@@ -1,0 +1,26 @@
+state={
+	id=73
+	name="STATE_73"
+	manpower = 854300
+	
+	state_category = rural
+	
+	history={
+		victory_points = {
+			11691 1 
+		}
+		owner = DUS
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = DUS
+		add_claim_by = HUN
+		add_claim_by = UKR
+	}
+
+	provinces={
+		3548 6571 9563 11536 11691 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,183 @@
+intel_category = {
+
+	create_company_decision = {
+
+		icon = ger_mefo_bills
+
+		allowed = {
+			tag = REA
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		complete_effect = {
+
+			add_tech_bonus = {
+    				bonus = 0.5
+    				uses = 1
+    				category = engineers_tech
+			}
+
+			add_tech_bonus = {
+    				bonus = 0.5
+    				uses = 1
+    				category = computing_tech
+			}
+
+			set_variable = {
+    				var = intel_created
+    				value = 1
+    				tooltip = intel_created_start
+			}
+
+		}
+
+
+	}
+
+	build_new_office_decision = {
+
+		icon = generic_scorched_earth
+
+		allowed = {
+			tag = REA
+		}
+
+		cost = 100
+
+		available = {
+			has_variable = intel_created
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+
+			add_tech_bonus = {
+    				bonus = 0.5
+    				uses = 1
+    				category = radar_tech
+			}
+
+			add_tech_bonus = {
+    				bonus = 0.5
+    				uses = 1
+    				category = electronics
+			}
+
+			set_variable = {
+    				var = intel_build
+    				value = 1
+    				tooltip = intel_build_start
+			}
+
+		}
+
+	}
+
+	distribute_products_decision = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = REA
+		}
+
+		cost = 100
+
+		available = {
+			has_variable = intel_created
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+
+			add_tech_bonus = {
+    				bonus = 0.5
+    				uses = 1
+    				category = decryption_tech
+			}
+
+			add_tech_bonus = {
+    				bonus = 0.5
+    				uses = 1
+    				category = computing_tech
+			}
+
+			set_variable = {
+    				var = intel_distribute
+    				value = 1
+    				tooltip = intel_distribute_start
+			}
+
+
+		}
+
+	}
+
+	invest_in_company_decision = {
+
+		icon = generic_nationalism
+
+		allowed = {
+			tag = REA
+		}
+
+		cost = 100
+
+		available = {
+			has_variable = intel_created
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+
+			add_research_slot = 1
+			add_offsite_building = { type = industrial_complex level = 3 }
+
+			set_variable = {
+    				var = intel_invest_in_company
+    				value = 1
+    				tooltip = intel_invest_in_company_start
+			}
+
+		}
+
+	}
+
+	promotion_of_success_decision = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			tag = REA
+		}
+
+		cost = 150
+
+		available = {
+			has_variable = intel_created
+			has_variable = intel_build
+			has_variable = intel_distribute
+			has_variable = intel_invest_in_company
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+
+			add_popularity = {
+    				ideology = democratic
+    				popularity = 0.25
+			}
+
+		}
+
+	}
+
+
+}

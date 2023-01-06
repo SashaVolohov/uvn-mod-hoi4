@@ -1,0 +1,28 @@
+
+state={
+	id=200
+	name="STATE_200"
+	manpower = 1687401
+	state_category = town
+
+	history={
+		owner = REA
+		victory_points = {
+			6596 1
+		}
+		buildings = {
+			infrastructure = 3
+			air_base = 3
+			arms_factory = 4
+			industrial_complex = 1
+		}
+		add_core_of = REA
+		add_core_of = UKR
+	}
+
+	provinces={
+		429 588 3399 3767 6596 9571 9729 11405 11700 
+	}
+
+	local_supplies=0.0 
+}

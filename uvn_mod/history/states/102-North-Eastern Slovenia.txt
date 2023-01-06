@@ -1,0 +1,26 @@
+state=
+{
+	id=102
+	name="STATE_102"
+	manpower = 811050
+	
+	state_category = large_town
+	
+	history =
+	{
+		owner = DUS
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			665 1
+		}
+		add_core_of = DUS
+		add_core_of = SLV
+	}
+	provinces={
+		596 665 3631 3654 6672 9596
+	}
+	
+	local_supplies=0.0 
+}

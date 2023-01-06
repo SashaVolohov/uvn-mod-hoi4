@@ -1,0 +1,23 @@
+state={
+	id=805
+	name="STATE_805"
+	provinces={
+		914 13234 13235
+	}
+	manpower = 262200
+	
+	state_category = pastoral
+
+	history= {
+		owner = DUS
+		victory_points = {
+			914 1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = DUS
+	}
+
+	local_supplies=0.0 
+}

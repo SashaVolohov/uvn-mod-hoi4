@@ -1,0 +1,34 @@
+
+state={
+	id=202
+	name="STATE_202"
+	manpower = 1722875
+	resources={
+		oil=8
+		aluminium=7
+	}
+	
+	state_category = city
+
+	history={
+		owner = REA
+		victory_points = {
+			525 25
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 3
+			fuel_silo = 1
+			air_base = 8
+		}
+		add_core_of = REA
+		add_core_of = UKR
+	}
+
+	provinces={
+		489 504 525 582 3494 3543 6497 9465 9543 9568 11557 
+	}
+
+	local_supplies=0.0 
+}

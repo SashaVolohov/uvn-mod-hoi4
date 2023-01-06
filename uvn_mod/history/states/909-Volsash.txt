@@ -1,0 +1,35 @@
+
+state={
+	id=909
+	name="STATE_909"
+	manpower = 8263616
+	
+	state_category = megalopolis
+
+	history={
+		owner = REA
+		buildings = {
+			infrastructure = 4
+			arms_factory = 7
+			industrial_complex = 3
+			air_base = 10
+
+			6420 = {
+				naval_base = 10
+
+			}
+
+		}
+		victory_points = {
+			6420 50
+		}
+		add_core_of = REA
+		add_core_of = UKR
+	}
+
+	provinces={
+		6420 3421 6776 6493 
+	}
+
+	local_supplies=10.0 
+}
