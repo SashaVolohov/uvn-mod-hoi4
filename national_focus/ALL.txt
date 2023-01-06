@@ -1,0 +1,178 @@
+focus_tree = {
+	id = ALL
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ALL
+		}
+	}
+	default = no
+	focus = {
+		id = ALL_uvn
+		icon = GFX_goal_anschluss
+		cost = 7
+		x = 2
+		y = 0
+
+	}
+	focus = {
+		id = ALL_promka
+		icon = GFX_goal_generic_construct_civilian
+		cost = 50
+		x = 6
+		y = 0
+
+	}
+	focus = {
+		id = ALL_ neutral
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 50
+		x = 1
+		y = 4
+
+	}
+	focus = {
+		id = ALL_investors
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 35
+		x = 9
+		y = 0
+
+	}
+	focus = {
+		id = ALL_exp
+		icon = GFX_focus_research
+		cost = 50
+		x = 11
+		y = 0
+
+	}
+	focus = {
+		id = ALL_army
+		icon = GFX_goal_rhineland
+		cost = 50
+		x = 13
+		y = 0
+
+	}
+	focus = {
+		id = ALL_autoritarian
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 35
+		prerequisite = {
+			focus = ALL_uvn
+		}
+		mutually_exclusive = {
+			focus = ALL_democracy
+		}
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = ALL_democracy
+		icon = GFX_goal_support_democracy
+		cost = 35
+		prerequisite = {
+			focus = ALL_uvn
+		}
+		mutually_exclusive = {
+			focus = ALL_autoritarian
+		}
+		x = 3
+		y = 1
+
+	}
+	focus = {
+		id = ALL_fabrika
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 50
+		prerequisite = {
+			focus = ALL_promka
+		}
+		x = 5
+		y = 1
+
+	}
+	focus = {
+		id = ALL_zavod
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 50
+		prerequisite = {
+			focus = ALL_promka
+		}
+		x = 7
+		y = 1
+
+	}
+	focus = {
+		id = ALL_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 50
+		prerequisite = {
+			focus = ALL_zavod
+		}
+		prerequisite = {
+			focus = ALL_fabrika
+		}
+		x = 6
+		y = 2
+
+	}
+	focus = {
+		id = ALL_potreblenie
+		icon = GFX_goal_generic_consumer_goods
+		cost = 50
+		prerequisite = {
+			focus = ALL_infrastructure
+		}
+		x = 6
+		y = 3
+
+	}
+	focus = {
+		id = ALL__sell
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 35
+		prerequisite = {
+			focus = ALL_investors
+		}
+		x = 9
+		y = 1
+
+	}
+	focus = {
+		id = ALL_exp_together
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 50
+		prerequisite = {
+			focus = ALL_exp
+		}
+		x = 11
+		y = 1
+
+	}
+	focus = {
+		id = ALL_army_modernisation
+		icon = GFX_goal_poland_goal
+		cost = 50
+		prerequisite = {
+			focus = ALL_army
+		}
+		x = 13
+		y = 1
+
+	}
+	focus = {
+		id = ALL_army_modernisation_2
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 50
+		prerequisite = {
+			focus = ALL_army_modernisation
+		}
+		x = 13
+		y = 2
+
+	}
+}
