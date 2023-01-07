@@ -43,6 +43,9 @@ focus_tree = {
 		}
 		x = 1
 		y = 2
+		completion_reward = {
+		
+		}
 
 	}
 	focus = {
@@ -104,6 +107,9 @@ focus_tree = {
 		}
 		x = 4
 		y = 2
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
@@ -159,6 +165,10 @@ focus_tree = {
 		}
 		x = 6
 		y = 3
+		completion_reward = {
+		add_offsite_building = { type = arms_factory level = 1 }
+		add_offsite_building = { type = arms_factory level = 1 }
+		}
 
 	}
 	focus = {
@@ -170,7 +180,10 @@ focus_tree = {
 		}
 		x = 6
 		y = 4
-
+		completion_reward = {
+		add_manpower = 10000
+		army_experience = 10
+		}
 	}
 	focus = {
 		id = VIC_army_exp
@@ -182,7 +195,7 @@ focus_tree = {
 		x = 6
 		y = 5
 		completion_reward = {
-		army_experience = 100
+		army_experience = 50
 		}
 		
 
@@ -236,6 +249,10 @@ focus_tree = {
 		x = 9
 		y = 1
 		completion_reward = {
+			add_popularity = {
+    			ideology = democratic
+    			popularity = 0.2
+			}
 		}
 
 	}
@@ -248,6 +265,18 @@ focus_tree = {
 		}
 		x = 9
 		y = 2
+		completion_reward = {
+		add_stability = 0.1
+		add_political_power = 100
+		add_popularity = {
+    			ideology = democratic
+    			popularity = 0.1
+			}
+		add_popularity = {
+    			ideology = neutrality
+    			popularity = -0.1
+			}
+		}
 
 	}
 	focus = {
@@ -295,6 +324,14 @@ focus_tree = {
 		completion_reward = {
 		add_stability = 0.1
 		add_political_power = 100
+		add_popularity = {
+    			ideology = democratic
+    			popularity = 0.1
+			}
+		add_popularity = {
+    			ideology = communism
+    			popularity = 0.4
+			}
 		}
 
 	}
@@ -311,7 +348,18 @@ focus_tree = {
 		x = 11
 		y = 1
 		completion_reward = {
-
+			add_popularity = {
+    			ideology = fascism
+    			popularity = 0.1
+			}
+			add_popularity = {
+    			ideology = neutrality
+    			popularity = 0.5
+			}
+			add_popularity = {
+    			ideology = communism
+    			popularity = -0.2
+			}
 		}
 
 	}
@@ -325,7 +373,12 @@ focus_tree = {
 		x = 11
 		y = 2
 		completion_reward = {
-
+			set_politics = {
+			ruling_party = neutrality
+    			elections_allowed = no
+    			last_election = "2022.12.17"
+    			election_frequency = 48
+			}
 		}
 
 	}
@@ -338,7 +391,14 @@ focus_tree = {
 		}
 		x = 11
 		y = 3
-
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = 0.1
+			add_popularity = {
+    			ideology = neutrality
+    			popularity = 0.05
+			}
+		}
 	}
 	focus = {
 		id = VIC_my_friends
@@ -360,7 +420,31 @@ focus_tree = {
 		}
 		x = 11
 		y = 5
-
+		completion_reward = {
+			add_state_core = 357
+			add_state_core = 465
+			add_state_core = 682
+			add_state_core = 866
+			add_state_core = 360
+			add_state_core = 359
+			add_state_core = 361
+			add_state_core = 362
+			add_state_core = 816
+			add_state_core = 369
+			add_state_core = 396
+			add_state_core = 261
+			add_state_core = 393
+			add_state_core = 101
+			add_state_core = 100
+			add_state_core = 769
+			add_state_core = 768
+			add_state_core = 548
+			add_state_core = 300
+			add_state_core = 286
+			add_state_core = 671
+			add_state_core = 333
+			add_state_core = 50
+			}
 	}
 	focus = {
 		id = VIC_bastard_unite
@@ -438,6 +522,23 @@ focus_tree = {
 		}
 		x = 15
 		y = 3
+		completion_reward = {
+			add_resource = {
+    			type = oil
+    			amount = 5
+    			state = 466
+			}
+			add_resource = {
+    			type = oil
+    			amount = 5
+    			state = 861
+			}
+			add_resource = {
+    			type = steel
+    			amount = 10
+    			state = 861
+			}
+}
 
 	}
 	focus = {
