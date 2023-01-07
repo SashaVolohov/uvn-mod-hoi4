@@ -1,0 +1,15 @@
+VIC = {
+	male = {
+		names = { Alexandr Alex Alehandro Alekiy Aleks
+		}
+		callsigns = { "democrat" "aferist" "intellectual"}
+	}
+	female = {
+		names = { Anna Hanna }
+		callsigns = { "Dura" "Pushka" "Kartoshka"}
+	}
+	surnames = { 
+			Mitrokhin Mitrohin Mitrofanus Mitt
+		  }
+	
+}

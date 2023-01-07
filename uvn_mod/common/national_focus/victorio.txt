@@ -14,7 +14,7 @@ focus_tree = {
 		cost = 5
 		x = 3
 		y = 0
-		complite reward ={
+		completion_reward = {
 		add_political_power = 100
 		add_stability = 0.1
 		}
@@ -23,21 +23,21 @@ focus_tree = {
 	focus = {
 		id = VIC_capital
 		icon = GFX_goal_generic_construction2
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = VIC_uvn
 		}
 		x = 3
 		y = 1
-		complite reward ={
-
+		completion_reward = {
+		
 		}
 
 	}
 	focus = {
 		id = VIC_fabrika
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = VIC_capital
 		}
@@ -48,7 +48,7 @@ focus_tree = {
 	focus = {
 		id = VIC_bank
 		icon = GFX_goal_generic_intelligence_exchange
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = VIC_fabrika
 		}
@@ -59,7 +59,7 @@ focus_tree = {
 	focus = {
 		id = VIC_VICOPS
 		icon = GFX_goal_tripartite_pact
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = VIC_bank
 		}
@@ -70,7 +70,7 @@ focus_tree = {
 	focus = {
 		id = VIC_afera
 		icon = GFX_goal_generic_wolf_pack
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = VIC_VICOPS
 		}
@@ -84,7 +84,7 @@ focus_tree = {
 	focus = {
 		id = VIC_finance_reform
 		icon = GFX_goal_generic_consumer_goods
-		cost = 0
+		cost = 15
 		prerequisite = {
 			focus = VIC_VICOPS
 		}
@@ -98,7 +98,7 @@ focus_tree = {
 	focus = {
 		id = VIC_port
 		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = VIC_capital
 		}
@@ -109,7 +109,7 @@ focus_tree = {
 	focus = {
 		id = VIC_sell_ship
 		icon = GFX_goal_generic_navy_battleship
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = VIC_port
 		}
@@ -120,7 +120,7 @@ focus_tree = {
 	focus = {
 		id = VIC_war_ship
 		icon = GFX_goal_generic_navy_submarine
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = VIC_sell_ship
 		}
@@ -131,7 +131,7 @@ focus_tree = {
 	focus = {
 		id = VIC_mare_pekota
 		icon = GFX_goal_generic_amphibious_assault
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = VIC_war_ship
 		}
@@ -142,7 +142,7 @@ focus_tree = {
 	focus = {
 		id = VIC_army
 		icon = GFX_goal_rhineland
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = VIC_capital
 		}
@@ -153,7 +153,7 @@ focus_tree = {
 	focus = {
 		id = VIC_military_fabrik
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = VIC_army
 		}
@@ -164,7 +164,7 @@ focus_tree = {
 	focus = {
 		id = VIC_army_camp
 		icon = GFX_goal_generic_construct_military
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = VIC_military_fabrik
 		}
@@ -175,18 +175,22 @@ focus_tree = {
 	focus = {
 		id = VIC_army_exp
 		icon = GFX_goal_generic_small_arms
-		cost = 0
+		cost = 15
 		prerequisite = {
 			focus = VIC_army_camp
 		}
 		x = 6
 		y = 5
+		completion_reward = {
+		army_experience = 100
+		}
+		
 
 	}
 	focus = {
 		id = VIC_paper_tank
 		icon = GFX_goal_generic_army_tanks
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = VIC_army_exp
 		}
@@ -197,7 +201,7 @@ focus_tree = {
 	focus = {
 		id = VIC_aviation
 		icon = GFX_goal_generic_air_fighter
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = VIC_army_exp
 		}
@@ -208,7 +212,7 @@ focus_tree = {
 	focus = {
 		id = VIC_rocket
 		icon = GFX_focus_rocketry
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = VIC_paper_tank
 		}
@@ -222,7 +226,7 @@ focus_tree = {
 	focus = {
 		id = VIC_democracy
 		icon = GFX_goal_support_democracy
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = VIC_uvn
 		}
@@ -231,12 +235,14 @@ focus_tree = {
 		}
 		x = 9
 		y = 1
+		completion_reward = {
+		}
 
 	}
 	focus = {
 		id = VIC_election
 		icon = GFX_goal_anschluss
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = VIC_democracy
 		}
@@ -247,7 +253,7 @@ focus_tree = {
 	focus = {
 		id = VIC_new_rules
 		icon = GFX_goal_generic_propaganda
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = VIC_election
 		}
@@ -258,7 +264,7 @@ focus_tree = {
 	focus = {
 		id = VIC_pact
 		icon = GFX_goal_generic_improve_relations
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = VIC_new_rules
 		}
@@ -269,7 +275,7 @@ focus_tree = {
 	focus = {
 		id = VIC_ANGS
 		icon = GFX_goal_tripartite_pact
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = VIC_pact
 		}
@@ -280,18 +286,22 @@ focus_tree = {
 	focus = {
 		id = VIC_constitution
 		icon = GFX_goal_generic_intelligence_exchange
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = VIC_ANGS
 		}
 		x = 9
 		y = 6
+		completion_reward = {
+		add_stability = 0.1
+		add_political_power = 100
+		}
 
 	}
 	focus = {
 		id = VIC_autoritarian
 		icon = GFX_goal_generic_political_pressure
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = VIC_uvn
 		}
@@ -300,23 +310,29 @@ focus_tree = {
 		}
 		x = 11
 		y = 1
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = VIC_dictator
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = VIC_autoritarian
 		}
 		x = 11
 		y = 2
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = VIC_my_rules
 		icon = GFX_goal_generic_military_sphere
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = VIC_dictator
 		}
@@ -327,7 +343,7 @@ focus_tree = {
 	focus = {
 		id = VIC_my_friends
 		icon = GFX_goal_generic_dangerous_deal
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = VIC_my_rules
 		}
@@ -338,7 +354,7 @@ focus_tree = {
 	focus = {
 		id = VIC_pretension
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = VIC_my_friends
 		}
@@ -349,7 +365,7 @@ focus_tree = {
 	focus = {
 		id = VIC_bastard_unite
 		icon = GFX_goal_generic_national_unity
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = VIC_pretension
 		}
@@ -360,7 +376,7 @@ focus_tree = {
 	focus = {
 		id = VIC_BNB
 		icon = GFX_goal_generic_defence
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = VIC_constitution
 			focus = VIC_bastard_unite
@@ -372,7 +388,7 @@ focus_tree = {
 	focus = {
 		id = VIC_intel
 		icon = GFX_goal_generic_production2
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = VIC_uvn
 		}
@@ -383,7 +399,7 @@ focus_tree = {
 	focus = {
 		id = VIC_TUS
 		icon = GFX_goal_generic_scientific_exchange
-		cost = 0
+		cost = 15
 		prerequisite = {
 			focus = VIC_intel
 		}
@@ -394,7 +410,7 @@ focus_tree = {
 	focus = {
 		id = VIC_our_land
 		icon = GFX_goal_generic_demand_territory
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = VIC_uvn
 		}
@@ -405,7 +421,7 @@ focus_tree = {
 	focus = {
 		id = VIC_territory_reform
 		icon = GFX_goal_generic_consumer_goods
-		cost = 0
+		cost = 15
 		prerequisite = {
 			focus = VIC_our_land
 		}
@@ -416,7 +432,7 @@ focus_tree = {
 	focus = {
 		id = VIC_exploration_vildland
 		icon = GFX_goal_generic_cavalry
-		cost = 0
+		cost = 15
 		prerequisite = {
 			focus = VIC_territory_reform
 		}
@@ -427,7 +443,7 @@ focus_tree = {
 	focus = {
 		id = VIC_stability
 		icon = GFX_goal_generic_neutrality_focus
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = VIC_BNB
 		}
