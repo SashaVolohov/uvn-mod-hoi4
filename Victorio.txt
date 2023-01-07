@@ -1,0 +1,454 @@
+focus_tree = {
+	id = Victorio
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = VIC
+		}
+	}
+	default = no
+	focus = {
+		id = VIC_uvn
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 3
+		y = 0
+		completion_reward = {
+		add_political_power = 100
+		add_stability = 0.1
+		}
+
+	}
+	focus = {
+		id = VIC_capital
+		icon = GFX_goal_generic_construction2
+		cost = 5
+		prerequisite = {
+			focus = VIC_uvn
+		}
+		x = 3
+		y = 1
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = VIC_fabrika
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = VIC_capital
+		}
+		x = 1
+		y = 2
+
+	}
+	focus = {
+		id = VIC_bank
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		prerequisite = {
+			focus = VIC_fabrika
+		}
+		x = 1
+		y = 3
+
+	}
+	focus = {
+		id = VIC_VICOPS
+		icon = GFX_goal_tripartite_pact
+		cost = 10
+		prerequisite = {
+			focus = VIC_bank
+		}
+		x = 1
+		y = 4
+
+	}
+	focus = {
+		id = VIC_afera
+		icon = GFX_goal_generic_wolf_pack
+		cost = 5
+		prerequisite = {
+			focus = VIC_VICOPS
+		}
+		mutually_exclusive = {
+			focus = VIC_finance_reform
+		}
+		x = 0
+		y = 5
+
+	}
+	focus = {
+		id = VIC_finance_reform
+		icon = GFX_goal_generic_consumer_goods
+		cost = 15
+		prerequisite = {
+			focus = VIC_VICOPS
+		}
+		mutually_exclusive = {
+			focus = VIC_afera
+		}
+		x = 2
+		y = 5
+
+	}
+	focus = {
+		id = VIC_port
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10
+		prerequisite = {
+			focus = VIC_capital
+		}
+		x = 4
+		y = 2
+
+	}
+	focus = {
+		id = VIC_sell_ship
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10
+		prerequisite = {
+			focus = VIC_port
+		}
+		x = 4
+		y = 3
+
+	}
+	focus = {
+		id = VIC_war_ship
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10
+		prerequisite = {
+			focus = VIC_sell_ship
+		}
+		x = 4
+		y = 4
+
+	}
+	focus = {
+		id = VIC_mare_pekota
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 10
+		prerequisite = {
+			focus = VIC_war_ship
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = VIC_army
+		icon = GFX_goal_rhineland
+		cost = 5
+		prerequisite = {
+			focus = VIC_capital
+		}
+		x = 6
+		y = 2
+
+	}
+	focus = {
+		id = VIC_military_fabrik
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = VIC_army
+		}
+		x = 6
+		y = 3
+
+	}
+	focus = {
+		id = VIC_army_camp
+		icon = GFX_goal_generic_construct_military
+		cost = 10
+		prerequisite = {
+			focus = VIC_military_fabrik
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = VIC_army_exp
+		icon = GFX_goal_generic_small_arms
+		cost = 15
+		prerequisite = {
+			focus = VIC_army_camp
+		}
+		x = 6
+		y = 5
+		completion_reward = {
+		army_experience = 100
+		}
+		
+
+	}
+	focus = {
+		id = VIC_paper_tank
+		icon = GFX_goal_generic_army_tanks
+		cost = 10
+		prerequisite = {
+			focus = VIC_army_exp
+		}
+		x = 5
+		y = 6
+
+	}
+	focus = {
+		id = VIC_aviation
+		icon = GFX_goal_generic_air_fighter
+		cost = 10
+		prerequisite = {
+			focus = VIC_army_exp
+		}
+		x = 7
+		y = 6
+
+	}
+	focus = {
+		id = VIC_rocket
+		icon = GFX_focus_rocketry
+		cost = 10
+		prerequisite = {
+			focus = VIC_paper_tank
+		}
+		prerequisite = {
+			focus = VIC_aviation
+		}
+		x = 6
+		y = 7
+
+	}
+	focus = {
+		id = VIC_democracy
+		icon = GFX_goal_support_democracy
+		cost = 5
+		prerequisite = {
+			focus = VIC_uvn
+		}
+		mutually_exclusive = {
+			focus = VIC_autoritarian
+		}
+		x = 9
+		y = 1
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = VIC_election
+		icon = GFX_goal_anschluss
+		cost = 10
+		prerequisite = {
+			focus = VIC_democracy
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = VIC_new_rules
+		icon = GFX_goal_generic_propaganda
+		cost = 10
+		prerequisite = {
+			focus = VIC_election
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = {
+		id = VIC_pact
+		icon = GFX_goal_generic_improve_relations
+		cost = 10
+		prerequisite = {
+			focus = VIC_new_rules
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = VIC_ANGS
+		icon = GFX_goal_tripartite_pact
+		cost = 10
+		prerequisite = {
+			focus = VIC_pact
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = VIC_constitution
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		prerequisite = {
+			focus = VIC_ANGS
+		}
+		x = 9
+		y = 6
+		completion_reward = {
+		add_stability = 0.1
+		add_political_power = 100
+		}
+
+	}
+	focus = {
+		id = VIC_autoritarian
+		icon = GFX_goal_generic_political_pressure
+		cost = 5
+		prerequisite = {
+			focus = VIC_uvn
+		}
+		mutually_exclusive = {
+			focus = VIC_democracy
+		}
+		x = 11
+		y = 1
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = VIC_dictator
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = VIC_autoritarian
+		}
+		x = 11
+		y = 2
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = VIC_my_rules
+		icon = GFX_goal_generic_military_sphere
+		cost = 10
+		prerequisite = {
+			focus = VIC_dictator
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = VIC_my_friends
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10
+		prerequisite = {
+			focus = VIC_my_rules
+		}
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = VIC_pretension
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10
+		prerequisite = {
+			focus = VIC_my_friends
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = VIC_bastard_unite
+		icon = GFX_goal_generic_national_unity
+		cost = 10
+		prerequisite = {
+			focus = VIC_pretension
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = VIC_BNB
+		icon = GFX_goal_generic_defence
+		cost = 10
+		prerequisite = {
+			focus = VIC_constitution
+			focus = VIC_bastard_unite
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = VIC_intel
+		icon = GFX_goal_generic_production2
+		cost = 10
+		prerequisite = {
+			focus = VIC_uvn
+		}
+		x = 13
+		y = 1
+
+	}
+	focus = {
+		id = VIC_TUS
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 15
+		prerequisite = {
+			focus = VIC_intel
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = VIC_our_land
+		icon = GFX_goal_generic_demand_territory
+		cost = 5
+		prerequisite = {
+			focus = VIC_uvn
+		}
+		x = 15
+		y = 1
+
+	}
+	focus = {
+		id = VIC_territory_reform
+		icon = GFX_goal_generic_consumer_goods
+		cost = 15
+		prerequisite = {
+			focus = VIC_our_land
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = VIC_exploration_vildland
+		icon = GFX_goal_generic_cavalry
+		cost = 15
+		prerequisite = {
+			focus = VIC_territory_reform
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = VIC_stability
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = {
+			focus = VIC_BNB
+		}
+		x = 10
+		y = 8
+
+	}
+}
