@@ -267,5 +267,8 @@ SQR = "countries/Sqr United.txt"
 SGK = "countries/SGK.txt"
 IND = "countries/Indyzia.txt"
 LUT = "countries/Lutheran.txt"
+CAU = "countries/Caucasus.txt"
+OLE = "countries/Olegostan.txt"
+TEX = "countries/Texas.txt"
 
 #NOTE: Useful to add a basic default loc entry for each tag in 00_countries.txt so that hovering over a tag will show the tag's name in loc (ie. PAP: "Papal States")
