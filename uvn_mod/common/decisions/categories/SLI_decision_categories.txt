@@ -1,0 +1,13 @@
+vicops_category = {
+
+	icon = generic_economy
+
+	pictire = GFX_decision_cat_constitutional_arrows
+
+	priority = 97
+
+	allowed = {
+		original_tag = SLI
+	}
+
+}

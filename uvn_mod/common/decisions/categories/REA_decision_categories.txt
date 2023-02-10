@@ -2,7 +2,7 @@ intel_category = {
 
 	icon = generic_political_actions
 
-	puctire = GFX_decision_cat_generic_mefo_bills
+	pictire = GFX_decision_cat_generic_mefo_bills
 
 	priority = 97
 

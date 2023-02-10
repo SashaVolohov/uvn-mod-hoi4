@@ -1,0 +1,158 @@
+vicops_category = {
+
+	create_vicops_decision = {
+
+		icon = ger_mefo_bills
+
+		allowed = {
+			tag = SLI
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		complete_effect = {
+
+			political_power_cost = -0.1
+			political_power_gain = 0.1
+			political_power_factor = 0.1
+
+			set_variable = {
+    				var = vicops_created
+    				value = 1
+    				tooltip = vicops_created_start
+			}
+
+
+		}
+
+
+	}
+
+	build_vicops_office_decision = {
+
+		icon = generic_scorched_earth
+
+		allowed = {
+			tag = SLI
+		}
+
+		cost = 100
+
+		available = {
+			has_variable = vicops_created
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+
+			stability_factor = 0.1
+			stability_weekly = 0.1
+			stability_weekly_factor = 0.1
+
+			set_variable = {
+    				var = vicops_build
+    				value = 1
+    				tooltip = vicops_build_start
+			}
+
+		}
+
+	}
+
+	distribute_vicops_decision = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = SLI
+		}
+
+		cost = 100
+
+		available = {
+			has_variable = vicops_created
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+
+			war_stability_factor = 0.1
+			war_support_factor = 0.1
+
+			set_variable = {
+    				var = vicops_distribute
+    				value = 1
+    				tooltip = vicops_distribute_start
+			}
+
+
+		}
+
+	}
+
+	invest_in_vicops_decision = {
+
+		icon = generic_nationalism
+
+		allowed = {
+			tag = SLI
+		}
+
+		cost = 100
+
+		available = {
+			has_variable = vicops_created
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+
+			add_offsite_building = { type = industrial_complex level = 5 }
+
+			set_variable = {
+    				var = vicops_invest_in_company
+    				value = 1
+    				tooltip = vicops_invest_in_company_start
+			}
+
+		}
+
+	}
+
+	promotion_of_vicops_decision = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			tag = SLI
+		}
+
+		cost = 150
+
+		available = {
+			has_variable = vicops_created
+			has_variable = vicops_build
+			has_variable = vicops_distribute
+			has_variable = vicops_invest_in_company
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+
+			add_popularity = {
+    				ideology = neutrality
+    				popularity = 0.25
+			}
+
+		}
+
+	}
+
+
+}
