@@ -1,0 +1,161 @@
+zeitland_army_category = {
+
+	create_zeitland_army_decision = {
+
+		icon = generic_army_support
+
+		allowed = {
+			tag = ZEI
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		complete_effect = {
+
+			command_power_gain = 0.1
+			command_power_gain_mult = 0.1
+			conscription = 0.1
+
+			set_variable = {
+    				var = zeitland_army_created
+    				value = 1
+    				tooltip = zeitland_army_created_start
+			}
+
+
+		}
+
+
+	}
+
+	build_zeitland_army_office_decision = {
+
+		icon = generic_industry
+
+		allowed = {
+			tag = ZEI
+		}
+
+		cost = 100
+
+		available = {
+			has_variable = zeitland_army_created
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+
+			conscription_factor = 0.1
+			experience_gain_army = 0.1
+			experience_gain_army_factor = 0.1
+
+			set_variable = {
+    				var = zeitland_army_build
+    				value = 1
+    				tooltip = zeitland_army_build_start
+			}
+
+		}
+
+	}
+
+	distribute_zeitland_army_decision = {
+
+		icon = generic_naval
+
+		allowed = {
+			tag = ZEI
+		}
+
+		cost = 100
+
+		available = {
+			has_variable = zeitland_army_created
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+
+			experience_gain_navy = 0.1
+			experience_gain_navy_factor = 0.1
+
+			set_variable = {
+    				var = zeitland_army_distribute
+    				value = 1
+    				tooltip = zeitland_army_distribute_start
+			}
+
+
+		}
+
+	}
+
+	invest_in_zeitland_army_decision = {
+
+		icon = generic_air
+
+		allowed = {
+			tag = ZEI
+		}
+
+		cost = 100
+
+		available = {
+			has_variable = zeitland_army_created
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+
+			experience_gain_air = 0.1
+			experience_gain_air_factor = 0.1
+
+			set_variable = {
+    				var = zeitland_army_invest_in_company
+    				value = 1
+    				tooltip = zeitland_army_invest_in_company_start
+			}
+
+		}
+
+	}
+
+	promotion_of_zeitland_army_decision = {
+
+		icon = generic_tank
+
+		allowed = {
+			tag = ZEI
+		}
+
+		cost = 150
+
+		available = {
+			has_variable = zeitland_army_created
+			has_variable = zeitland_army_build
+			has_variable = zeitland_army_distribute
+			has_variable = zeitland_army_invest_in_company
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+
+			add_popularity = {
+    				ideology = democratic
+    				popularity = 0.25
+			}
+
+			add_offsite_building = { type = arms_factory level = 10 }
+
+		}
+
+	}
+
+
+}

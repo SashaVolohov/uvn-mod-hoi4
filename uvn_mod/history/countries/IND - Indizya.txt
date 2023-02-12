@@ -36,3 +36,31 @@ set_popularities = {
 	neutrality = 40
 	communism = 10
 }
+create_country_leader = {
+    name = "Фёдор Фёдоров"
+    desc = ""
+    picture = "gfx/leaders/IND/IND_dem.dds"
+    expire = "2100.1.1"
+    ideology = liberalism
+}
+create_country_leader = {
+    name = "Андрей Артемьев"
+    desc = ""
+    picture = "gfx/leaders/IND/IND_fas.dds"
+    expire = "2100.1.1"
+    ideology = fascism_ideology
+}
+create_country_leader = {
+    name = "Шарль Чистичь"
+    desc = ""
+    picture = "gfx/leaders/IND/IND_neu.dds"
+    expire = "2100.1.1"
+    ideology = despotism
+}
+create_country_leader = {
+    name = "Матвей Фёдоров"
+    desc = ""
+    picture = "gfx/leaders/IND/IND_com.dds"
+    expire = "2100.1.1"
+    ideology = leninism
+}

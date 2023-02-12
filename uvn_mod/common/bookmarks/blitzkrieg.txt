@@ -1,0 +1,118 @@
+bookmarks = {
+	bookmark = {
+		name = "BEGINNING_OF_2022_NAME"
+		desc = "BEGINNING_OF_2022_DESC"
+		date = 2022.1.1.12
+		picture = "GFX_select_date_2022"
+		default_country = "REA"
+		default = yes
+		
+		"DUS"={
+			history = "DUS_BEGINNING_OF_2023_DESC"
+			ideology = democratic
+			ideas = {
+				
+				
+				
+			}
+			focuses = {
+				
+				
+				
+			}
+		}
+		"ZEI"={
+			history = "ZEI_BEGINNING_OF_2023_DESC"
+			ideology = neutrality
+			ideas = {
+				
+				
+				
+			}
+			focuses = {
+				
+				
+				
+			}
+		}
+		"SQR"={
+			history = "SQR_BEGINNING_OF_2023_DESC"
+			ideology = democratic
+			ideas = {
+				
+				
+				
+			}
+			focuses = {
+				
+				
+				
+			}
+		}
+		"REA"={
+			history = "REA_BEGINNING_OF_2023_DESC"
+			ideology = democratic
+			ideas = {
+				
+				
+				
+			}
+			focuses = {
+				
+				
+				
+			}
+		}
+		"KIN"={
+			history = "KIN_BEGINNING_OF_2023_DESC"
+			ideology = democratic
+			ideas = {
+				
+				
+				
+			}	
+			focuses = {
+				
+				
+				
+			}		
+		}
+		"IND"={
+			history = "IND_BEGINNING_OF_2023_DESC"
+			ideology = democratic
+			ideas = {
+				
+				
+				
+			}	
+			focuses = {
+				
+				
+				
+			}			
+		}
+		"TEX"={
+			history = "TEX_BEGINNING_OF_2023_DESC"
+			ideology = democratic
+			ideas = {
+				
+				
+				
+			}
+			focuses = {
+				
+				
+				
+			}	
+		}
+
+		"---"={
+			history = "OTHER_BEGINNING_OF_2023_DESC"
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

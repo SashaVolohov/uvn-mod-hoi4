@@ -40,3 +40,18 @@ set_popularities = {
 	neutrality = 30
 	communism = 20
 }
+
+create_country_leader = {
+    name = "Александр Волохов"
+    desc = ""
+    picture = "gfx/leaders/REA/REA_dem.dds"
+    expire = "2100.1.1"
+    ideology = liberalism
+}
+create_country_leader = {
+    name = "Хаиль Волохов"
+    desc = ""
+    picture = "gfx/leaders/REA/REA_fas.dds"
+    expire = "2100.1.1"
+    ideology = fascism_ideology
+}

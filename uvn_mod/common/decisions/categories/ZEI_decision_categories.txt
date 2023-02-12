@@ -1,0 +1,13 @@
+zeitland_army_category = {
+
+	icon = generic_army_reform
+
+	picture = GFX_decision_chi_infiltration
+
+	priority = 97
+
+	allowed = {
+		original_tag = ZEI
+	}
+
+}

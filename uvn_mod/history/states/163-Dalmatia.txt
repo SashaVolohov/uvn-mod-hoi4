@@ -19,7 +19,6 @@ state = {
 		add_core_of = DUS
 		add_core_of = CRO
 		add_core_of = LBV
-		start_resistance = CRO
 		set_compliance = 70
 	}
 	provinces = {	

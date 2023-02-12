@@ -40,3 +40,11 @@ set_popularities = {
 	neutrality = 20
 	communism = 30
 }
+
+create_country_leader = {
+    name = "Никита Фролов"
+    desc = ""
+    picture = "gfx/leaders/KIN/KIN_dem.dds"
+    expire = "2100.1.1"
+    ideology = liberalism
+}

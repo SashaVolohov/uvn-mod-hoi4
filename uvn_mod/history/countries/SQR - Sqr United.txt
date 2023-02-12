@@ -40,3 +40,11 @@ set_popularities = {
 	neutrality = 40
 	communism = 20
 }
+
+create_country_leader = {
+    name = "Tymur Slyva"
+    desc = ""
+    picture = "gfx/leaders/SQR/SQR_dem.dds"
+    expire = "2100.1.1"
+    ideology = liberalism
+}

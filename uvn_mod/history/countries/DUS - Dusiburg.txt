@@ -40,3 +40,11 @@ set_popularities = {
 	neutrality = 19
 	communism = 28
 }
+
+create_country_leader = {
+    name = "Иван Резчиков"
+    desc = ""
+    picture = "gfx/leaders/DUS/DUS_dem.dds"
+    expire = "2100.1.1"
+    ideology = liberalism
+}

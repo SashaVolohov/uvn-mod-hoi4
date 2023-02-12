@@ -1,0 +1,15 @@
+TEX = {
+	male = {
+		names = { Pablo Denis Algo Makar Evgeniy
+		}
+		callsigns = { "democrat" "aferist" "intellectual"}
+	}
+	female = {
+		names = { Anastasia Marina }
+		callsigns = { "Dura" "Pushka" "Kartoshka"}
+	}
+	surnames = { 
+			Pasho Demelka Matalo Rosol
+		  }
+	
+}

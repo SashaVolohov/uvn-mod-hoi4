@@ -40,3 +40,10 @@ set_popularities = {
 	neutrality = 35
 	communism = 15
 }
+
+create_country_leader = {
+    name = "Никита Дорожкин"
+    desc = ""
+    picture = "gfx/leaders/ZEI/ZEI_dem.dds"
+    expire = "2100.1.1"
+    ideology = liberalism
