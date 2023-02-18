@@ -1,0 +1,34 @@
+
+state={
+	id=464
+	name="STATE_464"
+	manpower = 490912
+	
+	state_category = rural
+
+	history={
+		owner = VIC
+		victory_points = {7361 10} #Белфаст
+		victory_points = {4623 1} #Трали
+		victory_points = {7304 3} #Спрингфилд
+		victory_points = {10244 1} #Честер
+		victory_points = {4430 1} #Кент
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 3
+			7361 = {
+				naval_base = 4
+
+			}
+		}
+		add_core_of = VIC
+	}
+
+	provinces={
+		1354 4430 4623 7304 7361 7644 10244 
+	}
+	
+
+	local_supplies=11.0 
+}

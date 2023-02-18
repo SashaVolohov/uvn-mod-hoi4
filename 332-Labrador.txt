@@ -1,0 +1,32 @@
+state={
+	id=332
+	name="STATE_332"
+	
+	state_category = wasteland
+
+	history={
+	
+		owner = VIC
+		victory_points = { 4720 10 } #Фольксштадт
+		victory_points = { 12503 3 } #Фишенхаффен
+		victory_points = { 4787 3 } #Шталенберг
+		victory_points = { 1785 3 } #Метсалинн
+		buildings = {
+			infrastructure = 1
+
+			12503 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = VIC
+
+	}
+
+	provinces={
+		1426 1785 4720 4787 12503 13165 13180 
+	}
+	manpower=500000
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}
