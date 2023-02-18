@@ -6,6 +6,8 @@ state={
 	}
 	history = {
 		owner = VIC
+		victory_points = { 7810 3 } #Вайсбург
+		victory_points = { 10534 3 } #Блаубург
 		add_core_of = VIC
 	}
 	manpower=110000

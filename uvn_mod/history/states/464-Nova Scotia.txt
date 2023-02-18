@@ -8,9 +8,11 @@ state={
 
 	history={
 		owner = VIC
-		victory_points = {
-			7361 3
-		}
+		victory_points = {7361 10} #Белфаст
+		victory_points = {4623 1} #Трали
+		victory_points = {7304 3} #Спрингфилд
+		victory_points = {10244 1} #Честер
+		victory_points = {4430 1} #Кент
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -24,7 +26,7 @@ state={
 	}
 
 	provinces={
-		1354 4360 4430 4623 7304 7361 7644 10244 
+		1354 4430 4623 7304 7361 7644 10244 
 	}
 	
 

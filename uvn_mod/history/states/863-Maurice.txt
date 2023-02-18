@@ -6,6 +6,7 @@ state={
 	}
 	history = {
 		owner = VIC
+		victory_points = { 12223 5 } #Лион
 		add_core_of = VIC
 	}
 	manpower=70000
