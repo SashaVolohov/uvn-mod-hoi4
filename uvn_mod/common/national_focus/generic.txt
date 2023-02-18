@@ -13,6 +13,12 @@ focus_tree = {
 		x = 2
 		y = 0
 
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+		}
+
+
 	}
 	focus = {
 		id = ALL_promka
@@ -21,13 +27,15 @@ focus_tree = {
 		x = 6
 		y = 0
 
-	}
-	focus = {
-		id = ALL_ neutral
-		icon = GFX_goal_generic_neutrality_focus
-		cost = 50
-		x = 1
-		y = 4
+		completion_reward = {
+
+			add_tech_bonus = {
+				bonus = 0.5
+    				uses = 1
+    				category = industry
+			}
+		}
+
 
 	}
 	focus = {
@@ -37,6 +45,12 @@ focus_tree = {
 		x = 9
 		y = 0
 
+		completion_reward = {
+
+			add_stability = 0.1
+
+		}
+
 	}
 	focus = {
 		id = ALL_exp
@@ -45,6 +59,13 @@ focus_tree = {
 		x = 11
 		y = 0
 
+		completion_reward = {
+
+			add_war_support = 0.1
+
+		}
+
+
 	}
 	focus = {
 		id = ALL_army
@@ -52,6 +73,13 @@ focus_tree = {
 		cost = 50
 		x = 13
 		y = 0
+
+		completion_reward = {
+
+			army_experience = 50
+
+		}
+
 
 	}
 	focus = {
@@ -67,6 +95,18 @@ focus_tree = {
 		x = 1
 		y = 1
 
+		completion_reward = {
+
+			add_political_power = 100
+			add_popularity = {
+    				ideology = fascism
+    				popularity = 0.25
+			}
+
+
+		}
+
+
 	}
 	focus = {
 		id = ALL_democracy
@@ -78,8 +118,21 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ALL_autoritarian
 		}
+
 		x = 3
 		y = 1
+
+
+		completion_reward = {
+
+			add_political_power = 100
+			add_popularity = {
+    				ideology = democratic
+    				popularity = 0.25
+			}
+
+
+		}
 
 	}
 	focus = {
@@ -92,6 +145,13 @@ focus_tree = {
 		x = 5
 		y = 1
 
+		completion_reward = {
+
+			add_offsite_building = { type = industrial_complex level = 3 }
+
+
+		}
+
 	}
 	focus = {
 		id = ALL_zavod
@@ -102,6 +162,14 @@ focus_tree = {
 		}
 		x = 7
 		y = 1
+
+		completion_reward = {
+
+			add_offsite_building = { type = arms_factory level = 3 }
+
+
+		}
+
 
 	}
 	focus = {
@@ -117,6 +185,35 @@ focus_tree = {
 		x = 6
 		y = 2
 
+		completion_reward = {
+
+			random_owned_state = {
+				add_building_construction = {
+    					type = infrastructure
+    					level = 5
+    					instant_build = yes
+				}
+			}
+
+			random_owned_state = {
+				add_building_construction = {
+    					type = infrastructure
+    					level = 5
+    					instant_build = yes
+				}
+			}
+
+			random_owned_state = {
+				add_building_construction = {
+    					type = infrastructure
+    					level = 5
+    					instant_build = yes
+				}
+			}
+
+
+		}
+
 	}
 	focus = {
 		id = ALL_potreblenie
@@ -127,6 +224,16 @@ focus_tree = {
 		}
 		x = 6
 		y = 3
+
+		completion_reward = {
+
+			add_tech_bonus = {
+    				bonus = 0.5
+    				uses = 1
+    				category = electronics
+			}
+
+		}
 
 	}
 	focus = {
@@ -139,6 +246,18 @@ focus_tree = {
 		x = 9
 		y = 1
 
+		completion_reward = {
+
+			add_tech_bonus = {
+    				bonus = 0.5
+    				uses = 1
+    				category = train_tech
+			}
+
+		}
+
+
+
 	}
 	focus = {
 		id = ALL_exp_together
@@ -149,6 +268,13 @@ focus_tree = {
 		}
 		x = 11
 		y = 1
+
+		completion_reward = {
+
+			add_command_power = 100
+
+		}
+
 
 	}
 	focus = {
@@ -161,6 +287,14 @@ focus_tree = {
 		x = 13
 		y = 1
 
+		completion_reward = {
+
+			army_experience = 100
+			navy_experience = 100
+			add_manpower = 100000
+		}
+
+
 	}
 	focus = {
 		id = ALL_army_modernisation_2
@@ -171,6 +305,21 @@ focus_tree = {
 		}
 		x = 13
 		y = 2
+
+		completion_reward = {
+
+			army_experience = 100
+			navy_experience = 100
+			air_experience = 100
+
+			add_tech_bonus = {
+				bonus = 0.5
+    				uses = 1
+    				category = air_doctrine
+			}
+
+		}
+
 
 	}
 }

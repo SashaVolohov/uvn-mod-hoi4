@@ -1,0 +1,159 @@
+rwlship_category = {
+
+	create_rwlship_decision = {
+
+		icon = ger_mefo_bills
+
+		allowed = {
+			tag = SQR
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		complete_effect = {
+
+			navy_fuel_consumption_factor = 0.1
+			navy_intel_factor = 0.1
+
+			set_variable = {
+    				var = rwlship_created
+    				value = 1
+    				tooltip = rwlship_created_start
+			}
+
+
+		}
+
+
+	}
+
+	build_rwlship_office_decision = {
+
+		icon = generic_scorched_earth
+
+		allowed = {
+			tag = SQR
+		}
+
+		cost = 100
+
+		available = {
+			has_variable = rwlship_created
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+
+			navy_intel_decryption_bonus = 0.1
+			navy_intel_to_others = 0.1
+
+			set_variable = {
+    				var = rwlship_build
+    				value = 1
+    				tooltip = rwlship_build_start
+			}
+
+		}
+
+	}
+
+	distribute_rwlship_decision = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = SQR
+		}
+
+		cost = 100
+
+		available = {
+			has_variable = rwlship_created
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+
+			ai_focus_naval_factor = 0.1
+			experience_gain_navy = 0.1
+
+			set_variable = {
+    				var = rwlship_distribute
+    				value = 1
+    				tooltip = rwlship_distribute_start
+			}
+
+
+		}
+
+	}
+
+	invest_in_rwlship_decision = {
+
+		icon = generic_nationalism
+
+		allowed = {
+			tag = SQR
+		}
+
+		cost = 100
+
+		available = {
+			has_variable = rwlship_created
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+
+			add_offsite_building = { type = naval_base level = 5 }
+
+			set_variable = {
+    				var = rwlship_invest_in_company
+    				value = 1
+    				tooltip = rwlship_invest_in_company_start
+			}
+
+		}
+
+	}
+
+	promotion_of_rwlship_decision = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			tag = SQR
+		}
+
+		cost = 150
+
+		available = {
+			has_variable = rwlship_created
+			has_variable = rwlship_build
+			has_variable = rwlship_distribute
+			has_variable = rwlship_invest_in_company
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+
+			experience_gain_navy_factor = 0.1
+			training_time_factor = 0.1
+
+			add_popularity = {
+    				ideology = democracy
+    				popularity = 0.25
+			}
+
+		}
+
+	}
+
+
+}

@@ -39,3 +39,11 @@ set_popularities = {
 	democratic = 67
 	communism = 33
 }
+
+create_country_leader = {
+    name = "Олег Куницын"
+    desc = ""
+    picture = "gfx/leaders/OLE/OLE_dem.dds"
+    expire = "2100.1.1"
+    ideology = liberalism
+}

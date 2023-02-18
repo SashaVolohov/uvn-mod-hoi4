@@ -37,3 +37,11 @@ set_popularities = {
 	neutrality = 75
 	communism = 5
 }
+
+create_country_leader = {
+    name = "Арсен Баянтай"
+    desc = ""
+    picture = "gfx/leaders/FLU/FLU_neu.dds"
+    expire = "2100.1.1"
+    ideology = despotism
+}

@@ -40,3 +40,11 @@ set_popularities = {
 	neutrality = 5
 	communism = 75
 }
+
+create_country_leader = {
+    name = "Franciszek Hawrylak"
+    desc = ""
+    picture = "gfx/leaders/CAU/CAU_com.dds"
+    expire = "2100.1.1"
+    ideology = marxism
+}

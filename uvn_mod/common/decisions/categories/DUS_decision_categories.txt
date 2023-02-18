@@ -1,0 +1,13 @@
+kotosoft_category = {
+
+	icon = generic_crisis
+
+	picture = GFX_decision_chi_political_support
+
+	priority = 97
+
+	allowed = {
+		original_tag = DUS
+	}
+
+}

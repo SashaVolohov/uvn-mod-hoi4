@@ -54,12 +54,16 @@ bookmarks = {
 			ideology = democratic
 			ideas = {
 				
-				
+				REA_uvco_member
+				REA_technology
+				REA_duma
 				
 			}
 			focuses = {
 				
-				
+				REA_DUS_pact
+				REA_ZEI_border_war
+				REA_for_everyone
 				
 			}
 		}

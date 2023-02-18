@@ -1,0 +1,337 @@
+focus_tree = {
+	id = Country_of_Reality
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = REA
+		}
+	}
+	default = no
+	focus = {
+		id = TAL_enter_troops
+		text = TAL_enter_troops
+		icon = GFX_goal_continuous_armor_production
+		cost = 10,00
+		x = 10
+		y = 0
+
+	}
+	focus = {
+		id = REA_SQR_relation
+		icon = GFX_goal_generic_improve_relations
+		cost = 10,00
+		prerequisite = {
+			focus = TAL_enter_troops
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = REA_ZEI_pact
+		icon = GFX_focus_generic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = REA_SQR_relation
+		}
+		mutually_exclusive = {
+			focus = REA_ZEI_border_war
+		}
+
+		ai_will_do = {
+			factor = 7
+		}
+
+		x = 4
+		y = 3
+
+	}
+	focus = {
+		id = REA_war_with_all
+		icon = GFX_focus_SOV_military_purge
+		cost = 10,00
+		prerequisite = {
+			focus = REA_ZEI_pact
+		}
+		mutually_exclusive = {
+			focus = REA_ZEI_puppet
+		}
+		x = 1
+		y = 4
+
+	}
+	focus = {
+		id = REA_ZEI_puppet
+		icon = GFX_focus_ITA_decima_flottiglia_mas
+		cost = 10,00
+		prerequisite = {
+			focus = REA_ZEI_pact
+		}
+		mutually_exclusive = {
+			focus = REA_war_with_all
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = REA_ZEI_border_war
+		icon = GFX_focus_generic_conspiracy
+		cost = 10,00
+		prerequisite = {
+			focus = REA_SQR_relation
+		}
+		mutually_exclusive = {
+			focus = REA_ZEI_pact
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = REA_DUS_pact
+		icon = GFX_focus_SWI_new_eidgenossenschaft
+		cost = 10,00
+		prerequisite = {
+			focus = REA_ZEI_border_war
+		}
+		mutually_exclusive = {
+			focus = REA_SLI_pact
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = REA_for_REA
+		text = REA_for_REA
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		cost = 10,00
+		prerequisite = {
+			focus = TAL_enter_troops
+		}
+		mutually_exclusive = {
+			focus = REA_for_everyone
+		}
+
+		ai_will_do = {
+			factor = 7
+		}
+
+		x = 9
+		y = 1
+
+	}
+	focus = {
+		id = REA_PAV_annexation
+		icon = GFX_focus_usa_build_the_pentagon
+		cost = 10,00
+		prerequisite = {
+			focus = TAL_enter_troops
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = REA_SQR_cruise_disable
+		icon = GFX_focus_ITA_devaluate_the_lire
+		cost = 10,00
+		prerequisite = {
+			focus = REA_PAV_annexation
+		}
+		mutually_exclusive = {
+			focus = REA_SQR_cruise
+		}
+
+		ai_will_do = {
+			factor = 7
+		}
+
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = REA_SLI_pact
+		icon = GFX_focus_POL_the_castle
+		cost = 10,00
+		prerequisite = {
+			focus = REA_ZEI_border_war
+		}
+		prerequisite = {
+			focus = REA_SQR_cruise_disable
+		}
+		mutually_exclusive = {
+			focus = REA_DUS_pact
+		}
+
+		ai_will_do = {
+			factor = 7
+		}
+
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = REA_for_everyone
+		text = REA_for_everyone
+		icon = GFX_goal_continuous_def_against_influence
+		cost = 10,00
+		prerequisite = {
+			focus = TAL_enter_troops
+		}
+		mutually_exclusive = {
+			focus = REA_for_REA
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		x = 11
+		y = 1
+
+	}
+	focus = {
+		id = REA_SQR_cruise
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10,00
+		prerequisite = {
+			focus = REA_PAV_annexation
+		}
+		mutually_exclusive = {
+			focus = REA_SQR_cruise_disable
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = REA_SQR_episode
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 10,00
+		prerequisite = {
+			focus = REA_SQR_cruise
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = REA_uvco_cancel
+		icon = GFX_focus_renounce_the_treaty_of_triannon
+		cost = 10,00
+		prerequisite = {
+			focus = REA_PAV_annexation
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = REA_decolonization
+		icon = GFX_focus_generic_coffee
+		cost = 10,00
+		prerequisite = {
+			focus = REA_uvco_cancel
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = REA_SQR_air
+		icon = GFX_focus_jap_zero
+		cost = 10,00
+		prerequisite = {
+			focus = REA_PAV_annexation
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = REA_new_politics
+		icon = GFX_focus_SOV_approach_primakov
+		cost = 10,00
+		prerequisite = {
+			focus = REA_PAV_annexation
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = REA_war_reform
+		icon = GFX_focus_TUR_ratify_the_six_arrows
+		cost = 10,00
+		prerequisite = {
+			focus = REA_new_politics
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = REA_capture_SGK
+		icon = GFX_focus_POL_sanation_right
+		cost = 10,00
+		prerequisite = {
+			focus = REA_war_with_all
+		}
+		x = 1
+		y = 5
+
+	}
+	focus = {
+		id = REA_capture_SLI
+		icon = GFX_focus_SWI_helvetic_junta
+		cost = 10,00
+		prerequisite = {
+			focus = REA_ZEI_puppet
+		}
+		x = 3
+		y = 5
+
+	}
+	focus = {
+		id = REA_capture_BRA
+		icon = GFX_focus_POL_beck_ribbentrop
+		cost = 10,00
+		prerequisite = {
+			focus = REA_SLI_pact
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = REA_army_reform
+		icon = GFX_focus_SWI_issue_war_bonds
+		cost = 10,00
+		prerequisite = {
+			focus = REA_DUS_pact
+		}
+		x = 6
+		y = 5
+
+	}
+}

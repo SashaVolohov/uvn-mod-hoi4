@@ -47,11 +47,21 @@ create_country_leader = {
     picture = "gfx/leaders/REA/REA_dem.dds"
     expire = "2100.1.1"
     ideology = liberalism
+	traits = { technology_leader peacemaker}
 }
+
 create_country_leader = {
     name = "Хаиль Волохов"
     desc = ""
     picture = "gfx/leaders/REA/REA_fas.dds"
     expire = "2100.1.1"
     ideology = fascism_ideology
+}
+
+add_ideas = {
+	REA_uvco_member
+	REA_technology
+	REA_duma
+	REA_democracy_regime
+	REA_colonization
 }

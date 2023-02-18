@@ -34,3 +34,11 @@ set_popularities = {
 	neutrality = 75
 	communism = 5
 }
+
+create_country_leader = {
+    name = "Wladislaw Gercog"
+    desc = ""
+    picture = "gfx/leaders/LUT/LUT_neu.dds"
+    expire = "2100.1.1"
+    ideology = despotism
+}

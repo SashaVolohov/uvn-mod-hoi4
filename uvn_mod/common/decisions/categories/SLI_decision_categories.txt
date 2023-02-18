@@ -2,7 +2,7 @@ vicops_category = {
 
 	icon = generic_economy
 
-	picture = GFX_decision_cat_constitutional_arrows
+	picture = GFX_decision_constitutional_arrows
 
 	priority = 97
 
