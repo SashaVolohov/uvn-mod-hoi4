@@ -6,7 +6,7 @@ state={
 	state_category=rural
 
 	history={
-		owner = DUS
+		owner = PAV
 		victory_points = {
 			9612 3
 		}
@@ -18,7 +18,12 @@ state={
 			industrial_complex =1
 
 		}
-		add_core_of = DUS
+		add_core_of = PAV
+
+		2023.1.1 = {
+			owner = DUS
+			add_core_of = DUS
+		}
 
 	}
 

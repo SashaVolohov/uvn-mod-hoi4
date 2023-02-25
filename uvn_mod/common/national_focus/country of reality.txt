@@ -16,6 +16,76 @@ focus_tree = {
 		x = 10
 		y = 0
 
+		available_if_capitulated = no
+		available = {
+			is_subject = no
+		}
+		cancel = {
+			OR = {
+				is_subject = yes
+				has_war_with = TAL
+			}
+		}
+		cancel_if_invalid = no
+
+		bypass = {
+			OR = {
+				TAL = {
+					OR = {
+						is_subject = yes
+						exists = no 
+						TAL = {
+							is_in_faction = yes
+							NOT = { is_in_faction_with = REA }
+						}
+					}
+				}
+				REA = {
+					owns_state = 219
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+			army_experience = 10
+			if = {
+				limit = {
+					country_exists = TAL
+					TAL = {
+						has_civil_war = no
+						OR = {
+							owns_state = 219
+						}
+					}
+					
+				}
+
+				TAL = {
+					country_event = {
+						id = country_of_reality.1
+						days = 1
+					}
+				}				
+			}
+
+			if = {
+				limit = {
+					219 = {
+						owner = {
+							NOT = {
+								tag = TAL
+							}
+							NOT = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				add_state_core = 219
+			}
+		}
+
+
 	}
 	focus = {
 		id = REA_SQR_relation
@@ -26,6 +96,33 @@ focus_tree = {
 		}
 		x = 5
 		y = 2
+
+		available = {
+			is_subject = no
+			AND = {
+				country_exists = SQR
+				SQR = { is_subject = no }
+				NOT = { has_war_with = SQR }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_in_faction_with = SQR
+				factor = 0
+			}
+		}	
+		completion_reward = {
+
+			SQR = {
+				add_opinion_modifier = { target = REA modifier = REA_SQR_diplomacy_focus }
+			}
+
+		}
+
 
 	}
 	focus = {
@@ -46,6 +143,30 @@ focus_tree = {
 		x = 4
 		y = 3
 
+		available = {
+			NOT = { has_war_with = ZEI }
+		}
+
+		bypass = {
+			OR = {
+				is_in_faction_with = ZEI
+				has_war_with = ZEI
+				NOT = { country_exists = ZEI }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			ZEI = {
+				country_event = {
+					id = country_of_reality.12
+					days = 1
+				}
+			}
+		}
+
+
 	}
 	focus = {
 		id = REA_war_with_all
@@ -60,6 +181,52 @@ focus_tree = {
 		x = 1
 		y = 4
 
+		available = {
+			NOT = { has_war_with = DUS }
+			NOT = { has_war_with = SLI }
+			NOT = { has_war_with = BRS }
+		}
+
+		bypass = {
+			OR = {
+				is_in_faction_with = DUS
+				has_war_with = DUS
+				NOT = { country_exists = DUS }
+			}
+			OR = {
+				is_in_faction_with = SLI
+				has_war_with = SLI
+				NOT = { country_exists = SLI }
+			}
+			OR = {
+				is_in_faction_with = BRS
+				has_war_with = BRS
+				NOT = { country_exists = BRS }
+			}
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+
+			create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = DUS
+			}
+
+			create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = SLI
+			}
+
+			create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = BRS
+			}
+
+		}
+
+
 	}
 	focus = {
 		id = REA_ZEI_puppet
@@ -73,6 +240,37 @@ focus_tree = {
 		}
 		x = 3
 		y = 4
+
+		available = {
+			NOT = { has_war_with = ZEI }
+		}
+
+		bypass = {
+			OR = {
+				is_in_faction_with = DUS
+				has_war_with = ZEI
+				NOT = { country_exists = ZEI }
+
+				ZEI = {
+					is_subject = yes
+				}
+
+			}
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+
+			ZEI = {
+				country_event = {
+					id = country_of_reality.12
+					days = 1
+				}
+			}
+
+		}
+
 
 	}
 	focus = {
@@ -89,6 +287,46 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		available = {
+			NOT = {
+				has_war_with = ZEI
+				is_in_faction_with = ZEI
+				has_non_aggression_pact_with = ZEI
+				ZEI = { is_puppet_of = REA }
+			}
+			202 = {
+				any_neighbor_state = {
+					is_controlled_by = ZEI
+				}
+			}
+		}
+
+		completion_reward = {
+
+			start_border_war = {
+    				change_state_after_war = no
+    				attacker = {
+        				state = 202
+        				num_provinces = 4
+        				on_win = country_of_reality.15
+        				on_lose = country_of_reality.16
+        				on_cancel = country_of_reality.17
+        				modifier = 0.1
+        				dig_in_factor = 0
+        				terrain_factor = 0
+    				}	
+    				defender = {
+        				state = 194
+        				num_provinces = 4
+        				on_win = country_of_reality.18
+        				on_lose = country_of_reality.19
+        				on_cancel = country_of_reality.20
+    				}
+			}
+
+		}
+
 
 		x = 7
 		y = 3
@@ -112,6 +350,30 @@ focus_tree = {
 		x = 6
 		y = 4
 
+		available = {
+			NOT = { has_war_with = DUS }
+		}
+
+		bypass = {
+			OR = {
+				is_in_faction_with = DUS
+				has_war_with = DUS
+				NOT = { country_exists = DUS }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			DUS = {
+				country_event = {
+					id = country_of_reality.25
+					days = 1
+				}
+			}
+		}
+
+
 	}
 	focus = {
 		id = REA_for_REA
@@ -129,6 +391,46 @@ focus_tree = {
 			factor = 7
 		}
 
+		cancelable = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		
+		bypass = {
+			NOT = { has_active_mission = REA_cossack_uprising_mission }
+			NOT = { has_active_mission = REA_cossack_uprising_2 }
+		}
+
+		select_effect = {
+			if = {
+				limit = {
+					has_active_mission = POL_looming_peasants_strike_mission
+				}
+				add_days_mission_timeout  = {
+					mission = REA_cossack_uprising_mission
+					days = 70
+				}
+			}
+			if = {
+				limit = {
+					has_active_mission = REA_cossack_uprising_2
+				}
+				add_days_mission_timeout  = {
+					mission = REA_cossack_uprising_2
+					days = 70
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = REA_very_cossack_uprising }
+				remove_ideas = REA_very_cossack_uprising
+			}
+			else = {
+				remove_ideas = REA_cossack_uprising
+			}
+		}
+
 		x = 9
 		y = 1
 
@@ -142,6 +444,48 @@ focus_tree = {
 		}
 		x = 13
 		y = 2
+
+		will_lead_to_war_with = PAV
+		will_lead_to_war_with = ZEI
+		available = {
+			is_subject = no	
+			NOT = {
+				AND = {
+					PAV = { is_in_faction_with = REA }
+					has_war = yes
+				}
+			}
+		}
+		bypass = {
+			OR = {
+				PAV = { is_puppet_of = REA }
+				46 = { 
+					CONTROLLER = {
+						has_war_with = REA
+					}
+				}
+				REA = { controls_state = 46 }
+			}
+		}
+		cancel = {
+			is_puppet = yes
+		}
+		cancel_if_invalid = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+			
+			46 = {
+				add_claim_by = REA
+			}
+
+			PAV = {
+				country_event = {
+					id = country_of_reality.5
+					days = 1
+				}
+			}
+		}
+
 
 	}
 	focus = {
@@ -161,6 +505,26 @@ focus_tree = {
 
 		x = 10
 		y = 3
+
+		available = {
+			is_subject = no
+			AND = {
+				country_exists = SQR
+				SQR = { is_subject = no }
+				NOT = { has_war_with = SQR }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			add_ideas = {
+				REA_navy_idea
+			}
+
+		}
+
 
 	}
 	focus = {
@@ -184,6 +548,30 @@ focus_tree = {
 		x = 8
 		y = 4
 
+		available = {
+			NOT = { has_war_with = SLI }
+		}
+
+		bypass = {
+			OR = {
+				is_in_faction_with = SLI
+				has_war_with = SLI
+				NOT = { country_exists = SLI }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			SLI = {
+				country_event = {
+					id = country_of_reality.28
+					days = 1
+				}
+			}
+		}
+
+
 	}
 	focus = {
 		id = REA_for_everyone
@@ -199,6 +587,24 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancelable = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		
+		bypass = {
+			NOT = { has_active_mission = REA_cossack_uprising_mission }
+			NOT = { has_active_mission = REA_cossack_uprising_2 }
+		}
+
+		completion_reward = {
+			
+
+			add_ideas = {
+				REA_idea_for_everyone
+			}
+
 		}
 
 		x = 11
@@ -223,6 +629,26 @@ focus_tree = {
 		x = 12
 		y = 3
 
+		available = {
+			is_subject = no
+			AND = {
+				country_exists = SQR
+				SQR = { is_subject = no }
+				NOT = { has_war_with = SQR }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			add_ideas = {
+				REA_idea_walstein_line
+			}
+
+		}
+
+
 	}
 	focus = {
 		id = REA_SQR_episode
@@ -234,16 +660,53 @@ focus_tree = {
 		x = 12
 		y = 4
 
+		available = {
+			is_subject = no
+			AND = {
+				country_exists = SQR
+				SQR = { is_subject = no }
+				NOT = { has_war_with = SQR }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			country_event = {
+				id = country_of_reality.31
+				days = 1
+			}
+		}
+
+
 	}
 	focus = {
 		id = REA_uvco_cancel
-		icon = GFX_focus_renounce_the_treaty_of_triannon
+		icon = GFX_focus_eng_the_kings_party
 		cost = 10,00
 		prerequisite = {
 			focus = REA_PAV_annexation
 		}
 		x = 15
 		y = 3
+
+		available = {
+			is_subject = no
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			swap_ideas = {
+
+				remove_idea = REA_uvco_member
+				add_idea = REA_uvn_member
+			}
+
+		}
+
 
 	}
 	focus = {
@@ -256,6 +719,23 @@ focus_tree = {
 		x = 15
 		y = 4
 
+		available = {
+			is_subject = no
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			swap_ideas = {
+
+				remove_idea = REA_colonization
+				add_idea = REA_decolonization_idea
+			}
+
+		}
+
+
 	}
 	focus = {
 		id = REA_SQR_air
@@ -266,6 +746,26 @@ focus_tree = {
 		}
 		x = 17
 		y = 3
+
+		available = {
+			is_subject = no
+			AND = {
+				country_exists = SQR
+				SQR = { is_subject = no }
+				NOT = { has_war_with = SQR }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			add_ideas = {
+				REA_air_idea
+			}
+
+		}
+
 
 	}
 	focus = {
@@ -278,6 +778,19 @@ focus_tree = {
 		x = 19
 		y = 3
 
+		available = {
+			is_subject = no
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			recruit_character = REA_nikita_afanasiev
+
+		}
+
+
 	}
 	focus = {
 		id = REA_war_reform
@@ -288,6 +801,23 @@ focus_tree = {
 		}
 		x = 19
 		y = 4
+		
+		available = {
+			is_subject = no
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			swap_ideas = {
+
+				remove_idea = REA_duma
+				add_idea = REA_council_federation
+			}
+
+		}
+
 
 	}
 	focus = {
@@ -300,6 +830,30 @@ focus_tree = {
 		x = 1
 		y = 5
 
+		available = {
+			NOT = { has_war_with = SGK }
+		}
+
+		bypass = {
+			OR = {
+				is_in_faction_with = SGK
+				has_war_with = SGK
+				NOT = { country_exists = SGK }
+			}
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+
+			create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = SGK
+			}
+
+		}
+
+
 	}
 	focus = {
 		id = REA_capture_SLI
@@ -310,6 +864,30 @@ focus_tree = {
 		}
 		x = 3
 		y = 5
+
+		available = {
+			NOT = { has_war_with = SLI }
+		}
+
+		bypass = {
+			OR = {
+				is_in_faction_with = SLI
+				has_war_with = SGK
+				NOT = { country_exists = SLI }
+			}
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+
+			create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = SLI
+			}
+
+		}
+
 
 	}
 	focus = {
@@ -322,6 +900,30 @@ focus_tree = {
 		x = 8
 		y = 5
 
+		available = {
+			NOT = { has_war_with = BRS }
+		}
+
+		bypass = {
+			OR = {
+				is_in_faction_with = BRS
+				has_war_with = BRS
+				NOT = { country_exists = BRS }
+			}
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+
+			create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = BRS
+			}
+
+		}
+
+
 	}
 	focus = {
 		id = REA_army_reform
@@ -332,6 +934,26 @@ focus_tree = {
 		}
 		x = 6
 		y = 5
+
+		available = {
+			is_subject = no
+			AND = {
+				country_exists = DUS
+				DUS = { is_subject = no }
+				NOT = { has_war_with = DUS }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			add_ideas = {
+				REA_army_reform_idea
+			}
+
+		}
+
 
 	}
 }

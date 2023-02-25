@@ -8,7 +8,7 @@ state={
 	state_category = town
 
 	history={
-		owner = DUS
+		owner = PAV
 		victory_points = {
 			9783 5
 		}
@@ -34,7 +34,13 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = DUS
+		add_core_of = PAV
+
+		2023.1.1 = {
+			owner = DUS
+			add_core_of = DUS
+		}
+
 	}
 
 	provinces={

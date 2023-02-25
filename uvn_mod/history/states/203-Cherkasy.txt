@@ -10,13 +10,19 @@ state={
 		victory_points = {
 			488 5
 		}
-		owner = REA
+		owner = PAV
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 1
 		}
-		add_core_of = REA
+		add_core_of = PAV
 		add_core_of = UKR
+
+		2023.1.1 = {
+			owner = REA
+			add_core_of = REA
+		}
+
 	}
 
 	provinces={

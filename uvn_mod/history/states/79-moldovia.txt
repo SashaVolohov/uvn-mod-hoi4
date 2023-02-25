@@ -8,7 +8,7 @@ state=
 	
 	history=
 	{
-		owner = DUS
+		owner = PAV
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -20,7 +20,13 @@ state=
 		victory_points = {
 			6706 1 
 		}
-		add_core_of = DUS
+		add_core_of = PAV
+
+		2023.1.1 = {
+			owner = DUS
+			add_core_of = DUS
+		}
+
 	}
 	provinces=
 	{

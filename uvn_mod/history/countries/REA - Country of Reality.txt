@@ -1,7 +1,7 @@
 ﻿capital = 909
 
 starting_train_buffer = 3.0
-set_oob = "REA_2023"
+set_oob = "REA_2022"
 
 set_research_slots = 3
 set_stability = 0.5
@@ -41,22 +41,8 @@ set_popularities = {
 	communism = 20
 }
 
-create_country_leader = {
-    name = "Александр Волохов"
-    desc = ""
-    picture = "gfx/leaders/REA/REA_dem.dds"
-    expire = "2100.1.1"
-    ideology = liberalism
-	traits = { technology_leader peacemaker}
-}
-
-create_country_leader = {
-    name = "Хаиль Волохов"
-    desc = ""
-    picture = "gfx/leaders/REA/REA_fas.dds"
-    expire = "2100.1.1"
-    ideology = fascism_ideology
-}
+recruit_character = REA_sasha_volohov
+recruit_character = REA_hail_volohov
 
 add_ideas = {
 	REA_uvco_member
@@ -64,4 +50,16 @@ add_ideas = {
 	REA_duma
 	REA_democracy_regime
 	REA_colonization
+	REA_cossack_uprising
+}
+
+2023.1.1 = {
+	set_oob = "REA_2023"
+
+	remove_ideas = {
+		REA_uvco_member
+		REA_cossack_uprising
+		REA_colonization
+	}
+
 }

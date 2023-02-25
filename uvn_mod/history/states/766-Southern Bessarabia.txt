@@ -12,7 +12,7 @@ state=
 		}
 		add_core_of = MOL
 		add_core_of = UKR
-		owner = DUS
+		owner = PAV
 		buildings = {
 			infrastructure = 2
 			dockyard = 1
@@ -20,7 +20,13 @@ state=
 				naval_base = 3
 			}
 		}
-		add_core_of = DUS
+		add_core_of = PAV
+
+		2023.1.1 = {
+			owner = DUS
+			add_core_of = DUS
+		}
+
 	}
 	provinces=
 	{

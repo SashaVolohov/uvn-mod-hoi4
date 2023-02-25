@@ -10,7 +10,7 @@ state= {
 	state_category = town
 
 	history= {
-		owner = IND
+		owner = PAV
 		victory_points = {
 			11842 5
 		}
@@ -22,7 +22,13 @@ state= {
 				coastal_bunker = 2
 			}
 		}
-		add_core_of = IND
+		add_core_of = PAV
+
+		2023.1.1 = {
+			owner = IND
+			add_core_of = IND
+		}
+
 	}
 	provinces=
 	{

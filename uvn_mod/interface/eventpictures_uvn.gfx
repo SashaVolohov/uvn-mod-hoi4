@@ -1,0 +1,108 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_report_event_REA_TAL"
+		texturefile = "gfx/event_pictures/report_event_REA_TAL.dds"
+	}
+
+    spriteType = {
+		name = "GFX_report_event_REA_TAL_success"
+		texturefile = "gfx/event_pictures/report_event_REA_TAL_success.dds"
+	}
+
+    spriteType = {
+		name = "GFX_report_event_REA_TAL_fail"
+		texturefile = "gfx/event_pictures/report_event_REA_TAL_fail.dds"
+	}
+
+    spriteType = {
+		name = "GFX_news_event_TAL_annexed"
+		texturefile = "gfx/event_pictures/news_event_TAL_annexed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_REA_ZEI_pact"
+		texturefile = "gfx/event_pictures/report_event_REA_ZEI_pact.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_REA_ZEI_war"
+		texturefile = "gfx/event_pictures/report_event_REA_ZEI_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_SGK_independence"
+		texturefile = "gfx/event_pictures/report_event_SGK_independence.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_REA_ZEI_war"
+		texturefile = "gfx/event_pictures/news_event_REA_ZEI_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_REA_ZEI_faction"
+		texturefile = "gfx/event_pictures/news_event_REA_ZEI_faction.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_SGK_independence"
+		texturefile = "gfx/event_pictures/news_event_SGK_independence.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_REA_ZEI_puppet"
+		texturefile = "gfx/event_pictures/report_event_REA_ZEI_puppet.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_REA_DUS_faction"
+		texturefile = "gfx/event_pictures/report_event_REA_DUS_faction.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_REA_SLI_faction"
+		texturefile = "gfx/event_pictures/report_event_REA_SLI_faction.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_bulgaria"
+		texturefile = "gfx/event_pictures/report_event_bulgaria.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_REA_end_of_provisional_goverment"
+		texturefile = "gfx/event_pictures/report_event_REA_end_of_provisional_goverment.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_REA_ZEI_puppet"
+		texturefile = "gfx/event_pictures/news_event_REA_ZEI_puppet.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_REA_DUS_faction"
+		texturefile = "gfx/event_pictures/news_event_REA_DUS_faction.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_REA_SLI_faction"
+		texturefile = "gfx/event_pictures/news_event_REA_SLI_faction.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_bulgaria"
+		texturefile = "gfx/event_pictures/news_event_bulgaria.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_REA_sasha_take_power"
+		texturefile = "gfx/event_pictures/news_event_REA_sasha_take_power.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_REA_nikita_take_power"
+		texturefile = "gfx/event_pictures/news_event_REA_nikita_take_power.dds"
+	}
+
+}

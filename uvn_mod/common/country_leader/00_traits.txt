@@ -8365,7 +8365,7 @@ leader_traits = {
 	technology_leader = {
 		random = no
 
-		research_speed_factor = 0.25
+		research_speed_factor = 0.10
 		trade_opinion_factor = 0.20
 		stability_factor = 0.10
 		
@@ -8379,6 +8379,34 @@ leader_traits = {
 		random = no
 		political_power_gain = 0.25
 		war_support_factor = -0.10
+		
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tibetan_genius = {
+		random = no
+		
+		research_speed_factor = 0.10
+		political_power_gain = 0.25
+		party_popularity_stability_factor = -0.50
+		
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tibetan_chief = {
+		random = no
+		
+		army_org_factor = 0.15
+		political_advisor_cost_factor = -0.3
+		military_advisor_cost_factor = -0.3
+		stability_factor = 0.15
+		war_stability_factor = 0.30
 		
 
 		ai_will_do = {

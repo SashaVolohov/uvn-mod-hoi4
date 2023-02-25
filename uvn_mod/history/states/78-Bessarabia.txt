@@ -8,7 +8,7 @@ state=
 	
 	history= {
 		add_core_of = MOL
-		owner = DUS
+		owner = PAV
 		victory_points = {
 			3707 1
 		}
@@ -16,7 +16,13 @@ state=
 			infrastructure = 2
 			air_base = 2
 		}
-		add_core_of = DUS
+		add_core_of = PAV
+
+		2023.1.1 = {
+			owner = DUS
+			add_core_of = DUS
+		}
+
 	}
 	provinces=
 	{

@@ -7,7 +7,7 @@ state = {
 	state_category = rural
 
 	history = {
-		owner = DUS
+		owner = PAV
 		victory_points = {
 			3757 2 
 		}
@@ -19,9 +19,15 @@ state = {
 			infrastructure = 2
 			
 		}
-		add_core_of = DUS
+		add_core_of = PAV
 		add_core_of = UKR
 		add_core_of = MOL
+
+		2023.1.1 = {
+			owner = DUS
+			add_core_of = DUS
+		}
+
 	}
 
 	provinces = {

@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_REA_nikita_afanasiev"
+		texturefile = "gfx/interface/ideas/REA/idea_REA_nikita_afanasiev.dds"
+	}
+
+}

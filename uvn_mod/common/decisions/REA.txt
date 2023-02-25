@@ -5,7 +5,7 @@ intel_category = {
 		icon = ger_mefo_bills
 
 		allowed = {
-			tag = REA
+			original_tag = REA
 		}
 
 		cost = 50
@@ -42,7 +42,7 @@ intel_category = {
 		icon = generic_scorched_earth
 
 		allowed = {
-			tag = REA
+			original_tag = REA
 		}
 
 		cost = 100
@@ -82,7 +82,7 @@ intel_category = {
 		icon = generic_political_discourse
 
 		allowed = {
-			tag = REA
+			original_tag = REA
 		}
 
 		cost = 100
@@ -123,7 +123,7 @@ intel_category = {
 		icon = generic_nationalism
 
 		allowed = {
-			tag = REA
+			original_tag = REA
 		}
 
 		cost = 100
@@ -154,7 +154,7 @@ intel_category = {
 		icon = generic_civil_support
 
 		allowed = {
-			tag = REA
+			original_tag = REA
 		}
 
 		cost = 150
@@ -179,5 +179,139 @@ intel_category = {
 
 	}
 
+}
+
+REA_cossack_uprising_category = {
+
+	REA_cossack_uprising_mission = {
+
+		allowed = { tag = REA }
+
+		icon = POL_looming_peasants_strike
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 80
+		is_good = no
+		fire_only_once = yes
+
+		cancel_trigger = {
+			has_completed_focus = REA_for_REA
+		}
+		
+		activation = {
+			has_idea = REA_cossack_uprising
+		}
+
+		visible = {
+			has_idea = REA_cossack_uprising
+		}
+		
+		cancel_effect = {
+		
+		}
+
+		timeout_effect = {
+			activate_mission = REA_cossack_uprising_2
+			swap_ideas = {
+				remove_idea = REA_cossack_uprising
+				add_idea = REA_very_cossack_uprising
+			}
+			hidden_effect = {
+				country_event = country_of_reality.4
+			}
+		}
+
+		ai_will_do = {
+			factor = -2000
+		}
+	}
+
+	REA_cossack_uprising_2 = {
+
+		allowed = { tag = REA }
+
+		icon = POL_organize_strike_two
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 70
+		is_good = no
+		fire_only_once = yes
+
+		cancel_trigger = {
+			has_completed_focus = REA_for_REA
+		}
+
+		activation = {
+			has_idea = REA_very_cossack_uprising
+		}
+
+		visible = {
+			has_idea = REA_very_cossack_uprising
+		}
+		
+		cancel_effect = {
+		
+		}
+
+		timeout_effect = {
+
+			start_civil_war = {
+				ideology = neutrality
+				size = 0.25
+				capital = 196
+				states = { 
+					196 197
+				}
+			}
+			
+			hidden_effect = {
+				random_other_country = {
+					limit = {
+						original_tag = ROOT
+						NOT = { tag = ROOT }
+						has_government = neutrality
+					}
+
+					set_popularities = {
+						neutrality = 65
+						communism = 35
+					}
+
+					set_cosmetic_tag = REA_COS
+
+					recruit_character = REA_bogdan_zybov
+
+					promote_character = {
+    					character = REA_bogdan_zybov
+    					ideology = centrism
+					}
+
+					set_party_name = {
+						ideology = neutrality
+						long_name = REA_cossack_party
+						name = REA_cossack_party
+					}
+
+				}
+			}
+
+			hidden_effect = {
+				news_event = {
+					id = news.1001
+					days = 1
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = -2000
+		}
+	}
 
 }

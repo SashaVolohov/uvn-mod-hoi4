@@ -7,7 +7,7 @@ state = {
 	state_category = city
 
 	history = {
-		owner = DUS
+		owner = PAV
 		victory_points = {
 			11670 10 
 		}
@@ -20,8 +20,14 @@ state = {
 				coastal_bunker = 1
 			}
 		}
-		add_core_of = DUS
+		add_core_of = PAV
 		add_core_of = UKR
+
+		2023.1.1 = {
+			owner = DUS
+			add_core_of = DUS
+		}
+
 	}
 
 	provinces = {

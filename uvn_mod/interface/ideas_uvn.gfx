@@ -1,0 +1,23 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_REA_uvco_member"
+		texturefile = "gfx/interface/ideas/REA/REA_uvco_member.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_REA_gov_duma"
+		texturefile = "gfx/interface/ideas/REA/REA_gov_duma.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_REA_democracy_regime"
+		texturefile = "gfx/interface/ideas/REA/REA_democracy_regime.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_REA_council_federation"
+		texturefile = "gfx/interface/ideas/REA/REA_council_federation.dds"
+	}
+
+}

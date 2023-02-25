@@ -1,0 +1,1098 @@
+add_namespace = country_of_reality
+
+country_event = {
+	id = country_of_reality.1
+	title = country_of_reality.1.t
+	desc = country_of_reality.1.d
+	picture = GFX_report_event_REA_TAL
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.1.a
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -25
+				REA = { has_army_size = { size < 10 } }
+			}
+			modifier = {
+				add = 100
+				REA = { has_army_size = { size > 20 } }
+			}
+			modifier = {
+				add = 20
+				is_in_faction_with = REA
+			}
+		}
+		REA = {
+			country_event = { hours = 2 id = country_of_reality.2 }
+		}
+	}
+	option = {
+		name = country_of_reality.1.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				REA = { has_army_size = { size > 10 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				REA = { has_army_size = { size < 20 } }
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = yes
+				NOT = { is_in_faction_with = REA }
+			}
+			modifier = {
+				any_other_country = {
+					has_guaranteed = TAL
+				}
+				factor = 5
+			}
+			modifier = {
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = TAL
+				}
+				factor = 5
+			}
+		}
+		REA = {
+			add_opinion_modifier = { target = ROOT modifier = REA_TAL_rejected }
+			country_event = { hours = 2 id = country_of_reality.3 }
+			if = { limit = { is_in_faction_with = TAL }
+				remove_from_faction = TAL
+			}
+		}
+	}
+}
+
+country_event = {
+	id = country_of_reality.2
+	title = country_of_reality.2.t
+	desc = country_of_reality.2.d
+	picture = GFX_report_event_REA_TAL_success
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.2.a
+		219 = {
+			if = {
+				limit = { is_owned_by = TAL }
+				add_core_of = REA
+			}
+		}
+		TAL = {
+			every_unit_leader = {
+				set_nationality = REA
+			}
+		}
+		annex_country = { target = TAL transfer_troops = yes }
+		add_political_power = 75
+		add_war_support = 0.1
+		add_stability = 0.05
+
+		hidden_effect = {
+			news_event = { hours = 6 id = news.1000 }
+		}
+
+	}
+}
+
+country_event = {
+	id = country_of_reality.3
+	title = country_of_reality.3.t
+	desc = country_of_reality.3.d
+	picture = GFX_report_event_REA_TAL_fail
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.3.a
+		add_state_claim = 219
+		create_wargoal = {
+			type = take_state_focus
+			target = TAL
+			generator = { 219}
+		}
+	}
+}
+
+country_event = {
+	id = country_of_reality.4
+	title = country_of_reality.4.t
+	desc = country_of_reality.4.d
+	picture = GFX_report_event_peasant_revolt
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = country_of_reality.4.a
+		ai_chance = {
+			factor = 50
+		}
+		effect_tooltip = {
+			activate_mission = REA_cossack_uprising_2
+			swap_ideas = {
+				remove_idea = REA_cossack_uprising
+				add_idea = REA_very_cossack_uprising
+			}
+		}
+	}
+}
+
+country_event = {
+	id = country_of_reality.5
+	title = country_of_reality.5.t
+	desc = country_of_reality.5.d
+	picture = GFX_report_event_REA_TAL
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.5.a
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -25
+				REA = { has_army_size = { size < 10 } }
+			}
+			modifier = {
+				add = 100
+				REA = { has_army_size = { size > 20 } }
+			}
+			modifier = {
+				add = 20
+				is_in_faction_with = REA
+			}
+		}
+		REA = {
+			country_event = { hours = 2 id = country_of_reality.6 }
+		}
+		DUS = {
+			country_event = { hours = 2 id = country_of_reality.7 }
+		}
+		IND = {
+			country_event = { hours = 2 id = country_of_reality.8 }
+		}
+	}
+	option = {
+		name = country_of_reality.5.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				REA = { has_army_size = { size > 10 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				REA = { has_army_size = { size < 20 } }
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = yes
+				NOT = { is_in_faction_with = REA }
+			}
+			modifier = {
+				any_other_country = {
+					has_guaranteed = PAV
+				}
+				factor = 5
+			}
+			modifier = {
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = PAV
+				}
+				factor = 5
+			}
+		}
+		REA = {
+			add_opinion_modifier = { target = ROOT modifier = REA_TAL_rejected }
+			country_event = { hours = 2 id = country_of_reality.9 }
+
+			DUS = {
+				country_event = { hours = 2 id = country_of_reality.10 }
+			}
+
+			IND = {
+				country_event = { hours = 2 id = country_of_reality.11 }
+			}
+
+			if = { limit = { is_in_faction_with = PAV }
+				remove_from_faction = PAV
+			}
+		}
+	}
+}
+
+country_event = {
+	id = country_of_reality.6
+	title = country_of_reality.6.t
+	desc = country_of_reality.6.d
+	picture = GFX_report_event_REA_TAL_success
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.6.a
+		203 = {
+			if = {
+				limit = { is_owned_by = PAV }
+				add_core_of = REA
+			}
+		}
+		PAV = {
+			every_unit_leader = {
+				set_nationality = REA
+			}
+		}
+		transfer_state = 203
+		add_political_power = 75
+		add_war_support = 0.1
+		add_stability = 0.05
+
+		hidden_effect = {
+			news_event = { hours = 6 id = news.1002 }
+		}
+
+	}
+}
+
+country_event = {
+	id = country_of_reality.7
+	title = country_of_reality.7.t
+	desc = country_of_reality.7.d
+	picture = GFX_report_event_REA_TAL_success
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.7.a
+
+		ai_chance = {
+			base = 30
+		}
+
+		834 = {
+			if = {
+				limit = { is_owned_by = PAV }
+				add_core_of = DUS
+			}
+		}
+		192 = {
+			if = {
+				limit = { is_owned_by = PAV }
+				add_core_of = DUS
+			}
+		}
+		766 = {
+			if = {
+				limit = { is_owned_by = PAV }
+				add_core_of = DUS
+			}
+		}
+		78 = {
+			if = {
+				limit = { is_owned_by = PAV }
+				add_core_of = DUS
+			}
+		}
+		79 = {
+			if = {
+				limit = { is_owned_by = PAV }
+				add_core_of = DUS
+			}
+		}
+		46 = {
+			if = {
+				limit = { is_owned_by = PAV }
+				add_core_of = DUS
+			}
+		}
+		77 = {
+			if = {
+				limit = { is_owned_by = PAV }
+				add_core_of = DUS
+			}
+		}
+		211 = {
+			if = {
+				limit = { is_owned_by = PAV }
+				add_core_of = DUS
+			}
+		}
+		801 = {
+			if = {
+				limit = { is_owned_by = PAV }
+				add_core_of = DUS
+			}
+		}
+		transfer_state = 834
+		transfer_state = 192
+		transfer_state = 766
+		transfer_state = 78
+		transfer_state = 79
+		transfer_state = 46
+		transfer_state = 77
+		transfer_state = 211
+		transfer_state = 801
+		add_political_power = 75
+		add_war_support = 0.1
+		add_stability = 0.05
+
+		hidden_effect = {
+			news_event = { hours = 12 id = news.1003 }
+		}
+
+	}
+
+	option = {
+		name = country_of_reality.7.b
+
+		ai_chance = {
+			base = 10
+		}
+
+	}
+
+}
+
+country_event = {
+	id = country_of_reality.8
+	title = country_of_reality.8.t
+	desc = country_of_reality.8.d
+	picture = GFX_report_event_REA_TAL_success
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.8.a
+
+		ai_chance = {
+			base = 30
+		}
+
+		341 = {
+			if = {
+				limit = { is_owned_by = PAV }
+				add_core_of = DUS
+			}
+		}
+		transfer_state = 341
+		add_political_power = 75
+		add_war_support = 0.1
+		add_stability = 0.05
+
+		hidden_effect = {
+			news_event = { hours = 24 id = news.1004 }
+		}
+
+	}
+
+	option = {
+		name = country_of_reality.8.b
+
+		ai_chance = {
+			base = 10
+		}
+
+	}
+
+}
+
+country_event = {
+	id = country_of_reality.9
+	title = country_of_reality.9.t
+	desc = country_of_reality.9.d
+	picture = GFX_report_event_REA_TAL_fail
+
+	is_triggered_only = yes
+
+	option = {
+
+		ai_chance = {
+			base = 30
+		}
+
+		name = country_of_reality.9.a
+
+		add_state_claim = 219
+		create_wargoal = {
+			type = take_state_focus
+			target = PAV
+			generator = { 219 }
+		}
+	}
+
+	option = {
+		name = country_of_reality.9.b
+
+		ai_chance = {
+			base = 10
+		}
+
+	}
+}
+
+country_event = {
+	id = country_of_reality.10
+	title = country_of_reality.10.t
+	desc = country_of_reality.10.d
+	picture = GFX_report_event_REA_TAL_fail
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.10.a
+
+		ai_chance = {
+			base = 30
+		}
+
+		add_state_claim = 834
+		add_state_claim = 192
+		add_state_claim = 766
+		add_state_claim = 78
+		add_state_claim = 79
+		add_state_claim = 46
+		add_state_claim = 77
+		add_state_claim = 211
+		add_state_claim = 801
+		create_wargoal = {
+			type = take_state_focus
+			target = PAV
+			generator = { 834 192 766 78 79 46 77 211 801 341 }
+		}
+	}
+
+	option = {
+		name = country_of_reality.10.b
+
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
+	id = country_of_reality.11
+	title = country_of_reality.11.t
+	desc = country_of_reality.11.d
+	picture = GFX_report_event_REA_TAL_fail
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.11.a
+
+		ai_chance = {
+			base = 30
+		}
+
+		add_state_claim = 341
+		create_wargoal = {
+			type = take_state_focus
+			target = PAV
+			generator = { 341 }
+		}
+	}
+
+	option = {
+		name = country_of_reality.11.b
+
+		ai_chance = {
+			base = 10
+		}
+
+	}
+}
+
+country_event = {
+	id = country_of_reality.12
+	title = country_of_reality.12.t
+	desc = country_of_reality.12.d
+	picture = GFX_report_event_REA_ZEI_pact
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.12.a
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -25
+				REA = { has_army_size = { size < 10 } }
+			}
+			modifier = {
+				add = 100
+				REA = { has_army_size = { size > 20 } }
+			}
+		}
+		REA = {
+			create_faction = REA_ZEI_pact_faction
+			add_to_faction = REA
+			add_to_faction = ZEI
+
+			country_event = { hours = 2 id = country_of_reality.14 }
+		}
+	}
+	option = {
+		name = country_of_reality.12.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				REA = { has_army_size = { size > 10 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				REA = { has_army_size = { size < 20 } }
+			}
+		}
+		REA = {
+			add_opinion_modifier = { target = ROOT modifier = REA_ZEI_rejected }
+			country_event = { hours = 2 id = country_of_reality.13 }
+		}
+	}
+}
+
+country_event = {
+	id = country_of_reality.13
+	title = country_of_reality.13.t
+	desc = country_of_reality.13.d
+	picture = GFX_report_event_REA_ZEI_pact
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.13.a
+	}
+}
+
+country_event = {
+	id = country_of_reality.14
+	title = country_of_reality.14.t
+	desc = country_of_reality.14.d
+	picture = GFX_report_event_REA_ZEI_pact
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.14.a
+
+		hidden_effect = {
+			news_event = { hours = 24 id = news.1005 }
+		}
+
+	}
+}
+
+country_event = {
+	id = country_of_reality.15
+	title = country_of_reality.15.t
+	desc = country_of_reality.15.d
+	picture = report_event_REA_ZEI_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.15.a
+
+		SGK = {
+			country_event = { hours = 48 id = country_of_reality.21 }
+		}
+
+		hidden_effect = {
+			news_event = { hours = 24 id = news.1006 }
+		}
+
+	}
+}
+
+country_event = {
+	id = country_of_reality.16
+	title = country_of_reality.16.t
+	desc = country_of_reality.16.d
+	picture = report_event_REA_ZEI_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.16.a
+
+		SGK = {
+			country_event = { hours = 48 id = country_of_reality.21 }
+		}
+
+		hidden_effect = {
+			news_event = { hours = 24 id = news.1007 }
+		}
+
+	}
+}
+
+country_event = {
+	id = country_of_reality.17
+	title = country_of_reality.17.t
+	desc = country_of_reality.17.d
+	picture = report_event_REA_ZEI_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.17.a
+
+		hidden_effect = {
+			news_event = { hours = 24 id = news.1008 }
+		}
+
+	}
+}
+
+country_event = {
+	id = country_of_reality.18
+	title = country_of_reality.18.t
+	desc = country_of_reality.18.d
+	picture = report_event_REA_ZEI_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.18.a
+
+	}
+}
+
+country_event = {
+	id = country_of_reality.19
+	title = country_of_reality.19.t
+	desc = country_of_reality.19.d
+	picture = report_event_REA_ZEI_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.19.a
+
+	}
+}
+
+country_event = {
+	id = country_of_reality.20
+	title = country_of_reality.20.t
+	desc = country_of_reality.20.d
+	picture = report_event_REA_ZEI_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.20.a
+
+	}
+}
+
+country_event = {
+	id = country_of_reality.21
+	title = country_of_reality.21.t
+	desc = country_of_reality.21.d
+	picture = GFX_report_event_SGK_independence
+
+	is_triggered_only = yes
+
+	option = {
+
+		ai_chance = {
+			base = 30
+		}
+
+		name = country_of_reality.21.a
+
+		ZEI = {
+
+			set_autonomy = {
+    				target = SGK
+    				autonomy_state = autonomy_free
+    				end_wars = no
+    				end_civil_wars = no
+			}
+
+		}
+
+		hidden_effect = {
+			news_event = { hours = 24 id = news.1009 }
+		}
+
+	}
+
+	option = {
+
+		ai_chance = {
+			base = 10
+		}
+
+		name = country_of_reality.21.b
+
+	}
+}
+
+country_event = {
+	id = country_of_reality.22
+	title = country_of_reality.22.t
+	desc = country_of_reality.22.d
+	picture = GFX_report_event_REA_ZEI_puppet
+
+	is_triggered_only = yes
+
+	option = {
+
+		name = country_of_reality.22.a
+
+		REA = {
+
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+
+				set_autonomy = {
+					target = ZEI
+					autonomous_state = autonomy_integrated_puppet
+				}
+			}
+
+			if = {
+				limit = { 
+					not = {
+						has_dlc = "Together for Victory"
+					}
+				}
+
+				set_autonomy = {
+					target = ZEI
+					autonomous_state = autonomy_puppet
+				}
+			}
+
+			country_event = { hours = 24 id = country_of_reality.23 }
+
+
+		}
+
+	}
+
+	option = {
+
+		name = country_of_reality.22.b
+
+		country_event = { hours = 24 id = country_of_reality.24 }
+
+	}
+}
+
+country_event = {
+	id = country_of_reality.23
+	title = country_of_reality.23.t
+	desc = country_of_reality.23.d
+	picture = GFX_report_event_REA_ZEI_puppet
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.23.a
+
+
+		hidden_effect = {
+			news_event = { hours = 6 id = news.1010 }
+		}
+
+	}
+}
+
+country_event = {
+	id = country_of_reality.24
+	title = country_of_reality.24.t
+	desc = country_of_reality.24.d
+	picture = GFX_report_event_REA_ZEI_puppet
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.24.a
+		create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = ZEI
+		}
+
+		if = { limit = { is_in_faction_with = ZEI }
+			remove_from_faction = ZEI
+		}
+
+	}
+}
+
+country_event = {
+	id = country_of_reality.25
+	title = country_of_reality.25.t
+	desc = country_of_reality.25.d
+	picture = GFX_report_event_REA_DUS_faction
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.25.a
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -25
+				REA = { has_army_size = { size < 10 } }
+			}
+			modifier = {
+				add = 100
+				REA = { has_army_size = { size > 20 } }
+			}
+		}
+		REA = {
+			create_faction = REA_DUS_pact_faction
+			add_to_faction = REA
+			add_to_faction = DUS
+
+			country_event = { hours = 2 id = country_of_reality.27 }
+		}
+	}
+	option = {
+		name = country_of_reality.25.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				REA = { has_army_size = { size > 10 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				REA = { has_army_size = { size < 20 } }
+			}
+		}
+		REA = {
+			add_opinion_modifier = { target = ROOT modifier = REA_ZEI_rejected }
+			country_event = { hours = 2 id = country_of_reality.26 }
+		}
+	}
+}
+
+country_event = {
+	id = country_of_reality.26
+	title = country_of_reality.26.t
+	desc = country_of_reality.26.d
+	picture = GFX_report_event_REA_DUS_faction
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.26.a
+	}
+}
+
+country_event = {
+	id = country_of_reality.27
+	title = country_of_reality.27.t
+	desc = country_of_reality.27.d
+	picture = GFX_report_event_REA_DUS_faction
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.27.a
+
+		hidden_effect = {
+			news_event = { hours = 24 id = news.1011 }
+		}
+
+	}
+}
+
+country_event = {
+	id = country_of_reality.28
+	title = country_of_reality.28.t
+	desc = country_of_reality.28.d
+	picture = GFX_report_event_REA_SLI_faction
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.28.a
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -25
+				REA = { has_army_size = { size < 10 } }
+			}
+			modifier = {
+				add = 100
+				REA = { has_army_size = { size > 20 } }
+			}
+		}
+		REA = {
+			create_faction = REA_SLI_pact_faction
+			add_to_faction = REA
+			add_to_faction = SLI
+
+			country_event = { hours = 2 id = country_of_reality.30 }
+		}
+	}
+	option = {
+		name = country_of_reality.28.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				REA = { has_army_size = { size > 10 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				REA = { has_army_size = { size < 20 } }
+			}
+		}
+		REA = {
+			add_opinion_modifier = { target = ROOT modifier = REA_ZEI_rejected }
+			country_event = { hours = 2 id = country_of_reality.29 }
+		}
+	}
+}
+
+country_event = {
+	id = country_of_reality.29
+	title = country_of_reality.29.t
+	desc = country_of_reality.29.d
+	picture = GFX_report_event_REA_SLI_faction
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.29.a
+	}
+}
+
+country_event = {
+	id = country_of_reality.30
+	title = country_of_reality.30.t
+	desc = country_of_reality.30.d
+	picture = GFX_report_event_REA_SLI_faction
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.30.a
+
+		hidden_effect = {
+			news_event = { hours = 24 id = news.1012 }
+		}
+
+	}
+}
+
+country_event = {
+	id = country_of_reality.31
+	title = country_of_reality.31.t
+	desc = country_of_reality.31.d
+	picture = GFX_report_event_bulgaria
+
+	is_triggered_only = yes
+
+	option = {
+		name = country_of_reality.31.a
+
+		promote_character = {
+    			character = REA_nikita_afanasiev
+    			ideology = liberalism
+		}
+		
+		add_ideas = {
+			REA_provisional_goverment
+		}
+
+		hidden_effect = {
+			country_event = { hours = 720 id = country_of_reality.32 }
+			news_event = { hours = 24 id = news.1013 }
+		}
+
+	}
+}
+
+country_event = {
+	id = country_of_reality.32
+	title = country_of_reality.32.t
+	desc = country_of_reality.32.d
+	picture = GFX_report_event_REA_end_of_provisional_goverment
+
+	is_triggered_only = yes
+
+	option = {
+
+		ai_chance = {
+			base = 10
+		}
+
+		name = country_of_reality.32.a
+
+		promote_character = {
+    			character = REA_sasha_volohov
+    			ideology = liberalism
+		}
+		
+		remove_ideas = {
+			REA_provisional_goverment
+		}
+
+		hidden_effect = {
+			news_event = { hours = 24 id = news.1014 }
+		}
+
+	}
+
+	option = {
+
+		ai_chance = {
+			base = 7
+		}
+
+
+		name = country_of_reality.32.b
+		
+		remove_ideas = {
+			REA_provisional_goverment
+		}
+
+		hidden_effect = {
+			news_event = { hours = 24 id = news.1015 }
+		}
+
+	}
+
+}

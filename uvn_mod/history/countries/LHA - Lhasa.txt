@@ -23,15 +23,15 @@ set_technology = {
 set_convoys = 50
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "2023.1.5"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	democratic = 71
-	communism = 29
+	neutrality = 71
+	democratic = 29
 }
 
 create_country_leader = {
@@ -40,4 +40,13 @@ create_country_leader = {
     picture = "gfx/leaders/LHA/LHA_dem.dds"
     expire = "2100.1.1"
     ideology = liberalism
+}
+
+create_country_leader = {
+    name = "Царь Норжун"
+    desc = ""
+    picture = "gfx/leaders/LHA/LHA_neu.dds"
+    expire = "2100.1.1"
+    ideology = despotism
+	traits = { tibetan_genius tibetan_chief }
 }

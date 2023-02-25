@@ -1,0 +1,79 @@
+characters={
+
+	REA_sasha_volohov={
+		name=REA_sasha_volohov
+		portraits={
+			civilian={
+				large=GFX_portrait_REA_sasha_volohov
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ technology_leader peacemaker }
+			expire="2100.1.1.1"
+			id=-1
+		}
+	}
+
+	REA_hail_volohov={
+		name=REA_hail_volohov
+		portraits={
+			civilian={
+				large=GFX_portrait_REA_hail_volohov
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="2100.1.1.1"
+			id=-1
+		}
+	}
+
+	REA_bogdan_zybov={
+		name=REA_bogdan_zybov
+		portraits={
+			civilian={
+				large=GFX_portrait_REA_bogdan_zybov
+			}
+		}
+		country_leader={
+			ideology=centrism
+			expire="2100.1.1.1"
+			id=-1
+		}
+	}
+
+	REA_nikita_afanasiev={
+		name=REA_nikita_afanasiev
+		portraits={
+			civilian={
+				large=GFX_portrait_REA_sasha_volohov
+			}
+			army={
+				small="GFX_idea_REA_nikita_afanasiev"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = REA_nikita_afanasiev
+			allowed = {
+				original_tag = REA
+			}
+			available = {
+				has_government = democratic
+			}
+			ai_will_do = {
+				factor = 30.000
+			}
+			traits = {
+				silent_workhorse 
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="2100.1.1.1"
+			id=1
+		}
+	}
+
+}

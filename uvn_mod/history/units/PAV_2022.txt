@@ -1,0 +1,124 @@
+﻿division_template = {
+	name = "Divizia de Infanterie"			# Infantry Division
+	# Note: also Fortress divisions
+
+	division_names_group = ROM_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # 2x 100mm howitzer bns, on average
+		engineer = { x = 0 y = 1 }   
+	}
+}
+division_template = {
+	name = "Brigada de Munte"				# Mountain Brigade
+
+	division_names_group = ROM_MTN_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+	}
+}
+division_template = {
+	name = "Brigada de Cavalerie" 				# Cavalry Brigade
+	# Note: regiments within the brigade were battalion-sized units
+
+	division_names_group = ROM_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+	}
+}
+
+##### OOB #####
+units = {
+
+	# Corp 2 Armata
+	division = {
+		#name = "Divizia 1 Infanterie de Garda"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 52
+		}
+		location = 9617
+		division_template = "Divizia de Infanterie"			# Guards division: elite, latest equipment
+		start_experience_factor = 0.3
+	}
+	division = {
+		#name = "Divizia 9 Infanterie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 9617
+		division_template = "Divizia de Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "Divizia 10 Infanterie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 9617
+		division_template = "Divizia de Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "Brigada 1 Cavalerie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9617
+		division_template = "Brigada de Cavalerie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+		
+}					
+
+
+		
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {
+	
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "PAV"
+		}
+		requested_factories = 5
+		progress = 0.1
+		efficiency = 50
+	}
+}
+	#####################

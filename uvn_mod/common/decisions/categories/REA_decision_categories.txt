@@ -11,3 +11,20 @@ intel_category = {
 	}
 
 }
+REA_cossack_uprising_category = {
+	
+	icon = GFX_decision_category_generic_crisis
+
+	allowed = {
+		original_tag = REA
+	}
+
+	visible = {
+		OR = {
+			has_idea = REA_cossack_uprising
+			has_idea = REA_very_cossack_uprising
+		}
+	}
+
+	priority = 100
+}

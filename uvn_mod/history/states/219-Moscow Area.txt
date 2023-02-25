@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = REA
+		owner = TAL
 		victory_points = {
 			6380 40 
 		}
@@ -20,7 +20,13 @@ state={
 			industrial_complex = 3
 			air_base = 10
 		}
-		add_core_of = REA
+		add_core_of = TAL
+
+		2023.1.1 = {
+			owner = REA
+			add_core_of = REA
+		}
+
 	}
 
 	provinces={

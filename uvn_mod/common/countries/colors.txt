@@ -940,3 +940,11 @@ LHA = {
 	color = rgb { 128  128  128 }
 	color_ui = rgb { 96  96  96 }
 }
+TAL = {
+	color = rgb { 255  102  102 }
+	color_ui = rgb { 255  51  51 }
+}
+PAV = {
+	color = rgb { 153  0  0 }
+	color_ui = rgb { 102  0  0 }
+}

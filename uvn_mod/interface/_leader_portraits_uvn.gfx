@@ -1,0 +1,18 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_REA_sasha_volohov"
+		texturefile = "gfx/leaders/REA/portrait_REA_sasha_volohov.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_REA_hail_volohov"
+		texturefile = "gfx/leaders/REA/portrait_REA_hail_volohov.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_REA_bogdan_zybov"
+		texturefile = "gfx/leaders/REA/portrait_REA_bogdan_zybov.dds"
+	}
+
+}
