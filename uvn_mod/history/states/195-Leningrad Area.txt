@@ -22,7 +22,7 @@ state={
 				coastal_bunker = 5
 			}
 		}
-		add_core_of = SOV
+		add_core_of = ZEI
 	}
 
 	provinces={

@@ -1,4 +1,4 @@
-﻿capital = 277
+﻿capital = 375
 
 starting_train_buffer = 3.0
 set_oob = "TEX_2023"

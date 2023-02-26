@@ -10,7 +10,6 @@ state={
 			6375 3
 		}
 		owner = ZEI
-		controller = ZEI
 		
 		buildings = {
 			infrastructure = 3

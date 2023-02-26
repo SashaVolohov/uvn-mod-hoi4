@@ -12,7 +12,8 @@ state=
 
 	history=
 	{
-		owner = DUS
+		owner = DUS	
+
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1

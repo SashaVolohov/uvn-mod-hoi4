@@ -5,8 +5,8 @@ state={
 		761 763 3736 4753 
 	}
 	history = {
-		owner = CAN
-		add_core_of = CAN
+		owner = TTS
+		add_core_of = TTS
 	}
 	manpower=10000
 	state_category = pastoral

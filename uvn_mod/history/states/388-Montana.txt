@@ -9,11 +9,11 @@ state={
 	}
 
 	history={
-		owner = USA
+		owner = TTS
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = USA
+		add_core_of = TTS
 		victory_points = {
 			4860 1 
 		}

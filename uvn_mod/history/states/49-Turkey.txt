@@ -11,7 +11,7 @@ state={
 	state_category = town
 
 	history={
-		owner = TUR
+		owner = TTS
 		victory_points = {
 			11747 15
 		}
@@ -27,7 +27,7 @@ state={
 			industrial_complex = 2
 			air_base = 3
 		}
-		add_core_of = TUR
+		add_core_of = TTS
 	}
 
 	provinces={

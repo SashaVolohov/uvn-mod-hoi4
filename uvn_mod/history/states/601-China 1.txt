@@ -8,7 +8,6 @@ state={
 	history={
 		owner = LHA
 		add_core_of = LHA
-		add_core_of = TIB
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 1

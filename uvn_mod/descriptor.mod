@@ -1,4 +1,4 @@
-version="1.12.7"
+version="Alpha_1.0.0_rc1"
 tags={
 	"Alternative History"
 	"Balance"
@@ -7,5 +7,11 @@ tags={
 	"National Focuses"
 	"Map"
 }
+replace_path="common/decisions"
+replace_path="common/national_focus"
+replace_path="events"
+replace_path="history/states"
+replace_path="history/units"
+replace_path="gfx/loadingscreens"
 name="United Virtual Nations Mod"
-supported_version="1.12.9"
+supported_version="1.12.*"

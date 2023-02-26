@@ -1,0 +1,66 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Politsya Slingonii"			# Rifle Division
+	division_names_group = SOV_INF_01
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+	}
+}
+
+### Note: OOB abstracts away the following:
+#	Marine Brigade (3x marine bn), 2 Brigades: Leningrad, Sevastopol
+#	Airborne Brigade (3x paratrooper bn), 1 Brigade: Moscow
+
+
+##### OOB #####
+units = {
+	
+	
+	division= {	# "28ya 'Vyatskaya' Gornostrelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3465
+		division_template = "Politsya Slingonii"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}			
+	division= {	# "11ya NKVD Pogranichnaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3360
+		division_template = "Politsya Slingonii"		# NKVD -- older equipment, training
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BRS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+
+}					
+
+
+		
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {
+	
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "SLI"
+		}
+		requested_factories = 7
+		progress = 0.1
+		efficiency = 50
+	}
+}
+	#####################
