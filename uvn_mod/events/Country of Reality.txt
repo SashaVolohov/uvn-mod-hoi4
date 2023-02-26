@@ -82,6 +82,12 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+ 		hidden_effect = {
+ 			add_named_threat = { threat = 3 name = country_of_reality.2.t }
+ 		}
+ 	}
+
 	option = {
 		name = country_of_reality.2.a
 		219 = {
@@ -248,6 +254,12 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+ 		hidden_effect = {
+ 			add_named_threat = { threat = 2 name = country_of_reality.6.t }
+ 		}
+ 	}
+
 	option = {
 		name = country_of_reality.6.a
 		203 = {
@@ -357,6 +369,7 @@ country_event = {
 
 		hidden_effect = {
 			news_event = { hours = 12 id = news.1003 }
+			add_named_threat = { threat = 2 name = country_of_reality.6.t }
 		}
 
 	}
@@ -400,6 +413,7 @@ country_event = {
 
 		hidden_effect = {
 			news_event = { hours = 24 id = news.1004 }
+			add_named_threat = { threat = 2 name = country_of_reality.6.t }
 		}
 
 	}
@@ -596,6 +610,12 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+ 		hidden_effect = {
+ 			add_named_threat = { threat = 3 name = country_of_reality.12.t }
+ 		}
+ 	}
+
 	option = {
 		name = country_of_reality.14.a
 
@@ -613,6 +633,12 @@ country_event = {
 	picture = report_event_REA_ZEI_war
 
 	is_triggered_only = yes
+
+	immediate = {
+ 		hidden_effect = {
+ 			add_named_threat = { threat = 5 name = country_of_reality.15.t }
+ 		}
+ 	}
 
 	option = {
 		name = country_of_reality.15.a
@@ -636,6 +662,12 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+ 		hidden_effect = {
+ 			add_named_threat = { threat = 5 name = country_of_reality.16.t }
+ 		}
+ 	}
+
 	option = {
 		name = country_of_reality.16.a
 
@@ -657,6 +689,12 @@ country_event = {
 	picture = report_event_REA_ZEI_war
 
 	is_triggered_only = yes
+
+	immediate = {
+ 		hidden_effect = {
+ 			add_named_threat = { threat = 5 name = country_of_reality.17.t }
+ 		}
+ 	}
 
 	option = {
 		name = country_of_reality.17.a
@@ -717,6 +755,12 @@ country_event = {
 	picture = GFX_report_event_SGK_independence
 
 	is_triggered_only = yes
+
+	immediate = {
+ 		hidden_effect = {
+ 			add_named_threat = { threat = 2 name = country_of_reality.17.t }
+ 		}
+ 	}
 
 	option = {
 
@@ -816,6 +860,12 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+ 		hidden_effect = {
+ 			add_named_threat = { threat = 4 name = country_of_reality.23.t }
+ 		}
+ 	}
+
 	option = {
 		name = country_of_reality.23.a
 
@@ -834,6 +884,12 @@ country_event = {
 	picture = GFX_report_event_REA_ZEI_puppet
 
 	is_triggered_only = yes
+
+	immediate = {
+ 		hidden_effect = {
+ 			add_named_threat = { threat = 5 name = country_of_reality.24.t }
+ 		}
+ 	}
 
 	option = {
 		name = country_of_reality.24.a
@@ -923,6 +979,12 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+ 		hidden_effect = {
+ 			add_named_threat = { threat = 1 name = country_of_reality.27.t }
+ 		}
+ 	}
+
 	option = {
 		name = country_of_reality.27.a
 
@@ -1006,6 +1068,12 @@ country_event = {
 	picture = GFX_report_event_REA_SLI_faction
 
 	is_triggered_only = yes
+
+	immediate = {
+ 		hidden_effect = {
+ 			add_named_threat = { threat = 1 name = country_of_reality.303.t }
+ 		}
+ 	}
 
 	option = {
 		name = country_of_reality.30.a

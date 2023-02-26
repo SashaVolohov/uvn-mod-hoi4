@@ -11,12 +11,8 @@ state={
 	history={
 		owner = VIC
 		add_core_of = TAH
-		victory_points = {
-			4268 1
-		}
-		victory_points = {
-			12120 1
-		}
+		victory_points = {4268 3} #Санкара
+		victory_points = { 12132 1 } #Фий
 		buildings = {
 			infrastructure = 2
 			4268 = {
@@ -35,7 +31,7 @@ state={
 	}
 
 	provinces={
-		1237 1263 4231 4247 4268 7264 10160 12120 12132 
+		 1263 4231 4268 7264 10160 12132 
 	}
 	manpower=51876
 	buildings_max_level_factor=1.000

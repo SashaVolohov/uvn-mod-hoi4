@@ -1,4 +1,4 @@
-version="Alpha_1.0.0_rc1"
+version="Alpha_1.0.0"
 tags={
 	"Alternative History"
 	"Balance"
@@ -12,6 +12,7 @@ replace_path="common/decisions"
 replace_path="common/national_focus"
 replace_path="events"
 replace_path="history/states"
+replace_path="history/units"
 replace_path="gfx/loadingscreens"
 supported_version="1.12.*"
 path="mod/uvn_mod"

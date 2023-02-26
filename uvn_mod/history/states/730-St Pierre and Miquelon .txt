@@ -6,6 +6,7 @@ state={
 
 	history={
 		owner = VIC
+		victory_points = { 373 1 } #Кляйндорф
 		buildings = {
 			infrastructure = 2
 			373 = {

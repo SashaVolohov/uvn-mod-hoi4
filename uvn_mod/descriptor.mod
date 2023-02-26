@@ -1,4 +1,4 @@
-version="Alpha_1.0.0_rc1"
+version="Alpha_1.0.0"
 tags={
 	"Alternative History"
 	"Balance"

@@ -1,15 +1,14 @@
 VIC = {
 	male = {
-		names = { Alexandr Alex Alehandro Alekiy Aleks
-		}
-		callsigns = { "democrat" "aferist" "intellectual"}
+		names = { Александр Алехандро Пабло Вильгельм Карл Линкольн Фридрих Томас Джон Джордж Франклин Мартин }
+		callsigns = { "демократ" "аферист" "интеллектуал"}
 	}
 	female = {
-		names = { Anna Hanna }
+		names = { Анна Елизаветта }
 		callsigns = { "Dura" "Pushka" "Kartoshka"}
 	}
 	surnames = { 
-			Mitrokhin Mitrohin Mitrofanus Mitt
+			Блаугер Митрохин Санкара Франклин Боливар Вайс Блау Шерман Ли 
 		  }
 	
 }

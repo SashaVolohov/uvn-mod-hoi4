@@ -15,12 +15,11 @@ state={
 			air_base = 5
 		}
 		add_core_of = VIC
-		victory_points = {
-			3778 20 
-		}
-		victory_points = {
-			3775 10
-		}
+		victory_points = {3778 20 }
+		victory_points = {3775 10}
+		victory_points = { 3763 1 } #Гамильтон
+		victory_points = { 722 1 } #Детроит
+		victory_points = { 3605 3 } #Валенсия
 
 	}
 

@@ -8,6 +8,8 @@ state={
 
 	history={
 		owner = VIC
+		victory_points = { 12698 3 } #Крабсхаффен
+		victory_points = { 12505 1 } #Сан-Кусто
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
