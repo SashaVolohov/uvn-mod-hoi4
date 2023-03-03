@@ -12,11 +12,15 @@ bookmarks = {
 			ideology = democratic
 			ideas = {
 				
-				
-				
+				DUS_uvco_member
+				DUS_it
+				DUS_constitution
 			}
 			focuses = {
 				
+				DUS_democratic_reforms
+				DUS_world_revolution
+				DUS_REA_ZEI_zag
 				
 				
 			}
@@ -100,12 +104,12 @@ bookmarks = {
 			ideology = democratic
 			ideas = {
 				
-				
+				TEX_Destabilization	
 				
 			}
 			focuses = {
 				
-				
+				TEX_On_the_start
 				
 			}	
 		}

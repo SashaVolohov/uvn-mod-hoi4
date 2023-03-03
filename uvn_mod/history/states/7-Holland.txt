@@ -6,8 +6,8 @@ state={
 	}
 
 	history={
-		owner = DUS
-		add_core_of = DUS
+		owner = TTS
+		add_core_of = TTS
 		victory_points = {
 			391 40 
 		}
@@ -32,6 +32,11 @@ state={
 
 			}
 
+		}
+
+		2023.1.1 = {
+			owner = DUS
+			add_core_of = DUS
 		}
 
 	}

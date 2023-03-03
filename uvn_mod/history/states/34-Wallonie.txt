@@ -7,7 +7,7 @@ state={
 	state_category = large_city
 
 	history={
-		owner = DUS
+		owner = TTS
 		victory_points = {
 			3516 5
 		}
@@ -24,7 +24,13 @@ state={
 			air_base = 1
 
 		}
-		add_core_of = DUS
+		add_core_of = TTS
+
+		2023.1.1 = {
+			owner = DUS
+			add_core_of = DUS
+		}
+
 	}
 
 	provinces={

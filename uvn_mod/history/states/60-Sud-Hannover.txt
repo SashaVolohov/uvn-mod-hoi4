@@ -12,14 +12,20 @@ state={
 	state_category = large_city
 
 	history={
-		owner = SGK
+		owner = ANI
 		victory_points = { 3561 5 }
 		victory_points = { 425 3 }
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 		}
-		add_core_of = SGK
+		add_core_of = ANI
+
+		2023.1.1 = {
+			owner = SGK
+			add_core_of = SGK
+		}
+
 	}
 
 	provinces={

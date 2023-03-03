@@ -7,7 +7,7 @@ state={
 	state_category = city
 
 	history={
-		owner = SGK
+		owner = BAV
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
@@ -15,7 +15,13 @@ state={
 		victory_points = {
 			11544 10 
 		}
-		add_core_of = SGK
+		add_core_of = BAV
+
+		2023.1.1 = {
+			owner = SGK
+			add_core_of = SGK
+		}
+
 	}
 
 	provinces={

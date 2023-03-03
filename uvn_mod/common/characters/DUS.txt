@@ -1,0 +1,47 @@
+characters={
+
+	DUS_ivan_rezchikov_communist={
+		name=DUS_ivan_rezchikov
+		portraits={
+			civilian={
+				large=GFX_portrait_DUS_ivan_rezchikov
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={ italian_gentleman ambitionist }
+			expire="2100.1.1.1"
+			id=-1
+		}
+	}
+
+	DUS_ivan_rezchikov={
+		name=DUS_ivan_rezchikov
+		portraits={
+			civilian={
+				large=GFX_portrait_DUS_ivan_rezchikov
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ italian_gentleman ambitionist }
+			expire="2100.1.1.1"
+			id=-1
+		}
+	}
+
+	DUS_kirill_tishkov={
+		name=DUS_kirill_tishkov
+		portraits={
+			civilian={
+				large=GFX_portrait_SQR_kirill_tishkov
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="2100.1.1.1"
+			id=-1
+		}
+	}
+
+}

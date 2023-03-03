@@ -6,14 +6,19 @@ state={
 		victory_points = {
 			11411 1
 		}
-		owner = DUS
+		owner = SGK
 		buildings = {
 			infrastructure = 3
 			air_base = 3
 
 		}
-		add_core_of = DUS
+		add_core_of = SGK
 		add_core_of = UKR
+
+		2023.1.1 = {
+			owner = DUS
+			add_core_of = DUS
+		}
 
 	}
 

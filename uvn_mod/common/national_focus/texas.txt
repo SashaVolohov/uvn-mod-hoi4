@@ -1,0 +1,283 @@
+focus_tree = {
+	id = Texas
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TEX
+		}
+	}
+	default = no
+	focus = {
+		id = TEX_On_the_start
+		icon = GFX_goal_generic_demand_territory
+		cost = 10,00
+		x = 22
+		y = 0
+			completion_reward = {
+					add_political_power = 100
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = TEX_Old_Sector
+		icon = GFX_goal_support_communism
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_On_the_start
+		}
+		mutually_exclusive = {
+			focus = TEX_Why_bother
+			focus = TEX_Dedkov_is_the_true_ruler
+			focus = TEX_New_Government
+		}
+		x = 17
+		y = 1
+			completion_reward = {
+					add_political_power = -50
+					add_popularity = {
+							ideology = communism
+							popularity = 0.1
+						}
+				}
+
+	}
+	focus = {
+		id = TEX_Communist_propaganda
+		icon = GFX_focus_TUR_ratify_the_six_arrows
+		cost = 5,00
+		prerequisite = {
+			focus = TEX_Old_Sector
+		}
+		x = 13
+		y = 2
+			completion_reward = {
+					add_popularity = {
+							ideology = communism
+							popularity = 0.1
+						}
+				}
+
+	}
+	focus = {
+		id = TEX_foreign_example
+		icon = GFX_focus_SOV_international_union_of_soviet_republics
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_Communist_propaganda
+		}
+		prerequisite = {
+			focus = TEX_Old_Sector
+		}
+		x = 15
+		y = 3
+			completion_reward = {
+					hidden_effect = {
+							news_event = {
+									hours = 3
+									id = news.1025
+								}
+						}
+					add_timed_idea = {
+							idea = TEX_iron_communism
+							days = 126
+						}
+					add_political_power = 100
+					KIN = {
+							add_opinion_modifier = {
+									target = TEX
+									modifier = TEX_KIN_diplomacy_focus
+								}
+						}
+					add_popularity = {
+							ideology = communism
+							popularity = -0.05
+						}
+				}
+
+	}
+	focus = {
+		id = TEX_an_unfortunate_example
+		icon = GFX_focus_RAJ_seek_help_from_soviet
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_foreign_example
+		}
+		x = 13
+		y = 4
+			completion_reward = {
+					add_political_power = -30
+				}
+
+	}
+	focus = {
+		id = TEX_Revolution_on_the_threshold
+		icon = GFX_focus_SOV_the_last_purge
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_an_unfortunate_example
+		}
+		mutually_exclusive = {
+			focus = TEX_Peaceful_parish
+		}
+		x = 11
+		y = 5
+			completion_reward = {
+					add_political_power = -100
+					add_ideas = TEX_revolutionary_sentiments
+				}
+			focus = {
+					id = TEX_Velik_Uniko
+					icon = GFX_focus_ITA_corpo_volontari_della_liberta
+					cost = 10,00
+					prerequisite = {
+							focus = TEX_New_Government
+						}
+					x = 28
+					y = 2
+				}
+			focus = {
+					id = TEX_March_of_a_Great_Nation
+					icon = GFX_focus_generic_women_in_military
+					cost = 10,00
+					prerequisite = {
+							focus = TEX_Velik_Uniko
+						}
+					x = 26
+					y = 3
+				}
+			focus = {
+					id = TEX_fraud
+					icon = GFX_focus_SWI_embrace_rote_drei
+					cost = 10,00
+					prerequisite = {
+							focus = TEX_March_of_a_Great_Nation
+						}
+					x = 28
+					y = 4
+				}
+
+	}
+	focus = {
+		id = TEX_Peaceful_parish
+		icon = GFX_goal_generic_propaganda
+		cost = 5,00
+		prerequisite = {
+			focus = TEX_an_unfortunate_example
+		}
+		prerequisite = {
+			focus = TEX_Communist_propaganda
+		}
+		mutually_exclusive = {
+			focus = TEX_Revolution_on_the_threshold
+		}
+		x = 15
+		y = 5
+			completion_reward = {
+					add_political_power = 60
+					add_popularity = {
+							ideology = communism
+							popularity = 0.05
+						}
+				}
+
+	}
+	focus = {
+		id = TEX_Why_bother
+		icon = GFX_focus_generic_secret_service_agency
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_On_the_start
+		}
+		mutually_exclusive = {
+			focus = TEX_Old_Sector
+			focus = TEX_Dedkov_is_the_true_ruler
+			focus = TEX_New_Government
+		}
+		x = 20
+		y = 1
+
+	}
+	focus = {
+		id = TEX_Dedkov_is_the_true_ruler
+		icon = GFX_goal_support_democracy
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_On_the_start
+		}
+		mutually_exclusive = {
+			focus = TEX_Old_Sector
+			focus = TEX_Why_bother
+			focus = TEX_New_Government
+		}
+		x = 24
+		y = 1
+
+	}
+	focus = {
+		id = TEX_New_Government
+		icon = GFX_focus_SWI_dissolve_the_federal_council
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_On_the_start
+		}
+		mutually_exclusive = {
+			focus = TEX_Old_Sector
+			focus = TEX_Why_bother
+			focus = TEX_Dedkov_is_the_true_ruler
+		}
+		x = 27
+		y = 1
+
+	}
+	focus = {
+		id = TEX_New_horizons
+		icon = GFX_focus_GRE_reviving_the_double_headed_eagle
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_Revolution_on_the_threshold
+		}
+		x = 8
+		y = 6
+
+	}
+	focus = {
+		id = TEX_propaganda
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_Revolution_on_the_threshold
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = TEX_Communist_Triumph
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_Revolution_on_the_threshold
+		}
+		x = 5
+		y = 6
+			completion_reward = {
+					add_popularity = {
+							ideology = communism
+							popularity = 0.50
+						}
+                                       set_politics = {
+							ruling_party = communism
+						}
+					start_civil_war = {
+                                          ideology = democratic
+                                          size = 0.5
+                                          capital = 375
+                                          states = { 386 385 378 379 384 377 380 382 376 375 374 383 384 392 373 372 371 370 368 369 261 816 360 359 480 479 478 277 477 485 476 475 313 474 311 314 312 317 316 304 685 484 }
+
+}
+				}
+
+	}
+}

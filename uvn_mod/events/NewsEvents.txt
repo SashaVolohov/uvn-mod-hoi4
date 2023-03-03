@@ -13816,3 +13816,350 @@ news_event = {
 		}
 	}
 }
+
+news_event = {
+	id = news.1016
+	title = news.1016.t
+	desc = news.1016.d
+	picture = GFX_news_event_DUS_BEL_colony
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1016.a
+		trigger = {
+			NOT = {
+				TAG = REA
+				TAG = DUS
+				TAG = ZEI
+				TAG = SLI
+			}
+		}
+	}
+	option = {
+		name = news.1016.b
+		trigger = { TAG = REA }
+	}
+	option = {
+		name = news.1016.c
+		trigger = { TAG = DUS }
+	}
+	option = {
+		name = news.1016.e
+		trigger = {
+			OR = {
+				TAG = ZEI
+				TAG = SLI
+			}
+		}
+	}
+}
+
+news_event = {
+	id = news.1017
+	title = news.1017.t
+	desc = news.1017.d
+	picture = GFX_news_event_DUS_BEL_colony
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1017.a
+		trigger = {
+			NOT = {
+				TAG = REA
+				TAG = DUS
+				TAG = ZEI
+				TAG = SLI
+			}
+		}
+	}
+	option = {
+		name = news.1017.b
+		trigger = { TAG = REA }
+	}
+	option = {
+		name = news.1017.c
+		trigger = { TAG = DUS }
+	}
+	option = {
+		name = news.1017.e
+		trigger = {
+			OR = {
+				TAG = ZEI
+				TAG = SLI
+			}
+		}
+	}
+}
+
+news_event = {
+	id = news.1018
+	title = news.1018.t
+	desc = news.1018.d
+	picture = GFX_news_event_DUS_BEL_colony
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1018.a
+		trigger = {
+			NOT = {
+				TAG = REA
+				TAG = DUS
+				TAG = VIC
+				TAG = SGK
+			}
+		}
+	}
+	option = {
+		name = news.1018.b
+		trigger = { TAG = REA }
+	}
+	option = {
+		name = news.1018.c
+		trigger = { TAG = DUS }
+	}
+	option = {
+		name = news.1018.e
+		trigger = {
+			OR = {
+				TAG = VIC
+				TAG = SGK
+			}
+		}
+	}
+}
+
+news_event = {
+	id = news.1019
+	title = news.1019.t
+	desc = news.1019.d
+	picture = GFX_news_event_DUS_BEL_colony
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1019.a
+		trigger = {
+			NOT = {
+				TAG = REA
+				TAG = DUS
+			}
+		}
+	}
+	option = {
+		name = news.1019.b
+		trigger = { TAG = REA }
+	}
+	option = {
+		name = news.1019.c
+		trigger = { TAG = DUS }
+	}
+}
+
+news_event = {
+	id = news.1020
+	title = news.1020.t
+	desc = news.1020.d
+	picture = GFX_news_event_DUS_BEL_colony
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1020.a
+		trigger = {
+			NOT = {
+				TAG = SGK
+				TAG = DUS
+			}
+		}
+	}
+	option = {
+		name = news.1020.b
+		trigger = { TAG = SGK }
+	}
+	option = {
+		name = news.1020.c
+		trigger = { TAG = DUS }
+	}
+}
+
+news_event = {
+	id = news.1021
+	title = news.1021.t
+	desc = news.1021.d
+	picture = GFX_news_event_DUS_zag_found
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1021.a
+		trigger = {
+			NOT = {
+				has_government = democratic
+				tag = REA
+			}
+		}
+	}
+	option = {
+		name = news.1021.b
+		trigger = { 
+			has_government = democratic
+			NOT = {
+				tag = REA
+				tag = DUS
+			}
+
+		}
+
+		add_opinion_modifier = { target = DUS modifier = DUS_MAN_zag }
+
+	}
+	option = {
+		name = news.1021.c
+		trigger = { TAG = REA }
+	}
+	option = {
+		name = news.1021.e
+		trigger = { TAG = DUS }
+	}
+}
+
+news_event = {
+	id = news.1022
+	title = news.1022.t
+	desc = news.1022.d
+	picture = GFX_news_event_DUS_zag_passed
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1022.a
+		trigger = {
+			NOT = {
+				has_government = democratic
+				tag = REA
+			}
+		}
+	}
+	option = {
+		name = news.1022.b
+		trigger = { 
+			has_government = democratic
+			NOT = {
+				tag = REA
+				tag = DUS
+			}
+
+		}
+
+		remove_opinion_modifier = { target = DUS modifier = DUS_MAN_zag }
+
+	}
+	option = {
+		name = news.1022.c
+		trigger = { TAG = REA }
+	}
+	option = {
+		name = news.1022.e
+		trigger = { TAG = DUS }
+	}
+}
+
+news_event = {
+	id = news.1023
+	title = news.1023.t
+	desc = news.1023.d
+	picture = GFX_news_event_DUS_zag_passed
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1023.a
+		trigger = {
+			NOT = {
+				tag = DUS
+			}
+		}
+	}
+	option = {
+		name = news.1023.b
+		trigger = { 
+			tag = DUS
+
+		}
+
+	}
+}
+
+news_event = {
+	id = news.1024
+	title = news.1024.t
+	desc = news.1024.d
+	picture = GFX_news_event_DUS_zag_passed
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1024.a
+		trigger = {
+			NOT = {
+				has_government = democratic
+			}
+		}
+	}
+	option = {
+		name = news.1024.b
+		trigger = { 
+			has_government = democratic
+
+		}
+
+	}
+}
+
+news_event = {
+	id = news.1025
+	title = news.1025.t
+	desc = news.1025.d
+	picture = GFX_news_event_TEX_Gropkiy
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+        option = {
+		name = news.1025.e
+		trigger = {
+	 		TAG = KIN	
+	    	}
+      	}   
+   
+	option = {
+		name = news.1025.a
+		trigger = {
+			NOT = {
+				TAG = KIN
+			}
+                }
+	}
+}

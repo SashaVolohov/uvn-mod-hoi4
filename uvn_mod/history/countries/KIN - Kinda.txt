@@ -48,3 +48,5 @@ create_country_leader = {
     expire = "2100.1.1"
     ideology = liberalism
 }
+
+add_opinion_modifier = { target = DUS modifier = DUS_KIN_relationship }

@@ -40,6 +40,9 @@ set_popularities = {
 	communism = 21
 }
 
+add_ideas = {
+	TEX_Destabilization
+}
 create_country_leader = {
     name = "Марк Дедков"
     desc = ""

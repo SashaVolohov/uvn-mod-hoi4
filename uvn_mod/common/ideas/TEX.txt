@@ -1,0 +1,65 @@
+ideas = {
+
+	country = {
+		TEX_iron_communism = {
+
+			picture = TEX_iron_communism
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 2
+				improve_relations_maintain_cost_factor = 0.2
+                                research_speed_factor = 0,5
+                                war_support_weekly = 0.01
+                                communism_drift = 0.3
+                        }
+                  }
+
+                  TEX_Destabilization = {
+
+			picture = TEX_Destabilization
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.20
+				production_factory_efficiency_gain_factor = -0.02
+				production_factory_max_efficiency_factor = -0.15
+                 }
+}
+
+                     TEX_revolutionary_sentiments = {
+
+			picture = TEX_revolutionary_sentiments
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+                                
+                 }

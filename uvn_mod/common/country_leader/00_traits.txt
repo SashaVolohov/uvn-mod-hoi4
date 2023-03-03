@@ -8414,5 +8414,31 @@ leader_traits = {
 		}
 	}
 
+	italian_gentleman = {
+		random = no
+		
+		research_speed_factor = 0.05
+		min_export = 0.1
+		equipment_conversion_speed = 0.1
+		
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ambitionist = {
+		random = no
+
+		war_support_factor = 0.10
+		justify_war_goal_time = -0.2
+		improve_relations_maintain_cost_factor = 0.20
+		
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 
 }

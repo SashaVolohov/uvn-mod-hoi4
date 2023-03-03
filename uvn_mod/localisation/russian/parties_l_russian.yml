@@ -626,8 +626,6 @@
  GXC_communism_party_long:0 "Коммунистическая партия Китая"
  YUN_communism_party:0 "КПК"
  YUN_communism_party_long:0 "Коммунистическая партия Китая"
- MAN_fascism_party:0 "ОСМ"
- MAN_fascism_party_long:0 "Общество Согласия Маньчжоу-го"
  TAH_fascism_party:0 "PaO"
  TAH_fascism_party_long:0 "Pouvanaa a Oopa"
  TAH_neutrality_party:0 "Майрау"
@@ -1016,4 +1014,23 @@
  PAV_fascism_party:0 "Павленские фашисты"
  PAV_neutrality_party:0 "Анархия"
  
+ DUS_democratic_party:0 "Свободный Дусибург"
+ DUS_communism_party:0 "КПД"
+ DUS_fascism_party:0 "МПД"
+ DUS_neutrality_party:0 "Союз трёх флагов"
  
+ BAV_democratic_party:0 "Демократы Баварии"
+ BAV_communism_party:0 "СПБ"
+ BAV_fascism_party:0 "БПНС"
+ BAV_neutrality_party:0 "Нейтралы Баварии"
+
+ ANI_democratic_party:0 "Демократы Анигары"
+ ANI_communism_party:0 "Коммунисты Анигары"
+ ANI_fascism_party:0 "Фашисты Анигары"
+ ANI_neutrality_party:0 "Нейтралы Анигары"
+
+ MAN_democratic_party:0 "Демократы Маньчджурии"
+ MAN_communism_party:0 "Коммунисты Маньчджурии"
+ MAN_fascism_party:0 "Фашисты Маньчджурии"
+ MAN_neutrality_party:0 "Нейтралы Маньчджурии"
+

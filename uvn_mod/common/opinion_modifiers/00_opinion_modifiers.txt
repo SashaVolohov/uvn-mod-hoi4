@@ -1123,5 +1123,17 @@ opinion_modifiers = {
 		value = -30
 		decay = 1
 	}
+
+	DUS_MAN_zag = {
+		value = -50
+	}
+
+	TEX_KIN_diplomacy_focus = { 
+		value = 15	
+	}
+
+	DUS_KIN_relationship = { 
+		value = -30	
+	}
 	
 }

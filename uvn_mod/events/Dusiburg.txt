@@ -1,0 +1,969 @@
+add_namespace = dusiburg
+
+country_event = {
+	id = dusiburg.1
+	title = dusiburg.1.t
+	desc = dusiburg.1.d
+	picture = GFX_report_event_worker_protests
+	
+	trigger = {
+		NOT = { has_idea = DUS_democracy_constitution }
+		has_completed_focus = DUS_democracy_path
+		NOT = { has_country_flag = DUS_democracy_path_cooldown }
+		tag = DUS
+		date > 2022.4.1
+		date < 2024.1.1
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {	days = 60 }
+
+	option = {
+		ai_chance = {
+			base = 15
+		}
+		name = dusiburg.1.a
+		add_timed_idea = {
+			idea = DUS_factory_strikes
+			days = 360
+		}
+	}
+}
+
+country_event = {
+	id = dusiburg.2
+	title = dusiburg.2.t
+	desc = dusiburg.2.d
+	picture = GFX_report_event_REA_TAL
+
+	is_triggered_only = yes
+
+	option = {
+		name = dusiburg.2.a
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -25
+				DUS = { has_army_size = { size < 10 } }
+			}
+			modifier = {
+				add = 100
+				DUS = { has_army_size = { size > 20 } }
+			}
+			modifier = {
+				DUS = 20
+				is_in_faction_with = DUS
+			}
+		}
+		DUS = {
+			country_event = { hours = 2 id = dusiburg.4 }
+		}
+		REA = {
+			country_event = { hours = 2 id = dusiburg.5 }
+		}
+		VIC = {
+			country_event = { hours = 2 id = dusiburg.7 }
+		}
+	}
+	option = {
+		name = dusiburg.2.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				DUS = { has_army_size = { size > 10 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				DUS = { has_army_size = { size < 20 } }
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = yes
+				NOT = { is_in_faction_with = DUS }
+			}
+			modifier = {
+				any_other_country = {
+					has_guaranteed = BAV
+				}
+				factor = 5
+			}
+			modifier = {
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = BAV
+				}
+				factor = 5
+			}
+		}
+		DUS = {
+			add_opinion_modifier = { target = ROOT modifier = REA_TAL_rejected }
+			country_event = { hours = 2 id = dusiburg.8 }
+
+			REA = {
+				country_event = { hours = 2 id = dusiburg.9 }
+			}
+			VIC = {
+				country_event = { hours = 2 id = dusiburg.9 }
+			}
+
+			if = { limit = { is_in_faction_with = BAV }
+				remove_from_faction = BAV
+			}
+		}
+	}
+}
+
+country_event = {
+	id = dusiburg.3
+	title = dusiburg.3.t
+	desc = dusiburg.3.d
+	picture = GFX_report_event_REA_TAL
+
+	is_triggered_only = yes
+
+	option = {
+		name = dusiburg.3.a
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -25
+				DUS = { has_army_size = { size < 10 } }
+			}
+			modifier = {
+				add = 100
+				DUS = { has_army_size = { size > 20 } }
+			}
+			modifier = {
+				DUS = 20
+				is_in_faction_with = DUS
+			}
+		}
+		DUS = {
+			country_event = { hours = 2 id = dusiburg.10 }
+		}
+		REA = {
+			country_event = { hours = 2 id = dusiburg.11 }
+		}
+	}
+	option = {
+		name = dusiburg.3.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				DUS = { has_army_size = { size > 10 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				DUS = { has_army_size = { size < 20 } }
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = yes
+				NOT = { is_in_faction_with = DUS }
+			}
+			modifier = {
+				any_other_country = {
+					has_guaranteed = ANI
+				}
+				factor = 5
+			}
+			modifier = {
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = ANI
+				}
+				factor = 5
+			}
+		}
+		DUS = {
+			add_opinion_modifier = { target = ROOT modifier = REA_TAL_rejected }
+			country_event = { hours = 2 id = dusiburg.12 }
+
+			REA = {
+				country_event = { hours = 2 id = dusiburg.13 }
+			}
+
+			if = { limit = { is_in_faction_with = ANI }
+				remove_from_faction = ANI
+			}
+		}
+	}
+}
+
+country_event = {
+	id = dusiburg.4
+	title = dusiburg.4.t
+	desc = dusiburg.4.d
+	picture = GFX_report_event_REA_TAL_success
+
+	is_triggered_only = yes
+
+	immediate = {
+ 		hidden_effect = {
+ 			add_named_threat = { threat = 1 name = dusiburg.4.t }
+ 		}
+ 	}
+
+	option = {
+		name = dusiburg.4.a
+		56 = {
+			if = {
+				limit = { is_owned_by = BAV }
+				add_core_of = DUS
+			}
+		}
+		57 = {
+			if = {
+				limit = { is_owned_by = BAV }
+				add_core_of = DUS
+			}
+		}
+		51 = {
+			if = {
+				limit = { is_owned_by = BAV }
+				add_core_of = DUS
+			}
+		}
+		42 = {
+			if = {
+				limit = { is_owned_by = BAV }
+				add_core_of = DUS
+			}
+		}
+		55 = {
+			if = {
+				limit = { is_owned_by = BAV }
+				add_core_of = DUS
+			}
+		}
+		59 = {
+			if = {
+				limit = { is_owned_by = BAV }
+				add_core_of = DUS
+			}
+		}
+		58 = {
+			if = {
+				limit = { is_owned_by = BAV }
+				add_core_of = DUS
+			}
+		}
+		BAV = {
+			every_unit_leader = {
+				set_nationality = DUS
+			}
+		}
+		transfer_state = 56
+		transfer_state = 57
+		transfer_state = 51
+		transfer_state = 42
+		transfer_state = 55
+		transfer_state = 59
+		transfer_state = 58
+		add_political_power = 75
+		add_war_support = 0.1
+		add_stability = 0.05
+
+		hidden_effect = {
+			news_event = { hours = 48 id = news.1018 }
+		}
+
+	}
+}
+
+country_event = {
+	id = dusiburg.5
+	title = dusiburg.5.t
+	desc = dusiburg.5.d
+	picture = GFX_report_event_REA_TAL_success
+
+	is_triggered_only = yes
+
+	immediate = {
+ 		hidden_effect = {
+ 			add_named_threat = { threat = 1 name = dusiburg.5.t }
+ 		}
+ 	}
+
+	option = {
+
+		ai_chance = {
+			base = 10
+		}
+
+		name = dusiburg.5.a
+		50 = {
+			if = {
+				limit = { is_owned_by = BAV }
+				add_core_of = REA
+			}
+		}
+		54 = {
+			if = {
+				limit = { is_owned_by = BAV }
+				add_core_of = REA
+			}
+		}
+		transfer_state = 64
+		transfer_state = 65
+		transfer_state = 60
+		transfer_state = 50
+		transfer_state = 54
+		add_political_power = 75
+		add_war_support = 0.1
+		add_stability = 0.05
+
+	}
+
+	option = {
+
+		ai_chance = {
+			base = 7
+		}
+
+		name = dusiburg.5.b
+	}
+}
+
+country_event = {
+	id = dusiburg.7
+	title = dusiburg.7.t
+	desc = dusiburg.7.d
+	picture = GFX_report_event_REA_TAL_success
+
+	is_triggered_only = yes
+
+	immediate = {
+ 		hidden_effect = {
+ 			add_named_threat = { threat = 1 name = dusiburg.5.t }
+ 		}
+ 	}
+
+	option = {
+
+		ai_chance = {
+			base = 7
+		}
+
+		name = dusiburg.7.a
+		52 = {
+			if = {
+				limit = { is_owned_by = BAV }
+				add_core_of = VIC
+			}
+		}
+		53 = {
+			if = {
+				limit = { is_owned_by = BAV }
+				add_core_of = VIC
+			}
+		}
+		transfer_state = 52
+		transfer_state = 53
+		add_political_power = 75
+		add_war_support = 0.1
+		add_stability = 0.05
+
+	}
+
+	option = {
+
+		ai_chance = {
+			base = 15
+		}
+
+		name = dusiburg.7.b
+		52 = {
+			if = {
+				limit = { is_owned_by = BAV }
+				add_core_of = SGK
+			}
+		}
+		53 = {
+			if = {
+				limit = { is_owned_by = BAV }
+				add_core_of = SGK
+			}
+		}
+		SGK = {
+			transfer_state = 52
+			transfer_state = 53
+			add_political_power = 75
+			add_war_support = 0.1
+			add_stability = 0.05
+		}
+
+	}
+
+}
+
+country_event = {
+	id = dusiburg.8
+	title = dusiburg.8.t
+	desc = dusiburg.8.d
+	picture = GFX_report_event_REA_TAL_fail
+
+	is_triggered_only = yes
+
+	option = {
+		name = dusiburg.8.a
+		add_state_claim = 56
+		create_wargoal = {
+			type = take_state_focus
+			target = BAV
+			generator = { 56}
+		}
+	}
+}
+
+country_event = {
+	id = dusiburg.9
+	title = dusiburg.9.t
+	desc = dusiburg.9.d
+	picture = GFX_report_event_REA_TAL_fail
+
+	is_triggered_only = yes
+
+	option = {
+		name = dusiburg.9.a
+		add_state_claim = 56
+		create_wargoal = {
+			type = take_state_focus
+			target = BAV
+			generator = { 56}
+		}
+	}
+
+	option = {
+		name = dusiburg.9.b
+	}
+}
+
+country_event = {
+	id = dusiburg.10
+	title = dusiburg.10.t
+	desc = dusiburg.10.d
+	picture = GFX_report_event_REA_TAL_success
+
+	is_triggered_only = yes
+
+	immediate = {
+ 		hidden_effect = {
+ 			add_named_threat = { threat = 1 name = dusiburg.10.t }
+ 		}
+ 	}
+
+	option = {
+		name = dusiburg.10.a
+		62 = {
+			if = {
+				limit = { is_owned_by = ANI }
+				add_core_of = DUS
+			}
+		}
+		61 = {
+			if = {
+				limit = { is_owned_by = ANI }
+				add_core_of = DUS
+			}
+		}
+		ANI = {
+			every_unit_leader = {
+				set_nationality = DUS
+			}
+		}
+		transfer_state = 62
+		transfer_state = 61
+		add_political_power = 75
+		add_war_support = 0.1
+		add_stability = 0.05
+
+		hidden_effect = {
+			news_event = { hours = 24 id = news.1019 }
+		}
+
+	}
+}
+
+country_event = {
+	id = dusiburg.11
+	title = dusiburg.11.t
+	desc = dusiburg.11.d
+	picture = GFX_report_event_REA_TAL_success
+
+	is_triggered_only = yes
+
+	immediate = {
+ 		hidden_effect = {
+ 			add_named_threat = { threat = 1 name = dusiburg.11.t }
+ 		}
+ 	}
+
+	option = {
+
+		ai_chance = {
+			base = 10
+		}
+
+		name = dusiburg.11.a
+		60 = {
+			if = {
+				limit = { is_owned_by = ANI }
+				add_core_of = REA
+			}
+		}
+		65 = {
+			if = {
+				limit = { is_owned_by = ANI }
+				add_core_of = REA
+			}
+		}
+		64 = {
+			if = {
+				limit = { is_owned_by = ANI }
+				add_core_of = REA
+			}
+		}
+		transfer_state = 60
+		transfer_state = 65
+		transfer_state = 64
+		add_political_power = 75
+		add_war_support = 0.1
+		add_stability = 0.05
+
+	}
+
+	option = {
+
+		name = dusiburg.11.b
+
+		ai_chance = {
+			base = 7
+		}
+	}
+}
+
+country_event = {
+	id = dusiburg.12
+	title = dusiburg.12.t
+	desc = dusiburg.12.d
+	picture = GFX_report_event_REA_TAL_fail
+
+	is_triggered_only = yes
+
+	option = {
+		name = dusiburg.12.a
+		add_state_claim = 65
+		create_wargoal = {
+			type = take_state_focus
+			target = ANI
+			generator = { 65}
+		}
+	}
+}
+
+country_event = {
+	id = dusiburg.13
+	title = dusiburg.13.t
+	desc = dusiburg.3.d
+	picture = GFX_report_event_REA_TAL_fail
+
+	is_triggered_only = yes
+
+	option = {
+		name = dusiburg.13.a
+		add_state_claim = 65
+		create_wargoal = {
+			type = take_state_focus
+			target = ANI
+			generator = { 65}
+		}
+	}
+}
+
+country_event = {
+	id = dusiburg.14
+	title = dusiburg.14.t
+	desc = dusiburg.14.d
+	picture = GFX_report_event_REA_TAL
+
+	is_triggered_only = yes
+
+	option = {
+		name = dusiburg.14.a
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -25
+				DUS = { has_army_size = { size < 10 } }
+			}
+			modifier = {
+				add = 100
+				DUS = { has_army_size = { size > 20 } }
+			}
+			modifier = {
+				DUS = 20
+				is_in_faction_with = DUS
+			}
+		}
+		DUS = {
+			country_event = { hours = 2 id = dusiburg.15 }
+		}
+	}
+	option = {
+		name = dusiburg.14.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				DUS = { has_army_size = { size > 10 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				DUS = { has_army_size = { size < 20 } }
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = yes
+				NOT = { is_in_faction_with = DUS }
+			}
+		}
+		DUS = {
+			add_opinion_modifier = { target = ROOT modifier = REA_TAL_rejected }
+			country_event = { hours = 2 id = dusiburg.16 }
+		}
+	}
+}
+
+country_event = {
+	id = dusiburg.15
+	title = dusiburg.15.t
+	desc = dusiburg.15.d
+	picture = GFX_report_event_REA_TAL_success
+
+	is_triggered_only = yes
+
+	option = {
+		name = dusiburg.15.a
+		153 = {
+			if = {
+				limit = { is_owned_by = DUS }
+				add_core_of = SGK
+			}
+		}
+		848 = {
+			if = {
+				limit = { is_owned_by = DUS }
+				add_core_of = SGK
+			}
+		}
+		89 = {
+			if = {
+				limit = { is_owned_by = SGK }
+				add_core_of = DUS
+			}
+		}
+		transfer_state = 89
+
+		SGK = {
+			transfer_state = 153
+			transfer_state = 848
+		}
+
+		add_political_power = 75
+		add_war_support = 0.1
+		add_stability = 0.05
+
+		hidden_effect = {
+			news_event = { hours = 24 id = news.1020 }
+		}
+
+	}
+}
+
+country_event = {
+	id = dusiburg.16
+	title = dusiburg.16.t
+	desc = dusiburg.16.d
+	picture = GFX_report_event_REA_TAL_success
+
+	is_triggered_only = yes
+
+	option = {
+
+		name = dusiburg.16.a
+
+	}
+}
+
+country_event = {
+	id = dusiburg.17
+	title = dusiburg.17.t
+	desc = dusiburg.17.d
+	picture = GFX_report_event_REA_TAL
+
+	is_triggered_only = yes
+
+	option = {
+		name = dusiburg.17.a
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -25
+				DUS = { has_army_size = { size < 10 } }
+			}
+			modifier = {
+				add = 100
+				DUS = { has_army_size = { size > 20 } }
+			}
+			modifier = {
+				DUS = 20
+				is_in_faction_with = DUS
+			}
+		}
+
+		create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = KIN
+		}
+
+		SQR = {
+			give_guarantee = KIN
+		}
+
+		CAU = {
+			give_guarantee = MAN
+		}
+
+		LUT = {
+			give_guarantee = KIN
+		}
+
+	`	ZEI = {
+			give_guarantee = KIN
+		}
+
+		IND = {
+			give_guarantee = KIN
+		}
+
+		
+
+		DUS = {
+			country_event = { hours = 2 id = dusiburg.18 }
+			give_guarantee = KIN
+
+		}
+
+		declare_war_on = {
+			target = KIN
+			type = puppet_wargoal_focus
+		}
+
+		hidden_effect = {
+			news_event = { hours = 720 id = news.1021 }
+			news_event = { hours = 1440 id = news.1022 } 
+		}
+
+	}
+	option = {
+		name = dusiburg.17.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				DUS = { has_army_size = { size > 10 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				DUS = { has_army_size = { size < 20 } }
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = yes
+				NOT = { is_in_faction_with = DUS }
+			}
+		}
+		DUS = {
+			country_event = { hours = 2 id = dusiburg.19 }
+		}
+	}
+}
+
+country_event = {
+	id = dusiburg.18
+	title = dusiburg.18.t
+	desc = dusiburg.18.d
+	picture = GFX_report_event_REA_TAL_success
+
+	is_triggered_only = yes
+
+	option = {
+		name = dusiburg.18.a
+
+	}
+}
+
+country_event = {
+	id = dusiburg.19
+	title = dusiburg.19.t
+	desc = dusiburg.19.d
+	picture = GFX_report_event_REA_TAL_success
+
+	is_triggered_only = yes
+
+	option = {
+
+		name = dusiburg.19.a
+
+	}
+}
+
+country_event = {
+	id = dusiburg.20
+	title = dusiburg.20.t
+	desc = dusiburg.20.d
+	picture = GFX_report_event_REA_TAL
+
+	is_triggered_only = yes
+
+	option = {
+		name = dusiburg.20.a
+
+		create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = REA
+		}
+
+		DUS = {
+			country_event = { hours = 2 id = dusiburg.21 }
+		}
+
+	}
+	option = {
+		name = dusiburg.20.b
+
+		DUS = {
+			country_event = { hours = 2 id = dusiburg.22 }
+		}
+
+	}
+}
+
+country_event = {
+	id = dusiburg.21
+	title = dusiburg.21.t
+	desc = dusiburg.21.d
+	picture = GFX_report_event_REA_TAL_success
+
+	is_triggered_only = yes
+
+	option = {
+
+		name = dusiburg.21.a
+
+	}
+}
+
+country_event = {
+	id = dusiburg.22
+	title = dusiburg.22.t
+	desc = dusiburg.22.d
+	picture = GFX_report_event_REA_TAL_success
+
+	is_triggered_only = yes
+
+	option = {
+
+		name = dusiburg.22.a
+
+	}
+}
+
+country_event = {
+	id = dusiburg.23
+	title = dusiburg.23.t
+	desc = dusiburg.23.d
+	picture = GFX_report_event_REA_TAL
+
+	is_triggered_only = yes
+
+	option = {
+		name = dusiburg.23.a
+
+		set_politics = {
+			ruling_party = neutrality
+			last_election = "2022.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+
+		set_popularities = {
+			democratic = 40
+			neutrality = 40
+			communism = 20
+		}
+
+		DUS = {
+			country_event = { hours = 2 id = dusiburg.24 }
+		}
+
+	}
+	option = {
+		name = dusiburg.23.b
+
+		DUS = {
+			country_event = { hours = 2 id = dusiburg.25 }
+		}
+
+	}
+}
+
+country_event = {
+	id = dusiburg.24
+	title = dusiburg.24.t
+	desc = dusiburg.24.d
+	picture = GFX_report_event_REA_TAL_success
+
+	is_triggered_only = yes
+
+	option = {
+
+		name = dusiburg.24.a
+
+	}
+}
+
+country_event = {
+	id = dusiburg.25
+	title = dusiburg.25.t
+	desc = dusiburg.25.d
+	picture = GFX_report_event_REA_TAL_success
+
+	is_triggered_only = yes
+
+	option = {
+
+		name = dusiburg.25.a
+
+	}
+}

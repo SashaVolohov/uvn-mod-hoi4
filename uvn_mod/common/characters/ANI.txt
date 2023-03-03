@@ -1,0 +1,18 @@
+characters={
+
+	ANI_aleksei_tigrov={
+		name=ANI_aleksei_tigrov
+		portraits={
+			civilian={
+				large=GFX_portrait_ANI_aleksei_tigrov
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ }
+			expire="2100.1.1.1"
+			id=-1
+		}
+	}
+
+}

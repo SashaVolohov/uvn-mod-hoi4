@@ -118,11 +118,36 @@ units = {
 	}
 
 	division = {
+		name = "Ryojun Kichi Shubitai"
+		location = 1150 #Dalian
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3		
+	}
+
+	division = {
 		name = "Manshu Tetsudo Shubitai" # Manchuria Railway Guard
 		location = 11771 #Mukden
 		division_template = "Chuton-chi Shidan"		# Japanese garrison (better than militia, but still with older equipment)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7	
+	}
+
+	division = {
+		name = "Manshu Tetsudo Shubitai" # Manchuria Railway Guard
+		location = 11771 #Mukden
+		division_template = "Chuton-chi Shidan"		# Japanese garrison (better than militia, but still with older equipment)
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7	
+	}
+
+
+	division = {
+		name = "Kantogun Shureibu Keibitai"
+		location = 4572 #Hsinking
+		division_template = "Chuton-chi Shidan"		# Japanese garrison (better than militia, but still with older equipment)
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7		
 	}
 
 	division = {
@@ -139,6 +164,26 @@ units = {
 			name_order = 19
 		}
 		location = 4052 #Pyongyang
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+
+	division = { # "19 'Tora' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 4052 #Pyongyang
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+
+	division = { # "9 'Take' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 3944 #Near Changkufeng Lake
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
@@ -163,6 +208,25 @@ units = {
 		start_experience_factor = 0.3
 	}
 
+	division = { # "14 'Sho' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 3843 #Eastern Manchuria
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+
+
+	division = {
+		name = "6 Dokuritsu Shubirentai"
+		location = 12500
+		division_template = "Chuton-chi Shidan"		# Japanese garrison (better than militia, but still with older equipment)
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		
+	}
 
 	division = {
 		name = "6 Dokuritsu Shubirentai"
@@ -181,6 +245,25 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 		
+	}
+
+	division = {
+		name = "3 Dokuritsu Shubirentai"
+		location = 10521
+		division_template = "Chuton-chi Shidan"		# Japanese garrison (better than militia, but still with older equipment)
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		
+	}
+
+	division = { # "19 'Tora' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 6981 #Pyongyang
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
 	}
 
 	division = { # "19 'Tora' Hohei Shidan"
@@ -211,7 +294,7 @@ instant_effect =
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
-			creator = "JAP"
+			creator = "KIN"
 		}
 		requested_factories = 3
 		progress = 0.1
@@ -221,7 +304,7 @@ instant_effect =
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
-			creator = "JAP" 
+			creator = "KIN" 
 		}
 		requested_factories = 1
 		progress = 0.3
@@ -231,7 +314,7 @@ instant_effect =
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_1
-			creator = "JAP" 
+			creator = "KIN" 
 		}
 		requested_factories = 1
 		progress = 0.4

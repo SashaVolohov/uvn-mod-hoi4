@@ -1,4 +1,4 @@
-version="Alpha_1.0.0"
+version="Alpha_1.1.0"
 tags={
 	"Alternative History"
 	"Balance"
@@ -7,12 +7,14 @@ tags={
 	"National Focuses"
 	"Map"
 }
-name="United Virtual Nations Mod"
 replace_path="common/decisions"
 replace_path="common/national_focus"
 replace_path="events"
 replace_path="history/states"
 replace_path="history/units"
 replace_path="gfx/loadingscreens"
+name="United Virtual Nations Mod"
+picture="Thumbnail.png"
 supported_version="1.12.*"
-path="mod/uvn_mod"
+path="C:/Users/2022/Documents/Paradox Interactive/Hearts of Iron IV/mod/uvn_mod"
+remote_file_id="2939421783"

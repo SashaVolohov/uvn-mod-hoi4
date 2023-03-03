@@ -7,7 +7,7 @@ state={
 	state_category = town
 
 	history={
-		owner = SGK
+		owner = ANI
 		victory_points = {
 			321 5
 		}
@@ -23,7 +23,13 @@ state={
 			}
 			air_base = 3
 		}
-		add_core_of = SGK
+		add_core_of = ANI
+
+		2023.1.1 = {
+			owner = SGK
+			add_core_of = SGK
+		}
+
 	}
 
 	provinces={

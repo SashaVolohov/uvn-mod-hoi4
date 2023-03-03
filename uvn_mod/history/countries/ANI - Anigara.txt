@@ -1,0 +1,37 @@
+﻿capital = 65
+
+starting_train_buffer = 3.0
+set_oob = "ANI_2022"
+
+set_research_slots = 2
+set_stability = 0.25
+set_war_support = 0.1
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "2022.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 75
+	neutrality = 5
+	democratic = 20
+}
+
+recruit_character = ANI_aleksei_tigrov
+

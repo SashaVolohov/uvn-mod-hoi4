@@ -6,15 +6,21 @@ state={
 	state_category = town
 
 	history={
-		owner = TTS
+		owner = MAN
 		add_core_of = CHI
-		add_core_of = TTS
+		add_core_of = MAN
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 1
 		}
+
+		2023.1.1 = {
+			owner = TTS
+			add_core_of = TTS
+		}
+
 
 	}
 

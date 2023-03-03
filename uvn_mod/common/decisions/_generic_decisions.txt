@@ -68,6 +68,14 @@ political_actions = {
 
 		available = {
 			has_stability < 1.0
+			if = {
+				limit = {
+					tag = SPR
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
 		}
 
 		visible = {
@@ -98,11 +106,98 @@ political_actions = {
 				has_stability < 0.6
 				has_political_power > 155 #Spend on other things first
 			}
+			modifier = {
+				factor = 0
+				original_tag = SPR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
 		}
 	}
 }
 
 economy_decisions = {
+
+	dismantle_maginot = {
+
+		icon = generic_construction
+
+		allowed = {
+			NOT = { OR = { original_tag = GER original_tag = FRA } }
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		days_remove = 200
+
+		available = {
+			controls_state = 28
+			if = {
+				limit = {
+					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
+				}
+				controls_state = 18
+				controls_state = 29
+			}
+		}
+
+		visible = {
+			FRA = {
+				any_owned_state = {
+					is_controlled_by = ROOT
+				}
+			}
+			NOT = { is_in_faction_with = FRA }
+		}
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		complete_effect = {
+			28 = {
+				set_building_level = {
+					type = bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						level > 2
+					}
+				}
+			}
+			if = {
+				limit = {
+					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
+				}
+				18 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							level > 2
+						}
+					}
+				}
+				29 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							level > 2
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_protected_by_the_maginot_line
+				}
+				remove_ideas = FRA_protected_by_the_maginot_line
+			}
+		}
+	}
 
 	restructure_supply_system = { #one time boost to get a few cheap supply hubs
 
@@ -184,6 +279,23 @@ propaganda_efforts = {
 		available = {
 			NOT = { has_country_flag = war_propaganda_campaign_running }
 			has_war_support < 0.5
+			
+			if = {
+				limit = {
+					tag = SPR
+					has_dlc = "La Resistance"
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
+			if = {
+				limit = {
+					original_tag = SPR
+					has_dlc = "La Resistance"
+				}
+				has_global_flag = scw_over
+			}
 		}
 
 		visible = {
@@ -418,6 +530,115 @@ propaganda_efforts = {
 					has_idea = limited_conscription
 					has_idea = extensive_conscription
 				}
+			}
+		}
+	}
+	
+	war_propaganda_radio_industry = { 
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			threat > 0.25
+			has_tech = radio
+		}
+
+		visible = {
+			if = {
+				limit = {
+					tag = SPR
+					has_dlc = "La Resistance"
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
+			if = {
+				limit = {
+					original_tag = SPR
+					has_dlc = "La Resistance"
+				}
+				has_global_flag = scw_over
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 75
+
+		complete_effect = {
+			add_war_support = 0.05
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 201
+				has_war_support < 0.6
+			}
+		}
+	}
+	
+	war_propaganda_film_industry = { 
+
+		icon = generic_prepare_civil_war
+
+		available = { 
+			has_war_with_non_exiled_country = yes
+			OR = {
+				is_major = yes
+				any_allied_country = {
+					is_major = yes
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_government = fascism }
+				}
+				threat > 0.5
+			}
+			else = {
+				threat > 0.30
+			}
+		}
+
+		visible = {
+			if = {
+				limit = {
+					tag = SPR
+					has_dlc = "La Resistance"
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
+			if = {
+				limit = {
+					original_tag = SPR
+					has_dlc = "La Resistance"
+				}
+				has_global_flag = scw_over
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 100 
+
+		complete_effect = {
+			effect_tooltip = {
+				add_war_support = 0.10
+			}
+			hidden_effect = {
+				country_event = political.33
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 201
+				has_war_support < 0.6
 			}
 		}
 	}
@@ -1131,8 +1352,13 @@ operations = {
 				country_event = { id = wtt_news.41 hours = 6}
 			}
 			effect_tooltip = {
-				add_war_support = -0.05
-				add_stability = -0.05
+				if = {
+					limit = {
+						USA = { owns_state = 685 }
+					}
+					add_war_support = -0.05
+					add_stability = -0.05
+				}
 			}
 		}
 		ai_will_do = {
@@ -1153,6 +1379,14 @@ operations = {
 						}
 					}
 				}
+			}
+			modifier = {
+				factor = 200 # Always blow up the canal as JAP or GER when at war with USA (priority)
+				OR = {
+					is_in_faction_with = JAP
+					is_in_faction_with = GER
+				}
+				has_war_with = USA
 			}
 		}
 	}
@@ -1213,12 +1447,18 @@ special_projects = {
 						}
 					}
 				}
+				has_war_with = ITA
+				ITA = { surrender_progress > 0.1 }
 				has_full_control_of_state = 447
 				has_full_control_of_state = 454
 				has_full_control_of_state = 452
 				has_full_control_of_state = 456
 				has_full_control_of_state = 457
 				NOT = { has_country_flag = blew_up_suez }
+			}
+			modifier = {
+				factor = 200 # Prioritize if UK
+				tag = ENG
 			}
 			modifier = {
 				factor = 10 # Prioritize if not at war
@@ -1275,11 +1515,18 @@ special_projects = {
 			modifier = {
 				factor = 0 # Don't bother if your navy is weak AND not USA
 				has_navy_size = { size < 50 }
+				NOT = { tag = USA }
 				has_war = yes
 			}
 			modifier = {
 				factor = 200 # Prioritize if you decisively beat USA's navy
+				has_war_with = USA
+				USA = { has_navy_size = { size < 50 } }
 				has_navy_size = { size > 100 }
+			}
+			modifier = {
+				factor = 200 # Prioritize if USA
+				tag = USA
 			}
 			modifier = {
 				factor = 10 # Prioritize if not at war
@@ -1441,7 +1688,12 @@ war_measures = {
 			}
 		}
 		complete_effect = {
-		
+			if = {
+				limit = {
+					tag = CAN
+				}
+				country_event = { id = canada_vanilla.1 hours = 6 } # Ronnie the Bren Gun Girl
+			}
         }
    }
 
@@ -1480,6 +1732,7 @@ war_measures = {
         }
         visible = {
             has_war = yes
+            NOT = { tag = SPC }
         }
 
         fire_only_once = no
@@ -1497,6 +1750,12 @@ war_measures = {
 			modifier = {
 				has_political_power < 100
 				factor = 0 #use as pp dump
+			}
+
+			modifier = {
+				factor = 0
+				original_tag = SOV
+				SOV_save_pp_for_manpower_trouble = yes
 			}
 		}
 
@@ -1584,6 +1843,12 @@ foreign_politics = {
         	NOT = { has_war_with = FROM }
         	any_enemy_country = {
 				has_attache_from = FROM
+			}
+			NOT = {
+				AND = {
+					original_tag = SPR
+					has_completed_focus = SPR_regional_defense_council_of_aragon
+				}
 			}
 		}
 

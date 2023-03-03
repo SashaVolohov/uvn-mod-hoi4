@@ -20,4 +20,34 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/REA/REA_council_federation.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_DUS_infrastructure"
+		texturefile = "gfx/interface/ideas/DUS/DUS_infrastructure.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_DUS_defective_democracy"
+		texturefile = "gfx/interface/ideas/DUS/DUS_defective_democracy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_DUS_neutral_idea"
+		texturefile = "gfx/interface/ideas/DUS/DUS_neutral_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_TEX_iron_communism"
+		texturefile = "gfx/interface/ideas/TEX/TEX_iron_communism.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_TEX_Destabilization"
+		texturefile = "gfx/interface/ideas/TEX/TEX_Destabilization.dds"
+	}
+        
+    spriteType = {
+		name = "GFX_idea_TEX_revolutionary_sentiments"
+		texturefile = "gfx/interface/ideas/TEX/TEX_revolutionary_sentiments.dds"
+	}
+
 }

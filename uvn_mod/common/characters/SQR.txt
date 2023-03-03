@@ -1,0 +1,33 @@
+characters={
+
+	SQR_tymur_slyva={
+		name=SQR_tymur_slyva
+		portraits={
+			civilian={
+				large=GFX_portrait_SQR_tymur_slyva
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ }
+			expire="2100.1.1.1"
+			id=-1
+		}
+	}
+
+	SQR_kirill_tishkov={
+		name=DUS_kirill_tishkov
+		portraits={
+			civilian={
+				large=GFX_portrait_SQR_kirill_tishkov
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="2100.1.1.1"
+			id=-1
+		}
+	}
+
+}

@@ -12,13 +12,13 @@ state = {
 	}
 
 	history = {
-		owner = KOM
+		owner = TTS
 		buildings = {
 			infrastructure = 1
 
 		}
+		add_core_of = TTS
 		add_core_of = KOM
-		add_core_of = REA
 	}
 
 	provinces = {

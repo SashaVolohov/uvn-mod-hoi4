@@ -15,4 +15,34 @@ spriteTypes = {
 		texturefile = "gfx/leaders/REA/portrait_REA_bogdan_zybov.dds"
 	}
 
+	spriteType = {
+		name = "GFX_portrait_DUS_ivan_rezchikov"
+		texturefile = "gfx/leaders/DUS/portrait_DUS_ivan_rezchikov.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_BAV_albert_muller"
+		texturefile = "gfx/leaders/BAV/portrait_BAV_albert_muller.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ANI_aleksei_tigrov"
+		texturefile = "gfx/leaders/ANI/portrait_ANI_aleksei_tigrov.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_MAN_roma_korti"
+		texturefile = "gfx/leaders/MAN/portrait_MAN_roma_korti.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_SQR_kirill_tishkov"
+		texturefile = "gfx/leaders/SQR/portrait_SQR_kirill_tishkov.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_SQR_tymur_slyva"
+		texturefile = "gfx/leaders/SQR/portrait_SQR_tymur_slyva.dds"
+	}
+
 }

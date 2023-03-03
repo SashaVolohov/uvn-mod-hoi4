@@ -12,7 +12,10 @@ state = {
 		}
 		owner = IND
 		buildings = {
-			infrastructure = 1
+			infrastructure = 5
+			industrial_complex = 10
+			arms_factory = 10
+
 		}
 		add_core_of = IND
 		add_core_of = TAY

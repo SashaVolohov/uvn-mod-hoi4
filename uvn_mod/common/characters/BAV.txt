@@ -1,0 +1,18 @@
+characters={
+
+	BAV_albert_muller={
+		name=BAV_albert_muller
+		portraits={
+			civilian={
+				large=GFX_portrait_BAV_albert_muller
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={ }
+			expire="2100.1.1.1"
+			id=-1
+		}
+	}
+
+}

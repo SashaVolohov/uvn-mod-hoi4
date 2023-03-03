@@ -11,7 +11,7 @@ state={
 
 
 	history={
-		owner = SGK
+		owner = ANI
 		buildings = {
 			infrastructure = 4
 			arms_factory = 2
@@ -23,7 +23,13 @@ state={
 		victory_points = {
 			3535 5 
 		}
-		add_core_of = SGK
+		add_core_of = ANI
+
+		2023.1.1 = {
+			owner = SGK
+			add_core_of = SGK
+		}
+
 	}
 
 	provinces={

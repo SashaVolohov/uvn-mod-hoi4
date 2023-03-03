@@ -105,4 +105,25 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news_event_REA_nikita_take_power.dds"
 	}
 
+	spriteType = {
+		name = "GFX_news_event_DUS_BEL_colony"
+		texturefile = "gfx/event_pictures/news_event_DUS_BEL_colony.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_DUS_zag_found"
+		texturefile = "gfx/event_pictures/news_event_DUS_zag_found.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_DUS_zag_passed"
+		texturefile = "gfx/event_pictures/news_event_DUS_zag_passed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_TEX_Gropkiy"
+		texturefile = "gfx/event_pictures/news_event_TEX_Gropkiy.dds"
+	}
+
+
 }

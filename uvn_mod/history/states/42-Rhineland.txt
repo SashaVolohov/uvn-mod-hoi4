@@ -11,7 +11,7 @@ state={
 	state_category = metropolis
 
 	history={
-		owner = DUS
+		owner = BAV
 		victory_points = { 11435 1 }
 		victory_points = { 11531 5 }
 		buildings = {
@@ -19,7 +19,13 @@ state={
 			industrial_complex = 3
 
 		}
-		add_core_of = DUS
+		add_core_of = BAV
+
+		2023.1.1 = {
+			owner = DUS
+			add_core_of = DUS
+		}
+
 	
 	}
 
