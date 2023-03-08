@@ -786,7 +786,7 @@ focus_tree = {
 
 		completion_reward = {
 
-			recruit_character = REA_nikita_afanasiev
+			show_ideas_tooltip = REA_nikita_afanasiev
 
 		}
 

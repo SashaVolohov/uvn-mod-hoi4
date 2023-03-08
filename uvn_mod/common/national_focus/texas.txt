@@ -1,5 +1,5 @@
 focus_tree = {
-	id = Texas
+	id = TEX
 	country = {
 		factor = 0
 		modifier = {
@@ -9,70 +9,423 @@ focus_tree = {
 	}
 	default = no
 	focus = {
-		id = TEX_On_the_start
-		icon = GFX_goal_generic_demand_territory
-		cost = 10,00
-		x = 22
+		id = TEX_New_standards
+		icon = GFX_focus_generic_secret_service_agency
+		cost = 5
+		mutually_exclusive = {
+			focus = TEX_Old_Sector
+		}
+		x = 72
 		y = 0
-			completion_reward = {
-					add_political_power = 100
+                completion_reward = {
+					add_political_power = 50
 					add_stability = 0.1
-				}
-
+                                                    }
 	}
 	focus = {
 		id = TEX_Old_Sector
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_BUL_support_macedonian_organizations
+		cost = 10,00
+		mutually_exclusive = {
+			focus = TEX_New_standards
+		}
+		x = 94
+		y = 0
+                completion_reward = {
+					add_political_power = 50
+					add_stability = -0.1
+				}
+
+	}
+	focus = {
+		id = TEX_Reforms
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 5
+		prerequisite = {
+			focus = TEX_New_standards
+		}
+		x = 72
+		y = 1
+                completion_reward = {
+					add_political_power = 50
+                                }
+
+	}
+	focus = {
+		id = TEX_Dem_propaganda
+		icon = GFX_focus_TUR_ratify_the_six_arrows
 		cost = 10,00
 		prerequisite = {
-			focus = TEX_On_the_start
+			focus = TEX_Reforms
 		}
-		mutually_exclusive = {
-			focus = TEX_Why_bother
-			focus = TEX_Dedkov_is_the_true_ruler
-			focus = TEX_New_Government
-		}
-		x = 17
-		y = 1
-			completion_reward = {
-					add_political_power = -50
-					add_popularity = {
-							ideology = communism
-							popularity = 0.1
+		x = 71
+		y = 2
+                completion_reward = {
+					add_political_power = -15
+                                        add_popularity = {
+							ideology = democratic
+							popularity = 0.2
 						}
 				}
 
 	}
 	focus = {
-		id = TEX_Communist_propaganda
-		icon = GFX_focus_TUR_ratify_the_six_arrows
-		cost = 5,00
+		id = TEX_Dedkov
+		icon = GFX_focus_ETH_ecole_militaire_haile_selassie_1er
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_Dem_propaganda
+		}
+		mutually_exclusive = {
+			focus = TEX_Aron
+		}
+		x = 70
+		y = 3
+                completion_reward = {
+					add_political_power = 50
+					add_stability = 0.1
+                                                    }
+
+	}
+	focus = {
+		id = TEX_reduce_powers
+		icon = GFX_focus_POL_complete_april_constitution
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_Dedkov
+		}
+		x = 69
+		y = 5
+                completion_reward = {
+					add_political_power = -50
+					add_stability = 0.2
+                                                    }
+	}
+	focus = {
+		id = TEX_neu
+		icon = GFX_goal_anschluss
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_reduce_powers
+		}
+		mutually_exclusive = {
+			focus = TEX_World_Dem
+		}
+		x = 67
+		y = 6
+                completion_reward = {
+					add_political_power = -15
+                  add_popularity = {
+							ideology = neutrality
+							popularity = 0.2
+}
+				}
+	}
+	focus = {
+		id = TEX_Dedkov_Prez
+		icon = GFX_focus_SOV_approach_semyonov
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_Dedkov
+		}
+		x = 71
+		y = 4
+                completion_reward = {
+                                        hidden_effect = {
+							news_event = {
+									hours = 2
+									id = news.1027
+								}
+						}
+					add_political_power = -100
+				        promote_character = {
+                                        character = TEX_Mark_Dedkov
+                                        ideology = liberalism
+
+} 
+                             }	
+}
+
+	focus = {
+		id = TEX_World_Dem
+		icon = GFX_focus_ITA_devaluate_the_lire
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_reduce_powers
+		}
+		prerequisite = {
+			focus = TEX_Dedkov_Prez
+		}
+		mutually_exclusive = {
+			focus = TEX_neu
+		}
+		x = 71
+		y = 6
+                completion_reward = {
+                       add_political_power = 100
+                       add_popularity = {
+					ideology = democratic      !####ADDIDEA####!
+					popularity = 0.15
+                                        }
+				    }
+	}
+	focus = {
+		id = TEX_kaz_fra
+		icon = GFX_goal_generic_improve_relations
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_World_Dem
+		}
+		mutually_exclusive = {
+			focus = TEX_kaz_War
+		}
+		x = 70
+		y = 7
+                completion_reward = {
+                       add_political_power = 50
+                       CAU = {
+				add_opinion_modifier = {
+						target = TEX
+						modifier = TEX_KIN_diplomacy_focus
+								}
+						}
+                                    }
+
+	}
+	focus = {
+		id = TEX_Texas_populism
+		icon = GFX_goal_generic_propaganda
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_Reforms
+		}
+		x = 73
+		y = 2
+
+	}
+	focus = {
+		id = TEX_Aron
+		icon = GFX_focus_generic_improve_the_administration
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_Texas_populism
+		}
+		mutually_exclusive = {
+			focus = TEX_Dedkov
+		}
+		x = 74
+		y = 3
+
+	}
+	focus = {
+		id = TEX_Garan_VGK
+		icon = GFX_goal_generic_defence
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_Dedkov_Prez
+			focus = TEX_Aron
+		}
+		x = 73
+		y = 5
+                 completion_reward = {
+				give_guarantee = SGK
+                                 add_political_power = -50
+                       SGK = {
+				add_opinion_modifier = {
+						target = TEX
+						modifier = TEX_KIN_diplomacy_focus
+								}
+						}	
+                            }
+	}
+	focus = {
+		id = TEX_Dem_Aron
+		icon = GFX_focus_SWI_dissolve_the_federal_council
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_Aron
+		}
+		mutually_exclusive = {
+			focus = TEX_Fas_Aron
+		}
+		x = 76
+		y = 4
+
+	}
+	focus = {
+		id = TEX_Up_powers
+		icon = GFX_focus_usa_honor_the_confederacy
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_Dem_Aron
+		}
+		x = 76
+		y = 5
+
+	}
+	focus = {
+		id = TEX_Fas_Aron
+		icon = GFX_focus_SWI_embrace_panoramaheim
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_Aron
+		}
+		mutually_exclusive = {
+			focus = TEX_Dem_Aron
+		}
+		x = 83
+		y = 4
+
+	}
+	focus = {
+		id = TEX_Aron_Prez
+		icon = GFX_focus_ITA_alcide_de_gasperi
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_Dem_Aron
+			focus = TEX_Dem_Aron
+			focus = TEX_Fas_Aron
+		}
+		x = 79
+		y = 5
+
+	}
+	focus = {
+		id = TEX_Army_Up
+		icon = GFX_focus_generic_license_production
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_Up_powers
+		}
+		prerequisite = {
+			focus = TEX_Aron_Prez
+		}
+		x = 76
+		y = 6
+
+	}
+	focus = {
+		id = TEX_kaz_War
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_World_Dem
+			focus = TEX_Army_Up
+		}
+		mutually_exclusive = {
+			focus = TEX_kaz_fra
+		}
+		x = 75
+		y = 7
+                completion_reward = {
+                                     create_wargoal = {
+                                      type = puppet_wargoal_focus
+                                      target = CAU
+                                                       }
+                                    }
+	}
+	focus = {
+		id = TEX_rea_up
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_kaz_fra
+			focus = TEX_kaz_War
+		}
+		x = 72
+		y = 8
+                completion_reward = {
+                       add_political_power = 50
+                       REA = {
+				add_opinion_modifier = {
+						target = TEX
+						modifier = TEX_KIN_diplomacy_focus
+								}
+						}
+                                    }
+	}
+	focus = {
+		id = TEX_Velik_Uniko
+		icon = GFX_focus_generic_armored_air_support
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_Aron_Prez
+		}
+		prerequisite = {
+			focus = TEX_Fas_Aron
+		}
+		x = 83
+		y = 6
+
+	}
+	focus = {
+		id = TEX_march_great_Nation
+		icon = GFX_focus_generic_women_in_military
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_Velik_Uniko
+		}
+		x = 82
+		y = 7
+
+	}
+	focus = {
+		id = TEX_Fas_ruling
+		icon = GFX_focus_BUL_the_return_of_ferdinand
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_march_great_Nation
+		}
+		x = 80
+		y = 8
+
+	}
+	focus = {
+		id = TEX_dus_war
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_Fas_ruling
+		}
+		mutually_exclusive = {
+			focus = TEX_dus_fra
+		}
+		x = 79
+		y = 10
+
+	}
+	focus = {
+		id = TEX_com_propaganda
+		icon = GFX_goal_support_communism
+		cost = 10,00
 		prerequisite = {
 			focus = TEX_Old_Sector
 		}
-		x = 13
+		x = 92
+		y = 1
+
+	}
+	focus = {
+		id = TEX_Big_parad
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_com_propaganda
+		}
+		x = 92
 		y = 2
-			completion_reward = {
-					add_popularity = {
-							ideology = communism
-							popularity = 0.1
-						}
-				}
 
 	}
 	focus = {
 		id = TEX_foreign_example
-		icon = GFX_focus_SOV_international_union_of_soviet_republics
-		cost = 10,00
-		prerequisite = {
-			focus = TEX_Communist_propaganda
-		}
+		icon = GFX_focus_ETH_callout_to_the_world
+		cost = 5
 		prerequisite = {
 			focus = TEX_Old_Sector
 		}
-		x = 15
-		y = 3
-			completion_reward = {
+		x = 96
+		y = 1
+                completion_reward = {
 					hidden_effect = {
 							news_event = {
 									hours = 3
@@ -98,17 +451,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = TEX_an_unfortunate_example
-		icon = GFX_focus_RAJ_seek_help_from_soviet
+		id = TEX_Zapros_inos
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
 		cost = 10,00
 		prerequisite = {
 			focus = TEX_foreign_example
 		}
-		x = 13
-		y = 4
-			completion_reward = {
-					add_political_power = -30
-				}
+		x = 96
+		y = 2
 
 	}
 	focus = {
@@ -116,154 +466,116 @@ focus_tree = {
 		icon = GFX_focus_SOV_the_last_purge
 		cost = 10,00
 		prerequisite = {
-			focus = TEX_an_unfortunate_example
-		}
-		mutually_exclusive = {
-			focus = TEX_Peaceful_parish
-		}
-		x = 11
-		y = 5
-			completion_reward = {
-					add_political_power = -100
-					add_ideas = TEX_revolutionary_sentiments
-				}
-			focus = {
-					id = TEX_Velik_Uniko
-					icon = GFX_focus_ITA_corpo_volontari_della_liberta
-					cost = 10,00
-					prerequisite = {
-							focus = TEX_New_Government
-						}
-					x = 28
-					y = 2
-				}
-			focus = {
-					id = TEX_March_of_a_Great_Nation
-					icon = GFX_focus_generic_women_in_military
-					cost = 10,00
-					prerequisite = {
-							focus = TEX_Velik_Uniko
-						}
-					x = 26
-					y = 3
-				}
-			focus = {
-					id = TEX_fraud
-					icon = GFX_focus_SWI_embrace_rote_drei
-					cost = 10,00
-					prerequisite = {
-							focus = TEX_March_of_a_Great_Nation
-						}
-					x = 28
-					y = 4
-				}
-
-	}
-	focus = {
-		id = TEX_Peaceful_parish
-		icon = GFX_goal_generic_propaganda
-		cost = 5,00
-		prerequisite = {
-			focus = TEX_an_unfortunate_example
+			focus = TEX_Big_parad
 		}
 		prerequisite = {
-			focus = TEX_Communist_propaganda
+			focus = TEX_Zapros_inos
 		}
-		mutually_exclusive = {
-			focus = TEX_Revolution_on_the_threshold
-		}
-		x = 15
-		y = 5
-			completion_reward = {
-					add_political_power = 60
-					add_popularity = {
-							ideology = communism
-							popularity = 0.05
-						}
-				}
-
+		x = 94
+		y = 3
+                completion_reward = {
+                                      add_ideas =  {
+                                                  idea = TEX_revolutionary_sentiments
+                                                   }
+                                    }
 	}
 	focus = {
-		id = TEX_Why_bother
-		icon = GFX_focus_generic_secret_service_agency
+		id = TEX_New_Kons
+		icon = GFX_focus_generic_treaty
 		cost = 10,00
 		prerequisite = {
-			focus = TEX_On_the_start
+			focus = TEX_neu
 		}
-		mutually_exclusive = {
-			focus = TEX_Old_Sector
-			focus = TEX_Dedkov_is_the_true_ruler
-			focus = TEX_New_Government
-		}
-		x = 20
-		y = 1
-
-	}
+		x = 67
+		y = 7
+                completion_reward = {
+	           set_politics = {
+							ruling_party = neutrality
+						}
+              }
+        }
 	focus = {
-		id = TEX_Dedkov_is_the_true_ruler
-		icon = GFX_goal_support_democracy
+		id = TEX_rea_pact
+		icon = GFX_goal_tripartite_pact
 		cost = 10,00
 		prerequisite = {
-			focus = TEX_On_the_start
+			focus = TEX_rea_up
 		}
-		mutually_exclusive = {
-			focus = TEX_Old_Sector
-			focus = TEX_Why_bother
-			focus = TEX_New_Government
-		}
-		x = 24
-		y = 1
+		x = 72
+		y = 9
 
 	}
 	focus = {
-		id = TEX_New_Government
-		icon = GFX_focus_SWI_dissolve_the_federal_council
+		id = TEX_dus_fra
+		icon = GFX_goal_generic_major_alliance
 		cost = 10,00
 		prerequisite = {
-			focus = TEX_On_the_start
+			focus = TEX_rea_pact
 		}
 		mutually_exclusive = {
-			focus = TEX_Old_Sector
-			focus = TEX_Why_bother
-			focus = TEX_Dedkov_is_the_true_ruler
+			focus = TEX_dus_war
 		}
-		x = 27
-		y = 1
+		x = 74
+		y = 10
 
 	}
 	focus = {
-		id = TEX_New_horizons
-		icon = GFX_focus_GRE_reviving_the_double_headed_eagle
+		id = TEX_Oleg_war
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_dus_war
+		}
+		mutually_exclusive = {
+			focus = TEX_Oleg_fra
+		}
+		x = 78
+		y = 12
+
+	}
+	focus = {
+		id = TEX_Oleg_fra
+		icon = GFX_goal_generic_national_unity
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_dus_fra
+			focus = TEX_dus_war
+		}
+		mutually_exclusive = {
+			focus = TEX_Oleg_war
+		}
+		x = 75
+		y = 12
+
+	}
+	focus = {
+		id = TEX_Boom_TNR
+		icon = GFX_goal_poland_goal
 		cost = 10,00
 		prerequisite = {
 			focus = TEX_Revolution_on_the_threshold
 		}
-		x = 8
-		y = 6
-
-	}
-	focus = {
-		id = TEX_propaganda
-		icon = GFX_focus_hol_the_foundations_of_defense
-		cost = 10,00
-		prerequisite = {
-			focus = TEX_Revolution_on_the_threshold
-		}
-		x = 11
-		y = 6
+		x = 94
+		y = 4
 
 	}
 	focus = {
 		id = TEX_Communist_Triumph
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_por_workers_of_iberia
 		cost = 10,00
 		prerequisite = {
-			focus = TEX_Revolution_on_the_threshold
+			focus = TEX_Boom_TNR
 		}
-		x = 5
-		y = 6
-			completion_reward = {
-					add_popularity = {
+		x = 94
+		y = 5
+                completion_reward = {
+					hidden_effect = {
+							news_event = {
+									hours = 2
+									id = news.1026
+								}
+						}
+                               add_popularity = {
 							ideology = communism
 							popularity = 0.50
 						}
@@ -274,10 +586,140 @@ focus_tree = {
                                           ideology = democratic
                                           size = 0.5
                                           capital = 375
-                                          states = { 386 385 378 379 384 377 380 382 376 375 374 383 384 392 373 372 371 370 368 369 261 816 360 359 480 479 478 277 477 485 476 475 313 474 311 314 312 317 316 304 685 484 }
+                                          states = { 386 385 378 379 384 377 380 382 376 375 374 383 384 392 373 372 371 370 368 369 261 816 360 359 480 479 478 277 477 485 476 475 313 474 311 314 312 317 316 304 685 484 478 }
 
 }
 				}
+	}
+	focus = {
+		id = TEX_Grop
+		icon = GFX_focus_SWI_embrace_rote_drei
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_Communist_Triumph
+		}
+		x = 91
+		y = 6
+
+	}
+	focus = {
+		id = TEX_dus_pact
+		icon = GFX_goal_tripartite_pact
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_Grop
+		}
+		x = 89
+		y = 7
+
+	}
+	focus = {
+		id = TEX_vic_free
+		icon = GFX_focus_ITA_il_sol_dell_avvenire
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_Grop
+		}
+		x = 93
+		y = 7
+
+	}
+	focus = {
+		id = TEX_oleg_war_com
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_vic_free
+			focus = TEX_dus_pact
+		}
+		x = 91
+		y = 8
+
+	}
+	focus = {
+		id = TEX_world_revolution
+		icon = GFX_focus_spr_anarchism_knows_no_borders
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_oleg_war_com
+		}
+		mutually_exclusive = {
+			focus = TEX_Stop
+		}
+		x = 92
+		y = 9
+
+	}
+	focus = {
+		id = TEX_Stop
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_Communist_Triumph
+			focus = TEX_oleg_war_com
+		}
+		mutually_exclusive = {
+			focus = TEX_world_revolution
+		}
+		x = 97
+		y = 9
+
+	}
+	focus = {
+		id = TEX_war_flu
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_world_revolution
+		}
+		x = 92
+		y = 10
+
+	}
+	focus = {
+		id = TEX_war_Ind
+		icon = GFX_focus_focus_fra_revolution_upmost
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_war_flu
+		}
+		x = 91
+		y = 11
+
+	}
+	focus = {
+		id = TEX_fra_ind
+		icon = GFX_goal_generic_improve_relations
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_war_flu
+		}
+		x = 93
+		y = 11
+
+	}
+	focus = {
+		id = TEX_com_cons
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_Stop
+		}
+		x = 97
+		y = 10
+
+	}
+	focus = {
+		id = TEX_only_party
+		icon = GFX_focus_SOV_the_supreme_soviet
+		cost = 10,00
+		prerequisite = {
+			focus = TEX_fra_ind
+			focus = TEX_com_cons
+			focus = TEX_war_Ind
+		}
+		x = 95
+		y = 12
 
 	}
 }

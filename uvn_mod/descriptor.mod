@@ -1,4 +1,4 @@
-version="Alpha_1.2.0"
+version="Alpha_1.2.1"
 tags={
 	"Alternative History"
 	"Balance"
@@ -16,4 +16,5 @@ replace_path="gfx/loadingscreens"
 name="United Virtual Nations Mod"
 picture="Thumbnail.png"
 supported_version="1.12.*"
+path="mod/uvn_mod"
 remote_file_id="2939421783"

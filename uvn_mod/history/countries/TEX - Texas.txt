@@ -43,31 +43,10 @@ set_popularities = {
 add_ideas = {
 	TEX_Destabilization
 }
-create_country_leader = {
-    name = "Марк Дедков"
-    desc = ""
-    picture = "gfx/leaders/TEX/TEX_dem.dds"
-    expire = "2100.1.1"
-    ideology = liberalism
-}
-create_country_leader = {
-    name = "Арон Кузнецкий"
-    desc = ""
-    picture = "gfx/leaders/TEX/TEX_fas.dds"
-    expire = "2100.1.1"
-    ideology = fascism_ideology
-}
-create_country_leader = {
-    name = "Техасская Народная Потремна"
-    desc = ""
-    picture = "gfx/leaders/TEX/TEX_neu.dds"
-    expire = "2100.1.1"
-    ideology = despotism
-}
-create_country_leader = {
-    name = "Владимир Гропкий"
-    desc = ""
-    picture = "gfx/leaders/TEX/TEX_com.dds"
-    expire = "2100.1.1"
-    ideology = leninism
-}
+
+recruit_character = TEX_Aron_Kuznezkiy_dem
+recruit_character = TEX_Vladimir_Gropkiy
+recruit_character = TEX_Potremna
+recruit_character = TEX_Mark_Dedkov
+recruit_character = TEX_Aron_Kuznezkiy
+

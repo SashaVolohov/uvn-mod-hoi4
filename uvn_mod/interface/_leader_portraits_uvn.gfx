@@ -55,4 +55,34 @@ spriteTypes = {
 		texturefile = "gfx/leaders/REA/portrait_REA_andrey_shevchenko.dds"
 	}
 
+	spriteType = {
+		name = "GFX_portrait_REA_nikita_afanasiev"
+		texturefile = "gfx/leaders/REA/portrait_REA_nikita_afanasiev.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_TEX_Aron_Kuznezkiy"
+		texturefile = "gfx/leaders/TEX/portrait_TEX_Aron_Kuznezkiy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_TEX_Aron_Kuznezkiy_dem"
+		texturefile = "gfx/leaders/TEX/portrait_TEX_Aron_Kuznezkiy_dem.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_TEX_Mark_Dedkov"
+		texturefile = "gfx/leaders/TEX/portrait_TEX_Mark_Dedkov.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_TEX_Potremna"
+		texturefile = "gfx/leaders/TEX/portrait_TEX_Potremna.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_TEX_Vladimir_Gropkiy"
+		texturefile = "gfx/leaders/TEX/portrait_TEX_Vladimir_Gropkiy.dds"
+	}
+
 }

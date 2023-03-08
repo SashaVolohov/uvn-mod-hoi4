@@ -61,7 +61,7 @@ characters={
 		name=REA_nikita_afanasiev
 		portraits={
 			civilian={
-				large=GFX_portrait_REA_sasha_volohov
+				large=GFX_portrait_REA_nikita_afanasiev
 			}
 			army={
 				small="GFX_idea_REA_nikita_afanasiev"
@@ -75,6 +75,7 @@ characters={
 			}
 			available = {
 				has_government = democratic
+				has_completed_focus = REA_new_politics
 			}
 			ai_will_do = {
 				factor = 30.000
