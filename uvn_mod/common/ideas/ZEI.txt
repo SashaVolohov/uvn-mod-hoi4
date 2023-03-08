@@ -1,0 +1,260 @@
+ideas = {
+
+	country = {
+		ZEI_uvco_member = {
+
+			picture = REA_uvco_member
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.1
+				trade_opinion_factor = -0.1
+				improve_relations_maintain_cost_factor = 0.1
+			}
+		}
+
+		ZEI_colonies = {
+
+			picture = generic_acquire_tanks
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				annex_cost_factor = -0.5
+				puppet_cost_factor = -0.5
+				send_volunteer_factor = 0.5
+			}
+		}
+
+		ZEI_electricity = {
+
+			picture = generic_local_self_management
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.3
+				political_power_gain = -0.3
+				stability_factor = -0.3
+			}
+		}
+
+		ZEI_military_propaganda = {
+
+			picture = generic_army_war_college
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_stability_factor = 0.5
+				equipment_capture_factor = 0.3
+				license_purchase_cost = 0.3
+				
+			}
+		}
+
+		ZEI_zach = {
+
+			picture = ZEI_zach
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.2
+				war_support_factor = -0.2
+				stability_factor = 0.1
+			}
+
+		}
+
+		ZEI_destroy_coal_idea = {
+			picture = Generic_exploit_mines
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				nuclear_production_factor = 0.1
+				local_resources_factor = 0.1
+				trade_opinion_factor = 0.1
+			}
+		}
+
+		ZEI_uvn_member = {
+
+			picture = generic_political_support
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = -0.2
+				trade_opinion_factor = 0.2
+				improve_relations_maintain_cost_factor = -0.2
+			}
+		}
+
+		ZEI_water_looking_show_idea = {
+			picture = generic_flexible_foreign_policy
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = 0.05
+				political_power_factor = 0.1
+				stability_factor = 0.1
+			}
+		}
+
+		ZEI_democratic_reforms_idea = {
+			picture = generic_foreign_capital
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = 0.1
+				improve_relations_maintain_cost_factor = 0.1
+				democratic_drift = 0.1
+			}
+		}
+
+		ZEI_cult_of_nikita_idea = {
+			picture = carl_V_wilhelm
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				defensive_war_stability_factor = 0.2
+				party_popularity_stability_factor = 0.1
+				political_power_factor = 0.2
+			}
+		}
+
+		ZEI_air_idea = {
+			
+			allowed = {
+				original_tag = ZEI
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_air_bonus
+
+			modifier = {
+				air_volunteer_cap = 0.10
+				air_fuel_consumption_factor = -0.10
+				industry_air_damage_factor = -0.10
+
+			}
+
+		}
+
+		ZEI_good_zach = {
+			picture = ZEI_good_zach
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.2
+				war_support_factor = 0.2
+				stability_factor = 0.1
+			}
+		}
+
+
+
+	}
+
+}

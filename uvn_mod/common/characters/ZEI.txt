@@ -1,0 +1,33 @@
+characters={
+
+	ZEI_nikita_dorozhkin={
+		name=ZEI_nikita_dorozhkin
+		portraits={
+			civilian={
+				large=GFX_portrait_ZEI_nikita_dorozhkin
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ aggressive_artist hard_colonizer }
+			expire="2100.1.1.1"
+			id=-1
+		}
+	}
+
+	ZEI_nikita_dorozhkin_imperialist={
+		name=ZEI_nikita_dorozhkin
+		portraits={
+			civilian={
+				large=GFX_portrait_ZEI_nikita_dorozhkin
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ aggressive_artist hard_colonizer }
+			expire="2100.1.1.1"
+			id=-1
+		}
+	}
+
+}

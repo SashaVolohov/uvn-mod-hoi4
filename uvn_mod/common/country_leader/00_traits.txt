@@ -8440,5 +8440,29 @@ leader_traits = {
 		}
 	}
 
+	aggressive_artist = {
+		random = no
+
+		political_advisor_cost_factor = -0.2
+		license_production_speed = 0.2
+		production_factory_start_efficiency_factor = 0.2
+		
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	hard_colonizer = {
+		random = no
+
+		political_power_gain = 0.2
+		war_support_factor = 0.2
+		justify_war_goal_time = -0.5
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 
 }

@@ -1,0 +1,30 @@
+﻿#Generic Operative list
+GENERIC_ANI_OPERATIVE_CODENAME_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_OPERATIVES
+
+	# for all English speaking countries
+	for_countries = { ANI }
+
+	type = codename
+
+	fallback_name = "Agent %d"
+
+	unique = {
+		"Царь"
+		"Генрих"
+		"Алексий"
+		"Мааро"
+		"Афгуст"
+		"Тигр"
+		"Бьёр"
+		"Пантера"
+		"Конрод"
+		"Мышь"
+		"Леопард"
+		"Ганц"
+		"Mепись"
+		"Вильхельм"
+		"Григори"
+		"Цезарь"
+	}
+}

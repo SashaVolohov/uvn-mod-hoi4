@@ -45,4 +45,14 @@ spriteTypes = {
 		texturefile = "gfx/leaders/SQR/portrait_SQR_tymur_slyva.dds"
 	}
 
+	spriteType = {
+		name = "GFX_portrait_ZEI_nikita_dorozhkin"
+		texturefile = "gfx/leaders/ZEI/portrait_ZEI_nikita_dorozhkin.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_REA_andrey_shevchenko"
+		texturefile = "gfx/leaders/REA/portrait_REA_andrey_shevchenko.dds"
+	}
+
 }

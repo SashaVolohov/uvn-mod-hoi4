@@ -37,17 +37,20 @@ set_politics = {
 
 set_popularities = {
 	democratic = 50
-	neutrality = 35
+	fascism = 35
 	communism = 15
 }
 
-create_country_leader = {
-    name = "Никита Дорожкин"
-    desc = ""
-    picture = "gfx/leaders/ZEI/ZEI_dem.dds"
-    expire = "2100.1.1"
-    ideology = liberalism
+add_ideas = {
+	ZEI_uvco_member
+	ZEI_colonies
+	ZEI_electricity
+	ZEI_military_propaganda
+	ZEI_zach
 }
+
+recruit_character = ZEI_nikita_dorozhkin
+recruit_character = ZEI_nikita_dorozhkin_imperialist
 
 if = {
 	limit = {
@@ -78,6 +81,11 @@ if = {
 		autonomy_state = autonomy_free
 		end_wars = no
 		end_civil_wars = no
+	}
+
+	remove_ideas = {
+		ZEI_electricity
+		ZEI_zach
 	}
 
 }

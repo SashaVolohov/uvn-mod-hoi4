@@ -1,0 +1,47 @@
+ideas = {
+
+	country = {
+		VIC_nationalism_wildland = {
+
+			picture = POL_looming_peasants_strike
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.1
+				stability_factor = -0.03
+				consumer_goods_factor = 0.03	
+			}
+		}
+		VIC_army_economy = {
+
+			picture = volunteer_only
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+   				production_factory_efficiency_gain_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				experience_gain_army = -0.50
+				political_power_factor = 0.15
+				production_speed_buildings_factor = 0.15			
+			}
+		}
+}
+

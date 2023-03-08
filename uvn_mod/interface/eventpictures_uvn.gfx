@@ -125,5 +125,24 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news_event_TEX_Gropkiy.dds"
 	}
 
+	spriteType = {
+		name = "GFX_news_event_SGK_annex"
+		texturefile = "gfx/event_pictures/news_event_SGK_annex.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_SGK_war"
+		texturefile = "gfx/event_pictures/news_event_SGK_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_REA_ZEI_pact_empire"
+		texturefile = "gfx/event_pictures/report_event_REA_ZEI_pact_empire.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_REA_ZEI_faction_empire"
+		texturefile = "gfx/event_pictures/news_event_REA_ZEI_faction_empire.dds"
+	}
 
 }

@@ -50,4 +50,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/TEX/TEX_revolutionary_sentiments.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_ZEI_zach"
+		texturefile = "gfx/interface/ideas/ZEI/ZEI_zach.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ZEI_good_zach"
+		texturefile = "gfx/interface/ideas/ZEI/ZEI_good_zach.dds"
+	}
+
 }

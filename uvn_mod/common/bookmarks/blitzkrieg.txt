@@ -30,11 +30,16 @@ bookmarks = {
 			ideology = neutrality
 			ideas = {
 				
-				
+				ZEI_uvco_member
+				ZEI_colonies
+				ZEI_electricity
 				
 			}
 			focuses = {
 				
+				ZEI_cult_of_nikita
+				ZEI_declare_empire
+				ZEI_end_of_colony
 				
 				
 			}

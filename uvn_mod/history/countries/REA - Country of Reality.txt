@@ -43,6 +43,7 @@ set_popularities = {
 
 recruit_character = REA_sasha_volohov
 recruit_character = REA_hail_volohov
+recruit_character = REA_andrey_shevchenko
 
 add_ideas = {
 	REA_uvco_member

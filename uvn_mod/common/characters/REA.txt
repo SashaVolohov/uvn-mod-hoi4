@@ -43,6 +43,20 @@ characters={
 		}
 	}
 
+	REA_andrey_shevchenko={
+		name=REA_andrey_shevchenko
+		portraits={
+			civilian={
+				large=GFX_portrait_REA_andrey_shevchenko
+			}
+		}
+		country_leader={
+			ideology=centrism
+			expire="2100.1.1.1"
+			id=-1
+		}
+	}
+
 	REA_nikita_afanasiev={
 		name=REA_nikita_afanasiev
 		portraits={

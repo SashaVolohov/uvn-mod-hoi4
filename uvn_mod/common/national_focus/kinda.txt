@@ -1,0 +1,1327 @@
+focus_tree = {
+	id = kinda
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KIN
+		}
+	}
+	default = no
+	focus = {
+		id = KIN_isolation
+		text = KIN_isolation
+		icon = GFX_goal_generic_fortify_city
+		cost = 10,00
+		mutually_exclusive = {
+			focus = KIN_open
+		}
+		x = 30
+		y = 0
+
+	}
+	focus = {
+		id = KIN_open
+		text = KIN_open
+		icon = GFX_focus_POL_support_global_falangism
+		cost = 10,00
+		mutually_exclusive = {
+			focus = KIN_isolation
+		}
+		x = 7
+		y = 0
+
+	}
+	focus = {
+		id = KIN_open_dem
+		icon = GFX_goal_support_democracy
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_open
+		}
+		mutually_exclusive = {
+			focus = KIN_open_com
+		}
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = KIN_dem_stability
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_open_dem
+		}
+		x = 1
+		y = 2
+
+	}
+	focus = {
+		id = KIN_dem_parlament
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_dem_stability
+		}
+		x = 1
+		y = 3
+
+	}
+	focus = {
+		id = KIN_dem_REA_relations
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_open_dem
+		}
+		x = 3
+		y = 2
+
+	}
+	focus = {
+		id = KIN_dem_ZEI_relations
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_dem_REA_relations
+		}
+		x = 3
+		y = 3
+
+	}
+	focus = {
+		id = KIN_dem_neutral
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_dem_ZEI_relations
+			focus = KIN_dem_parlament
+		}
+		mutually_exclusive = {
+			focus = KIN_dem_radical
+		}
+		x = 1
+		y = 4
+
+	}
+	focus = {
+		id = KIN_ndem_OIPT
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_dem_neutral
+		}
+		x = 1
+		y = 5
+
+	}
+	focus = {
+		id = KIN_ndem_OIPT_ZEI_invite
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_ndem_OIPT
+		}
+		x = 3
+		y = 6
+
+	}
+	focus = {
+		id = KIN_ndem_OIPT_REA_invite
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_ndem_OIPT
+		}
+		x = 1
+		y = 6
+
+	}
+	focus = {
+		id = KIN_ndem_OIPT_SQR_invite
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_ndem_OIPT
+		}
+		x = 5
+		y = 6
+
+	}
+	focus = {
+		id = KIN_ndem_OIPT_IND_invite
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_ndem_OIPT_REA_invite
+			focus = KIN_ndem_OIPT_ZEI_invite
+			focus = KIN_ndem_OIPT_SQR_invite
+		}
+		x = 3
+		y = 7
+
+	}
+	focus = {
+		id = KIN_ndem_OIPT_VIC_invite
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_ndem_OIPT_REA_invite
+			focus = KIN_ndem_OIPT_ZEI_invite
+			focus = KIN_ndem_OIPT_SQR_invite
+		}
+		x = 1
+		y = 7
+
+	}
+	focus = {
+		id = KIN_ndem_OIPT_TEX_invite
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_ndem_OIPT_ZEI_invite
+			focus = KIN_ndem_OIPT_SQR_invite
+			focus = KIN_ndem_OIPT_REA_invite
+		}
+		x = 5
+		y = 7
+
+	}
+	focus = {
+		id = KIN_ndem_DUS_oppose
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_ndem_OIPT_VIC_invite
+			focus = KIN_ndem_OIPT_IND_invite
+			focus = KIN_ndem_OIPT_TEX_invite
+		}
+		mutually_exclusive = {
+			focus = KIN_ndem_DUS_forgive
+		}
+		x = 4
+		y = 8
+
+	}
+	focus = {
+		id = KIN_ndem_DUS_forgive
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_ndem_OIPT_VIC_invite
+			focus = KIN_ndem_OIPT_IND_invite
+			focus = KIN_ndem_OIPT_TEX_invite
+		}
+		mutually_exclusive = {
+			focus = KIN_ndem_DUS_oppose
+		}
+		x = 2
+		y = 8
+
+	}
+	focus = {
+		id = KIN_open_trade
+		text = KIN_open_trade
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_open
+		}
+		x = 7
+		y = 1
+
+	}
+	focus = {
+		id = KIN_trade_asia
+		text = KIN_trade_asia
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_open_trade
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = KIN_trade_europe
+		text = KIN_trade_europe
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_open_trade
+		}
+		x = 7
+		y = 2
+
+	}
+	focus = {
+		id = KIN_dem_radical
+		icon = GFX_goal_support_democracy
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_dem_ZEI_relations
+			focus = KIN_dem_parlament
+		}
+		mutually_exclusive = {
+			focus = KIN_dem_neutral
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = KIN_rdem_APZ
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_dem_radical
+		}
+		x = 7
+		y = 5
+
+	}
+	focus = {
+		id = KIN_rdem_APZ_neighbours_invite
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_rdem_APZ
+		}
+		x = 7
+		y = 6
+
+	}
+	focus = {
+		id = KIN_rdem_APZ_REA_invite
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_rdem_APZ_neighbours_invite
+		}
+		x = 7
+		y = 7
+
+	}
+	focus = {
+		id = KIN_rdem_APZ_DUS_invite
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_rdem_APZ_neighbours_invite
+		}
+		x = 9
+		y = 7
+
+	}
+	focus = {
+		id = KIN_rdem_APZ_ZEI_invite
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_rdem_APZ_DUS_invite
+			focus = KIN_rdem_APZ_REA_invite
+		}
+		mutually_exclusive = {
+			focus = KIN_rdem_ZEI_oppose
+		}
+		x = 7
+		y = 8
+
+	}
+	focus = {
+		id = KIN_rdem_SGK_oppose
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_rdem_APZ_ZEI_invite
+		}
+		x = 7
+		y = 9
+
+	}
+	focus = {
+		id = KIN_trade_america
+		text = KIN_trade_america
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_open_trade
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = KIN_open_com
+		icon = GFX_goal_support_communism
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_open
+		}
+		mutually_exclusive = {
+			focus = KIN_open_dem
+		}
+		x = 12
+		y = 1
+
+	}
+	focus = {
+		id = KIN_ocom_plan
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_open_com
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = KIN_ocom_plan_development
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_ocom_plan
+		}
+		mutually_exclusive = {
+			focus = KIN_ocom_plan_defence
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = KIN_ocom_CAU_relations
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_ocom_plan
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = KIN_ocom_INT
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_ocom_CAU_relations
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = KIN_ocom_asia
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_ocom_INT
+		}
+		x = 9
+		y = 6
+
+	}
+	focus = {
+		id = KIN_ocom_europe
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_ocom_INT
+		}
+		x = 12
+		y = 6
+
+	}
+	focus = {
+		id = KIN_ocom_plan_defence
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_ocom_plan
+		}
+		mutually_exclusive = {
+			focus = KIN_ocom_plan_development
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = KIN_ocom_europe_oppose
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_ocom_europe
+		}
+		mutually_exclusive = {
+			focus = KIN_ocom_europe_tradeoff
+		}
+		x = 13
+		y = 7
+
+	}
+	focus = {
+		id = KIN_ocom_europe_tradeoff
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_ocom_europe
+		}
+		mutually_exclusive = {
+			focus = KIN_ocom_europe_oppose
+		}
+		x = 11
+		y = 7
+
+	}
+	focus = {
+		id = KIN_ocom_INT_DUS_invite
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_ocom_europe_tradeoff
+		}
+		x = 13
+		y = 8
+
+	}
+	focus = {
+		id = KIN_ocom_america
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_ocom_INT
+		}
+		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = KIN_ocom_TEX_revolution_support
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_ocom_america
+		}
+		x = 15
+		y = 7
+
+	}
+	focus = {
+		id = KIN_ocom_INT_TEX_invite
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_ocom_TEX_revolution_support
+		}
+		x = 15
+		y = 8
+
+	}
+	focus = {
+		id = KIN_isolation_fas
+		icon = GFX_goal_support_fascism
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_isolation
+		}
+		mutually_exclusive = {
+			focus = KIN_isolation_com
+		}
+		x = 22
+		y = 1
+
+	}
+	focus = {
+		id = KIN_fas_nation
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_isolation_fas
+		}
+		mutually_exclusive = {
+			focus = KIN_fas_history
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = KIN_nfas_highlight
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_fas_nation
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = KIN_nfas_reforms
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_nfas_highlight
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = KIN_nfas_kindafirst
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_nfas_reforms
+		}
+		x = 17
+		y = 5
+
+	}
+	focus = {
+		id = KIN_nfas_contrmalta
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_nfas_reforms
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = KIN_nfas_erasehistory
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_nfas_reforms
+		}
+		x = 21
+		y = 5
+
+	}
+	focus = {
+		id = KIN_nfas_onenation
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_nfas_kindafirst
+		}
+		prerequisite = {
+			focus = KIN_nfas_contrmalta
+		}
+		prerequisite = {
+			focus = KIN_nfas_erasehistory
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = KIN_nfas_newhistory
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_nfas_onenation
+		}
+		x = 18
+		y = 7
+
+	}
+	focus = {
+		id = KIN_nfas_historicaljustice
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_nfas_onenation
+		}
+		x = 20
+		y = 7
+
+	}
+	focus = {
+		id = KIN_nfas_fatherland
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_nfas_newhistory
+		}
+		prerequisite = {
+			focus = KIN_nfas_historicaljustice
+		}
+		x = 19
+		y = 8
+
+	}
+	focus = {
+		id = KIN_nfas_CHI_influence
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_nfas_fatherland
+		}
+		mutually_exclusive = {
+			focus = KIN_nfas_CHI_oppose
+		}
+		x = 20
+		y = 9
+
+	}
+	focus = {
+		id = KIN_nfas_PRTY
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_nfas_CHI_influence
+		}
+		x = 20
+		y = 10
+
+	}
+	focus = {
+		id = KIN_fas_history
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_isolation_fas
+		}
+		mutually_exclusive = {
+			focus = KIN_fas_nation
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = KIN_hfas_maltalies
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_fas_history
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = KIN_hfas_opposition
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_fas_history
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = KIN_hfas_historicaljustice
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_hfas_maltalies
+		}
+		prerequisite = {
+			focus = KIN_hfas_opposition
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = KIN_hfas_propaganda
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_hfas_maltalies
+		}
+		prerequisite = {
+			focus = KIN_hfas_opposition
+		}
+		x = 25
+		y = 4
+
+	}
+	focus = {
+		id = KIN_hfas_roots
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_hfas_historicaljustice
+		}
+		prerequisite = {
+			focus = KIN_hfas_propaganda
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = KIN_hfas_weapons
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_hfas_historicaljustice
+		}
+		prerequisite = {
+			focus = KIN_hfas_propaganda
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = KIN_hfas_independence
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_hfas_roots
+		}
+		prerequisite = {
+			focus = KIN_hfas_weapons
+		}
+		x = 24
+		y = 6
+
+	}
+	focus = {
+		id = KIN_hfas_KIN_oppose
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_hfas_independence
+		}
+		mutually_exclusive = {
+			focus = KIN_hfas_KIN_coexist
+		}
+		x = 23
+		y = 7
+
+	}
+	focus = {
+		id = KIN_hfas_KIN_coexist
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_hfas_independence
+		}
+		mutually_exclusive = {
+			focus = KIN_hfas_KIN_oppose
+		}
+		x = 25
+		y = 7
+
+	}
+	focus = {
+		id = KIN_hfas_PRTY
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_hfas_KIN_coexist
+		}
+		x = 25
+		y = 8
+
+	}
+	focus = {
+		id = KIN_hfas_economy
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_hfas_PRTY
+		}
+		x = 25
+		y = 9
+
+	}
+	focus = {
+		id = KIN_isolation_development
+		text = KIN_isolation_development
+		icon = GFX_goal_continuous_non_factory_construct
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_isolation
+		}
+		x = 30
+		y = 1
+
+	}
+	focus = {
+		id = KIN_isolation_developent_factories
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_isolation_development
+		}
+		x = 28
+		y = 2
+
+	}
+	focus = {
+		id = KIN_isolation_developent_factories_2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_isolation_developent_factories
+		}
+		x = 28
+		y = 3
+
+	}
+	focus = {
+		id = KIN_isolation_developent_defence
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_isolation_development
+		}
+		x = 30
+		y = 2
+
+	}
+	focus = {
+		id = KIN_isolation_developent_defence_2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_isolation_developent_defence
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = KIN_isolation_developent_infrastructure
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_isolation_development
+		}
+		x = 32
+		y = 2
+
+	}
+	focus = {
+		id = KIN_isolation_developent_infrastructure_2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_isolation_developent_infrastructure
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = KIN_isolation_developent_science
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_isolation_developent_factories_2
+		}
+		prerequisite = {
+			focus = KIN_isolation_developent_defence_2
+		}
+		prerequisite = {
+			focus = KIN_isolation_developent_infrastructure_2
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = KIN_isolation_com
+		text = KIN_isolation_com
+		icon = GFX_goal_support_communism
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_isolation
+		}
+		mutually_exclusive = {
+			focus = KIN_isolation_fas
+		}
+		x = 35
+		y = 1
+
+	}
+	focus = {
+		id = KIN_icom_plan
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_isolation_com
+		}
+		x = 35
+		y = 2
+
+	}
+	focus = {
+		id = KIN_icom_plan_economy
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_icom_plan
+		}
+		x = 34
+		y = 3
+
+	}
+	focus = {
+		id = KIN_icom_juche
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_icom_plan
+		}
+		x = 35
+		y = 4
+
+	}
+	focus = {
+		id = KIN_icom_plan_defence
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_icom_plan
+		}
+		x = 36
+		y = 3
+
+	}
+	focus = {
+		id = KIN_icom_manse
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_icom_juche
+		}
+		x = 36
+		y = 5
+
+	}
+	focus = {
+		id = KIN_icom_CAU_relations
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_icom_manse
+		}
+		x = 36
+		y = 6
+
+	}
+	focus = {
+		id = KIN_rdem_ZEI_oppose
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_rdem_APZ_DUS_invite
+			focus = KIN_rdem_APZ_REA_invite
+		}
+		mutually_exclusive = {
+			focus = KIN_rdem_APZ_ZEI_invite
+		}
+		x = 9
+		y = 8
+
+	}
+	focus = {
+		id = KIN_rdem_SGK_support
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_rdem_ZEI_oppose
+		}
+		x = 9
+		y = 9
+
+	}
+	focus = {
+		id = KIN_ocom_INT_REA_invite
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_ocom_europe_tradeoff
+		}
+		x = 11
+		y = 8
+
+	}
+	focus = {
+		id = KIN_nfas_CHI_oppose
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_nfas_fatherland
+		}
+		mutually_exclusive = {
+			focus = KIN_nfas_CHI_influence
+		}
+		x = 18
+		y = 9
+
+	}
+	focus = {
+		id = KIN_ocom_fas_oppose
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_ocom_INT_REA_invite
+			focus = KIN_ocom_INT_DUS_invite
+		}
+		x = 12
+		y = 9
+
+	}
+	focus = {
+		id = KIN_hfas_warpropaganda
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_hfas_KIN_oppose
+		}
+		x = 23
+		y = 8
+
+	}
+	focus = {
+		id = KIN_hfas_suppressopposition
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_hfas_warpropaganda
+		}
+		x = 23
+		y = 9
+
+	}
+	focus = {
+		id = KIN_hfas_afterwardefence
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_hfas_suppressopposition
+		}
+		x = 23
+		y = 10
+
+	}
+	focus = {
+		id = KIN_hfas_MON_oppose
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_hfas_afterwardefence
+		}
+		x = 22
+		y = 11
+
+	}
+	focus = {
+		id = KIN_hfas_KOR_oppose
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_hfas_afterwardefence
+		}
+		x = 24
+		y = 11
+
+	}
+	focus = {
+		id = KIN_hfas_LAO
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_hfas_MON_oppose
+		}
+		prerequisite = {
+			focus = KIN_hfas_KOR_oppose
+		}
+		x = 23
+		y = 12
+
+	}
+	focus = {
+		id = KIN_icom_establish
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_icom_juche
+		}
+		x = 34
+		y = 5
+
+	}
+	focus = {
+		id = KIN_icom_comstate
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_icom_establish
+		}
+		x = 34
+		y = 6
+
+	}
+	focus = {
+		id = KIN_icom_INT
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_icom_comstate
+		}
+		prerequisite = {
+			focus = KIN_icom_CAU_relations
+		}
+		x = 35
+		y = 7
+
+	}
+	focus = {
+		id = KIN_icom_spread_asia
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_icom_INT
+		}
+		x = 33
+		y = 8
+
+	}
+	focus = {
+		id = KIN_icom_spread_europe
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_icom_INT
+		}
+		x = 35
+		y = 8
+
+	}
+	focus = {
+		id = KIN_icom_spread_america
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_icom_INT
+		}
+		x = 37
+		y = 8
+
+	}
+	focus = {
+		id = KIN_icom_INT_KOR_invite
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_icom_spread_asia
+		}
+		x = 32
+		y = 9
+
+	}
+	focus = {
+		id = KIN_icom_INT_DUS_invite
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_icom_spread_europe
+		}
+		mutually_exclusive = {
+			focus = KIN_icom_INT_REA_invite
+		}
+		x = 34
+		y = 9
+
+	}
+	focus = {
+		id = KIN_icom_INT_REA_invite
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_icom_spread_europe
+		}
+		mutually_exclusive = {
+			focus = KIN_icom_INT_DUS_invite
+		}
+		x = 36
+		y = 9
+
+	}
+	focus = {
+		id = KIN_icom_INT_TEX_invite
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_icom_TEX_revolution_support
+		}
+		x = 38
+		y = 10
+
+	}
+	focus = {
+		id = KIN_icom_TEX_revolution_support
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_icom_spread_america
+		}
+		x = 38
+		y = 9
+
+	}
+	focus = {
+		id = KIN_icom_INT_SQR_invite
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_icom_INT_DUS_invite
+		}
+		x = 34
+		y = 10
+
+	}
+	focus = {
+		id = KIN_icom_INT_IND_invite
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_icom_INT_REA_invite
+		}
+		x = 36
+		y = 10
+
+	}
+	focus = {
+		id = KIN_icom_exportrevolution
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_icom_INT_SQR_invite
+			focus = KIN_icom_INT_IND_invite
+			focus = KIN_icom_INT_KOR_invite
+			focus = KIN_icom_INT_TEX_invite
+		}
+		x = 35
+		y = 11
+
+	}
+	focus = {
+		id = KIN_icom_demfas_oppose
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = KIN_icom_exportrevolution
+		}
+		x = 35
+		y = 12
+
+	}
+}

@@ -14163,3 +14163,90 @@ news_event = {
                 }
 	}
 }
+
+news_event = {
+	id = news.1026
+	title = news.1026.t
+	desc = news.1026.d
+	picture = GFX_news_event_SGK_annex
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+        option = {
+		name = news.1026.e
+		trigger = {
+	 		TAG = ZEI	
+	    	}
+      	}   
+   
+	option = {
+		name = news.1026.a
+		trigger = {
+			NOT = {
+				TAG = ZEI
+			}
+                }
+	}
+}
+
+news_event = {
+	id = news.1027
+	title = news.1027.t
+	desc = news.1027.d
+	picture = GFX_news_event_SGK_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+        option = {
+		name = news.1027.e
+		trigger = {
+	 		TAG = ZEI	
+	    	}
+      	}   
+   
+	option = {
+		name = news.1027.a
+		trigger = {
+			NOT = {
+				TAG = ZEI
+			}
+                }
+	}
+}
+
+news_event = {
+	id = news.1028
+	title = news.1028.t
+	desc = news.1028.d
+	picture = GFX_news_event_REA_ZEI_faction_empire
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+        option = {
+		name = news.1028.e
+		trigger = {
+			OR = {
+	 			TAG = ZEI
+				TAG = REA
+			}	
+	    	}
+      	}   
+   
+	option = {
+		name = news.1028.a
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = ZEI
+					TAG = REA
+				}
+			}
+                }
+	}
+}

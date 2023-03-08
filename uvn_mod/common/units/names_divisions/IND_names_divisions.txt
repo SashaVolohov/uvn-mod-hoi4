@@ -1,0 +1,280 @@
+﻿ IND_INF_01 = 
+{
+	name = "Pekhotnayia diviyia IK" 
+
+	for_countries = { IND } 
+
+	can_use = { always = yes } 
+
+	division_types = { "infantry" } 
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { IND_INF_01 }
+
+	fallback_name = "%d. Pekhotnayia diviyia IK" 
+
+	ordered =
+	{
+		1 = { "%d. Pekhotnayia diviyia IK" } 
+		2 = { "%d. Pekhotnayia diviyia IK" } 
+		3 = { "%d. Pekhotnayia diviyia IK" } 
+		4 = { "%d. Pekhotnayia diviyia IK" } 
+		5 = { "%d. Pekhotnayia diviyia IK" } 
+		6 = { "%d. Pekhotnayia diviyia IK" } 
+		7 = { "%d. Pekhotnayia diviyia IK" } 
+		8 = { "%d. Pekhotnayia diviyia IK" } 
+		9 = { "%d. Pekhotnayia diviyia IK" } 
+		10 = { "%d. Pekhotnayia diviyia IK" } 
+		11 = { "%d. Pekhotnayia diviyia IK" } 
+		12 = { "%d. Pekhotnayia diviyia IK" } 
+		13 = { "%d. Pekhotnayia diviyia IK" } 
+		14 = { "%d. Pekhotnayia diviyia IK" } 
+		15 = { "%d. Pekhotnayia diviyia IK" } 
+		16 = { "%d. Pekhotnayia diviyia IK" } 
+		17 = { "%d. Pekhotnayia diviyia IK" } 
+		18 = { "%d. Pekhotnayia diviyia IK" } 
+		19 = { "%d. Pekhotnayia diviyia IK" } 
+		20 = { "%d. Pekhotnayia diviyia IK" } 	
+	}
+}
+
+ IND_CAV_01 = 
+{
+	name = "Kavaleriyisckayia divizyia IK " 
+
+	for_countries = { IND } 
+
+	can_use = { always = yes } 
+
+	division_types = { "cavalry" } 
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { IND_INF_01 }
+
+	fallback_name = "%d. Kavaleriyisckayia divizyia IK " 
+
+	ordered =
+	{
+		1 = { "%d. Kavaleriyisckayia divizyia IK " } 
+		2 = { "%d. Kavaleriyisckayia divizyia IK " } 
+		3 = { "%d. Kavaleriyisckayia divizyia IK " } 
+		4 = { "%d. Kavaleriyisckayia divizyia IK " } 
+		5 = { "%d. Kavaleriyisckayia divizyia IK " } 
+		6 = { "%d. Kavaleriyisckayia divizyia IK " } 
+		7 = { "%d. Kavaleriyisckayia divizyia IK " } 
+		8 = { "%d. Kavaleriyisckayia divizyia IK " } 
+		9 = { "%d. Kavaleriyisckayia divizyia IK " } 
+		10 = { "%d. Kavaleriyisckayia divizyia IK " } 
+	}
+}
+
+ IND_MOT_01 = 
+{
+	name = "Motorizovanayia divizyia IK" 
+
+	for_countries = { IND } 
+
+	can_use = { always = yes } 
+
+	division_types = { "motorized" } 
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { IND_INF_01 }
+
+	fallback_name = "%d. Motorizovanayia divizyia IK" 
+
+	ordered =
+	{
+		1 = { "%d. Motorizovanayia divizyia IK" } 
+		2 = { "%d. Motorizovanayia divizyia IK" } 
+		3 = { "%d. Motorizovanayia divizyia IK" } 
+		4 = { "%d. Motorizovanayia divizyia IK" } 
+		5 = { "%d. Motorizovanayia divizyia IK" } 
+		6 = { "%d. Motorizovanayia divizyia IK" } 
+		7 = { "%d. Motorizovanayia divizyia IK" } 
+		8 = { "%d. Motorizovanayia divizyia IK" } 
+		9 = { "%d. Motorizovanayia divizyia IK" } 
+		10 = { "%d. Motorizovanayia divizyia IK" } 
+	}
+}
+
+ IND_MEC_01 = 
+{
+	name = "Mekhnizirovanayia divizyia IK" 
+
+	for_countries = { IND } 
+
+	can_use = { always = yes } 
+
+	division_types = { "mechanized" } 
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { IND_INF_01 }
+
+	fallback_name = "%d. Мехинизорованная дивизия" 
+
+	ordered =
+	{
+		1 = { "%d. Mekhnizirovanayia divizyia IK" } 
+		2 = { "%d. Mekhnizirovanayia divizyia IK" } 
+		3 = { "%d. Mekhnizirovanayia divizyia IK" } 
+		4 = { "%d. Mekhnizirovanayia divizyia IK" } 
+		5 = { "%d. Mekhnizirovanayia divizyia IK" } 
+		6 = { "%d. Mekhnizirovanayia divizyia IK" } 
+		7 = { "%d. Mekhnizirovanayia divizyia IK" } 
+		8 = { "%d. Mekhnizirovanayia divizyia IK" } 
+		9 = { "%d. Mekhnizirovanayia divizyia IK" } 
+		10 = { "%d. Mekhnizirovanayia divizyia IK" } 
+	}
+}
+
+ IND_ARM_01 = 
+{
+	name = "Bronyetankovayia divizyia IK" 
+
+	for_countries = { IND } 
+
+	can_use = { always = yes } 
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" } 
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { IND_INF_01 }
+
+	fallback_name = "%d. Bronyetankovayia divizyia IK" 
+
+	ordered =
+	{
+		1 = { "%d. Bronyetankovayia divizyia IK" } 
+		2 = { "%d. Bronyetankovayia divizyia IK" } 
+		3 = { "%d. Bronyetankovayia divizyia IK" } 
+		4 = { "%d. Bronyetankovayia divizyia IK" } 
+		5 = { "%d. Bronyetankovayia divizyia IK" } 
+		6 = { "%d. Bronyetankovayia divizyia IK" } 
+		7 = { "%d. Bronyetankovayia divizyia IK" } 
+		8 = { "%d. Bronyetankovayia divizyia IK" } 
+		9 = { "%d. Bronyetankovayia divizyia IK" } 
+		10 = { "%d. Bronyetankovayia divizyia IK" } 
+	}
+}
+
+ IND_PAR_01 = 
+{
+	name = "VDV IK" 
+
+	for_countries = { IND } 
+
+	can_use = { always = yes } 
+
+	division_types = { "paratrooper" } 
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { IND_INF_01 }
+
+	fallback_name = "%d. VDV IK" 
+
+	ordered =
+	{
+		1 = { "%d. VDV IK" } 
+		2 = { "%d. VDV IK" } 
+		3 = { "%d. VDV IK" } 
+		4 = { "%d. VDV IK" } 
+		5 = { "%d. VDV IK" } 
+		6 = { "%d. VDV IK" } 
+		7 = { "%d. VDV IK" } 
+		8 = { "%d. VDV IK" } 
+		9 = { "%d. VDV IK" } 
+		10 = { "%d. VDV IK" } 
+	}
+}
+
+ IND_MAR_01 = 
+{
+	name = "Morsea pekhota IK" 
+
+	for_countries = { IND } 
+
+	can_use = { always = yes } 
+
+	division_types = { "marine" } 
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { IND_INF_01 }
+
+	fallback_name = "%d. Morsea pekhota IK" 
+
+	ordered =
+	{
+		1 = { "%d. Morsea pekhota IK" } 
+		2 = { "%d. Morsea pekhota IK" } 
+		3 = { "%d. Morsea pekhota IK" } 
+		4 = { "%d. Morsea pekhota IK" } 
+		5 = { "%d. Morsea pekhota IK" } 
+		6 = { "%d. Morsea pekhota IK" } 
+		7 = { "%d. Morsea pekhota IK" } 
+		8 = { "%d. Morsea pekhota IK" } 
+		9 = { "%d. Morsea pekhota IK" } 
+		10 = { "%d. Morsea pekhota IK" } 
+	}
+}
+
+ IND_MNT_01 = 
+{
+	name = "Gorno-strelkovayia divizyia IK" 
+
+	for_countries = { IND } 
+
+	can_use = { always = yes } 
+
+	division_types = { "mountaineers" } 
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { IND_INF_01 }
+
+	fallback_name = "%d. Gorno-strelkovayia divizyia IK"
+
+	ordered =
+	{
+		1 = { "%d. Gorno-strelkovayia divizyia IK" } 
+		2 = { "%d. Gorno-strelkovayia divizyia IK" } 
+		3 = { "%d. Gorno-strelkovayia divizyia IK" } 
+		4 = { "%d. Gorno-strelkovayia divizyia IK" } 
+		5 = { "%d. Gorno-strelkovayia divizyia IK" } 
+		6 = { "%d. Gorno-strelkovayia divizyia IK" } 
+		7 = { "%d. Gorno-strelkovayia divizyia IK" } 
+		8 = { "%d. Gorno-strelkovayia divizyia IK" } 
+		9 = { "%d. Gorno-strelkovayia divizyia IK" } 
+		10 = { "%d. Gorno-strelkovayia divizyia IK" } 
+	}
+}
+
+ IND_GAR_01 = 
+{
+	name = "pekhotnayia divizyia IK (G)" 
+
+	for_countries = { IND } 
+
+	can_use = { always = yes } 
+
+	division_types = { "infantry" } 
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { IND_INF_01 }
+
+	fallback_name = "%d. Pekhotnayia diviyia IK" 
+
+	ordered =
+	{
+		11 = { "%d. Pekhotnayia diviyia IK" } 
+		12 = { "%d. Pekhotnayia diviyia IK" } 
+		13 = { "%d. Pekhotnayia diviyia IK" } 
+		14 = { "%d. Pekhotnayia diviyia IK" } 
+		15 = { "%d. Pekhotnayia diviyia IK" } 
+		16 = { "%d. Pekhotnayia diviyia IK" } 
+		17 = { "%d. Pekhotnayia diviyia IK" } 
+		18 = { "%d. Pekhotnayia diviyia IK" } 
+		19 = { "%d. Pekhotnayia diviyia IK" } 
+		20 = { "%d. Pekhotnayia diviyia IK" } 		
+	}
+}
+

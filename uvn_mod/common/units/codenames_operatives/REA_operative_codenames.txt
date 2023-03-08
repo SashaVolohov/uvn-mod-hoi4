@@ -1,0 +1,26 @@
+﻿#Generic Operative list
+GENERIC_REA_OPERATIVE_CODENAME_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_OPERATIVES
+
+	# for all English speaking countries
+	for_countries = { REA }
+
+	type = codename
+
+	fallback_name = "Agent %d"
+
+	unique = {
+		"Kirill Lotsman"
+		"Egor Kalinin"
+		"Nikita Afanasiev"
+		"Vladiclav Gercog"
+		"Yuan Ming"
+		"Stanislav Novikov"
+                "Andrey Shevchenko"
+                "Egor Baranov"
+                "Maksim Zavolokin"
+                "Anton Fyodorov"
+                "Dmitriy Krykov"
+                "Kamila Anafieva"
+	}
+}

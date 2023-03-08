@@ -1,0 +1,80 @@
+add_namespace = zeitland
+
+country_event = {
+	id = zeitland.1
+	title = zeitland.1.t
+	desc = zeitland.1.d
+	picture = GFX_report_event_REA_ZEI_pact_empire
+
+	is_triggered_only = yes
+
+	option = {
+		name = zeitland.1.a
+
+		set_politics = {
+			ruling_party = neutrality
+			last_election = "2022.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+
+		set_popularities = {
+			neutrality = 50
+			democratic = 30
+			communism = 20
+		}
+
+		ZEI = {
+			create_faction = REA_ZEI_pact_faction_empire
+			add_to_faction = ZEI
+			add_to_faction = REA
+
+			country_event = { hours = 2 id = zeitland.2 }
+		}
+	}
+	option = {
+		name = zeitland.1.b
+
+		ZEI = {
+			add_opinion_modifier = { target = ROOT modifier = REA_ZEI_rejected }
+			country_event = { hours = 2 id = zeitland.3 }
+		}
+	}
+}
+
+country_event = {
+	id = zeitland.2
+	title = zeitland.2.t
+	desc = zeitland.2.d
+	picture = GFX_report_event_REA_ZEI_pact_empire
+
+	is_triggered_only = yes
+
+	immediate = {
+ 		hidden_effect = {
+ 			add_named_threat = { threat = 3 name = zeitland.2.t }
+ 		}
+ 	}
+
+	option = {
+		name = zeitland.2.a
+
+		hidden_effect = {
+			news_event = { hours = 24 id = news.1028 }
+		}
+
+	}
+}
+
+country_event = {
+	id = zeitland.3
+	title = zeitland.3.t
+	desc = zeitland.3.d
+	picture = GFX_report_event_REA_ZEI_pact_empire
+
+	is_triggered_only = yes
+
+	option = {
+		name = zeitland.3.a
+	}
+}

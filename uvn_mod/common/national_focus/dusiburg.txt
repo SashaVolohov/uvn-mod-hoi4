@@ -1630,6 +1630,10 @@ focus_tree = {
 		x = 14
 		y = 7
 
+		mutually_exclusive = {
+			focus = DUS_TEX_war
+		}
+
 		available = {
 			is_subject = no
 			AND = {
@@ -1642,11 +1646,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				is_in_faction_with = TEX
-				factor = 0
-			}
+			factor = 10
 		}	
 		completion_reward = {
 
@@ -1667,6 +1667,10 @@ focus_tree = {
 		}
 		x = 10
 		y = 7
+
+		ai_will_do = {
+			factor = 7
+		}
 
 		available = {
 			NOT = { has_war_with = TEX }

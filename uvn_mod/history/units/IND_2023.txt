@@ -1,7 +1,7 @@
 ﻿##### Division Templates #####
 division_template = {
 	name = "Strelkovaya Diviziya"			# Rifle Division
-	division_names_group = SOV_INF_01
+	division_names_group = IND_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -23,7 +23,7 @@ division_template = {
 
 division_template = {
 	name = "Gornostrelkovaya Diviziya"		# Mountain Division
-	division_names_group = SOV_MNT_01
+	division_names_group = IND_MNT_01
 
 	regiments = {
 		mountaineers = { x = 0 y = 0 }	
@@ -47,7 +47,7 @@ division_template = {
 
 division_template = {
 	name = "Motostrelkovaya Diviziya"		# Motor Rifle Division
-	division_names_group = SOV_MOT_01
+	division_names_group = IND_MOT_01
 											# Note: only represents Moscow Proletariat Division in 1936; after 1938-40, Motor Rifle Divisions had +1 mot regiment (3 bns) 
 	regiments = {
 		motorized = { x = 0 y = 0 }

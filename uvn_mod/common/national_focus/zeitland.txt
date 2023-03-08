@@ -1,0 +1,1097 @@
+focus_tree = {
+	id = Zeitland
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ZEI
+		}
+	}
+	default = no
+	focus = {
+		id = ZEI_end_of_colony
+		icon = GFX_focus_generic_steel
+		cost = 10,00
+		mutually_exclusive = {
+			focus = ZEI_new_colonies
+		}
+		x = 7
+		y = 0
+
+		available = {
+			is_subject = no
+		}
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 10
+		}	
+		completion_reward = {
+
+			add_political_power = 100
+
+		}
+
+
+	}
+	focus = {
+		id = ZEI_new_colonies
+		icon = GFX_focus_por_concordat
+		cost = 10,00
+		mutually_exclusive = {
+			focus = ZEI_end_of_colony
+		}
+		x = 11
+		y = 0
+
+		available = {
+			is_subject = no
+		}
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 7
+		}
+
+		completion_reward = {
+
+			add_political_power = 150
+
+		}
+
+
+
+	}
+	focus = {
+		id = ZEI_border_east
+		icon = GFX_focus_LAT_suspend_constitution_of_latvia
+		cost = 10,00
+		prerequisite = {
+			focus = ZEI_end_of_colony
+		}
+		x = 3
+		y = 1
+
+		completion_reward = {
+			825 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 198
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 6040
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 11119
+						instant_build = yes
+					}
+				}
+			}
+			262 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 10723
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 9121
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 6177
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 154
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 9099
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 6016
+						instant_build = yes
+					}
+				}
+			}
+			880 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 87
+						instant_build = yes
+					}
+				}
+			}			
+		}
+
+
+	}
+	focus = {
+		id = ZEI_border_sgk
+		icon = GFX_focus_POL_beck_ribbentrop
+		cost = 10,00
+		prerequisite = {
+			focus = ZEI_border_east
+		}
+		x = 3
+		y = 2
+
+		completion_reward = {
+			664 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 3716
+						instant_build = yes
+					}
+				}
+			}
+			70 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 9692
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 9539
+						instant_build = yes
+					}
+				}
+			}
+			69 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 57
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 11525
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 543
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 5283
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 7857
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 9555
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 424
+						instant_build = yes
+					}
+				}
+			}			
+		}
+
+
+	}
+	focus = {
+		id = ZEI_DRK_relation
+		icon = GFX_focus_jap_cast_the_die
+		cost = 10,00
+		prerequisite = {
+			focus = ZEI_border_sgk
+		}
+		x = 3
+		y = 3
+
+		available = {
+			is_subject = no
+			AND = {
+				country_exists = KIN
+				KIN = { is_subject = no }
+				KIN = { NOT = { has_war_with = ZEI } }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_in_faction_with = KIN
+				factor = 0
+			}
+		}	
+		completion_reward = {
+
+			KIN = {
+				add_opinion_modifier = { target = ZEI modifier = REA_SQR_diplomacy_focus }
+			}
+
+		}
+
+
+	}
+	focus = {
+		id = ZEI_REA_relations
+		icon = GFX_goal_continuous_def_against_influence
+		cost = 10,00
+		prerequisite = {
+			focus = ZEI_DRK_relation
+		}
+		x = 3
+		y = 4
+
+		available = {
+			is_subject = no
+			AND = {
+				country_exists = REA
+				REA = { is_subject = no }
+				REA = { NOT = { has_war_with = ZEI } }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_in_faction_with = REA
+				factor = 0
+			}
+		}	
+		completion_reward = {
+
+			REA = {
+				add_opinion_modifier = { target = ZEI modifier = REA_SQR_diplomacy_focus }
+			}
+
+		}
+
+
+	}
+	focus = {
+		id = ZEI_SQR_relation
+		icon = GFX_goal_continuous_increase_nu
+		cost = 10,00
+		prerequisite = {
+			focus = ZEI_border_east
+		}
+		x = 5
+		y = 2
+
+		available = {
+			is_subject = no
+			AND = {
+				country_exists = SQR
+				SQR = { is_subject = no }
+				NOT = { has_war_with = SQR }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_in_faction_with = SQR
+				factor = 0
+			}
+		}	
+		completion_reward = {
+
+			SQR = {
+				add_opinion_modifier = { target = ZEI modifier = REA_SQR_diplomacy_focus }
+			}
+
+		}
+
+
+	}
+	focus = {
+		id = ZEI_SGK_war
+		icon = GFX_focus_POL_belarus_army
+		cost = 10,00
+		prerequisite = {
+			focus = ZEI_SQR_relation
+		}
+		x = 5
+		y = 3
+
+		available = {
+			is_subject = no
+			AND = {
+				country_exists = SGK
+				SGK = { is_subject = yes }
+				NOT = { has_war_with = SGK }
+			}
+		}
+
+		completion_reward = {
+
+			add_political_power = 75
+			add_war_support = 0.1
+			add_stability = 0.05
+
+			SGK = {
+				add_autonomy_score = {
+    					value = -250
+    					localization = SGK_ZEI_war_autonomy
+				}
+			}
+
+			hidden_effect = {
+				news_event = { hours = 6 id = news.1027 }
+			}
+		}
+
+
+	}
+	focus = {
+		id = ZEI_build_atom
+		icon = GFX_focus_ITA_battaglioni_m
+		cost = 10,00
+		prerequisite = {
+			focus = ZEI_end_of_colony
+			focus = ZEI_new_colonies
+		}
+		mutually_exclusive = {
+			focus = ZEI_build_water
+		}
+		x = 7
+		y = 1
+
+		ai_will_do = {
+			factor = 7
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+			remove_ideas = {
+				ZEI_electricity
+			}
+			
+			add_political_power = 150
+
+		}
+
+
+	}
+	focus = {
+		id = ZEI_destroy_coal
+		icon = GFX_focus_SOV_organize_wreckers
+		cost = 10,00
+		prerequisite = {
+			focus = ZEI_build_atom
+		}
+		x = 7
+		y = 3
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+			add_ideas = {
+				ZEI_destroy_coal_idea
+			}
+			
+			add_political_power = 150
+
+		}
+
+
+	}
+	focus = {
+		id = ZEI_build_water
+		icon = GFX_focus_SOV_reinforce_northern_naval_bases
+		cost = 10,00
+		prerequisite = {
+			focus = ZEI_new_colonies
+			focus = ZEI_end_of_colony
+		}
+		mutually_exclusive = {
+			focus = ZEI_build_atom
+		}
+		x = 11
+		y = 1
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+			remove_ideas = {
+				ZEI_electricity
+			}
+			
+			add_political_power = 100
+
+		}
+
+
+	}
+	focus = {
+		id = ZEI_exit_uvco
+		icon = GFX_focus_eng_the_kings_party
+		cost = 10,00
+		prerequisite = {
+			focus = ZEI_build_atom
+			focus = ZEI_build_water
+		}
+		x = 9
+		y = 3
+
+		available = {
+			is_subject = no
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			swap_ideas = {
+
+				remove_idea = ZEI_uvco_member
+				add_idea = ZEI_uvn_member
+			}
+
+		}
+
+
+	}
+	focus = {
+		id = ZEI_democratic_reforms
+		icon = GFX_focus_LAT_suspend_constitution_of_latvia
+		cost = 10,00
+		prerequisite = {
+			focus = ZEI_exit_uvco
+		}
+		mutually_exclusive = {
+			focus = ZEI_cult_of_nikita
+		}
+
+		ai_will_do = {
+			factor = 7
+		}
+		x = 7
+		y = 4
+
+		available = {
+			is_subject = no
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			add_ideas = {
+
+				ZEI_democratic_reforms_idea
+			}
+
+		}
+
+
+	}
+	focus = {
+		id = ZEI_water_looking
+		icon = GFX_focus_hol_prepare_the_inundation_lines
+		cost = 10,00
+		prerequisite = {
+			focus = ZEI_build_water
+		}
+		x = 11
+		y = 3
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+			add_ideas = {
+				ZEI_water_looking_show_idea
+			}
+			
+			add_political_power = 100
+
+		}
+
+
+	}
+	focus = {
+		id = ZEI_cult_of_nikita
+		icon = GFX_focus_ITA_democratic_leadership
+		cost = 10,00
+		prerequisite = {
+			focus = ZEI_exit_uvco
+		}
+		mutually_exclusive = {
+			focus = ZEI_democratic_reforms
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		x = 11
+		y = 4
+
+		available = {
+			is_subject = no
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			add_ideas = {
+
+				ZEI_cult_of_nikita_idea
+			}
+
+		}
+
+
+	}
+	focus = {
+		id = ZEI_scandinavia_colony
+		icon = GFX_focus_GRE_reviving_the_spartan_warrior_spirit
+		cost = 10,00
+		prerequisite = {
+			focus = ZEI_new_colonies
+		}
+		x = 13
+		y = 1
+
+		available = {
+			NOT = { has_war_with = NOR }
+			NOT = { has_war_with = SWE }
+			NOT = { has_war_with = FIN }
+		}
+
+		bypass = {
+			OR = {
+				is_in_faction_with = NOR
+				has_war_with = NOR
+				NOT = { country_exists = NOR }
+			}
+			OR = {
+				is_in_faction_with = SWE
+				has_war_with = SWE
+				NOT = { country_exists = SWE }
+			}
+			OR = {
+				is_in_faction_with = FIN
+				has_war_with = FIN
+				NOT = { country_exists = FIN }
+			}
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+
+			create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = NOR
+			}
+
+			create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = SWE
+			}
+
+			create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = FIN
+			}
+
+		}
+
+
+	}
+	focus = {
+		id = ZEI_declare_empire
+		icon = GFX_focus_ITA_subdue_the_sentinels
+		cost = 10,00
+		prerequisite = {
+			focus = ZEI_scandinavia_colony
+		}
+		x = 13
+		y = 2
+
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "2022.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+
+			set_popularities = {
+				neutrality = 53
+				democratic = 19
+				communism = 28
+			}
+
+		}
+
+
+	}
+	focus = {
+		id = ZEI_aravi_colony
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		cost = 10,00
+		prerequisite = {
+			focus = ZEI_declare_empire
+		}
+		x = 13
+		y = 3
+
+		available = {
+			NOT = { has_war_with = SAU }
+			NOT = { has_war_with = UAE }
+			NOT = { has_war_with = QAT }
+		}
+
+		bypass = {
+			OR = {
+				is_in_faction_with = SAU
+				has_war_with = SAU
+				NOT = { country_exists = SAU }
+			}
+			OR = {
+				is_in_faction_with = UAE
+				has_war_with = UAE
+				NOT = { country_exists = UAE }
+			}
+			OR = {
+				is_in_faction_with = QAT
+				has_war_with = QAT
+				NOT = { country_exists = QAT }
+			}
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+
+			create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = SAU
+			}
+
+			create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = UAE
+			}
+
+			create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = QAT
+			}
+
+		}
+
+
+	}
+	focus = {
+		id = ZEI_siberia_colony
+		icon = GFX_focus_LAT_aizsargi
+		cost = 10,00
+		prerequisite = {
+			focus = ZEI_new_colonies
+		}
+		x = 15
+		y = 1
+
+		available = {
+			NOT = { has_war_with = TTS }
+			NOT = { has_war_with = YAM }
+			NOT = { has_war_with = OVO }
+		}
+
+		bypass = {
+			OR = {
+				is_in_faction_with = TTS
+				has_war_with = TTS
+				NOT = { country_exists = TTS }
+			}
+			OR = {
+				is_in_faction_with = YAM
+				has_war_with = YAM
+				NOT = { country_exists = YAM }
+			}
+			OR = {
+				is_in_faction_with = OVO
+				has_war_with = OVO
+				NOT = { country_exists = OVO }
+			}
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+
+			create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = TTS
+			}
+
+			create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = YAM
+			}
+
+			create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = OVO
+			}
+
+		}
+
+
+	}
+	focus = {
+		id = ZEI_SGK_annex
+		icon = GFX_focus_SOV_mobilization_plan
+		cost = 10,00
+		prerequisite = {
+			focus = ZEI_siberia_colony
+		}
+		x = 15
+		y = 2
+
+		available = {
+			is_subject = no
+			AND = {
+				country_exists = SGK
+				SGK = { is_subject = yes }
+				NOT = { has_war_with = SGK }
+			}
+		}
+
+		completion_reward = {
+
+			4 = {
+				if = {
+					limit = { is_owned_by = SGK }
+					add_core_of = ZEI
+				}
+			}
+			145 = {
+				if = {
+					limit = { is_owned_by = SGK }
+					add_core_of = ZEI
+				}
+			}
+			152 = {
+				if = {
+					limit = { is_owned_by = SGK }
+					add_core_of = ZEI
+				}
+			}
+			SGK = {
+				every_unit_leader = {
+					set_nationality = ZEI
+				}
+			}
+			annex_country = { target = SGK transfer_troops = yes }
+			add_political_power = 75
+			add_war_support = 0.1
+			add_stability = 0.05
+			
+			hidden_effect = {
+				news_event = { hours = 6 id = news.1026 }
+			}
+		}
+
+
+	}
+	focus = {
+		id = ZEI_airship_countries
+		icon = GFX_focus_usa_escort_fighters
+		cost = 10,00
+		prerequisite = {
+			focus = ZEI_REA_relations
+		}
+		x = 4
+		y = 5
+
+		available = {
+			is_subject = no
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			add_ideas = {
+				ZEI_air_idea
+			}
+
+		}
+
+
+	}
+	focus = {
+		id = ZEI_REA_empire
+		icon = GFX_focus_POL_sanation_left
+		cost = 10,00
+		prerequisite = {
+			focus = ZEI_SGK_annex
+		}
+		x = 15
+		y = 4
+
+		available = {
+			NOT = { has_war_with = REA }
+		}
+
+		bypass = {
+			OR = {
+				is_in_faction_with = REA
+				has_war_with = REA
+				NOT = { country_exists = REA }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			REA = {
+				country_event = {
+					id = zeitland.1
+					days = 1
+				}
+			}
+		}
+
+
+	}
+	focus = {
+		id = ZEI_capture_DUS
+		icon = GFX_focus_ITA_southern_industry
+		cost = 10,00
+		prerequisite = {
+			focus = ZEI_aravi_colony
+		}
+		x = 13
+		y = 5
+
+		available = {
+			NOT = { has_war_with = DUS }
+		}
+
+		bypass = {
+			OR = {
+				is_in_faction_with = DUS
+				has_war_with = DUS
+				NOT = { country_exists = DUS }
+			}
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+
+			create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = DUS
+			}
+
+		}
+
+
+	}
+	focus = {
+		id = ZEI_capture_LUT
+		icon = GFX_focus_POL_sanation_right
+		cost = 10,00
+		prerequisite = {
+			focus = ZEI_cult_of_nikita
+			focus = ZEI_democratic_reforms
+		}
+
+		ai_will_do = {
+			factor = 7
+		}
+
+		x = 11
+		y = 5
+
+		available = {
+			NOT = { has_war_with = LUT }
+		}
+
+		bypass = {
+			OR = {
+				is_in_faction_with = LUT
+				has_war_with = LUT
+				NOT = { country_exists = LUT }
+			}
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+
+			create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = LUT
+			}
+
+		}
+
+
+	}
+	focus = {
+		id = ZEI_reform_parlament
+		icon = GFX_focus_jap_manchurian_project
+		cost = 10,00
+		prerequisite = {
+			focus = ZEI_democratic_reforms
+			focus = ZEI_cult_of_nikita
+		}
+		x = 7
+		y = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		mutually_exclusive = {
+			focus = ZEI_capture_LUT
+		}
+
+		available = {
+			is_subject = no
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			swap_ideas = {
+
+				remove_idea = ZEI_zach
+				add_idea = ZEI_good_zach
+			}
+
+		}
+
+
+
+	}
+}
