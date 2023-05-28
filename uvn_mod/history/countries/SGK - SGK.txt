@@ -1,7 +1,7 @@
 ﻿capital = 152
 
 starting_train_buffer = 3.0
-set_oob = "SGK_2023"
+set_oob = "SGK_2022"
 
 set_research_slots = 2
 set_stability = 0.25
@@ -41,3 +41,8 @@ create_country_leader = {
     expire = "2100.1.1"
     ideology = conservatism
 }
+
+2023.1.1 = {
+	set_oob = "SGK_2023"
+}
+

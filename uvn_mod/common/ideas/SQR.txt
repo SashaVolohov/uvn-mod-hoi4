@@ -1,0 +1,138 @@
+ideas = {
+
+	country = {
+		SQR_uvco_member = {
+
+			picture = REA_uvco_member
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.1
+				trade_opinion_factor = -0.1
+				improve_relations_maintain_cost_factor = 0.1
+			}
+		}
+
+		SQR_sea_idea = {
+
+			picture = generic_the_london_naval_treaty
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				navy_fuel_consumption_factor = -0.2
+				navy_intel_factor = 0.2
+				experience_gain_navy_factor = 0.1
+			}
+		}
+
+		SQR_tymur_depression = {
+
+			picture = prc_low_popular_support
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.3
+				political_power_factor = -0.3
+				stability_factor = -0.3
+			}
+		}
+
+		SQR_travellers = {
+
+			picture = prc_the_long_march2
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				democracy_drift = 0.025
+				democracy_acceptance = 0.1
+				annex_cost_factor = -0.25
+			}
+		}
+
+		SQR_fire_revolution = {
+
+			picture = chi_incompetent_officers
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				war_stability_factor = -0.2
+				fascism_drift = 0.01
+			}
+
+		}
+
+		SQR_provisional_goverment = {
+			
+			allowed = {
+				original_tag = SQR
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_deal_with_the_devil
+
+			modifier = {
+				production_speed_buildings_factor = -0.5
+				industrial_capacity_factory = -0.5
+				consumer_goods_factor = 0.25
+				stability_factor = -0.2
+
+			}
+
+		}
+
+
+	}
+
+}

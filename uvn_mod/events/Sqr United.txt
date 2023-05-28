@@ -1,0 +1,81 @@
+add_namespace = sqr_united
+
+country_event = {
+	id = sqr_united.1
+	title = sqr_united.1.t
+	desc = sqr_united.1.d
+	picture = GFX_report_event_tymur_sleep
+
+	is_triggered_only = yes
+
+	option = {
+		name = sqr_united.1.a
+
+		promote_character = {
+    			character = SQR_kseniya_simachova
+    			ideology = liberalism
+		}
+		
+		add_ideas = {
+			SQR_provisional_goverment
+		}
+
+		hidden_effect = {
+			country_event = { hours = 720 id = sqr_united.2 }
+			news_event = { hours = 24 id = news.1029 }
+		}
+
+	}
+}
+
+country_event = {
+	id = sqr_united.2
+	title = sqr_united.2.t
+	desc = sqr_united.2.d
+	picture = GFX_report_event_tymur_end_sleep
+
+	is_triggered_only = yes
+
+	option = {
+
+		ai_chance = {
+			base = 10
+		}
+
+		name = sqr_united.2.a
+
+		promote_character = {
+    			character = SQR_tymur_slyva
+    			ideology = liberalism
+		}
+		
+		remove_ideas = {
+			SQR_provisional_goverment
+		}
+
+		hidden_effect = {
+			news_event = { hours = 24 id = news.1030 }
+		}
+
+	}
+
+	option = {
+
+		ai_chance = {
+			base = 7
+		}
+
+
+		name = sqr_united.2.b
+		
+		remove_ideas = {
+			SQR_provisional_goverment
+		}
+
+		hidden_effect = {
+			news_event = { hours = 24 id = news.1031 }
+		}
+
+	}
+
+}

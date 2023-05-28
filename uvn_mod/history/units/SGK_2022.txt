@@ -1,7 +1,7 @@
 ﻿division_template = {
 	name = "Infanterie-Division"
 
-	division_names_group = ANI_INF_01
+	division_names_group = GER_Inf_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -23,7 +23,7 @@
 division_template = {
 	name = "Panzer-Division"
 
-	division_names_group = ANI_ARM_01
+	division_names_group = GER_Arm_01
 
 	regiments = {
 		light_armor = { x = 0 y = 0 }
@@ -42,7 +42,7 @@ division_template = {
 division_template = {
 	name = "Infanterie-Division (mot.)" 			# Used to be SS division -> New system for SS. Also messed up the civil war by refusing to move to the fascists, and immersion-breaking to have them around as royalists
 
-	division_names_group = ANI_MOT_01
+	division_names_group = GER_MOT_02
 
 	regiments = {
 		motorized = { x = 0 y = 0 }
@@ -66,7 +66,7 @@ division_template = {
 division_template = {
 	name = "Gebirgs-Brigade"		# Gebirgsbrigade
 	#Note: precursor to Gebirgs-Divisions
-	division_names_group = ANI_MNT_01
+	division_names_group = GER_Mnt_01
 
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
@@ -80,7 +80,7 @@ division_template = {
 division_template = {
 	name = "Kavallerie-Brigade"
 
-	division_names_group = ANI_CAV_01
+	division_names_group = GER_Cav_01
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -104,7 +104,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 6521
+		location = 688
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -114,7 +114,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 6521
+		location = 688
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -124,7 +124,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 3
 		}
-		location = 6521
+		location = 688
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -143,7 +143,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
-			creator = "BAV"
+			creator = "SGK"
 		}
 		requested_factories = 10
 		progress = 0.1
@@ -153,7 +153,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
-			creator = "BAV" 
+			creator = "SGK" 
 		}
 		requested_factories = 2
 		progress = 0.3
@@ -163,7 +163,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_1
-			creator = "BAV" 
+			creator = "SGK" 
 		}
 		requested_factories = 1
 		progress = 0.3

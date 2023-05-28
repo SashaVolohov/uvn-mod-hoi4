@@ -14250,3 +14250,70 @@ news_event = {
                 }
 	}
 }
+
+news_event = {
+	id = news.1029
+	title = news.1029.t
+	desc = news.1029.d
+	picture = GFX_news_event_tymur_sleep
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1029.a
+	}
+}
+
+news_event = {
+	id = news.1030
+	title = news.1030.t
+	desc = news.1030.d
+	picture = GFX_news_event_tymur_take_power
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1030.a
+		trigger = {
+			NOT = {
+				TAG = SQR
+			}
+		}
+	}
+	option = {
+		name = news.1030.e
+		trigger = {
+			TAG = SQR
+		}
+	}
+}
+
+news_event = {
+	id = news.1031
+	title = news.1031.t
+	desc = news.1031.d
+	picture = GFX_news_event_kseniya_take_power
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1031.a
+		trigger = {
+			NOT = {
+				TAG = SQR
+			}
+		}
+	}
+	option = {
+		name = news.1031.e
+		trigger = {
+			TAG = SQR
+		}
+	}
+}

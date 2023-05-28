@@ -214,13 +214,6 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
-	#Southern Command
-	division= {	
-		name = "Royal Tank Regiment"
-		location = 9239
-		division_template = "Tank Brigade"
-		start_experience_factor = 0.3
-	}
 	division= {	# "3rd Infantry Division"
 		division_name = {
 			is_name_ordered = yes
@@ -252,6 +245,19 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 11293
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
 	
 }
 

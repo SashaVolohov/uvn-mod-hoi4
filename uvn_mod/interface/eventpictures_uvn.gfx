@@ -145,4 +145,29 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news_event_REA_ZEI_faction_empire.dds"
 	}
 
+	spriteType = {
+		name = "GFX_news_event_tymur_sleep"
+		texturefile = "gfx/event_pictures/news_event_tymur_sleep.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_tymur_sleep"
+		texturefile = "gfx/event_pictures/report_event_tymur_sleep.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_tymur_end_sleep"
+		texturefile = "gfx/event_pictures/report_event_tymur_end_sleep.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_tymur_take_power"
+		texturefile = "gfx/event_pictures/news_event_tymur_take_power.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_kseniya_take_power"
+		texturefile = "gfx/event_pictures/news_event_kseniya_take_power.dds"
+	}
+
 }

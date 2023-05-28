@@ -1,0 +1,27 @@
+
+state={
+	id=910
+	name="STATE_910"
+	manpower = 1428410
+	
+	state_category = town
+
+	history={
+		owner = DAF
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			7221 20
+		}
+		add_core_of = DAF
+		add_core_of = KIN
+	}
+
+	provinces={
+		7221 7204 11992
+	}
+
+	local_supplies=0.0 
+}

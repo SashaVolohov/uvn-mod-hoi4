@@ -104,27 +104,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 6521
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 6521
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 3
-		}
-		location = 6521
+		location = 7221
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -143,30 +123,10 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
-			creator = "BAV"
+			creator = "DAF"
 		}
 		requested_factories = 10
 		progress = 0.1
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = support_equipment_1
-			creator = "BAV" 
-		}
-		requested_factories = 2
-		progress = 0.3
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = artillery_equipment_1
-			creator = "BAV" 
-		}
-		requested_factories = 1
-		progress = 0.3
 		efficiency = 50
 	}
 }

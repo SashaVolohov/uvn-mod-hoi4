@@ -1,4 +1,4 @@
-version="Alpha_1.2.1"
+version="Alpha_1.3_rc"
 tags={
 	"Alternative History"
 	"Balance"
@@ -16,5 +16,5 @@ replace_path="gfx/loadingscreens"
 name="United Virtual Nations Mod"
 picture="Thumbnail.png"
 supported_version="1.12.*"
-path="mod/uvn_mod"
+path="C:/Users/2022/Documents/Paradox Interactive/Hearts of Iron IV/mod/uvn_mod"
 remote_file_id="2939421783"

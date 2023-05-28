@@ -1,0 +1,17 @@
+characters={
+
+	DAF_daniil_voynov={
+		name=DAF_daniil_voynov
+		portraits={
+			civilian={
+				large=GFX_portrait_DAF_daniil_voynov
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="2100.1.1.1"
+			id=-1
+		}
+	}
+
+}

@@ -1,0 +1,374 @@
+focus_tree = {
+	id = sqr_united
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SQR
+		}
+	}
+	default = no
+	focus = {
+		id = SQR_CHE_relation
+		icon = GFX_focus_POL_beck_ribbentrop
+		cost = 10,00
+		mutually_exclusive = {
+			focus = SQR_KIN_relation
+		}
+		x = 7
+		y = 0
+
+		available = {
+			is_subject = no
+			AND = {
+				country_exists = CHE
+				CHE = { is_subject = no }
+				NOT = { has_war_with = CHE }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 10
+		}	
+		completion_reward = {
+
+			CHE = {
+				add_opinion_modifier = { target = SQR modifier = REA_SQR_diplomacy_focus }
+			}
+
+		}
+
+
+	}
+	focus = {
+		id = SQR_KIN_relation
+		icon = GFX_goal_anschluss
+		cost = 10,00
+		mutually_exclusive = {
+			focus = SQR_CHE_relation
+		}
+		x = 13
+		y = 0
+
+		available = {
+			is_subject = no
+			AND = {
+				country_exists = KIN
+				KIN = { is_subject = no }
+				NOT = { has_war_with = KIN }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 7
+		}	
+		completion_reward = {
+
+			KIN = {
+				add_opinion_modifier = { target = SQR modifier = REA_SQR_diplomacy_focus }
+			}
+
+		}
+
+	}
+	focus = {
+		id = SQR_tymur_sleep
+		icon = GFX_focus_POL_warsaw_main_station
+		cost = 10,00
+		prerequisite = {
+			focus = SQR_CHE_relation
+		}
+		x = 5
+		y = 1
+
+		available = {
+			is_subject = no
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			country_event = {
+				id = sqr_united.1
+				days = 1
+			}
+		}
+
+
+	}
+	focus = {
+		id = SQR_SGK_sanctions
+		icon = GFX_focus_renounce_the_treaty_of_triannon
+		cost = 10,00
+		prerequisite = {
+			focus = SQR_tymur_sleep
+		}
+		x = 3
+		y = 2
+
+	}
+	focus = {
+		id = SQR_kirill_resistance
+		icon = GFX_focus_rom_handle_king
+		cost = 10,00
+		prerequisite = {
+			focus = SQR_SGK_sanctions
+		}
+		x = 1
+		y = 3
+
+	}
+	focus = {
+		id = SQR_DAF_sanctions
+		icon = GFX_focus_RAJ_indian_gentlemen_offcers
+		cost = 10,00
+		prerequisite = {
+			focus = SQR_SGK_sanctions
+		}
+		x = 3
+		y = 3
+
+	}
+	focus = {
+		id = SQR_new_politics
+		icon = GFX_focus_spa_caudillo_of_spain
+		cost = 10,00
+		prerequisite = {
+			focus = SQR_DAF_sanctions
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = SQR_REA_relation
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10,00
+		prerequisite = {
+			focus = SQR_SGK_sanctions
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = SQR_fascist_resistance
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		cost = 10,00
+		prerequisite = {
+			focus = SQR_REA_relation
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = SQR_atom
+		icon = GFX_focus_NZL_bob_semple_tank
+		cost = 10,00
+		prerequisite = {
+			focus = SQR_tymur_sleep
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = SQR_DUS_sanctions
+		icon = GFX_focus_SWI_establish_pro_helvetia
+		cost = 10,00
+		prerequisite = {
+			focus = SQR_atom
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = SQR_REA_incident
+		icon = GFX_focus_SOV_reinforce_southern_naval_bases
+		cost = 10,00
+		prerequisite = {
+			focus = SQR_DUS_sanctions
+		}
+		mutually_exclusive = {
+			focus = SQR_REA_destroy_flet
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = SQR_REA_destroy_flet
+		icon = GFX_focus_secret_rearmament
+		cost = 10,00
+		prerequisite = {
+			focus = SQR_DUS_sanctions
+		}
+		mutually_exclusive = {
+			focus = SQR_REA_incident
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = SQR_exit_uvco
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		cost = 10,00
+		prerequisite = {
+			focus = SQR_atom
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = SQR_LUT_sanctions
+		icon = GFX_goal_continuous_boost_freedom
+		cost = 10,00
+		prerequisite = {
+			focus = SQR_atom
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = SQR_tymur_adventure
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		cost = 10,00
+		prerequisite = {
+			focus = SQR_LUT_sanctions
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = SQR_SGK_war
+		icon = GFX_focus_SOV_penal_battalions
+		cost = 10,00
+		prerequisite = {
+			focus = SQR_KIN_relation
+		}
+		x = 17
+		y = 1
+
+	}
+	focus = {
+		id = SQR_kill_kirill
+		icon = GFX_focus_POL_end_the_regency
+		cost = 10,00
+		prerequisite = {
+			focus = SQR_SGK_war
+		}
+		x = 16
+		y = 2
+
+	}
+	focus = {
+		id = SQR_REA_faction
+		icon = GFX_focus_SOV_restore_cossack_units
+		cost = 10,00
+		prerequisite = {
+			focus = SQR_kill_kirill
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = SQR_LUT_war
+		icon = GFX_focus_por_luso_tropicalism
+		cost = 10,00
+		prerequisite = {
+			focus = SQR_REA_faction
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = SQR_DAF_war
+		icon = GFX_focus_SOV_mobilization_plan
+		cost = 10,00
+		prerequisite = {
+			focus = SQR_SGK_war
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = SQR_DUS_war
+		icon = GFX_focus_rocketry
+		cost = 10,00
+		prerequisite = {
+			focus = SQR_DAF_war
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = SQR_AFR_colonization
+		icon = GFX_focus_generic_africa_defense
+		cost = 10,00
+		prerequisite = {
+			focus = SQR_DAF_war
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = SQR_increase_power
+		icon = GFX_focus_mex_support_general_cedillo
+		cost = 10,00
+		prerequisite = {
+			focus = SQR_AFR_colonization
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = SQR_fascist_revolution
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10,00
+		prerequisite = {
+			focus = SQR_increase_power
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = SQR_capture_BRS
+		icon = GFX_focus_SOV_panslavic_nationalism
+		cost = 10,00
+		prerequisite = {
+			focus = SQR_REA_faction
+		}
+		x = 15
+		y = 5
+
+	}
+	focus = {
+		id = SQR_kill_tymur
+		icon = GFX_focus_ITA_dino_grandi
+		cost = 10,00
+		prerequisite = {
+			focus = SQR_DUS_war
+		}
+		x = 17
+		y = 5
+
+	}
+}

@@ -49,12 +49,16 @@ bookmarks = {
 			ideology = democratic
 			ideas = {
 				
-				
+				SQR_uvco_member
+				SQR_sea_idea
+				SQR_tymur_depression
 				
 			}
 			focuses = {
 				
-				
+				SQR_REA_destroy_flet
+				SQR_kill_tymur
+				SQR_tymur_adventure
 				
 			}
 		}

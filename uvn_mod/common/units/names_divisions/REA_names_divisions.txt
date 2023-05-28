@@ -99,7 +99,7 @@ REA_MOT_01 =
 
 REA_MEC_01 = 
 {
-	name = "Мехинизорованная дивизия"
+	name = "Механизированная дивизия"
 
 	for_countries = { REA }
 
@@ -110,7 +110,7 @@ REA_MEC_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { REA_INF_01 }
 
-	fallback_name = "%d. Мехинизорованная дивизия"
+	fallback_name = "%d. Механизированная дивизия"
 
 	ordered =
 	{
@@ -192,7 +192,7 @@ REA_MAR_01 =
 {
 	name = "Морские котики"
 
-	for_countries = { REM }
+	for_countries = { REA }
 
 	can_use = { always = yes }
 
@@ -229,7 +229,7 @@ REA_MNT_01 =
 	division_types = { "mountaineers" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { REM_INF_01 }
+	link_numbering_with = { REA_INF_01 }
 
 	fallback_name = "%d. Горно-стрелковая дивизия"
 
@@ -259,7 +259,7 @@ REA_GAR_01 =
 	division_types = { "infantry" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { REM_INF_01 }
+	link_numbering_with = { REA_INF_01 }
 
 	fallback_name = "%d. Стрелковая дивизия"
 

@@ -43,3 +43,13 @@ set_popularities = {
 
 recruit_character = SQR_tymur_slyva
 recruit_character = SQR_kirill_tishkov
+recruit_character = SQR_kseniya_simachova
+
+add_ideas = {
+	SQR_uvco_member
+	SQR_sea_idea
+	SQR_tymur_depression
+	SQR_travellers
+	SQR_fire_revolution
+}
+

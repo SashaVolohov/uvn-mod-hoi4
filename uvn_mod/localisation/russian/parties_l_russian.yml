@@ -1039,3 +1039,17 @@
  ZEI_fascism_party:0 "БДСМ"
  ZEI_neutrality_party:0 "ПЛП"
 
+ SQR_democratic_party:0 "Тимуровцы"
+ SQR_communism_party:0 "Коммунисты Sqr United"
+ SQR_fascism_party:0 "Фашисты Sqr United"
+ SQR_neutrality_party:0 "Кирилловцы"
+
+ CHE_democratic_party:0 "Демократы Чейджоу"
+ CHE_communism_party:0 "Коммунисты Чейджоу"
+ CHE_fascism_party:0 "Фашисты Чейджоу"
+ CHE_neutrality_party:0 "Нейтралы Чейджоу"
+
+ DAF_democratic_party:0 "Демократы Дафии"
+ DAF_communism_party:0 "Коммунисты Дафии"
+ DAF_fascism_party:0 "Фашисты Дафии"
+ DAF_neutrality_party:0 "Нейтралы Дафии"

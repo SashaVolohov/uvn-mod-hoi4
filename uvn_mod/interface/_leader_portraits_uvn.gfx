@@ -85,4 +85,19 @@ spriteTypes = {
 		texturefile = "gfx/leaders/TEX/portrait_TEX_Vladimir_Gropkiy.dds"
 	}
 
+	spriteType = {
+		name = "GFX_portrait_CHE_neutrality_leader"
+		texturefile = "gfx/leaders/CHE/portrait_CHE_neutrality_leader.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_DAF_daniil_voynov"
+		texturefile = "gfx/leaders/DAF/portrait_DAF_daniil_voynov.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_SQR_kseniya_simachova"
+		texturefile = "gfx/leaders/SQR/portrait_SQR_kseniya_simachova.dds"
+	}
+
 }

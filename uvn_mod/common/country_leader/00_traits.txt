@@ -8463,6 +8463,29 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	great_traveller = {
+		random = no
+
+		monthly_population = 0.2
+		improve_relations_maintain_cost_factor = -0.1
+		trade_opinion_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	maritime_genius = {
+		random = no
+
+		navy_advisor_cost_factor = -0.25
+		political_power_factor = 0.2
+		naval_damage_factor = 0.25
+		ai_focus_naval_factor = 0.20
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 
 }

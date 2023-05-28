@@ -956,3 +956,11 @@ ANI = {
 	color = rgb { 255  102  102 }
 	color_ui = rgb { 255  51  51 }
 }
+CHE = {
+	color = rgb { 102  0  102 }
+	color_ui = rgb { 51  0  51 }
+}
+DAF = {
+	color = rgb { 255  102  178 }
+	color_ui = rgb { 255 51 153 }
+}

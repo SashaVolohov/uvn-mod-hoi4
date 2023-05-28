@@ -1,0 +1,34 @@
+﻿capital = 910
+
+starting_train_buffer = 3.0
+set_oob = "DAF_2022"
+
+set_research_slots = 2
+set_stability = 0.5
+set_war_support = 0.2
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+}
+
+set_politics = {
+	ruling_party = conservatism
+	last_election = "2022.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	fascism = 5
+	neutrality = 20
+	democratic = 75
+}
+
+recruit_character = DAF_daniil_voynov
+

@@ -1,0 +1,17 @@
+characters={
+
+	CHE_neutrality_leader={
+		name=CHE_neutrality_leader
+		portraits={
+			civilian={
+				large=GFX_portrait_CHE_neutrality_leader
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="2100.1.1.1"
+			id=-1
+		}
+	}
+
+}
