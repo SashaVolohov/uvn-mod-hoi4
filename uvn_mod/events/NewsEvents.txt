@@ -14317,3 +14317,280 @@ news_event = {
 		}
 	}
 }
+
+news_event = {
+	id = news.1032
+	title = news.1032.t
+	desc = news.1032.d
+	picture = GFX_news_event_DUS_zag_passed
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1032.a
+		trigger = {
+			NOT = {
+				has_government = democratic
+			}
+		}
+	}
+	option = {
+		name = news.1032.b
+		trigger = { 
+			has_government = democratic
+
+		}
+
+	}
+}
+
+news_event = {
+	id = news.1033
+	title = news.1033.t
+	desc = news.1033.d
+	picture = GFX_news_event_DUS_zag_passed
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1033.a
+		trigger = {
+			NOT = {
+				has_government = neutrality
+			}
+		}
+	}
+	option = {
+		name = news.1033.b
+		trigger = { 
+			has_government = neutrality
+
+		}
+
+	}
+}
+
+news_event = {
+	id = news.1034
+	title = news.1034.t
+	desc = news.1034.d
+	picture = GFX_news_event_REA_SLI_faction
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1034.a
+		trigger = {
+			NOT = {
+				TAG = SQR
+				TAG = REA
+			}
+		}
+	}
+	option = {
+		name = news.1034.e
+		trigger = {
+			OR = {
+				TAG = SQR
+				TAG = REA
+			}
+		}
+	}
+}
+
+news_event = {
+	id = news.1035
+	title = news.1035.t
+	desc = news.1035.d
+	picture = GFX_news_event_DUS_zag_passed
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1035.a
+		trigger = {
+			NOT = {
+				has_government = fascist
+			}
+		}
+	}
+	option = {
+		name = news.1035.b
+		trigger = { 
+			has_government = fascist
+
+		}
+
+	}
+}
+
+news_event = {
+	id = news.1036
+	title = news.1036.t
+	desc = news.1036.d
+	picture = GFX_news_event_DUS_zag_passed
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1036.a
+		trigger = {
+			NOT = {
+				tag = SQR
+				tag = REA
+			}
+		}
+	}
+	option = {
+		name = news.1036.b
+		trigger = {
+			OR = {
+				tag = SQR
+				tag = REA
+			}
+
+		}
+
+		navy_experience = 100
+
+
+	}
+}
+
+news_event = {
+	id = news.1037
+	title = news.1037.t
+	desc = news.1037.d
+	picture = GFX_news_event_DUS_zag_passed
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1037.a
+		trigger = {
+			NOT = {
+				tag = SQR
+				tag = REA
+			}
+		}
+	}
+	option = {
+		name = news.1037.b
+		trigger = { 
+			OR = {
+				tag = SQR
+				tag = REA
+			}
+
+		}
+
+
+	}
+}
+
+news_event = {
+	id = news.1038
+	title = news.1038.t
+	desc = news.1038.d
+	picture = GFX_news_event_DUS_zag_passed
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1038.a
+		trigger = {
+			NOT = {
+				tag = SQR
+				tag = REA
+			}
+		}
+	}
+	option = {
+		name = news.1038.b
+		trigger = { 
+			OR = {
+				tag = SQR
+				tag = REA
+			}
+
+		}
+
+
+	}
+}
+
+news_event = {
+	id = news.1039
+	title = news.1039.t
+	desc = news.1039.d
+	picture = GFX_news_event_DUS_zag_passed
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1039.a
+		trigger = {
+			NOT = {
+				tag = SQR
+			}
+		}
+	}
+	option = {
+		name = news.1039.b
+		trigger = { 
+			tag = SQR
+
+		}
+
+		navy_experience = 25
+
+
+	}
+}
+
+news_event = {
+	id = news.1040
+	title = news.1040.t
+	desc = news.1040.d
+	picture = GFX_news_event_DUS_zag_passed
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1040.a
+		trigger = {
+			NOT = {
+				tag = SQR
+			}
+		}
+	}
+	option = {
+		name = news.1040.b
+		trigger = { 
+			tag = SQR
+
+		}
+
+		navy_experience = 25
+
+
+	}
+}

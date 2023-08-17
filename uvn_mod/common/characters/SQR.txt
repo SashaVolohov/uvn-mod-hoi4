@@ -36,11 +36,31 @@ characters={
 			civilian={
 				large=GFX_portrait_SQR_kseniya_simachova
 			}
+			army={
+				small="GFX_idea_SQR_kseniya_simachova"
+			}
 		}
 		country_leader={
 			ideology=liberalism
 			expire="2100.1.1.1"
 			id=1
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SQR_kseniya_simachova
+			can_be_fired = no
+			allowed = {
+				original_tag = SQR
+			}
+			available = {
+				has_government = democratic
+			}
+			ai_will_do = {
+				factor = 30.000
+			}
+			traits = {
+				cabinet_crisis 
+			}
 		}
 	}
 

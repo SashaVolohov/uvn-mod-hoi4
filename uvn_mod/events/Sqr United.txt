@@ -79,3 +79,183 @@ country_event = {
 	}
 
 }
+
+country_event = {
+	id = sqr_united.3
+	title = sqr_united.3.t
+	desc = sqr_united.3.d
+	picture = GFX_report_event_REA_SLI_faction
+
+	is_triggered_only = yes
+
+	option = {
+		name = sqr_united.3.a
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -25
+				SQR = { has_army_size = { size < 10 } }
+			}
+			modifier = {
+				add = 100
+				SQR = { has_army_size = { size > 20 } }
+			}
+		}
+		SQR = {
+			create_faction = SQR_REA_pact_faction
+			add_to_faction = SQR
+			add_to_faction = REA
+
+			country_event = { hours = 2 id = sqr_united.5 }
+		}
+	}
+	option = {
+		name = sqr_united.3.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				SQR = { has_army_size = { size > 10 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				SQR = { has_army_size = { size < 20 } }
+			}
+		}
+		SQR = {
+			add_opinion_modifier = { target = ROOT modifier = REA_ZEI_rejected }
+			country_event = { hours = 2 id = sqr_united.4 }
+		}
+	}
+}
+
+country_event = {
+	id = sqr_united.4
+	title = sqr_united.4.t
+	desc = sqr_united.4.d
+	picture = GFX_report_event_REA_SLI_faction
+
+	is_triggered_only = yes
+
+	option = {
+		name = sqr_united.4.a
+	}
+}
+
+country_event = {
+	id = sqr_united.5
+	title = sqr_united.5.t
+	desc = sqr_united.5.d
+	picture = GFX_report_event_REA_SLI_faction
+
+	is_triggered_only = yes
+
+	immediate = {
+ 		hidden_effect = {
+ 			add_named_threat = { threat = 1 name = sqr_united.5.t }
+ 		}
+ 	}
+
+	option = {
+		name = sqr_united.5.a
+
+		hidden_effect = {
+			news_event = { hours = 24 id = news.1034 }
+		}
+
+	}
+}
+
+country_event = {
+	id = sqr_united.6
+	title = sqr_united.6.t
+	desc = sqr_united.6.d
+	picture = GFX_report_event_tymur_sleep
+
+	is_triggered_only = yes
+
+	option = {
+		name = sqr_united.6.a
+
+		ai_chance = {
+			base = 10
+		}
+
+		hidden_effect = {
+			news_event = { hours = 24 id = news.1036 }
+		}
+
+	}
+
+	option = {
+		name = sqr_united.6.b
+
+		ai_chance = {
+			base = 3
+		}
+		
+		create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = SQR
+		}
+		
+
+		hidden_effect = {
+			news_event = { hours = 24 id = news.1037 }
+		}
+
+	}
+
+}
+
+country_event = {
+	id = sqr_united.7
+	title = sqr_united.7.t
+	desc = sqr_united.7.d
+	picture = GFX_report_event_tymur_sleep
+
+	is_triggered_only = yes
+
+	option = {
+		name = sqr_united.7.a
+
+		ai_chance = {
+			base = 7
+		}
+		
+		create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = SQR
+		}
+		
+
+		hidden_effect = {
+			news_event = { hours = 24 id = news.1038 }
+		}
+
+	}
+
+}
+
+country_event = {
+	id = sqr_united.8
+	title = sqr_united.8.t
+	desc = sqr_united.8.d
+	picture = GFX_report_event_tymur_sleep
+
+	is_triggered_only = yes
+
+	option = {
+		name = sqr_united.8.a
+
+		hidden_effect = {
+			news_event = { hours = 24 id = news.1039 }
+		}
+
+	}
+
+}

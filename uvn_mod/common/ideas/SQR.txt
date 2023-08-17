@@ -132,6 +132,71 @@ ideas = {
 
 		}
 
+		SQR_sanctions_against_other = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_hyper_inflation
+
+			modifier = {
+				production_speed_buildings_factor = -0.25
+				industrial_capacity_factory = -0.25
+				stability_factor = -0.1
+
+			}
+
+		}
+
+		SQR_atom_idea = {
+			picture = man_five_year_plan_air
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				line_change_production_efficiency_factor = 0.1
+				supply_node_range = 0.1
+			}
+		}
+
+		
+		SQR_uvn_member = {
+
+			picture = generic_political_support
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = -0.2
+				trade_opinion_factor = 0.2
+				improve_relations_maintain_cost_factor = -0.2
+			}
+		}
+
 
 	}
 

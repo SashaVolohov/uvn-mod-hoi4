@@ -5,4 +5,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/REA/idea_REA_nikita_afanasiev.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_SQR_kseniya_simachova"
+		texturefile = "gfx/interface/ideas/SQR/idea_SQR_kseniya_simachova.dds"
+	}
+
 }

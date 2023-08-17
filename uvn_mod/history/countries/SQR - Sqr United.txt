@@ -51,5 +51,7 @@ add_ideas = {
 	SQR_tymur_depression
 	SQR_travellers
 	SQR_fire_revolution
+
+	SQR_kseniya_simachova
 }
 

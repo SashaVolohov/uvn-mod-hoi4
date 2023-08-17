@@ -1135,5 +1135,9 @@ opinion_modifiers = {
 	DUS_KIN_relationship = { 
 		value = -30	
 	}
+
+	SQR_SGK_sanctions_diplomacy = {
+		value = -30
+	}
 	
 }
