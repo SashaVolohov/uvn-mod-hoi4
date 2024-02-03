@@ -1,0 +1,137 @@
+﻿
+units= {
+
+	##### NAVAL UNITS #####
+	### Black Sea Fleet -- Sevastopol
+	fleet = {
+		name = "Chernomorskiy Flot"
+		naval_base = 705 # Sevastopopl
+		task_force = {				
+			name = "Chernomorskiy Flot"
+			location = 705 # Sevastopopl
+			ship = { name = "Nickita Afanasiev" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = REA version_name = "Marat Class" } } }
+			ship = { name = "Kirill Lotsman" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = REA version_name = "Ukraina Class" } } }
+			ship = { name = "Egor Kalinin" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = REA version_name = "Ukraina Class" } } }
+			ship = { name = "Sasha Volohov" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = REA version_name = "Ukraina Class" } } }
+			ship = { name = "Maxim Zavolokin" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = REA version_name = "Ukraina Class" } } }
+			ship = { name = "Egor Baranov" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = REA version_name = "Bug Class" } } }
+		}	
+		task_force = {	
+			name = "Chernomorskiy Podvodniy Flot"
+			location = 705 # Sevastopopl
+			# 9iy Podvodniy Flot
+			ship = { name = "Shch-121" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series Olymp" } } }			
+			ship = { name = "Shch-122" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series Olymp" } } }			
+			ship = { name = "Shch-123" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series Olymp" } } }			
+			ship = { name = "Shch-124" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series Olymp" } } }			
+			# 15iy Podvodniy Flot
+			ship = { name = "A-1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "AG Class" } } }
+			ship = { name = "A-2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "AG Class" } } }
+			ship = { name = "A-3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "AG Class" } } }
+			ship = { name = "A-4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "AG Class" } } }
+			ship = { name = "A-5" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "AG Class" } } }
+			# 17iy  Podvodniy Flot
+			ship = { name = "L-4" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series Fedorovs" } } }			
+			ship = { name = "L-5" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series Fedorovs" } } }			
+			ship = { name = "L-6" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series Fedorovs" } } }			
+		}	
+	}
+} 
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+
+	### Ships Under Construction Notes ###
+	# DD: Leningrad & Minsk variant (x4) ("Leningrad" "Moskva" "Kharkov" "Minsk")
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "REA"
+			version_name = "Volsash & Tixomersk Class"
+		}
+		requested_factories = 1
+		progress = 0.70
+		amount = 2
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "REA"
+			version_name = "Volsash & Tixomersk Class"
+		}
+		requested_factories = 1
+		progress = 0.60
+		amount = 2
+	}
+	#CA Kirov Class (Kirov)
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "REA"
+			version_name = "Andrey Class"
+		}
+		requested_factories = 1
+		progress = 0.10
+		amount = 1
+	}
+	#CA Kirov Class (Voroshilov)
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "REA"
+			version_name = "Andrey Class"
+		}
+		requested_factories = 1
+		progress = 0.10
+		amount = 1
+	}
+	# SS: Shchuka class (x29) ("Shch-125" "Shch-205" "Shch-206" "Shch-207" "Shch-310" "Shch-311" "Shch-126" "Shch-127" "Shch-128" "Shch-129" "Shch-130" "Shch-131" "Shch-132" "Shch-133" 
+	#		"Shch-134" "Shch-208" "Shch-312" "Shch-313" "Shch-314" "Shch-315" "Shch-316" "Shch-317" "Shch-318" "Shch-319" "Shch-320" "Shch-321" "Shch-322" "Shch-323" "Shch-324")
+	# SS: Stalinets class (x5) ("P-1" "P-2" "P-3" "S-1" "S-2")
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_1
+			creator = "REA"
+			version_name = "Series Fedorovs"
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 6
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_1
+			creator = "REA"
+			version_name = "Series Fedorovs"
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 12
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_1
+			creator = "REA"
+			version_name = "Series Fedorovs"
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 12
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "REA"
+			version_name = "Series Oleg"
+		}
+		requested_factories = 1
+		progress = 0.70
+		amount = 5
+	}
+}
+
+#####################

@@ -17,16 +17,10 @@ state={
 			fuel_silo = 1
 		}
 		add_core_of = ANI
-
-		2023.1.1 = {
-			owner = SGK
-			add_core_of = SGK
-		}
-
 	}
 
 	provinces={
-		349 3207 3258 3312 3340 9388 
+		349 3207 3258 3312 3340 9388 13257
 	}
 
 	local_supplies=3.0 
