@@ -100,4 +100,9 @@ spriteTypes = {
 		texturefile = "gfx/leaders/SQR/portrait_SQR_kseniya_simachova.dds"
 	}
 
+	spriteType = {
+		name = "GFX_portrait_AVI_andrey_tatarov"
+		texturefile = "gfx/leaders/AVI/portrait_AVI_andrey_tatarov.dds"
+	}
+
 }

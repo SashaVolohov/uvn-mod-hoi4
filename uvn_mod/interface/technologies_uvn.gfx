@@ -1,0 +1,23 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_REA_fighter_equipment_0_medium"
+    	texturefile = gfx/interface/technologies/REA_fighter_equipment_0_medium.dds
+	}
+
+	spriteType = {
+		name = "GFX_REA_fighter_equipment_1_medium"
+    	texturefile = gfx/interface/technologies/REA_fighter_equipment_1_medium.dds
+	}
+
+	spriteType = {
+		name = "GFX_REA_tac_bomber_equipment_0_medium"
+    	texturefile = gfx/interface/technologies/REA_tac_bomber_equipment_0_medium.dds
+	}
+
+	spriteType = {
+		name = "GFX_REA_strat_bomber_equipment_0_medium"
+    	texturefile = gfx/interface/technologies/REA_strat_bomber_equipment_0_medium.dds
+	}
+
+}

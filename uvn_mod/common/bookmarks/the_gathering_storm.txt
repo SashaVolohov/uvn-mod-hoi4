@@ -2,7 +2,7 @@ bookmarks = {
 	bookmark = {
 		name = "BEGINNING_OF_2023_NAME"
 		desc = "BEGINNING_OF_2023_DESC"
-		date = 2023.1.1.12
+		date = 2024.1.1.12
 		picture = "GFX_select_date_2023"
 		default_country = "REA"
 		default = yes
@@ -94,9 +94,9 @@ bookmarks = {
 				
 			}		
 		}
-		"IND"={
-			history = "IND_BEGINNING_OF_2023_DESC"
-			ideology = democratic
+		"AVI"={
+			history = "AVI_BEGINNING_OF_2023_DESC"
+			ideology = neutrality
 			ideas = {
 				
 				

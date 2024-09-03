@@ -22,6 +22,11 @@ state=
 			}
 		}
 		add_core_of = SLI
+
+		2024.1.1 = {
+			owner = TTS
+			add_core_of = TTS
+		}
 	}
 
 	provinces = {

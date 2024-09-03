@@ -24,6 +24,12 @@ state={
 			air_base = 5
 		}
 		add_core_of = IND
+
+		2024.1.1 = {
+			owner = DUS
+			add_core = DUS
+		}
+
 	}
 
 	provinces={

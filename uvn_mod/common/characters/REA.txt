@@ -9,7 +9,7 @@ characters={
 		}
 		country_leader={
 			ideology=liberalism
-			traits={ technology_leader peacemaker }
+			traits={ technology_leader peacemaker aviator}
 			expire="2100.1.1.1"
 			id=-1
 		}

@@ -964,3 +964,7 @@ DAF = {
 	color = rgb { 255  102  178 }
 	color_ui = rgb { 255 51 153 }
 }
+AVI = {
+	color = rgb { 59  100  100 }
+	color_ui = rgb { 69 110 110 }
+}

@@ -1053,3 +1053,8 @@
  DAF_communism_party:0 "Коммунисты Дафии"
  DAF_fascism_party:0 "Фашисты Дафии"
  DAF_neutrality_party:0 "Нейтралы Дафии"
+
+ AVI_democratic_party:0 "Либеральная партия"
+ AVI_communism_party:0 "Пролетариат Авильшахта"
+ AVI_fascism_party:0 "Великий Авиль"
+ AVI_neutrality_party:0 "Сторонники Андрея"

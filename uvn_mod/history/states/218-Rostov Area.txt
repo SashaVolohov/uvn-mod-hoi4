@@ -21,6 +21,12 @@ state={
 			}
 		}
 		add_core_of = BRS
+
+		2024.1.1 = {
+			owner = REA
+			add_core = REA
+		}
+
 	}
 
 	provinces={

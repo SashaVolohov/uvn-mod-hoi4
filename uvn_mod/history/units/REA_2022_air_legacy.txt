@@ -1,0 +1,58 @@
+
+
+### Air Wings
+air_wings = {
+
+	202 = {
+
+		fighter_equipment_1 = {
+			owner = "REA" 
+			amount = 94
+		}
+
+		tac_bomber_equipment_0 =  {
+			owner = "REA" 
+			amount = 60
+		}
+		tac_bomber_equipment_0 =  {
+			owner = "REA" 
+			amount = 60
+		}
+	}
+
+	137 = {
+		nav_bomber_equipment_1 = {
+			owner = "REA" 
+			amount = 54
+		}
+	}
+}
+
+
+		
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = "REA" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = strat_bomber_equipment_0
+			creator = "REA" 
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
+	}
+}
+	#####################

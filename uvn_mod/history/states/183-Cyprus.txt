@@ -26,6 +26,11 @@ state= {
 			}
 		}
 
+		2024.1.1 = {
+			owner = TTS
+			add_core_of = TTS
+		}
+
 	}
 	provinces= { 7193 11984 }
 

@@ -28,6 +28,7 @@
 
  technology_leader:0 "Технологический лидер"
  peacemaker:0 "Миротворец"
+ aviator:0 "Любитель авиации"
 
  TAL_enter_troops:0 "Ввести войска в Талонск"
  TAL_enter_troops_desc:0 "Глава Талонска Андрей Попов подал в отставку, и государство осталось без правителя. Нам нужно срочно ввести войска и навести порядок!"
@@ -311,3 +312,45 @@
  REA_andrey_shevchenko:0 "Андрей Шевченко"
  REA_bogdan_zybov:0 "Богдан Зубов"
  REA_nikita_afanasiev:0 "Никита Афанасьев"
+
+ REA_fighter_equipment_0:0 "СиВ-15"
+ REA_fighter_equipment_1:0 "СиВ-17"
+ REA_fighter_equipment_2:0 "СиВ-19"
+ REA_fighter_equipment_3:0 "СиВ-21"
+ REA_fighter_equipment_4:0 "СиВ-23"
+ REA_fighter_equipment_5:0 "СиВ-25"
+
+ REA_tac_bomber_equipment_0:0 "Ил-28"
+ REA_tac_bomber_equipment_1:0 "Як-28"
+ REA_tac_bomber_equipment_2:0 "Су-24"
+ REA_tac_bomber_equipment_3:0 "Су-34"
+ REA_tac_bomber_equipment_4:0 "Ил-128"
+ REA_tac_bomber_equipment_5:0 "Ил-148"
+
+ REA_strat_bomber_equipment_0:0 "Ту-16"
+ REA_strat_bomber_equipment_1:0 "Ту-95"
+ REA_strat_bomber_equipment_2:0 "М-4"
+ REA_strat_bomber_equipment_3:0 "3М"
+ REA_strat_bomber_equipment_4:0 "Ту-22"
+ REA_strat_bomber_equipment_5:0 "B-1 Sunflower"
+
+ REA_fighter_equipment_0_short:0 "СиВ-15"
+ REA_fighter_equipment_1_short:0 "СиВ-17"
+ REA_fighter_equipment_2_short:0 "СиВ-19"
+ REA_fighter_equipment_3_short:0 "СиВ-21"
+ REA_fighter_equipment_4_short:0 "СиВ-23"
+ REA_fighter_equipment_5_short:0 "СиВ-25"
+
+ REA_tac_bomber_equipment_0_short:0 "Ил-28"
+ REA_tac_bomber_equipment_1_short:0 "Як-28"
+ REA_tac_bomber_equipment_2_short:0 "Су-24"
+ REA_tac_bomber_equipment_3_short:0 "Су-34"
+ REA_tac_bomber_equipment_4_short:0 "Ил-128"
+ REA_tac_bomber_equipment_5_short:0 "Ил-148"
+
+ REA_strat_bomber_equipment_0_short:0 "Ту-16"
+ REA_strat_bomber_equipment_1_short:0 "Ту-95"
+ REA_strat_bomber_equipment_2_short:0 "М-4"
+ REA_strat_bomber_equipment_3_short:0 "3М"
+ REA_strat_bomber_equipment_4_short:0 "Ту-22"
+ REA_strat_bomber_equipment_5_short:0 "B-1 Sunflower"

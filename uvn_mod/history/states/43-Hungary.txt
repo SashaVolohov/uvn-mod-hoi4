@@ -11,7 +11,7 @@ state={
 	state_category = large_city
 
 	history={
-		owner = ZEI
+		owner = DUS
 		buildings = {
 			infrastructure = 3
 			arms_factory = 4
@@ -21,7 +21,8 @@ state={
 		victory_points = {
 			9660 20 
 		}
-		add_core_of = ZEI
+		add_core_of = DUS
+
 	}
 
 	provinces={

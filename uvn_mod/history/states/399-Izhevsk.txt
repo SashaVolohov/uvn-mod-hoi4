@@ -19,6 +19,11 @@ state = {
 		victory_points = {
 			6278 1 
 		}
+
+		2024.1.1 = {
+			owner = AVI
+			add_core_of = AVI
+		}
 	}
 
 	provinces = {

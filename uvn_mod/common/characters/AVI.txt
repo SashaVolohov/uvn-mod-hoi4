@@ -1,0 +1,18 @@
+characters={
+
+	AVI_andrey_tatarov={
+		name=AVI_andrey_tatarov
+		portraits={
+			civilian={
+				large=GFX_portrait_AVI_andrey_tatarov
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = { aviator }
+			expire="2100.1.1.1"
+			id=-1
+		}
+	}
+
+}

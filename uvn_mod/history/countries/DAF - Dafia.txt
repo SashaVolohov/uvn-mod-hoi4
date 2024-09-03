@@ -1,4 +1,4 @@
-﻿capital = 910
+﻿capital = 971
 
 starting_train_buffer = 3.0
 set_oob = "DAF_2022"

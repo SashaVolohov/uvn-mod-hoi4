@@ -20,6 +20,13 @@ state={
 			1822 1 
 		}
 		add_core_of = KUR
+
+		2024.1.1 = {
+			owner = CAU
+			add_core_of = CAU
+		}
+
+
 	}
 
 	provinces={

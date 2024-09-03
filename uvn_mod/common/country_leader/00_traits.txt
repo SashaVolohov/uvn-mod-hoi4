@@ -8386,6 +8386,18 @@ leader_traits = {
 		}
 	}
 
+	aviator = {
+		random = no
+		air_volunteer_cap = 100
+		fuel_cost = 50
+		ai_focus_aviation_factor = 0.5
+		
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	tibetan_genius = {
 		random = no
 		

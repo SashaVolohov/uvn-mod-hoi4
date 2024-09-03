@@ -14,6 +14,12 @@ state = {
 			arms_factory = 1
 		}
 		add_core_of = BAV
+
+		2024.1.1 = {
+			owner = DUS
+			add_core_of = DUS
+		}
+
 	}
 
 	provinces = {

@@ -24,6 +24,12 @@ state={
 			8031 1 
 		}
 		add_core_of = PER
+
+		2024.1.1 = {
+			owner = CAU
+			add_core_of = CAU
+		}
+
 	}
 
 	provinces={

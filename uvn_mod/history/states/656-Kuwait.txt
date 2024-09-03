@@ -18,6 +18,12 @@ state={
 			}
 		}
 
+		2024.1.1 = {
+			owner = CAU
+			add_core_of = CAU
+		}
+
+
 	}
 	provinces={
 		8085

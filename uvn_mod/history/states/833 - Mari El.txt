@@ -16,6 +16,11 @@ state = {
 		}
 		add_core_of = SLI
 		add_core_of = MEL
+
+		2024.1.1 = {
+			owner = AVI
+			add_core_of = AVI
+		}
 	}
 
 	provinces = {
