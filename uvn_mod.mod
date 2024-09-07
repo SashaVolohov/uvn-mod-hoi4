@@ -1,4 +1,4 @@
-version="Alpha_1.3.1"
+version="Alpha_1.3.1.3"
 tags={
 	"Alternative History"
 	"Balance"
@@ -10,6 +10,7 @@ tags={
 replace_path="common/decisions"
 replace_path="common/national_focus"
 replace_path="events"
+replace_path="history/countries"
 replace_path="history/states"
 replace_path="history/units"
 replace_path="gfx/loadingscreens"

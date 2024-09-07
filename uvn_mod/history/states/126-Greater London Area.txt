@@ -1,9 +1,7 @@
+
 state={
 	id=126
 	name="STATE_126"
-	manpower=9824296
-	
-	state_category = megalopolis
 
 	history={
 		owner = SQR
@@ -11,7 +9,7 @@ state={
 			6103 50 
 		}
 		buildings = {
-			infrastructure = 5 #was: 9
+			infrastructure = 5
 			arms_factory = 3
 			industrial_complex = 3
 			dockyard = 1
@@ -20,14 +18,19 @@ state={
 			air_base = 10
 			11374 = {
 				naval_base = 10
+
 			}
+
 		}
 		add_core_of = SQR
+
 	}
 
 	provinces={
-		6103 9239 11333 11374 
+		507 3501 11333 11446 13070 
 	}
-
-	local_supplies=0.0 
+	manpower=9824296
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
 }

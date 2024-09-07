@@ -10,4 +10,74 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/SQR/idea_SQR_kseniya_simachova.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_ANI_tatyana"
+		texturefile = "gfx/interface/ideas/ANI/idea_ANI_tatyana.dds"
+	}
+	
+	 spriteType = {
+		name = "GFX_idea_ANI_kirill_merkushev"
+		texturefile = "gfx/interface/ideas/ANI/idea_ANI_kirill_merkushev.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ANI_maksim_beliyaev"
+		texturefile = "gfx/interface/ideas/ANI/idea_ANI_maksim_beliyaev.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SQR_alexander_burakov"
+		texturefile = "gfx/interface/ideas/SQR/idea_SQR_alexander_burakov.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SQR_aleksei_tigrov"
+		texturefile = "gfx/interface/ideas/SQR/idea_SQR_aleksei_tigrov.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SQR_alexander_volokhov"
+		texturefile = "gfx/interface/ideas/SQR/idea_SQR_alexander_volokhov.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SQR_tymur_slyva"
+		texturefile = "gfx/interface/ideas/SQR/idea_SQR_tymur_slyva.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SQR_george_davenport"
+		texturefile = "gfx/interface/ideas/SQR/idea_SQR_george_davenport.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SQR_gillette_johnson"
+		texturefile = "gfx/interface/ideas/SQR/idea_SQR_gillette_johnson.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SQR_james_norrington"
+		texturefile = "gfx/interface/ideas/SQR/idea_SQR_james_norrington.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SQR_james_smith"
+		texturefile = "gfx/interface/ideas/SQR/idea_SQR_james_smith.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SQR_john_scarfield"
+		texturefile = "gfx/interface/ideas/SQR/idea_SQR_john_scarfield.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SQR_theodore_groves"
+		texturefile = "gfx/interface/ideas/SQR/idea_SQR_theodore_groves.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SQR_jack_lopez"
+		texturefile = "gfx/interface/ideas/SQR/idea_SQR_jack_lopez.dds"
+	}
+
 }

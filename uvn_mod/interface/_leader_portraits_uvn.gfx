@@ -105,4 +105,59 @@ spriteTypes = {
 		texturefile = "gfx/leaders/AVI/portrait_AVI_andrey_tatarov.dds"
 	}
 
+	spriteType = {
+		name = "GFX_portrait_ANI_tatyana"
+		texturefile = "gfx/leaders/ANI/portrait_ANI_tatyana.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_ANI_maksim_beliyaev"
+		texturefile = "gfx/leaders/ANI/portrait_ANI_maksim_beliyaev.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_SQR_aleksei_tigrov"
+		texturefile = "gfx/leaders/SQR/portrait_SQR_aleksei_tigrov.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_SQR_james_norrington"
+		texturefile = "gfx/leaders/SQR/portrait_SQR_james_norrington.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_SQR_gillette_johnson"
+		texturefile = "gfx/leaders/SQR/portrait_SQR_gillette_johnson.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_SQR_theodore_groves"
+		texturefile = "gfx/leaders/SQR/portrait_SQR_theodore_groves.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_SQR_george_davenport"
+		texturefile = "gfx/leaders/SQR/portrait_SQR_george_davenport.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_SQR_james_smith"
+		texturefile = "gfx/leaders/SQR/portrait_SQR_james_smith.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_SQR_john_scarfield"
+		texturefile = "gfx/leaders/SQR/portrait_SQR_john_scarfield.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_SQR_alexander_volokhov"
+		texturefile = "gfx/leaders/SQR/portrait_SQR_alexander_volokhov.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_SQR_jack_lopez"
+		texturefile = "gfx/leaders/SQR/portrait_SQR_jack_lopez.dds"
+	}
+
 }

@@ -1,0 +1,358 @@
+focus_tree = {
+	id = anigara
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ANI
+		}
+	}
+	default = no
+	focus = {
+		id = ANI_gov
+		icon = GFX_goal_generic_major_alliance
+		cost = 5
+		x = 13
+		y = 0
+		completion_reward = {
+
+			ANI = {
+				add_opinion_modifier = { target = SQR modifier = REA_SQR_diplomacy_focus }
+				add_opinion_modifier = { target = REA modifier = REA_SQR_diplomacy_focus }
+				add_opinion_modifier = { target = DUS modifier = REA_SQR_diplomacy_focus }
+			}
+
+		}
+	}
+	focus = {
+		id = ANI_army
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10
+		x = 6
+		y = 0
+		completion_reward = {
+
+			army_experience = 50
+
+		}
+	}
+	focus = {
+		id = ANI_ships
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10
+		x = 20
+		y = 0
+		completion_reward = {
+            add_building_construction = {
+            type = dockyard
+            level = 5
+            instant_build = yes
+            province = NO
+            }
+		}
+	}
+	focus = {
+		id = ANI_tanks
+		icon = GFX_goal_generic_army_tanks
+		cost = 7
+		prerequisite = {
+			focus = ANI_army
+		}
+		x = 6
+		y = 1
+		completion_reward = {
+            add_tech_bonus = {
+            bonus = 1
+            uses = 3
+            category = armor
+            }
+        }
+	}
+	focus = {
+		id = ANI_4
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = {
+			focus = ANI_tanks
+			focus = ANI_planes
+		}
+		x = 5
+		y = 3
+        completion_reward = { 
+		    add_political_power = 100 
+		}
+	}
+	focus = {
+		id = ANI_dep_1
+		icon = GFX_goal_generic_build_tank
+		cost = 10
+		prerequisite = {
+			focus = ANI_4
+		}
+		x = 4
+		y = 4
+		completion_reward = { 
+		    set_popularities = {
+				fascism = 50
+				communism = 20
+				neutrality = 30
+			} 
+		}
+	}
+	focus = {
+		id = ANI_dep
+		icon = GFX_goal_generic_air_doctrine
+		cost = 7
+		prerequisite = {
+			focus = ANI_gov
+		}
+		x = 13
+		y = 1
+		completion_reward = {
+            add_war_support = 0.3
+            add_stability = 0.2
+        }
+	}
+	focus = {
+		id = ANI_planes
+		icon = GFX_goal_generic_air_fighter
+		cost = 7
+		prerequisite = {
+			focus = ANI_dep
+		}
+		x = 12
+		y = 2
+		completion_reward = {
+            add_tech_bonus = {
+            bonus = 0.5
+            uses = 1
+            category = medium_air
+            }
+        }
+	}
+	focus = {
+		id = ANI_1
+		icon = GFX_goal_generic_radar
+		cost = 7
+		prerequisite = {
+			focus = ANI_planes
+			focus = ANI_racets
+		}
+		x = 9
+		y = 3
+		completion_reward = { add_ideas = {fascist_influence} }
+	}
+	focus = {
+		id = ANI_2
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 7
+		prerequisite = {
+			focus = ANI_1
+		}
+		x = 8
+		y = 4
+		completion_reward = { add_political_power = 150 }
+	}
+	focus = {
+		id = ANI_3
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 7
+		prerequisite = {
+			focus = ANI_1
+		}
+		x = 10
+		y = 4
+		completion_reward = { add_manpower = 100000000 }
+	}
+	focus = {
+		id = ANI_infantry
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 7
+		prerequisite = {
+			focus = ANI_dep
+		}
+		x = 14
+		y = 2
+		completion_reward = {
+            add_tech_bonus = {
+            bonus = 0.2
+            uses = 4
+            category = infantry_weapons
+            }
+        }
+	}
+	focus = {
+		id = ANI_tech_1
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 7
+		prerequisite = {
+			focus = ANI_infantry
+			focus = ANI_planes
+		}
+		x = 13
+		y = 3
+		completion_reward = {
+            add_tech_bonus = {
+            bonus = 0.5
+            uses = 1
+            category = electronics
+            }
+        }
+	}
+	focus = {
+		id = ANI_tech_2
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 7
+		prerequisite = {
+			focus = ANI_tech_1
+		}
+		x = 13
+		y = 4
+		completion_reward = {
+            add_tech_bonus = {
+            bonus = 0.5
+            uses = 1
+            category = industry
+        }
+	}
+}
+	focus = {
+		id = ANI_ships_1
+		icon = GFX_goal_generic_navy_submarine
+		cost = 7
+		prerequisite = {
+			focus = ANI_ships
+		}
+		x = 19
+		y = 1
+		completion_reward = {
+            add_building_construction = {
+            type = dockyard
+            level = 2
+            instant_build = yes
+            province = NO
+            }
+		}
+}
+	focus = {
+		id = ANI_ships_2
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 7
+		prerequisite = {
+			focus = ANI_ships
+		}
+		x = 20
+		y = 2
+		completion_reward = {
+            add_building_construction = {
+            type = dockyard
+            level = 2
+            instant_build = yes
+            province = NO
+            }
+		}
+	}
+	focus = {
+		id = ANI_ships_3
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 7
+		prerequisite = {
+			focus = ANI_ships
+		}
+		x = 21
+		y = 1
+
+	}
+	focus = {
+		id = ANI_war_1
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 7
+		prerequisite = {
+			focus = ANI_3
+			focus = ANI_2
+		}
+		x = 8
+		y = 5
+		available = {
+			NOT = { has_war_with = BAV }
+		}
+		completion_reward = {
+
+			create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = BAV
+			}
+
+		}
+	}
+	focus = {
+		id = ANI_war_2
+		icon = GFX_goal_generic_major_war
+		cost = 7
+		prerequisite = {
+			focus = ANI_2
+			focus = ANI_3
+		}
+		x = 10
+		y = 5
+		available = {
+			NOT = { has_war_with = DUS }
+		}
+		completion_reward = {
+
+			create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = DUS
+			}
+
+		}
+	}
+	focus = {
+		id = ANI_dep_2
+		icon = GFX_goal_generic_CAS
+		cost = 7
+		prerequisite = {
+			focus = ANI_dep_1
+		}
+		x = 4
+		y = 5
+		completion_reward = { 
+		    set_popularities = {
+				fascism = 50
+				communism = 25
+				neutrality = 25
+			} 
+		}
+	}
+	focus = {
+		id = ANI_const_1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 7
+		prerequisite = {
+			focus = ANI_tech_2
+		}
+		x = 12
+		y = 5
+		completion_reward = {
+            add_offsite_building = { type = arms_factory level = 7 }
+		}
+	}
+	focus = {
+		id = ANI_const_2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 7
+		prerequisite = {
+			focus = ANI_tech_2
+		}
+		x = 14
+		y = 5
+		completion_reward = {
+            add_building_construction = {
+            type = industrial_complex
+            level = 7
+            instant_build = yes
+            province = NO
+            }
+		}
+	}
+}

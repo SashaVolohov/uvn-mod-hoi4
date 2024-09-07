@@ -27,7 +27,7 @@ state = {
 
 		2024.1.1 = {
 			owner = REA
-			add_core = REA
+			add_core_of = REA
 		}
 
 	}

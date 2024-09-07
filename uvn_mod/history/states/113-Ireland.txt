@@ -2,24 +2,21 @@
 state={
 	id=113
 	name="STATE_113"
-	manpower = 1357600
 	resources={
-		aluminium=0 # was: 2
-		steel=2 # was: 3
+		aluminium=0.000
+		steel=2.000
 	}
-	
-	state_category = city
-	
+
 	history={
 		owner = SQR
 		victory_points = {
-			285 1
+			285 1 
 		}
 		victory_points = {
-			303 1
+			303 1 
 		}
 		victory_points = {
-			11293 10
+			11293 10 
 		}
 		buildings = {
 			infrastructure = 4
@@ -28,14 +25,19 @@ state={
 			air_base = 3
 			11293 = {
 				naval_base = 6
+
 			}
+
 		}
 		add_core_of = SQR
+
 	}
 
 	provinces={
-		285 303 369 3342 3359 7377 11293 11303 
+		285 303 3342 7377 7394 9284 9310 9405 11237 11267 11293 
 	}
-
-	local_supplies=0.0 
+	manpower=1357600
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

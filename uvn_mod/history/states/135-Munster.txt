@@ -2,28 +2,29 @@
 state={
 	id=135
 	name="STATE_135"
-	manpower = 941400
-
-	state_category = town
 
 	history={
 		owner = SQR
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 3
 			industrial_complex = 3
+
 		}
 		victory_points = {
-			7394 5 #Cork
+			7394 5 
 		}
 		victory_points = {
-			6313 1 #Limerick
+			6313 1 
 		}
 		add_core_of = SQR
+
 	}
 
 	provinces={
-		6289 6313 6405 7394 9284 9310 9405 11237 11267 11334 
+		369 3396 6289 6313 6405 9255 9303 9321 9369 11287 11334 
 	}
-
-	local_supplies=0.0 
+	manpower=941400
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

@@ -3,7 +3,7 @@
 starting_train_buffer = 3.0
 set_oob = "SQR_2023"
 
-set_research_slots = 3
+set_research_slots = 6
 set_stability = 0.5
 set_war_support = 0.3
 
@@ -44,6 +44,17 @@ set_popularities = {
 recruit_character = SQR_tymur_slyva
 recruit_character = SQR_kirill_tishkov
 recruit_character = SQR_kseniya_simachova
+recruit_character = SQR_alexander_burakov
+recruit_character = SQR_aleksei_tigrov
+recruit_character = SQR_james_norrington
+recruit_character = SQR_gillette_johnson
+recruit_character = SQR_theodore_groves
+recruit_character = SQR_george_davenport
+recruit_character = SQR_james_smith
+recruit_character = SQR_john_scarfield
+recruit_character = SQR_alexander_volokhov
+recruit_character = SQR_theory_tymur_slyva
+recruit_character = SQR_jack_lopez
 
 add_ideas = {
 	SQR_uvco_member
@@ -53,5 +64,6 @@ add_ideas = {
 	SQR_fire_revolution
 
 	SQR_kseniya_simachova
+	SQR_alexander_burakov
 }
 

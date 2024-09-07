@@ -1,9 +1,9 @@
-﻿capital = 65
+﻿capital = 64
 
 starting_train_buffer = 3.0
 set_oob = "ANI_2022"
-
-set_research_slots = 2
+set_country_tag = ANI
+set_research_slots = 4
 set_stability = 0.25
 set_war_support = 0.1
 
@@ -18,6 +18,7 @@ set_technology = {
 	motorised_infantry = 1
 	paratroopers = 1
 	gw_artillery = 1
+	basic_train = 1
 }
 
 set_politics = {
@@ -28,10 +29,17 @@ set_politics = {
 }
 
 set_popularities = {
-	fascism = 75
+	fascism = 50
 	neutrality = 5
 	democratic = 20
+	communism = 25
 }
 
 recruit_character = ANI_aleksei_tigrov
+
+recruit_character = ANI_tatyana
+
+recruit_character = ANI_maksim_beliyaev
+
+recruit_character = ANI_kirill_merkushev
 

@@ -27,7 +27,7 @@ state={
 
 		2024.1.1 = {
 			owner = DUS
-			add_core = DUS
+			add_core_of = DUS
 		}
 
 	}
