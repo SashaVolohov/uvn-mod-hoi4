@@ -17,6 +17,11 @@ state={
 			air_base = 1
 		}
 		add_core_of = ZEI
+
+		2025.1.1 = {
+			owner = REA
+			add_core_of = REA
+		}
 	}
 
 	provinces={

@@ -59,5 +59,37 @@ spriteTypes = {
 		name = "GFX_idea_ZEI_good_zach"
 		texturefile = "gfx/interface/ideas/ZEI/ZEI_good_zach.dds"
 	}
+    spriteType = {
+        name = "GFX_idea_SQR_harland_wolff"
+		texturefile = "gfx/interface/ideas/SQR/idea_SQR_harland_wolff.dds"
+    }
 
+    spriteType = {
+        name = "GFX_idea_SQR_tupolev"
+		texturefile = "gfx/interface/ideas/SQR/idea_SQR_tupolev.dds"
+    }
+	
+	spriteType = {
+		name = "GFX_idea_SQR_siv"
+		texturefile = "gfx/interface/ideas/SQR/idea_SQR_siv.dds"
+	}
+    spriteType = {
+        name = "GFX_idea_SQR_smt"
+		texturefile = "gfx/interface/ideas/SQR/idea_SQR_smt.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_SQR_brbc"
+		texturefile = "gfx/interface/ideas/SQR/idea_SQR_brbc.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_idea_SQR_datsun"
+		texturefile = "gfx/interface/ideas/SQR/idea_SQR_datsun.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_idea_SQR_sudi"
+		texturefile = "gfx/interface/ideas/SQR/idea_SQR_sudi.dds"
+    }
 }

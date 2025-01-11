@@ -21,9 +21,9 @@ state={
 		add_core_of = BRS
 		add_core_of = DAG
 
-		2024.1.1 = {
-			owner = CAU
-			add_core_of = CAU
+		2025.1.1 = {
+			owner = REA
+			add_core_of = REA
 		}
 
 	}

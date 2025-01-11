@@ -1,0 +1,118 @@
+technologies = {
+
+    SQR_fighter_equipment_0 = {
+        enable_equipments = {
+            fighter_equipment_0
+        }
+
+        icon = {
+            if = {
+                limit = {
+                    tag = SQR
+                }
+                icon = GFX_SQR_fighter_equipment_0_medium
+            }
+            else = {
+                icon = GFX_generic_fighter_equipment_0_medium
+            }
+        }
+
+        research_cost = 2.0
+        start_year = 1936
+        folder = {
+            name = aviation_folder
+            position = { x = 0 y = 0 }
+        }
+        
+        categories = {
+            aircraft
+        }
+    }
+
+    SQR_fighter_equipment_1 = {
+        enable_equipments = {
+            fighter_equipment_1
+        }
+
+        icon = {
+            if = {
+                limit = {
+                    tag = SQR
+                }
+                icon = GFX_SQR_fighter_equipment_1_medium
+            }
+            else = {
+                icon = GFX_generic_fighter_equipment_1_medium
+            }
+        }
+
+        research_cost = 2.5
+        start_year = 1940
+        folder = {
+            name = aviation_folder
+            position = { x = 1 y = 0 }
+        }
+        
+        categories = {
+            aircraft
+        }
+    }
+
+    SQR_strat_bomber_equipment_0 = {
+        enable_equipments = {
+            strat_bomber_equipment_0
+        }
+
+        icon = {
+            if = {
+                limit = {
+                    tag = SQR
+                }
+                icon = GFX_SQR_strat_bomber_equipment_0_medium
+            }
+            else = {
+                icon = GFX_generic_strat_bomber_equipment_0_medium
+            }
+        }
+
+        research_cost = 3.0
+        start_year = 1943
+        folder = {
+            name = aviation_folder
+            position = { x = 2 y = 0 }
+        }
+
+        categories = {
+            aircraft
+        }
+    }
+
+    SQR_strat_bomber_equipment_1 = {
+        enable_equipments = {
+            strat_bomber_equipment_1
+        }
+
+        icon = {
+            if = {
+                limit = {
+                    tag = SQR
+                }
+                icon = GFX_SQR_strat_bomber_equipment_1_medium
+            }
+            else = {
+                icon = GFX_generic_strat_bomber_equipment_1_medium
+            }
+        }
+
+        research_cost = 3.5
+        start_year = 1947
+        folder = {
+            name = aviation_folder
+            position = { x = 3 y = 0 }
+        }
+
+        categories = {
+            aircraft
+        }
+    }
+}

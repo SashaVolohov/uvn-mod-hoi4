@@ -10,13 +10,7 @@ state={
 	history={
 		owner = SQR
 		victory_points = {
-			407 3 
-		}
-		victory_points = {
-			311 1 
-		}
-		victory_points = {
-			377 5 
+			311 10
 		}
 		buildings = {
 			infrastructure = 3
@@ -33,7 +27,7 @@ state={
 	}
 
 	provinces={
-		311 3274 6301 6363 11361 253 377 407
+		311 3274 6301 6363 11361
 	}
 	manpower=2309230
 	buildings_max_level_factor=1.000

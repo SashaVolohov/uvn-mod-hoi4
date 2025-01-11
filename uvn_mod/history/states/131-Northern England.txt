@@ -14,7 +14,7 @@ state={
 		owner = SQR
 		add_core_of = SQR
 		victory_points = {
-			351 8 
+			351 10
 		}
 		buildings = {
 			infrastructure = 3 #was: 6
@@ -28,7 +28,7 @@ state={
 	}
 
 	provinces={
-		351 11270 11299 
+		351 11270 11299 11317 11297 9269 219
 	}
 
 	local_supplies=14.0 

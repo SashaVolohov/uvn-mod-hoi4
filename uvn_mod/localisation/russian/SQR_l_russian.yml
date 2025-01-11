@@ -106,6 +106,14 @@
  SQR_sanctions_against_other_desc:0 "Одно из государств наложило на нас свои экономические санкции, что привело к ряду проблем в нашей экономике."
  SQR_uvn_member:0 "Член ОВН"
  SQR_uvn_member_desc:0 "Являясь членом ОВН, мы сможем наконец сконцентрироваться на дипломатии и сотрудничать со всеми странами мира."
+ 
+ SQR_tupolev:0 "Туполев"
+ SQR_siv:0 "СиВ"
+ SQR_smt:0 "SMT"
+ SQR_harland_wolff:0 "Harland & Wolff"
+ SQR_brbc:0 "BRBC"
+ SQR_datsun:0 "Datsun"
+ SQR_sudi:0 "SUDI"
 
  SQR_SGK_sanctions_diplomacy:0 "Экономические санкции"
 
@@ -203,4 +211,35 @@
  news.1040.a:0 "Фашистов нужно запретить!"
  news.1040.b:0 "Малолетний дебил умер."
 
+ SQR_fighter_equipment_0:0 "СиВ-15"
+ SQR_fighter_equipment_1:0 "СиВ-17"
+ SQR_fighter_equipment_2:0 "СиВ-19"
+ SQR_fighter_equipment_3:0 "СиВ-21"
+ SQR_fighter_equipment_4:0 "СиВ-23"
+ SQR_fighter_equipment_5:0 "СиВ-25"
+
+ SQR_strat_bomber_equipment_0:0 "Ту-16"
+ SQR_strat_bomber_equipment_1:0 "Ту-16А"
+ SQR_strat_bomber_equipment_2:0 "Ту-16Б"
+ SQR_strat_bomber_equipment_3:0 "Ту-16Б-2"
+ SQR_strat_bomber_equipment_4:0 "Ту-22"
+ SQR_strat_bomber_equipment_5:0 "Ту-22М"
+ 
+ SQR_transport_plane_equipment_1:0 "Ту-104С"
+
+ SQR_fighter_equipment_0_short:0 "СиВ-15"
+ SQR_fighter_equipment_1_short:0 "СиВ-17"
+ SQR_fighter_equipment_2_short:0 "СиВ-19"
+ SQR_fighter_equipment_3_short:0 "СиВ-21"
+ SQR_fighter_equipment_4_short:0 "СиВ-23"
+ SQR_fighter_equipment_5_short:0 "СиВ-25"
+
+ SQR_strat_bomber_equipment_0_short:0 "Ту-16"
+ SQR_strat_bomber_equipment_1_short:0 "Ту-16А"
+ SQR_strat_bomber_equipment_2_short:0 "Ту-16Б"
+ SQR_strat_bomber_equipment_3_short:0 "Ту-16Б-2"
+ SQR_strat_bomber_equipment_4_short:0 "Ту-22"
+ SQR_strat_bomber_equipment_5_short:0 "Ту-22М"
+
+ SQR_transport_plane_equipment_1_short:0 "Ту-104С"
 

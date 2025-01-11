@@ -1,4 +1,4 @@
-﻿capital = 970
+﻿capital = 982
 
 starting_train_buffer = 3.0
 set_oob = "REA_2022"

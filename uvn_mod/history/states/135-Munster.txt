@@ -11,10 +11,10 @@ state={
 
 		}
 		victory_points = {
-			7394 5 
+			6313 1 
 		}
 		victory_points = {
-			6313 1 
+			9303 10 
 		}
 		add_core_of = SQR
 

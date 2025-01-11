@@ -16,14 +16,17 @@ state={
 
 		}
 		victory_points = {
-			9297 25 
+			9364 10
+		}
+		victory_points = {
+			11279 1
 		}
 		add_core_of = SQR
 
 	}
 
 	provinces={
-		3205 3301 6237 9364 11279 11345 3241 6270 7239 9297
+		3205 3301 6237 9364 11279 11345
 	}
 	manpower=3685235
 	buildings_max_level_factor=1.000

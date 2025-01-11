@@ -20,9 +20,9 @@ state={
 			11696 3
 		}
 
-		2024.1.1 = {
-			owner = CAU
-			add_core_of = CAU
+		2025.1.1 = {
+			owner = REA
+			add_core_of = REA
 		}
 
 	}

@@ -1,0 +1,1 @@
+loading_music = "music/kaskad_we_are_leaving.ogg"

@@ -43,12 +43,6 @@ focus_tree = {
 		x = 20
 		y = 0
 		completion_reward = {
-            add_building_construction = {
-            type = dockyard
-            level = 5
-            instant_build = yes
-            province = NO
-            }
 		}
 	}
 	focus = {
@@ -226,12 +220,7 @@ focus_tree = {
 		x = 19
 		y = 1
 		completion_reward = {
-            add_building_construction = {
-            type = dockyard
-            level = 2
-            instant_build = yes
-            province = NO
-            }
+            
 		}
 }
 	focus = {
@@ -244,12 +233,6 @@ focus_tree = {
 		x = 20
 		y = 2
 		completion_reward = {
-            add_building_construction = {
-            type = dockyard
-            level = 2
-            instant_build = yes
-            province = NO
-            }
 		}
 	}
 	focus = {
@@ -347,12 +330,6 @@ focus_tree = {
 		x = 14
 		y = 5
 		completion_reward = {
-            add_building_construction = {
-            type = industrial_complex
-            level = 7
-            instant_build = yes
-            province = NO
-            }
 		}
 	}
 }

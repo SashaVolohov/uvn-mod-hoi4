@@ -1024,10 +1024,10 @@
  BAV_fascism_party:0 "БПНС"
  BAV_neutrality_party:0 "Нейтралы Баварии"
 
- ANI_democratic_party:0 "Демократы Анигары"
- ANI_communism_party:0 "Коммунисты Анигары"
- ANI_fascism_party:0 "Фашисты Анигары"
- ANI_neutrality_party:0 "Нейтралы Анигары"
+ ANI_democratic_party:0 "Дрочомбро"
+ ANI_communism_party:0 "Красное Движение"
+ ANI_fascism_party:0 "Националистическая партия Анигары"
+ ANI_neutrality_party:0 "Нейтралы"
 
  MAN_democratic_party:0 "Демократы Маньчджурии"
  MAN_communism_party:0 "Коммунисты Маньчджурии"
@@ -1039,9 +1039,9 @@
  ZEI_fascism_party:0 "БДСМ"
  ZEI_neutrality_party:0 "ПЛП"
 
- SQR_democratic_party:0 "Тимуровцы"
- SQR_communism_party:0 "Коммунисты Sqr United"
- SQR_fascism_party:0 "Фашисты Sqr United"
+ SQR_democratic_party:0 "Наша "Sqr United""
+ SQR_communism_party:0 "Социалистическая Партия SQR"
+ SQR_fascism_party:0 "Свободная SQR"
  SQR_neutrality_party:0 "Кирилловцы"
 
  CHE_democratic_party:0 "Демократы Чейджоу"

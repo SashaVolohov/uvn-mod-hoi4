@@ -16,8 +16,49 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_REA_strat_bomber_equipment_0_medium"
-    	texturefile = gfx/interface/technologies/REA_strat_bomber_equipment_0_medium.dds
+		name = "GFX_REA_fighter_equipment_2_medium"
+    	texturefile = gfx/interface/technologies/REA_fighter_equipment_2_medium.dds
 	}
+	
+		spriteType = {
+		name = "GFX_SQR_fighter_equipment_0_medium"
+    	texturefile = gfx/interface/technologies/REA_fighter_equipment_0_medium.dds
+	}
+	
+		spriteType = {
+		name = "GFX_SQR_fighter_equipment_1_medium"
+    	texturefile = gfx/interface/technologies/REA_fighter_equipment_1_medium.dds
+	}
+	
+		spriteType = {
+		name = "GFX_SQR_fighter_equipment_2_medium"
+    	texturefile = gfx/interface/technologies/REA_fighter_equipment_2_medium.dds
+	}
+	
+		spriteType = {
+		name = "GFX_SQR_strat_bomber_equipment_0_medium"
+    	texturefile = gfx/interface/technologies/SQR_strat_bomber_equipment_0_medium.dds
+	}
+	
+		spriteType = {
+		name = "GFX_SQR_strat_bomber_equipment_1_medium"
+    	texturefile = gfx/interface/technologies/SQR_strat_bomber_equipment_1_medium.dds
+	}
+	
+			spriteType = {
+		name = "GFX_SQR_strat_bomber_equipment_2_medium"
+    	texturefile = gfx/interface/technologies/SQR_strat_bomber_equipment_2_medium.dds
+	}
+	
+			spriteType = {
+		name = "GFX_SQR_strat_bomber_equipment_3_medium"
+    	texturefile = gfx/interface/technologies/SQR_strat_bomber_equipment_3_medium.dds
+	}
+	
+	spriteType = {
+    name = "GFX_SQR_transport_plane_equipment_1_medium"
+    texturefile = gfx/interface/technologies/SQR_transport_plane_equipment_1_medium.dds
+	}
+	
 
 }

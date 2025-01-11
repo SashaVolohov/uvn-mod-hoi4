@@ -199,5 +199,194 @@ ideas = {
 
 
 	}
+naval_manufacturer = {
+designer = yes
+SQR_harland_wolff = {
 
+			picture = idea_SQR_harland_wolff
+			name = SQR_harland_wolff
+			allowed = {
+				original_tag = SQR
+			}
+
+			visible = {
+				
+			}
+
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+
+			traits = { naval_manufacturer }
+
+			modifier = {
+			}
+		}			
+}
+aircraft_manufacturer = {
+
+		designer = yes
+	
+		SQR_tupolev = {
+			name = SQR_tupolev
+
+			picture = idea_SQR_tupolev
+
+			allowed = {
+				original_tag = SQR
+			}
+
+			visible = {
+				
+			}
+
+			available = {
+			
+			}
+
+			research_bonus = {
+				air_equipment = 0.15
+			}
+
+			traits = { medium_aircraft_manufacturer }
+
+			modifier = {
+				air_agility_factor = 0.05
+			}
+
+			equipment_bonus = {
+				reliability = {
+					reliability = 0.05
+				}
+			}
+		}
+		SQR_siv = {
+			name = SQR_siv
+
+			picture = idea_SQR_siv
+
+			allowed = {
+				original_tag = SQR
+			}
+
+			visible = {
+				
+			}
+
+			available = {
+			
+			}
+
+			research_bonus = {
+				air_equipment = 0.15
+			}
+
+			traits = { light_aircraft_manufacturer }
+
+			modifier = {
+			small_plane_cas_airframe = {
+			build_cost_ic = -0.05
+			}
+		}
+	}
+}
+tank_manufacturer = {
+designer = yes
+		SQR_smt = {
+			picture = idea_SQR_smt
+			name = SQR_smt
+			allowed = {
+						original_tag = SQR
+					}
+
+					visible = {
+						
+					}
+
+					research_bonus = {
+						armor = 0.15
+					}
+
+					traits = { tank_manufacturer }
+
+					modifier = {
+						
+					}
+			}
+		}
+			
+industrial_concern = {
+designer = yes
+
+		SQR_brbc = {
+			picture = idea_SQR_brbc
+				name = SQR_brbc
+					allowed = {
+						original_tag = SQR
+					}
+
+					visible = {
+
+					}
+
+					research_bonus = {
+						industry = 0.15
+					}
+
+					traits = { industrial_concern }
+
+					modifier = {
+					
+					}
+			}
+	
+	}
+materiel_manufacturer = {
+designer = yes
+
+	SQR_datsun = {
+		picture = idea_SQR_datsun
+		name = SQR_datsun
+		allowed = {
+			original_tag = SQR
+		}
+		
+		visible = {
+		
+		}
+		
+		research_bonus = {
+			industry = 0.15
+		}
+		
+		traits = { motorized_equipment_manufacturer }
+		
+		modifier = {
+		
+		}
+	}
+	
+		SQR_sudi = {
+			picture = idea_SQR_sudi
+			name = SQR_sudi
+			allowed = {
+				original_tag = SQR
+			}
+			
+			visible = {
+			
+			}
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			
+			}
+		}
+			
+	}
 }

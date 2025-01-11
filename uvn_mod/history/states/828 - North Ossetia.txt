@@ -16,6 +16,11 @@ state = {
 		victory_points = {
 			9628 3
 		}
+
+		2025.1.1 = {
+			owner = REA
+			add_core_of = REA
+		}
 	}
 
 	provinces = {

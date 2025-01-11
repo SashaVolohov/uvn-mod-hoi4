@@ -12,9 +12,6 @@ state={
 		add_core_of = SQR
 		owner = SQR
 		victory_points = {
-			6062 1 
-		}
-		victory_points = {
 			284 1 
 		}
 		victory_points = {
@@ -22,6 +19,9 @@ state={
 		}
 		victory_points = {
 			11064 1 
+		}
+		victory_points = {
+			11161 10
 		}
 		buildings = {
 			infrastructure = 2
@@ -38,7 +38,7 @@ state={
 	}
 
 	provinces={
-		284 3373 6046 9075 11161 11266 131 3159 3178 6062 6104 6205 9090 11064 13269 13270
+		284 3373 9075 11161 11266 11306 6395 6385 159
 	}
 	manpower=247873
 	buildings_max_level_factor=1.000

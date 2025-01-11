@@ -6,7 +6,7 @@ state={
 	history={
 		owner = SQR
 		victory_points = {
-			540 10 
+			540 30 
 		}
 		victory_points = {
 			6526 1 
