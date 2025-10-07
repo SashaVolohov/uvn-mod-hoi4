@@ -1,0 +1,15 @@
+on_actions = {#ROOT = country that joined a war
+	on_war = { 
+		effect = {
+			if = {
+				limit = {
+					tag = REA
+					has_war_with = SQR
+					has_country_leader = { character = REA_sasha_volohov ruling_only = yes }
+					SQR = { has_war_with = DUS }
+				}
+				play_war_with_sqr_united_effect = yes
+			}
+		}
+	}
+}

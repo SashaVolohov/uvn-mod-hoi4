@@ -445,6 +445,8 @@ if = {
 2023.1.1 = {
 	set_oob = "REA_2023"
 
+	give_guarantee = DUS
+
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 			set_naval_oob = "REA_2023_naval_mtg"

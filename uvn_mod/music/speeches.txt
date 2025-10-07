@@ -1,0 +1,6 @@
+music_station = "speeches"
+
+music = {
+	song = "war_with_sqr_united"
+	chance = { factor = 0 }
+}

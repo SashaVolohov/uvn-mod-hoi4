@@ -1,0 +1,9 @@
+##### Speeches
+
+
+
+music = {
+	name = "war_with_sqr_united"
+	file = "speeches/Volohov - Declaration of War.ogg"
+	volume = 0.80
+}

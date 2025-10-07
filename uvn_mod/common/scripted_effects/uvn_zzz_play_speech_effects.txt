@@ -1,0 +1,3 @@
+play_war_with_sqr_united_effect = {
+	hidden_effect = { play_song = "war_with_sqr_united" } 
+}

@@ -120,6 +120,16 @@ division_template = {
 	}
 }
 
+division_template = {
+	name = "Morsko-Desantnaya Brigada"			# Airborne Brigade
+	division_names_group = REA_MAR_01
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+	}
+}
+
 ### Note: OOB abstracts away the following:
 #	Marine Brigade (3x marine bn), 2 Brigades: Leningrad, Sevastopol
 #	Airborne Brigade (3x paratrooper bn), 1 Brigade: Moscow
@@ -180,6 +190,138 @@ units = {
 	division= {	
 		division_name = {
 			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 11474
+		division_template = "Mekhanizirovaniy Korpus"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "REA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 520
+		division_template = "Mekhanizirovaniy Korpus"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "REA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3503
+		division_template = "Mekhanizirovaniy Korpus"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "REA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 6541
+		division_template = "Mekhanizirovaniy Korpus"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "REA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3517
+		division_template = "Mekhanizirovaniy Korpus"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "REA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 6479
+		division_template = "Mekhanizirovaniy Korpus"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "REA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 11460
+		division_template = "Mekhanizirovaniy Korpus"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "REA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 6601
+		division_template = "Mekhanizirovaniy Korpus"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "REA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 9432
+		division_template = "Mekhanizirovaniy Korpus"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "REA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 6149
+		division_template = "Mekhanizirovaniy Korpus"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "REA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3349
+		division_template = "Mekhanizirovaniy Korpus"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "REA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
 			name_order = 1
 		}
 		location = 705
@@ -187,7 +329,590 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 
-	}			
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6149
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3349
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3261
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 368
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3383
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3224
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6374
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3285
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11324
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11394
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 94074
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9407
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3322
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6284
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11363
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 275
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 232
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3389
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3332
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3304
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6328
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9352
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9326
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11308
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 353
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3343
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6366
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3316
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 326
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3477
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9432
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6601
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11460
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6479
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3517
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6541
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3503
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 520
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11474
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 498
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3475
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3439
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6463
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3597
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9735
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3529
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3578
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11375
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11248
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11351
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11706
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6758
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+	}
 	division= {	
 		division_name = {
 			is_name_ordered = yes
@@ -227,7 +952,7 @@ units = {
 			name_order = 1
 		}
 		location = 11561
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Gornostrelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "REA" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -239,7 +964,7 @@ units = {
 			name_order = 2
 		}
 		location = 11437
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Gornostrelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "REA" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -325,7 +1050,7 @@ units = {
 			name_order = 4
 		}
 		location = 418
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Gornostrelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "REA" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -360,7 +1085,7 @@ units = {
 			name_order = 5
 		}
 		location = 525
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Vozdushno-Desantnaya Brigada"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "REA" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -380,7 +1105,7 @@ units = {
 			name_order = 1
 		}
 		location = 3580
-		division_template = "Gornostrelkovaya Diviziya"
+		division_template = "Vozdushno-Desantnaya Brigada"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 
@@ -507,25 +1232,60 @@ units = {
 			name_order = 6
 		}
 		location = 6380
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Vozdushno-Desantnaya Brigada"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "REA" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
-	}			
+	}						
 	division= {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 7
 		}
 		location = 6380
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Morsko-Desantnaya Brigada"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "REA" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
-	}			
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 306
+		division_template = "Morsko-Desantnaya Brigada"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "REA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
 
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 11202
+		division_template = "Morsko-Desantnaya Brigada"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "REA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 11929
+		division_template = "Morsko-Desantnaya Brigada"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "REA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
 	division= {			
 		name = "12yi Mekhanizirovaniy Korpus"		
 		location = 6380
