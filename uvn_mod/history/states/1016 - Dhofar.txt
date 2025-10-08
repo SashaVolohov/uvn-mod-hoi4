@@ -20,6 +20,11 @@ state = {
 		victory_points = {
 			2103 1 # Salalah
 		}
+
+		2025.1.1 = {
+			owner = ANI
+			add_core_of = ANI
+		}
 		
 	}
 

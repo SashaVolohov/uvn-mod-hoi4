@@ -21,6 +21,11 @@ state = {
 			}
 		}
 
+		2025.1.1 = {
+			owner = ANI
+			add_core_of = ANI
+		}
+
 	}
 
 	provinces = {

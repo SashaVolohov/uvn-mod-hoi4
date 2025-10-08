@@ -22,6 +22,11 @@ state = {
 		victory_points = {
 			5049 1 # Nizwa
 		}
+
+		2025.1.1 = {
+			owner = ANI
+			add_core_of = ANI
+		}
 		
 	}
 

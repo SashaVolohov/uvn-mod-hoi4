@@ -18,6 +18,12 @@ state={
 		victory_points = {
 			12885 1 
 		}
+
+		2025.1.1 = {
+			owner = SQR
+			add_core_of = SQR
+		}
+
 	}
 
 	provinces={

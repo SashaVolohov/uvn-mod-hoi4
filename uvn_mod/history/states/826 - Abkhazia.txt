@@ -17,6 +17,11 @@ state = {
 		add_core_of = GEO
 		add_core_of = ABK
 
+		2025.1.1 = {
+			owner = DUS
+			add_core_of = DUS
+		}
+
 	}
 
 	provinces = {

@@ -19,6 +19,11 @@ state={
 		add_core_of = CAU
 		add_core_of = ARM
 
+		2025.1.1 = {
+			owner = DUS
+			add_core_of = DUS
+		}
+
 	}
 
 	provinces={

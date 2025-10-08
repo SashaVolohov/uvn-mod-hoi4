@@ -24,6 +24,12 @@ state = {
 			}
 		}
 		add_core_of = FER
+
+		2025.1.1 = {
+			owner = KIN
+			add_core_of = KIN
+		}
+
 	}
 
 	provinces = {

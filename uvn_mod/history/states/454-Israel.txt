@@ -27,6 +27,11 @@ state={
 		}
 		add_core_of = PAL
 		add_core_of = ISR
+
+		2025.1.1 = {
+			owner = DUS
+			add_core_of = DUS
+		}
 	}
 
 	provinces={

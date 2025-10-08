@@ -24,6 +24,12 @@ state = {
 		add_core_of = CAU
 		add_core_of = GEO
 
+		2025.1.1 = {
+			owner = DUS
+			add_core_of = DUS
+		}
+
+
 	}
 
 	provinces = {

@@ -16,9 +16,9 @@ state={
 			9515 3
 		}
 
-		2023.1.1 = {
-			owner = SGK
-			add_core_of = SGK
+		2025.1.1 = {
+			owner = ANI
+			add_core_of = ANI
 		}
 
 	}

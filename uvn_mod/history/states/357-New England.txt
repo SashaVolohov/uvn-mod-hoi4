@@ -9,7 +9,7 @@ state={
 
 
 	history={
-		owner = TTS
+		owner = VIC
 		buildings = {
 			infrastructure = 4
 			arms_factory = 1
@@ -26,7 +26,7 @@ state={
 			}
 
 		}
-		add_core_of = TTS
+		add_core_of = VIC
 		victory_points = {
 			6732 20 
 		}

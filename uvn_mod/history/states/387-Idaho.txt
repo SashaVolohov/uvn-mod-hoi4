@@ -13,11 +13,11 @@ state={
 	}
 
 	history={
-		owner = OLE
+		owner = TTS
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = OLE
+		add_core_of = TTS
 		victory_points = {
 			9616 1
 		}

@@ -33,6 +33,11 @@ state = {
 			air_base = 1
 		}
 
+		2025.1.1 = {
+			owner = ANI
+			add_core_of = ANI
+		}
+
 	}
 
 	provinces = {

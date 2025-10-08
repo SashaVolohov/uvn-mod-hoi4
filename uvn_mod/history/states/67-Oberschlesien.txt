@@ -23,6 +23,11 @@ state={
 		}
 		add_core_of = ZEI
 		add_core_of = SIL
+
+		2025.1.1 = {
+			owner = ANI
+			add_core_of = ANI
+		}
 	}
 
 	provinces={

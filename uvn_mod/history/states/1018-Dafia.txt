@@ -17,6 +17,10 @@ state={
 		}
 		add_core_of = DAF
 		add_core_of = KIN
+
+		2025.1.1 = {
+			owner = KIN
+		}
 	}
 
 	provinces={

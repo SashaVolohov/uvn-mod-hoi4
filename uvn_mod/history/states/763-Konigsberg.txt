@@ -28,6 +28,11 @@ state={
 			air_base = 6
 		}
 		add_core_of = ZEI
+
+		2025.1.1 = {
+			owner = ANI
+			add_core_of = ANI
+		}
 	}
 
 	provinces={

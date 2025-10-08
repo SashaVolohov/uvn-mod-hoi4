@@ -19,6 +19,11 @@ state={
 			10747 10
 		}
 
+		2025.1.1 = {
+			owner = SQR
+			add_core_of = SQR
+		}
+
 	}
 
 	provinces={
