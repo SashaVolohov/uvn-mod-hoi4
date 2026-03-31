@@ -4,7 +4,8 @@ state = {
 	name = "STATE_637"
 
 	history = {
-		owner = FER
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 1
 			12207 = {
@@ -13,7 +14,6 @@ state = {
 			}
 
 		}
-		add_core_of = FER
 	}
 
 	provinces = {

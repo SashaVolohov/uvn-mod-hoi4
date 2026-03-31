@@ -8,8 +8,6 @@ state={
 	history=
 	{
 		owner = KIN
-		add_core_of = CHI
-		add_core_of = PRC
 		add_core_of = KIN
 		victory_points = {
 			1150 1 

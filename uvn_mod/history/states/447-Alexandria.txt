@@ -10,7 +10,8 @@ state={
 	state_category = town
 
 	history={
-		owner = EGY
+		owner = TTS
+		add_core_of = TTS
 		
 		victory_points = {
 			4076 10 
@@ -27,8 +28,6 @@ state={
 				naval_base = 8
 			}
 		}
-
-		add_core_of = EGY
 	}
 
 	provinces={

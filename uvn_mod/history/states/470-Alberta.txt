@@ -2,6 +2,10 @@ state={
 	id=470
 	name="STATE_470"
 
+	resources = {
+		coal = 5 # initial distribution = with infra 9.6 / 36 total
+	}
+
 	history={
 		owner = TTS
 		buildings = {

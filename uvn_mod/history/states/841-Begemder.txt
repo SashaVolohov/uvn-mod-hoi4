@@ -17,8 +17,8 @@ state = {
 			1984 2
 		}
 		
-		owner = QEM
-		add_core_of = QEM
+		owner = TTS
+		add_core_of = TTS
 	}
 
 	provinces = {

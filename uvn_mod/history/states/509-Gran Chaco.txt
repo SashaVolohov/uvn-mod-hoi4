@@ -12,8 +12,8 @@ state = {
 
 	history = {
 
-		owner = ARG
-		add_core_of = ARG
+		owner = TTS
+		add_core_of = TTS
 
 		buildings = {
 			infrastructure = 1

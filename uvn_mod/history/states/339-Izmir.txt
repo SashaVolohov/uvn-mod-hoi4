@@ -10,7 +10,8 @@ state={
 	state_category = large_town
 
 	history={
-		owner = TUR
+		owner = TTS
+		add_core_of = TTS
 		
 		victory_points = {
 			4112 15
@@ -26,7 +27,6 @@ state={
 				naval_base = 5
 			}
 		}
-		add_core_of = TUR
 	}
 
 	provinces={

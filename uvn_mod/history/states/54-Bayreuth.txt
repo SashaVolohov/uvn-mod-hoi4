@@ -4,6 +4,11 @@ state={
 	name="STATE_54"
 	manpower = 2508159
 
+	resources = {
+
+		coal = 8 #initial distribution
+	}
+
 	state_category = city
 
 	history={

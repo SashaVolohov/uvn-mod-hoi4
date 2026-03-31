@@ -4,9 +4,10 @@ state={
 	name="STATE_219"
 	manpower = 7708499
 	
-	state_category = city
+	state_category = megalopolis
 	resources={
-		steel=16
+		steel = 16 # was: 28
+		coal = 16 # initial distribution
 	}
 
 	history={
@@ -15,7 +16,7 @@ state={
 			6380 40 
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 5
 			arms_factory = 7
 			industrial_complex = 3
 			air_base = 10

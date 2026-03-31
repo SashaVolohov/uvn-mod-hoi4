@@ -4,7 +4,8 @@ state={
 	name="STATE_677"
 
 	history={
-		owner = SYR
+		owner = TTS
+		add_core_of = TTS
 		victory_points = {
 			12473 3 
 		}
@@ -15,7 +16,6 @@ state={
 			infrastructure = 2
 
 		}
-		add_core_of = SYR
 
 		2024.1.1 = {
 			owner = CAU

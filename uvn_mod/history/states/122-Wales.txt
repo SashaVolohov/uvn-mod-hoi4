@@ -3,8 +3,9 @@ state={
 	id=122
 	name="STATE_122"
 	resources={
-		steel=11.000
-		aluminium=3.000
+		steel=11 # was: 16
+		aluminium=3 # was: 4
+		coal = 55 #initial distribution
 	}
 
 	history={

@@ -6,8 +6,13 @@ state={
 	
 	state_category = town
 
+	resources = {
+		coal = 2 #initial distribution
+	}
+
 	history={
-		owner = KUR
+		owner = TTS
+		add_core_of = TTS
 		victory_points = {
 			9893 15
 		}
@@ -27,8 +32,6 @@ state={
 				naval_base = 3
 			}
 		}
-
-		add_core_of = KUR
 
 		2024.1.1 = {
 			owner = CAU

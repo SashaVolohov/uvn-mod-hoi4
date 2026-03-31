@@ -9,8 +9,8 @@ state = {
 
 	history = {
 
-		owner = DUS
-		add_core_of = DUS
+		owner = PAV
+		add_core_of = PAV
 		add_claim_by = BUL
 
 		victory_points = { 
@@ -27,6 +27,11 @@ state = {
 				naval_base = 1
 			}
 			dockyard = 1
+		}
+
+		2023.1.1 = {
+			owner = DUS
+			add_core_of = DUS
 		}
 		
 	}

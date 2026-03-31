@@ -9,13 +9,14 @@ state = {
 		rubber = 150 # was: 268
 		oil = 12 # was: 24
 		aluminium = 28 # was: 50
+		coal = 4 # initial distribution
 	}
 
 
 	history = {
 
-		owner = INS
-		add_core_of = INS
+		owner = TTS
+		add_core_of = TTS
 
 		victory_points = {
 			4652 1 

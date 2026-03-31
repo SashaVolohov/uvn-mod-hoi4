@@ -10,12 +10,12 @@ state = {
 		victory_points = {
 			1659 1
 		}
-		owner = OVO
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = OVO
 	}
 
 	provinces = {

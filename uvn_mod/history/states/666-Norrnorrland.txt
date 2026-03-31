@@ -11,7 +11,8 @@ state = {
 	}
 
 	history={
-		owner = SWE
+		owner = TTS
+		add_core_of = TTS
 		victory_points = {
 			9108 2 
 		}
@@ -35,13 +36,6 @@ state = {
 
 			}
 
-		}
-		add_core_of = SWE
-		if = {
-			limit = {
-				has_dlc = "Arms Against Tyranny"
-			}
-			add_core_of = SMI
 		}
 
 	}

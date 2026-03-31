@@ -10,8 +10,8 @@ state={
 		victory_points = {
 			5097 1 
 		}
-		owner = AFA
-		add_core_of = AFA
+		owner = TTS
+		add_core_of = TTS
 
 	}
 

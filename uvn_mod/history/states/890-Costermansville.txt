@@ -9,12 +9,12 @@ state={
 	}
 	
 	history={
-		owner = COG
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = COG
 
 	}
 	

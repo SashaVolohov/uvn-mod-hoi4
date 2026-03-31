@@ -11,7 +11,8 @@ state={
 	}
 
 	history={
-		owner = BRA
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -20,7 +21,6 @@ state={
 				naval_base = 2
 			}
 		}
-		add_core_of = BRA
 		victory_points = {
 			12853 1 
 		}

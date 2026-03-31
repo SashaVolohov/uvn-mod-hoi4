@@ -10,11 +10,11 @@ state = {
 		victory_points = {
 			1684 1
 		}
-		owner = YAM
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = YAM
 
 		2024.1.1 = {
 			owner = AVI

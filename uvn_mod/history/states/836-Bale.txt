@@ -16,9 +16,8 @@ state = {
 			10775 1
 		}
 		
-		owner = SOM
-		add_core_of = SOM
-		add_core_of = ORO
+		owner = TTS
+		add_core_of = TTS
 	}
 
 	provinces = {

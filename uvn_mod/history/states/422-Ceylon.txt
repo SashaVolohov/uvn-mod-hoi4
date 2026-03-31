@@ -11,7 +11,6 @@ state=
 	}
 
 	history={
-		add_core_of = SRL
 		owner = TEX
 		add_core_of = TEX
 		victory_points = {

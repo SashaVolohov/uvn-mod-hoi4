@@ -8,8 +8,8 @@ state={
 		oil=3.000
 	}
 	history = {
-		owner = SAU
-		add_core_of = SAU
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 1
 			12702 = {

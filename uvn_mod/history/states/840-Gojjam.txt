@@ -17,8 +17,8 @@ state = {
 			13242 2 
 		}
 		
-		owner = BEG
-		add_core_of = BEG
+		owner = TTS
+		add_core_of = TTS
 	}
 
 	provinces = {

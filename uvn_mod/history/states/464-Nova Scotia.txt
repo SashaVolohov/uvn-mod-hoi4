@@ -6,6 +6,10 @@ state={
 	
 	state_category = rural
 
+	resources = {
+		coal = 7 # initial distribution = with infra 16 / 36 total 
+	}
+
 	history={
 		owner = VIC
 		victory_points = {7361 10} #Белфаст

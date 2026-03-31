@@ -1,0 +1,30 @@
+state = {
+	id = 1044
+	name = "STATE_1044"
+	manpower = 1010300
+	state_category = pastoral
+
+	history = {
+
+		owner = TTS
+		add_core_of = TTS
+
+		buildings = {
+			infrastructure = 1
+		}
+
+		victory_points = {
+			5100 1 #Wuwei
+		}
+
+	}
+
+	provinces = {
+		1630 5057 5100 12327 12776 
+	}
+	
+	buildings_max_level_factor = 1.000
+	
+
+	local_supplies = 0.0 
+}

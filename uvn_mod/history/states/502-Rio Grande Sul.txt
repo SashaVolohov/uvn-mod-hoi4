@@ -6,8 +6,13 @@ state={
 	
 	state_category = town
 
+	resources = {
+		coal = 8 # initial distribution = with infra 3.2 / 3 total	#boosted by 6 to reduce US import necessity
+	}
+
 	history={
-		owner = BRA
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 3
 			air_base = 2
@@ -15,7 +20,6 @@ state={
 				naval_base = 3
 			}
 		}
-		add_core_of = BRA
 		victory_points = {
 			10447 3 
 		}

@@ -7,7 +7,8 @@ state = {
 	state_category = pastoral
 
 	history={
-		owner = YAK
+		owner = TTS
+		add_core_of = TTS
 		victory_points = {
 			10641 1
 		}
@@ -15,7 +16,6 @@ state = {
 			infrastructure = 1
 			air_base = 1
 		}
-		add_core_of = YAK
 	}
 
 	provinces = {

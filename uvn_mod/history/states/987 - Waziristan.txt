@@ -11,11 +11,11 @@ state={
 	}
 
 	history={
-		owner = RAJ
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 		}
 		add_core_of = NWF
-		add_core_of = PAK
 		add_core_of = KHL
 		set_compliance = 0
 		start_resistance = yes

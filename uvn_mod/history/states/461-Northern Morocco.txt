@@ -2,8 +2,9 @@
 state={
 	id=461
 	name="STATE_461"
-	resources={
-		chromium=12.000
+	resources = {
+		chromium = 12.000 #added due to portugal setup
+		coal = 3 #initial distribution
 	}
 
 	manpower = 3197719
@@ -11,8 +12,8 @@ state={
 	state_category = rural
 	
 	history={
-		owner = MOR
-		add_core_of = MOR
+		owner = TTS
+		add_core_of = TTS
 		victory_points = {
 			7069 10 
 		}

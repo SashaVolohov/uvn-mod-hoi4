@@ -2,8 +2,13 @@ state={
 	id=435
 	name="STATE_435"
 
+	resources = {
+		coal = 15 # initial distribution
+	}
+
 	history={
-		owner = RAJ
+		owner = TTS
+		add_core_of = TTS
 		victory_points = {
 			4516 1 
 		}

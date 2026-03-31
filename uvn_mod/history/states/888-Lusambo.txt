@@ -4,13 +4,17 @@ state={
 	manpower = 885237
 	state_category = pastoral 
 
+	resources = {
+		coal = 2
+	}
+
 	history = {
-		owner = COG
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = COG
 
 	}
 

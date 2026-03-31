@@ -23,7 +23,6 @@ state = {
 
 		}
 		add_core_of = ZEI
-		add_core_of = NEN
 	}
 
 	provinces = {

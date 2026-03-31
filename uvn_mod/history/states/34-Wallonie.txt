@@ -6,6 +6,11 @@ state={
 	
 	state_category = large_city
 
+	resources={
+		steel=22 # was: 14
+		coal = 5 # More added through focus BEL_revive_coal_mining
+	}
+
 	history={
 		owner = TTS
 		victory_points = {

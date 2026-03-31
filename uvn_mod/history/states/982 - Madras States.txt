@@ -12,8 +12,8 @@ state={
 	state_category=rural
 	local_supplies=0.000
 	history={
-		owner = RAJ
-		add_core_of = RAS
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 1
 		}

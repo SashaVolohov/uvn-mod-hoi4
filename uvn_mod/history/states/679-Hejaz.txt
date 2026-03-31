@@ -3,7 +3,8 @@ state={
 	name="STATE_679"
 
 	history={
-		owner = SAU
+		owner = TTS
+		add_core_of = TTS
 		victory_points = {
 			12758 1 
 		}
@@ -13,7 +14,6 @@ state={
 			
 
 		}
-		add_core_of = SAU
 
 		2024.1.1 = {
 			owner = CAU

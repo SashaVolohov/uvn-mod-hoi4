@@ -6,10 +6,12 @@ state = {
 	state_category = town
 	resources = {
 		steel = 2
+		coal = 1 #initial distribution 
 	}
 
 	history = {
-		owner = SWE
+		owner = TTS
+		add_core_of = TTS
 		victory_points = {
 			383 10 
 		}
@@ -26,7 +28,6 @@ state = {
 			}
 
 		}
-		add_core_of = SWE
 
 	}
 

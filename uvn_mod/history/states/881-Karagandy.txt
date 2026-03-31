@@ -2,12 +2,16 @@ state = {
 	id = 881
 	name = "STATE_881" # Karagandy
 
+	resources = {
+		coal = 6 # initial distribution
+	}
+
 	history = {
-		owner = KAZ
+		owner = TTS
 		#victory_points = {
 		#	7597 1
 		#}
-		add_core_of = KAZ
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 1
 

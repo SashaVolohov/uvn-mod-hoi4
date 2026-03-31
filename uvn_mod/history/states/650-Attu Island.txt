@@ -8,6 +8,7 @@ state=
 	history=
 	{
 		owner = TTS
+		add_core_of = TTS
 		victory_points = {
 			13067 1 
 		}

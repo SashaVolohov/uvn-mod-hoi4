@@ -5,15 +5,16 @@ state={
 		1959 3427 4960 4986 10451 10854 12706 
 	}
 	state_category = pastoral
+
+	resources = {
+		coal = 8 #initial distribution
+	}
 	
 	
 	history=
 	{
-		owner = SHX
-		add_core_of = SHX
-		add_core_of = CHI
-		add_core_of = PRC
-		add_core_of = MEN
+		owner = TTS
+		add_core_of = TTS
 		
 		buildings = {
 			infrastructure = 1

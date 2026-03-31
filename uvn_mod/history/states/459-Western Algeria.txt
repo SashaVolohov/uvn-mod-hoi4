@@ -6,12 +6,13 @@ state={
 	state_category = town
 	
 	resources={
-		steel=26 # was: 36
+		steel=65 # was:26 was: 36
+		coal = 2 #initial distribution
 	}
 
 	history={
-		owner = ALG
-		add_core_of = ALG
+		owner = TTS
+		add_core_of = TTS
 
 		victory_points = {
 			1145 5 

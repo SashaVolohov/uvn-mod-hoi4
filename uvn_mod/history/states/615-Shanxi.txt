@@ -5,13 +5,15 @@ state=
 	manpower = 11601000
 	
 	state_category = town
+
+	resources = {
+		coal = 19 #initial distribution
+	}
 	
 	history=
 	{
-		owner = SHX
-		add_core_of = SHX
-		add_core_of = CHI
-		add_core_of = PRC
+		owner = TTS
+		add_core_of = TTS
 		victory_points = {
 			1519 3 
 		}

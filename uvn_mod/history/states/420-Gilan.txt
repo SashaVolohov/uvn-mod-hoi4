@@ -7,7 +7,8 @@ state={
 	state_category = rural
 
 	history={
-		owner = AZR
+		owner = TTS
+		add_core_of = TTS
 		victory_points = {
 			7969 5
 		}
@@ -17,7 +18,6 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = AZR
 
 		2024.1.1 = {
 			owner = CAU

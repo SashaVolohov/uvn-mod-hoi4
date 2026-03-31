@@ -5,14 +5,12 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = KEN
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 1
 
 		}
-		
-		add_core_of = KEN
-		add_core_of = SOM
 
 	}
 

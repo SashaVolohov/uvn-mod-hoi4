@@ -7,12 +7,14 @@ state={
 	state_category = city
 	
 	resources={
-		steel=5
-		chromium=53
+		steel=11 #was: 5   was: 8
+		chromium=53 # was: 80
+		coal = 14 # initial distribution
 	}
 
 	history={
-		owner = SAF
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
@@ -22,7 +24,6 @@ state={
 		victory_points = {
 			10400 10
 		}
-		add_core_of = SAF
 	}
 
 	provinces={

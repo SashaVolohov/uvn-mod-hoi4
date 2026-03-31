@@ -24,9 +24,8 @@ state = {
 			12812 1
 		}
 		
-		owner = SOM
-		add_core_of = SOM
-		add_core_of = HAR
+		owner = TTS
+		add_core_of = TTS
 	}
 
 	provinces = {

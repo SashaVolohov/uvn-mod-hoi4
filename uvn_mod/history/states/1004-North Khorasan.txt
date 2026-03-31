@@ -6,11 +6,11 @@ state={
 	state_category = rural
 
 	history={
-		owner = PER
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = PER
 	}
 	provinces={
 		7573 1521 10351

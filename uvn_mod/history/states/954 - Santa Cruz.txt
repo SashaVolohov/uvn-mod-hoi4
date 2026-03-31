@@ -7,13 +7,13 @@ state = {
 	
 	resources = {
 		oil = 3
+		coal = 2 # initial distribution = with infra 2.4 / 2 total
 	}
 
 	history = {
 
-		owner = ARG
-		add_core_of = ARG
-		add_core_of = WLA
+		owner = TTS
+		add_core_of = TTS
 
 		buildings = {
 			infrastructure = 1

@@ -10,8 +10,8 @@ state = {
 		
 	}
 	history={
-		owner = FIN
-		add_core_of = FIN
+		owner = TTS
+		add_core_of = TTS
 
 		victory_points = { #Oulu
 			158 2

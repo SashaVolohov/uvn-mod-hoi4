@@ -8,10 +8,12 @@ state={
 	
 	resources={
 		chromium=4 # was: 6
+		coal = 7 #initial distribution
 	}
 
 	history={
-		owner = RAJ
+		owner = TTS
+		add_core_of = TTS
 		
 		buildings = {
 			infrastructure = 1

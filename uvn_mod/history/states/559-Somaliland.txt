@@ -10,8 +10,8 @@ state=
 	state_category = rural
 	
 	history={
-		owner = SOM
-		add_core_of = SOM
+		owner = TTS
+		add_core_of = TTS
 		victory_points = {
 			12991 3 
 		}

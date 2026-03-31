@@ -5,9 +5,14 @@ state={
 	manpower = 899836
 	
 	state_category = city
+
+	resources = {
+		coal = 2 #initial distribution
+	}
 	
 	history={
-		owner = NZL
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
@@ -26,7 +31,6 @@ state={
 		victory_points = {
 			4543 5 
 		}
-		add_core_of = NZL
 	}
 
 	provinces={

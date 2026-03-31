@@ -9,7 +9,8 @@ state={
 	
 	state_category = town
 	history={
-		owner = PER
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 2
 			arms_factory = 2
@@ -17,9 +18,6 @@ state={
 		victory_points = {
 			1896 5 
 		}
-		add_core_of = PER
-		add_core_of = KUR
-		add_core_of = AZR
 	}
 
 	provinces={

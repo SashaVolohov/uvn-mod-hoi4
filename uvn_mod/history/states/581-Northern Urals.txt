@@ -18,7 +18,6 @@ state = {
 
 		}
 		add_core_of = TTS
-		add_core_of = KOM
 
 		2024.1.1 = {
 			owner = AVI

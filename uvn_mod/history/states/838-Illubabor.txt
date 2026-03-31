@@ -22,8 +22,8 @@ state = {
 			7912 1  
 		}
 		
-		owner = GBA
-		add_core_of = GBA
+		owner = TTS
+		add_core_of = TTS
 	}
 
 	provinces = {

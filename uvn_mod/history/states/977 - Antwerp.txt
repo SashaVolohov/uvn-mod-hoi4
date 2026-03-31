@@ -3,16 +3,16 @@ state = {
 	name = "STATE_977" # Antwerpen
 	manpower = 1800000
 
-	#resources = {
-	#	steel = 10 # was: 48 then 10
-	#}
+	resources={
+		coal = 2 
+	}
 	
 	state_category = metropolis
 
 	history = {
 
-		owner = DUS
-		add_core_of = DUS
+		owner = TTS
+		add_core_of = TTS
 
 		victory_points = { 
 			6598 30 
@@ -30,6 +30,11 @@ state = {
 			6598 = {
 				naval_base = 8
 			}
+		}
+
+		2023.1.1 = {
+			owner = DUS
+			add_core_of = DUS
 		}
 	
 	}

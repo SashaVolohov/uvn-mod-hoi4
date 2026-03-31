@@ -1,0 +1,45 @@
+state = {
+
+	id = 1027
+	name = "STATE_1027" # Bataan
+	manpower = 2371662 
+
+	resources={
+		chromium=23 # was: 0
+	}
+	
+	state_category = town
+
+	history = {
+
+		owner = TTS
+		add_core_of = TTS
+
+		buildings = {
+
+			infrastructure = 2
+			air_base = 2
+
+		}
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 3
+			}
+		}
+
+		victory_points = {
+			7351 2 # Bataan
+		}
+
+		victory_points = {
+			1415 1 # Dagupan
+		}
+		
+	}
+
+	provinces = {
+		1415 4423 7275 7351 10165 10280 12253
+	}
+
+	local_supplies = 0.0 
+}

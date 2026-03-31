@@ -12,9 +12,8 @@ state = {
 
 	history = {
 
-		owner = ENG
-		add_core_of = ZAM
-		add_core_of = BAR
+		owner = TTS
+		add_core_of = TTS
 
 		victory_points = {
 			697 1 # Mongu

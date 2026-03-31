@@ -6,8 +6,8 @@ state = {
 	manpower = 136693
 	
 	history = {
-		owner = BRM
-		add_core_of = BRM
+		owner = TTS
+		add_core_of = TTS
 
 		buildings = {
 			infrastructure = 1

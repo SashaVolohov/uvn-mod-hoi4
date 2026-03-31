@@ -3,8 +3,10 @@ state={
 	id=119
 	name="STATE_119"
 	resources={
-		aluminium=2.000
+		aluminium=2
+		coal = 2 #initial distribution
 	}
+
 
 	history={
 		owner = SQR

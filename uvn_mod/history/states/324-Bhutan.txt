@@ -12,7 +12,8 @@ state={
 	}
 
 	history={
-		owner = LHA
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
@@ -21,7 +22,6 @@ state={
 		victory_points = {
 			8010 3 
 		}
-		add_core_of = LHA
 	}
 
 	provinces={

@@ -7,11 +7,13 @@ state={
 	state_category = town
 	
 	resources={
-		oil=35
+		oil=35 # was: 126
+		coal = 1 # initial distribution = with infra 1.4 / 1 total
 	}
 
 	history={
-		owner = VEN
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
@@ -19,7 +21,6 @@ state={
 				naval_base = 5
 			}
 		}
-		add_core_of = VEN
 		victory_points = {
 			1944 1 
 		}

@@ -24,9 +24,8 @@ state = {
 			13247 1 
 		}
 		
-		owner = SID
-		add_core_of = SID
-		add_core_of = ORO
+		owner = TTS
+		add_core_of = TTS
 	}
 
 	provinces = {

@@ -7,11 +7,11 @@ state={
 		4949 5020 5064 8090 10789 
 	}
 	history={
-		owner = AFG
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 1 
 		}
-		add_core_of = AFG
 		victory_points = {
 			5064 1 
 		}

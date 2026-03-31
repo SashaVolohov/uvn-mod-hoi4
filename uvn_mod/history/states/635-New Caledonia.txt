@@ -10,7 +10,6 @@ state={
 
 	history={
 		owner = VIC
-		add_core_of = TAH
 		victory_points = {4268 3} #Санкара
 		victory_points = { 12132 1 } #Фий
 		buildings = {

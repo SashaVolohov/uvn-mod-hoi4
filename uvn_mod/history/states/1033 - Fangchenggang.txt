@@ -1,0 +1,34 @@
+state = {
+	id = 1033
+	name = "STATE_1033"
+	manpower = 4145000
+	state_category = town
+	resources = {
+
+	}
+
+	history = {
+		owner = TTS
+		add_core_of = TTS
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			10004 = { # Fangcheng
+				naval_base = 1
+				coastal_bunker = 1
+			}
+		}
+
+
+		victory_points = { 
+			10004 1 # Fangchenggang
+		}
+	}
+
+	provinces = {
+		1018 4023 4160 7135 7192 10004 10105 11926 
+	}
+
+	local_supplies = 1.0 
+}

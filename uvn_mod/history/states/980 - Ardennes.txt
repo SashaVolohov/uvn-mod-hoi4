@@ -4,14 +4,15 @@ state = {
 	manpower = 338130
 	resources={
 		steel=9 # was: 0
+		coal = 7 # initial distribution / 84 total
 	}
 	
 	state_category = rural
 
 	history = {
 
-		owner = DUS
-		add_core_of = DUS
+		owner = TTS
+		add_core_of = TTS
 
 		victory_points = {
 			9418 1 # Arlons
@@ -22,6 +23,11 @@ state = {
 
 			# Gileppe Dam
 			3488 = { dam = 1 }
+		}
+
+		2023.1.1 = {
+			owner = DUS
+			add_core_of = DUS
 		}
 		
 	}

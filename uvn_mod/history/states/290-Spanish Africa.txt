@@ -12,9 +12,8 @@ state={
 	}
 
 	history={
-		owner = MOR
-		add_core_of = MOR
-		add_core_of = RIF
+		owner = TTS
+		add_core_of = TTS
 		victory_points = {
 			9945 3
 		}

@@ -17,6 +17,12 @@ state={
 		}
 		add_core_of = DUS
 		add_core_of = UKR
+
+		2025.1.1 = {
+			owner = REA
+			add_core_of = REA
+		}
+
 	}
 
 	provinces={

@@ -7,14 +7,14 @@ state={
 	state_category = town
 	
 	history={
-		owner = PAR
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 3
 			air_base = 1
 		}
-		add_core_of = PAR
 		victory_points = {
 			2152 5 
 		}

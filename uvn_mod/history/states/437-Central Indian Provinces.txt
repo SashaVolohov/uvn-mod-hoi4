@@ -10,8 +10,8 @@ state={
 	local_supplies=0.000
 
 	history={
-		owner = RAJ
-		add_core_of = CIP
+		owner = TTS
+		add_core_of = TTS
 		victory_points = {
 			4106 5
 		}

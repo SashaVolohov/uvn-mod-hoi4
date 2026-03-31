@@ -7,8 +7,8 @@ state = {
 
 	history = {
 
-		owner = IRQ
-		add_core_of = IRQ
+		owner = TTS
+		add_core_of = TTS
 
 		victory_points = {
 			12879 1 # Samawah

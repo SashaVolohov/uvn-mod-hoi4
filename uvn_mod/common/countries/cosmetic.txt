@@ -281,11 +281,6 @@ USA_CSA = {
 	color_ui = rgb { 186 205 219 }
 }
 
-SOV_russia = {
-    color = rgb { 72 143 68 }
-    color_ui = rgb { 72 143 68 }
-}
-
 HOL_benelux_unified = {
 	color = rgb { 255 128 0 }
 	color_ui = rgb { 255 128 0 }
@@ -738,16 +733,6 @@ EST_UGRA = {
     color_ui = rgb { 20 175 145 }
 }
 
-SOV_ROME = {
-	color = rgb { 230 225 165 }
-	color_ui = rgb { 230 225 165 }
-}
-
-SOV_PANSLAVIC = {
-	color = rgb { 40 80 40 }
-	color_ui = rgb { 40 80 40 }
-}
-
 LIVONIA = {
 	color = rgb { 110 80 168 }
 	color_ui = rgb { 110 80 168 }
@@ -773,11 +758,6 @@ idel_ural = {
     color_ui = rgb { 0 92 153 }
 }
 
-SOV_PROVISIONAL = {
-	color = rgb { 255 255 255 }
-    color_ui = rgb { 242 242 242 }
-}
-
 WGR = {
     color = rgb { 195 236 230 } # The colors are set to be more are less what we are used to
     color_ui = rgb { 225 255 255 }
@@ -786,28 +766,9 @@ DDR = {
     color = rgb { 120 150 80 }
     color_ui = rgb { 150 180 120 }
 }
-
-stalinist_soviet_union = {
-	color = rgb { 125 13 24 }
-	color_ui = rgb { 163 17 31 }
-}
-
-SOV_left_opposition = {
-    color = rgb { 224 5 5 }
-    color_ui = rgb { 193 81 81 }
-}
-
-SOV_right_opposition = {
-	color = rgb { 230 0 0 }
-	color_ui = rgb { 255 51 51 }
-}
 russian_empire = {
 	color = rgb { 64 128 0 }
 	color_ui = rgb { 51 204 51 }
-}
-SOV_ROME = {
-	color = rgb { 128 0 128 }
-	color_ui = rgb { 128 0 128 }
 }
 ETH_African_Union_communism = {
 	color = rgb { 186 46 46 }
@@ -931,11 +892,6 @@ SWI_ITA_puppet_democratic = {
 SWI_ENG_puppet_democratic = {
 	color = rgb { 5 5 249 }
 	color_ui = rgb { 255 255 255 }
-}
-
-SWI_SOV_puppet_communism = {
-	color = rgb { 192 50 50 }
-	color_ui = rgb { 255 255 255 } 
 }
 
 SWI_alpine_democratic = {

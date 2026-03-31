@@ -2,6 +2,10 @@ state={
 	id=35
 	name="STATE_35"
 
+	resources = {
+		coal = 12 #initial distribution
+	}
+
 	history={
 		owner = TTS
 		add_core_of = TTS

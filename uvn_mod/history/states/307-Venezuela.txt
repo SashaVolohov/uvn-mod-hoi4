@@ -11,7 +11,8 @@ state={
 	}
 
 	history={
-		owner = VEN
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -24,7 +25,6 @@ state={
 				naval_base = 2
 			}
 		}
-		add_core_of = VEN
 		victory_points = {
 			8113 5 
 		}

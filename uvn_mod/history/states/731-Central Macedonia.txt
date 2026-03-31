@@ -3,6 +3,10 @@ state={
 	id=731
 	name="STATE_731"
 
+	resources = {
+		coal = 1 # initial distribution / 1 total
+	}
+
 	history={
 		owner = SLI
 		victory_points = {

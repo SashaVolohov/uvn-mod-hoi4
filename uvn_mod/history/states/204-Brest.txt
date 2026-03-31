@@ -19,6 +19,11 @@ state={
 		}
 		add_core_of = ZEI
 		add_core_of = BLR
+
+		2025.1.1 = {
+			owner = REA
+			add_core_of = REA
+		}
 	}
 
 	provinces={

@@ -3,6 +3,7 @@ state={
 	name="STATE_432"
 	resources={
 		oil=5.000
+		coal = 1 #initial distribution
 	}
 	provinces={
 		997 1075 1497 1581 7455 7634 10090 10349 10514 12366 12395 13208  
@@ -13,7 +14,8 @@ state={
 	local_supplies=0.000
 	history={
 
-		owner = RAJ
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 1
 		}

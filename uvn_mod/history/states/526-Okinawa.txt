@@ -6,6 +6,10 @@ state={
 	
 	state_category = small_island
 
+	resources = {
+		coal = 4 # Represents the Iriomote and Utara coal mines (and quite a few more)
+	}
+
 	history={
 		owner = TTS
 		add_core_of = TTS

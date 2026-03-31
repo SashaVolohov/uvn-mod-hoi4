@@ -3,8 +3,8 @@ state={
 	name="STATE_737"
 
 	history={
-		add_core_of = PNG
-		owner = PNG
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 1
 			air_base = 1

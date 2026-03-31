@@ -6,8 +6,8 @@ state=
 	manpower=75153
 	history=
 	{
-		owner = GUM
-		add_core_of = GUM
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 3
 			12140 = {

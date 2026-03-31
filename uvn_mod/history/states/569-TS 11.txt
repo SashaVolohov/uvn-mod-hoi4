@@ -6,13 +6,17 @@ state = {
 	
 	state_category = town
 
+	resources = {
+		coal = 16 #initial distirbution
+	}
+
 	history = {
-		owner = KHA
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
-		add_core_of = KHA
 		victory_points = {
 			7757 1
 		}

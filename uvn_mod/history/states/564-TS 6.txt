@@ -12,7 +12,8 @@ state={
 	}
 
 	history={
-		owner = BYA
+		owner = TTS
+		add_core_of = TTS
 		victory_points = {
 			7835 2 
 		}
@@ -23,7 +24,6 @@ state={
 			infrastructure = 2
 
 		}
-		add_core_of = BYA
 	}
 
 	provinces={

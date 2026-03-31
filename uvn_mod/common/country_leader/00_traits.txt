@@ -1154,16 +1154,6 @@ leader_traits = {
 		minimum_training_level = -0.1
 	}
 
-	militant_socialist = {
-		random = no
-		war_support_factor = 0.05
-		targeted_modifier = {
-			tag = SOV
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-	}
-
 	constitutional_monarch_minor = { #Dom Duarte Nuno, King of Portugal
 		random = no
 		stability_weekly = 0.005
@@ -3066,15 +3056,6 @@ leader_traits = {
 		neutrality_drift = 0.07
 		production_lack_of_resource_penalty_factor = -0.3
 		war_support_factor = 0.10
-	}
-
-	SWI_soviet_spy = { #Unlocks Anti-Fascist Drive
-		random = no 
-		sprite = 15
-		intel_network_gain_factor = 0.2
-		communism_drift = 0.05
-		war_support_factor = 0.10
-
 	}
 
 	### Neutrals ###

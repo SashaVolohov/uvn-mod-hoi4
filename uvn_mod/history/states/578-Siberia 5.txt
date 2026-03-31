@@ -6,6 +6,10 @@ state={
 	
 	state_category = rural
 
+	resources = {
+		coal = 16 #initial distribution
+	}
+
 	history={
 		owner = TTS
 		buildings = {

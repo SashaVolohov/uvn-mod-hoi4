@@ -1,0 +1,2674 @@
+### Names generation for aces ###
+# Surnames can be male/female dependent or general. Fe. in Polish some surnames has different endings depending on the gender.
+# Names and Surnames are randomly picked and will sometimes repeat, but will never repeat in combinations for example there will never be generated another "John Smith".
+# Assigning the callsign is random - may be assigned or not. If we use the callsign, it will never be assigned to anyone again. Callsigns are not obligatory to script.
+# Picking up a gender is random, and is influenced by the amount of names scripted.
+### Operations
+# Operations will randomly pick from national pools until exhausted
+# You can specify a strategic region for which an order name will be drawn
+# if any enemy province along the frontline matches this strategic region, this sub-pool will be considered and used in preference to default.
+# Whether this 'historical' name pool is exhausted is dependent on the define: HISTORICAL_ORDER_NAME_EXHAUSTION
+# Strategic region index '0' is the generic national pool.
+# You can specify the same name in several regions, though I would suggest not doing this too often, for performance reasons.
+# After this, a first and second will be randomly picked from the default pool
+# The prefix must be provided for all pools
+
+default = {
+	male = {
+		names = { "John" "Bob" "Lucas" "Marcus" "Alexander" "Alex" "Peter" "Jonas" "Jim" "Johannes"}
+		surnames = { }
+		callsigns = { }
+	}
+	#female = {
+	#	names = { "Juliette" "Anna" }
+	#	surnames = { }
+	#	callsigns = { "Queen Of The Sky" "The Red Princess" }
+	#}
+	surnames = { "Smith" "Jones" "Taylor" "Brown" "Williams" "Wilson" "Evans" "Walker" "White" "Roberts" }
+	callsigns = { "Easy Kill" "The Lightning" "The Devil" "Grasshopper" "Handsome" "Moose" "Mouse" "Pebbles" "Sunshine" Demon}
+
+
+	#Operations - treat these as keys, not strings.
+	prefix = o_operation
+
+	operation = {
+		0 = { o_default_operation }
+	}
+
+	use_geographical_default_operation_names = yes
+	offensive_operation_suffix = o_strat_offensive_default
+	defensive_operation_suffix = o_strat_defensive_default
+	naval_operation_suffix = o_strat_naval_default
+
+}
+
+###############################################################
+# The Majors
+###############################################################
+ANI = {
+	male = {
+		names = {
+			Adolf Alfred Anton Christian Dieter Emil Erich Erwin Felix Fritz Gabriel Gerhard
+			Gunther Hans Heinrich Heinz Helmuth Hermann Horst Joachim Karl Ludwig Marco
+			Markus Max Maximilian Otto Otto Paul Peter Philipp Ralph Samuel Staffan Theodor
+			Tobias Walter Wilhelm
+
+			# From VGE
+			Karl Willhelm Heinrich Hans Otto Hermann Paul Walther Friedrich Ernst Willi Fritz Max Franz Gustav August Johannes Johann Rudolph Emil Alfred Georg Albert Adolf Richard Erich Arthur Kurt Robert Josef Hugo Ludwig Bruno Bernhard Oskar Herbert Theodor Martin Peter Eduard Henri Werner Toni John Julius Christian Helmut Reinhold Erwin Ferdinand Gottlieb Siegfried
+		}
+	}
+	female = {
+		names = {
+			Jessica Emma Hanna Sofia Marie Hildegard
+
+			# From VGE
+			Anna Frida Marta Erna Emma Marie Gertrud Margarethe Maria Elisabeth Berta Elsa Helene Louise Johanna Hedwig Klara Minna Else Paula Ella Ida Wilhelmine Mathilde
+		}
+	}
+	surnames = {
+		Barkhorn Becker Behrmann Beisswenger Berglen Blum Brandt Brendel Dietrich
+		Duttmann Ehrler Fischer Graf Haas Hafner Hartmann Hoffmann Huber Kirschner Konig
+		Kraus Kuhn Lang Lehmann Lipfert Meyer Muller Rall Roth Schmidt Schneider Schulte
+		Schulz Sommer Stotz Sturm Vogt Wagner Weber Wilbs Winkler Winter Wolff Zimmermann
+
+		# From VGE
+		Adler Adolph Albach Albert Alles Alt Altergott Amen Appelhans Deisel Dellos Derr Detterer Diehl Dierlam Dieser Dietz Ditmar Döll Dorn Dörr Dorsch Dortman Driess Dumler Eberhard Eberhardt Eberling Ebert Eckert Eckhardt Eckler Edel Eich Eichhorn Eichmann Eisele Eisenach Eisenhuth Eitenmüller Elsässer Engel Engelhardt Erck Erder Eüler Euler Eurich Ewig Faber Falkenstein Faust Fech Fein Fendel Feuerstein Fischer Göttmann Götz Graf Gramlich Grasmück Grosch Gross Grún Grünemeier Grünwald Gutherich Gutmann Gutscher Guttmann Hegele Hegwald Heidenreich Heimbüchner Hein Heinrich Heitzenreder Helbrecht Heldt Helfenbein Heller Helmuth Helwig Hempel Henkel Henn Herber Herdt Hergenheim Hergert Hessler Hettinger Hetzel Heusel Hieronymus Hildt Hill Kammerzell Kappel Kappes Kaucher Kechter Kembel Kempel Kexel Kiehn Kildau Kimmel Kinderknecht Kindsvater Kirschbaum Kissler Kister Klamm Klaus Kleiber Klein Kleinfelder Klink Kloberdanz Kloster Knaus Kniss Knödler Kober Koch Köhler Kohlmann Langlitz Lapp Laubhan Lauck Lauterbach Lederer Lederhos Legler Lehr Lei Leichner Leiker Lein Leinweber Leister Lenz Leonhardt Lerch Lesser Licht Lichtenberger Lichtenwald Linenberg Lingelbach Link Lipps Lissmann Litzenberger Mill Miltenberger Mohn Mohr Mohrlang Molko Moninger Morasch Moritz Morkel Müller Müller Müller Münster Müntermann Muth Mützig Näb Nafts Nagelschmidt Nazarenus Neubauer Neuberger Neuhard Nickel Niedecker Niedenthal Oberheim Oberitter Oblander Ochsenhirt Oldt Orth Ostertag Oswald Ott Pappenheim Pickelhaubt Pinnecker Plouqet Präfried Prasch Preisendorf Quindt Raab Rauh Rausch Ravensberg Rebuhn Reh Rehn Reifschneider Reimer Rein Reinhardt Reinick Reis Reiswig Reiter Reitz Repp Rettig Reuscher Reuss Reuter Richter Ries Saalfeld Sack Sauer Sauerbrey Schäfer Schreieck Schremser Schuh Schultheis Schultz Schwab Schwabauer Schwabenland Schwan Schwartz Schwartzkopf  Seib Steinbach Steinbrecher Stellwagen Stiehl Stoll Störger Stork Stössel Streck Stroh Strohmann Stromberger Stürtz Suppes Thierolf Traub Traudt Traut Trin Trippel Trupp Ubert Uhrich Ulrich Urbach Urban Usinger Utz Vogel Vogler Voigt Völck Volk Volz Wasmuth Wassen Wassinger Weber Weckesser Weidemann Weidhardt Weigandt Weisgerber Weisheim Weiss Weitz Weitzel Welsch Wentz Wenzel Wenzereich Werth Wiedemann Wiederspahn Wiegand Wilhelm Will Willmann Windecker Winkelhausen Wittwanger Wolff Würtz Zell Zentner Zieg Ziegler Zitzmann Zorn Zürckgiebel
+	}
+
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+
+	prefix = o_unternehmen
+	operation = {
+		0 = {
+			o_ostwind
+			o_wetzstein
+ 			o_oderubung
+ 			o_donauubung
+ 			o_osterspaziergang
+ 			o_reibeisen
+ 			o_einbaum
+ 			o_apfelbaum
+ 			o_fuchsjagd
+ 			o_bismarck
+ 			o_dorffest
+ 			o_gelandemarsch
+ 			o_freiherr
+ 			o_deichgraf
+ 			o_heimfahrt
+ 			o_heimspiel
+ 			o_hasenjagd
+ 			o_ingwer
+ 			o_jahreswechsel
+ 			o_kannonenkugel
+ 			o_lastkahn
+ 			o_mondschein
+ 			o_neuland
+ 			o_ofenrohr
+ 			o_pistole
+ 			o_ruckreise
+ 			o_sandbank
+ 			o_tankwart
+ 			o_vogelsang
+ 			o_winkel
+ 			o_zebra
+ 			o_fischreiher
+			o_lichtschlag
+			o_nordpol
+			o_orkan
+			o_raubtier
+			o_storfang
+			o_taubenschlag
+			o_trappenjagd
+			o_wiesengrund
+			o_wintermarchen
+			o_eisbar
+			o_lehrgang
+			o_leopard
+			o_michael
+			o_poseidon
+			o_zwischenspiel
+			o_wintergewitter
+			o_aster
+			o_blei
+			o_blume
+			o_fischfang
+			o_herbstnebel
+			o_ludwig
+			o_luttich
+			o_martin
+			o_morgenwind
+			o_sonnenaufgang
+			o_konrad
+			o_maus
+			o_derfflinger
+			o_moorbrand
+			o_bettelstab
+			o_blucher
+			o_braunschweig
+			o_bruckenschlag
+			o_schneeman
+			o_sonnenwende
+			o_sudwing
+			o_haifisch
+			o_nordwind
+			o_schlussjagd
+			o_sturmflut
+			o_taube
+			o_siegfried
+			o_westwind
+			o_wildente
+			o_biene
+			o_gneisenau
+			o_granit
+			o_stahl
+			o_scharnhorst
+			o_nebelubung
+			o_eisen
+			o_festung
+			o_Geier
+			o_habicht
+			o_luchs
+			o_morgenrote
+			o_grunpfeil
+			o_fredericus
+		}
+		37 = { #baltics
+			o_beowulf
+			o_doppelkopf
+			o_laura
+		}
+		3 = { #Scotland
+			o_herbstreise
+		}
+		4 = { #ireland
+			o_kathleen
+		}
+		161 = { #iceland
+			o_ikarus
+		}
+		38 = { #Western Poland
+			o_fall_weiss
+		}
+		1 = { #South England
+			o_seelowe
+		}
+		5 = { #Benelux
+			o_fall_gelb
+			o_fall_braun
+		}
+		6 = { #Denmark
+			o_weserubung
+		}
+		22 = { #Czechoslovakia
+			o_fall_rot
+			o_fall_grun
+		}
+		202 = { #Crete/Aegean
+			o_merkur
+		}
+		25 = { #Greece
+			o_marita
+		}
+		29 = { #Central Med
+			o_herkules
+		}
+		26 = { # Bessarabia
+			o_munchen
+		}
+		130 = { #Russian Front
+			o_barbarossa
+		}
+		131 = { #Russian Front
+			o_barbarossa
+		}
+		132 = { #Northern Front
+			o_barbarossa
+			o_silberfuchs
+			o_blaufuchs
+			o_polarfuchs
+			o_platinfuchs
+			o_feuerzauber
+			o_nordlicht
+			o_sumpf
+		}
+		265 = { #Northern Front
+			o_barbarossa
+			o_silberfuchs
+			o_blaufuchs
+			o_polarfuchs
+			o_platinfuchs
+			o_feuerzauber
+			o_nordlicht
+			o_sumpf
+		}
+		150 = { #Northern Front
+			o_barbarossa
+			o_silberfuchs
+			o_blaufuchs
+			o_polarfuchs
+			o_platinfuchs
+			o_feuerzauber
+			o_nordlicht
+			o_sumpf
+		}
+		12 = { #Northern Front
+			o_barbarossa
+			o_silberfuchs
+			o_blaufuchs
+			o_polarfuchs
+			o_platinfuchs
+			o_feuerzauber
+			o_nordlicht
+			o_sumpf
+		}
+		133 = { #Moscow
+			o_taifun
+			o_zitadelle
+		}
+		134 = {
+			o_edelweiss
+			o_attika
+			o_bussard
+			o_herbstlaub
+			o_herbstzeitlose
+			o_schamil
+			o_clausewitz
+			o_brunhild
+			o_krimhilde
+			o_wikinger
+		}
+		19 = { #Northern France (this one is tricky)
+			o_fall_braun
+			o_herbstnebel
+		}
+		11 = {
+			o_buffel
+		}
+		191 = {
+			o_buffel
+			o_sizilien
+		}
+		13 = {
+			o_birke
+			o_tanne_ost
+			o_tanne_west
+		}
+		278 = {
+			o_birke
+			o_tanne_ost
+			o_tanne_west
+		}
+		277 = {
+			o_birke
+			o_tanne_ost
+			o_tanne_west
+		}
+		225 = {
+			o_brandung
+			o_skorpion
+			o_aida
+			o_capri
+			o_theseus
+			o_ochsenkopf
+			o_venezie
+			o_fruhlingswind
+			o_ausladung
+			o_eilbote
+			o_fliederblute
+			o_kuckuksei
+		}
+		126 = {
+			o_brandung
+			o_skorpion
+			o_aida
+			o_capri
+			o_theseus
+			o_ochsenkopf
+			o_venezie
+			o_fruhlingswind
+			o_ausladung
+			o_eilbote
+			o_fliederblute
+			o_kuckuksei
+		}
+		128 = {
+			o_brandung
+			o_skorpion
+			o_aida
+			o_capri
+			o_theseus
+			o_ochsenkopf
+			o_venezie
+			o_fruhlingswind
+			o_ausladung
+			o_eilbote
+			o_fliederblute
+			o_kuckuksei
+		}
+		129 = { #turkey
+			o_gertrud
+		}
+		41 = { #iberia
+			o_gisella
+			o_ilona
+			o_isabella
+			o_felix
+		}
+		154 = { # Northern Balkans
+			o_fruhlingserwachen
+			o_konrad
+			o_margarethe
+			o_sudwind
+		}
+		21 = { #italy
+			o_eiche
+			o_achse
+			o_alarich
+			o_siegfried
+			o_konstantin
+		}
+		23 = { #italy
+			o_eiche
+			o_achse
+			o_alaric
+			o_scwartz
+			o_siegfried
+			o_konstantin
+		}
+	}
+
+}
+
+SGK = {
+	male = {
+		names = {
+			Adolf Alfred Anton Christian Dieter Emil Erich Erwin Felix Fritz Gabriel Gerhard
+			Gunther Hans Heinrich Heinz Helmuth Hermann Horst Joachim Karl Ludwig Marco
+			Markus Max Maximilian Otto Otto Paul Peter Philipp Ralph Samuel Staffan Theodor
+			Tobias Walter Wilhelm
+
+			# From VGE
+			Karl Willhelm Heinrich Hans Otto Hermann Paul Walther Friedrich Ernst Willi Fritz Max Franz Gustav August Johannes Johann Rudolph Emil Alfred Georg Albert Adolf Richard Erich Arthur Kurt Robert Josef Hugo Ludwig Bruno Bernhard Oskar Herbert Theodor Martin Peter Eduard Henri Werner Toni John Julius Christian Helmut Reinhold Erwin Ferdinand Gottlieb Siegfried
+		}
+	}
+	female = {
+		names = {
+			Jessica Emma Hanna Sofia Marie Hildegard
+
+			# From VGE
+			Anna Frida Marta Erna Emma Marie Gertrud Margarethe Maria Elisabeth Berta Elsa Helene Louise Johanna Hedwig Klara Minna Else Paula Ella Ida Wilhelmine Mathilde
+		}
+	}
+	surnames = {
+		Barkhorn Becker Behrmann Beisswenger Berglen Blum Brandt Brendel Dietrich
+		Duttmann Ehrler Fischer Graf Haas Hafner Hartmann Hoffmann Huber Kirschner Konig
+		Kraus Kuhn Lang Lehmann Lipfert Meyer Muller Rall Roth Schmidt Schneider Schulte
+		Schulz Sommer Stotz Sturm Vogt Wagner Weber Wilbs Winkler Winter Wolff Zimmermann
+
+		# From VGE
+		Adler Adolph Albach Albert Alles Alt Altergott Amen Appelhans Deisel Dellos Derr Detterer Diehl Dierlam Dieser Dietz Ditmar Döll Dorn Dörr Dorsch Dortman Driess Dumler Eberhard Eberhardt Eberling Ebert Eckert Eckhardt Eckler Edel Eich Eichhorn Eichmann Eisele Eisenach Eisenhuth Eitenmüller Elsässer Engel Engelhardt Erck Erder Eüler Euler Eurich Ewig Faber Falkenstein Faust Fech Fein Fendel Feuerstein Fischer Göttmann Götz Graf Gramlich Grasmück Grosch Gross Grún Grünemeier Grünwald Gutherich Gutmann Gutscher Guttmann Hegele Hegwald Heidenreich Heimbüchner Hein Heinrich Heitzenreder Helbrecht Heldt Helfenbein Heller Helmuth Helwig Hempel Henkel Henn Herber Herdt Hergenheim Hergert Hessler Hettinger Hetzel Heusel Hieronymus Hildt Hill Kammerzell Kappel Kappes Kaucher Kechter Kembel Kempel Kexel Kiehn Kildau Kimmel Kinderknecht Kindsvater Kirschbaum Kissler Kister Klamm Klaus Kleiber Klein Kleinfelder Klink Kloberdanz Kloster Knaus Kniss Knödler Kober Koch Köhler Kohlmann Langlitz Lapp Laubhan Lauck Lauterbach Lederer Lederhos Legler Lehr Lei Leichner Leiker Lein Leinweber Leister Lenz Leonhardt Lerch Lesser Licht Lichtenberger Lichtenwald Linenberg Lingelbach Link Lipps Lissmann Litzenberger Mill Miltenberger Mohn Mohr Mohrlang Molko Moninger Morasch Moritz Morkel Müller Müller Müller Münster Müntermann Muth Mützig Näb Nafts Nagelschmidt Nazarenus Neubauer Neuberger Neuhard Nickel Niedecker Niedenthal Oberheim Oberitter Oblander Ochsenhirt Oldt Orth Ostertag Oswald Ott Pappenheim Pickelhaubt Pinnecker Plouqet Präfried Prasch Preisendorf Quindt Raab Rauh Rausch Ravensberg Rebuhn Reh Rehn Reifschneider Reimer Rein Reinhardt Reinick Reis Reiswig Reiter Reitz Repp Rettig Reuscher Reuss Reuter Richter Ries Saalfeld Sack Sauer Sauerbrey Schäfer Schreieck Schremser Schuh Schultheis Schultz Schwab Schwabauer Schwabenland Schwan Schwartz Schwartzkopf  Seib Steinbach Steinbrecher Stellwagen Stiehl Stoll Störger Stork Stössel Streck Stroh Strohmann Stromberger Stürtz Suppes Thierolf Traub Traudt Traut Trin Trippel Trupp Ubert Uhrich Ulrich Urbach Urban Usinger Utz Vogel Vogler Voigt Völck Volk Volz Wasmuth Wassen Wassinger Weber Weckesser Weidemann Weidhardt Weigandt Weisgerber Weisheim Weiss Weitz Weitzel Welsch Wentz Wenzel Wenzereich Werth Wiedemann Wiederspahn Wiegand Wilhelm Will Willmann Windecker Winkelhausen Wittwanger Wolff Würtz Zell Zentner Zieg Ziegler Zitzmann Zorn Zürckgiebel
+	}
+
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+
+	prefix = o_unternehmen
+	operation = {
+		0 = {
+			o_ostwind
+			o_wetzstein
+ 			o_oderubung
+ 			o_donauubung
+ 			o_osterspaziergang
+ 			o_reibeisen
+ 			o_einbaum
+ 			o_apfelbaum
+ 			o_fuchsjagd
+ 			o_bismarck
+ 			o_dorffest
+ 			o_gelandemarsch
+ 			o_freiherr
+ 			o_deichgraf
+ 			o_heimfahrt
+ 			o_heimspiel
+ 			o_hasenjagd
+ 			o_ingwer
+ 			o_jahreswechsel
+ 			o_kannonenkugel
+ 			o_lastkahn
+ 			o_mondschein
+ 			o_neuland
+ 			o_ofenrohr
+ 			o_pistole
+ 			o_ruckreise
+ 			o_sandbank
+ 			o_tankwart
+ 			o_vogelsang
+ 			o_winkel
+ 			o_zebra
+ 			o_fischreiher
+			o_lichtschlag
+			o_nordpol
+			o_orkan
+			o_raubtier
+			o_storfang
+			o_taubenschlag
+			o_trappenjagd
+			o_wiesengrund
+			o_wintermarchen
+			o_eisbar
+			o_lehrgang
+			o_leopard
+			o_michael
+			o_poseidon
+			o_zwischenspiel
+			o_wintergewitter
+			o_aster
+			o_blei
+			o_blume
+			o_fischfang
+			o_herbstnebel
+			o_ludwig
+			o_luttich
+			o_martin
+			o_morgenwind
+			o_sonnenaufgang
+			o_konrad
+			o_maus
+			o_derfflinger
+			o_moorbrand
+			o_bettelstab
+			o_blucher
+			o_braunschweig
+			o_bruckenschlag
+			o_schneeman
+			o_sonnenwende
+			o_sudwing
+			o_haifisch
+			o_nordwind
+			o_schlussjagd
+			o_sturmflut
+			o_taube
+			o_siegfried
+			o_westwind
+			o_wildente
+			o_biene
+			o_gneisenau
+			o_granit
+			o_stahl
+			o_scharnhorst
+			o_nebelubung
+			o_eisen
+			o_festung
+			o_Geier
+			o_habicht
+			o_luchs
+			o_morgenrote
+			o_grunpfeil
+			o_fredericus
+		}
+		37 = { #baltics
+			o_beowulf
+			o_doppelkopf
+			o_laura
+		}
+		3 = { #Scotland
+			o_herbstreise
+		}
+		4 = { #ireland
+			o_kathleen
+		}
+		161 = { #iceland
+			o_ikarus
+		}
+		38 = { #Western Poland
+			o_fall_weiss
+		}
+		1 = { #South England
+			o_seelowe
+		}
+		5 = { #Benelux
+			o_fall_gelb
+			o_fall_braun
+		}
+		6 = { #Denmark
+			o_weserubung
+		}
+		22 = { #Czechoslovakia
+			o_fall_rot
+			o_fall_grun
+		}
+		202 = { #Crete/Aegean
+			o_merkur
+		}
+		25 = { #Greece
+			o_marita
+		}
+		29 = { #Central Med
+			o_herkules
+		}
+		26 = { # Bessarabia
+			o_munchen
+		}
+		130 = { #Russian Front
+			o_barbarossa
+		}
+		131 = { #Russian Front
+			o_barbarossa
+		}
+		132 = { #Northern Front
+			o_barbarossa
+			o_silberfuchs
+			o_blaufuchs
+			o_polarfuchs
+			o_platinfuchs
+			o_feuerzauber
+			o_nordlicht
+			o_sumpf
+		}
+		265 = { #Northern Front
+			o_barbarossa
+			o_silberfuchs
+			o_blaufuchs
+			o_polarfuchs
+			o_platinfuchs
+			o_feuerzauber
+			o_nordlicht
+			o_sumpf
+		}
+		150 = { #Northern Front
+			o_barbarossa
+			o_silberfuchs
+			o_blaufuchs
+			o_polarfuchs
+			o_platinfuchs
+			o_feuerzauber
+			o_nordlicht
+			o_sumpf
+		}
+		12 = { #Northern Front
+			o_barbarossa
+			o_silberfuchs
+			o_blaufuchs
+			o_polarfuchs
+			o_platinfuchs
+			o_feuerzauber
+			o_nordlicht
+			o_sumpf
+		}
+		133 = { #Moscow
+			o_taifun
+			o_zitadelle
+		}
+		134 = {
+			o_edelweiss
+			o_attika
+			o_bussard
+			o_herbstlaub
+			o_herbstzeitlose
+			o_schamil
+			o_clausewitz
+			o_brunhild
+			o_krimhilde
+			o_wikinger
+		}
+		19 = { #Northern France (this one is tricky)
+			o_fall_braun
+			o_herbstnebel
+		}
+		11 = {
+			o_buffel
+		}
+		191 = {
+			o_buffel
+			o_sizilien
+		}
+		13 = {
+			o_birke
+			o_tanne_ost
+			o_tanne_west
+		}
+		278 = {
+			o_birke
+			o_tanne_ost
+			o_tanne_west
+		}
+		277 = {
+			o_birke
+			o_tanne_ost
+			o_tanne_west
+		}
+		225 = {
+			o_brandung
+			o_skorpion
+			o_aida
+			o_capri
+			o_theseus
+			o_ochsenkopf
+			o_venezie
+			o_fruhlingswind
+			o_ausladung
+			o_eilbote
+			o_fliederblute
+			o_kuckuksei
+		}
+		126 = {
+			o_brandung
+			o_skorpion
+			o_aida
+			o_capri
+			o_theseus
+			o_ochsenkopf
+			o_venezie
+			o_fruhlingswind
+			o_ausladung
+			o_eilbote
+			o_fliederblute
+			o_kuckuksei
+		}
+		128 = {
+			o_brandung
+			o_skorpion
+			o_aida
+			o_capri
+			o_theseus
+			o_ochsenkopf
+			o_venezie
+			o_fruhlingswind
+			o_ausladung
+			o_eilbote
+			o_fliederblute
+			o_kuckuksei
+		}
+		129 = { #turkey
+			o_gertrud
+		}
+		41 = { #iberia
+			o_gisella
+			o_ilona
+			o_isabella
+			o_felix
+		}
+		154 = { # Northern Balkans
+			o_fruhlingserwachen
+			o_konrad
+			o_margarethe
+			o_sudwind
+		}
+		21 = { #italy
+			o_eiche
+			o_achse
+			o_alarich
+			o_siegfried
+			o_konstantin
+		}
+		23 = { #italy
+			o_eiche
+			o_achse
+			o_alaric
+			o_scwartz
+			o_siegfried
+			o_konstantin
+		}
+	}
+
+}
+
+
+
+SQR = {
+	male = {
+		names = {
+			Albert Alexander Alfred Archibald Arthur Benjamin Bernard Bradley Charles Colbert
+			Colin Cyril Dara David Donald Douglas Edmund Edward Fairfax Francis Geoffrey
+			George Graham Henrey Herbert Horatio Hubert Hugh Ian Jack Jake James Jeremy John
+			Leopold Lester Martin Max Nigel Oswald Percy Peter Reginald Richard Robert
+			Russell Stanley Stephen Thomas Wallace William Winston Zachary
+		  }
+	}
+	female = {
+		names = { Elizabeth Anne Mary Nancy Sophie Sarah Deborah Helen Alice Monica Kathleen Edith Caroline Victoria }
+	}
+	surnames = {
+		Allenby Battemberg Beatty Beresford Black Brown Buller Butler Campbell Cardigan
+		Churchill Cochrane Cockburn Collin Darling Dundas Faithfull Fisher French
+		Golightly Gough Grant Grenfell Haig Hamilton Hardinge Havelock Hope Irons
+		Jellicoe Kitchener Leiper Lyons Madden Milne Montgomery Moresby Mundy Murphy
+		Napier Nicholson Nicholson Plummer Ragland Roberts Roberts Seaton Seymour Shapley
+		Smith Spring Steele Stewart Sutherland Thesiger Tyron Tyrwhitt Wilde Williams
+		Windsor Wolseley Wood Wright
+		}
+	callsigns = { Stubborn Arrow "The King" Eagle Hangover Striker Chase "One Wing" Pickle Thief Thunder Lightning Storm Target Hawk Fox Dog Sparrow Sunrise "Night Owl" Butcher Cocky Hawkeye Killer Mick Brandy "The Baron" }
+
+	prefix = o_operation
+
+	operation = {
+		225 = {
+			o_acrobat
+			o_agreement
+			o_daffodil
+			o_snowdrop
+			o_battleaxe
+			o_brevity
+			o_compass
+			o_crusader
+			o_guillotine
+			o_lightfoot
+			o_supercharge
+			o_pugilist
+			o_vulcan
+		}
+		128 = {
+			o_acrobat
+			o_agreement
+			o_daffodil
+			o_snowdrop
+			o_battleaxe
+			o_brevity
+			o_compass
+			o_crusader
+			o_guillotine
+			o_lightfoot
+			o_supercharge
+			o_pugilist
+			o_vulcan
+		}
+		126 = {
+			o_torch
+			o_acrobat
+			o_agreement
+			o_daffodil
+			o_snowdrop
+			o_battleaxe
+			o_brevity
+			o_compass
+			o_crusader
+			o_guillotine
+			o_lightfoot
+			o_supercharge
+			o_pugilist
+			o_vulcan
+		}
+		182 = {
+			o_torch
+		}
+		202 = {
+			o_abstention
+		}
+		208 = {
+			o_jubilee
+			o_bluecoat
+			o_Astonia
+			o_charnwood
+			o_epsom
+			o_goodwood
+			o_greenline
+			o_pomegranate
+			o_totalize
+			o_overlord
+		}
+		19 = {
+			o_jubilee
+			o_bluecoat
+			o_Astonia
+			o_charnwood
+			o_epsom
+			o_goodwood
+			o_greenline
+			o_pomegranate
+			o_totalize
+			o_overlord
+		}
+		7 = {
+			o_plunder
+			o_varsity
+		}
+		28 = {
+			o_accolade
+			o_exporter
+			o_mandibles
+			o_manna
+		}
+		69 = {
+			o_accolade
+			o_exporter
+			o_mandibles
+			o_manna
+		}
+		23 = {
+			o_baytown
+			o_slapstick
+			o_chesterfield
+			o_diadem
+			o_encore
+			o_husky
+			o_shingle
+			o_olive
+		}
+		189 = {
+			o_anakim
+			o_capital
+			o_dracula
+			o_longcloth
+			o_talon
+			o_thursday
+		}
+		142 = {
+			o_krohcol
+			o_matador
+		}
+		116 = {
+			o_countenance
+		}
+		188 = {
+			o_zipper
+			o_broadsword
+		}
+		161 = {
+			o_fork
+		}
+		11 = {
+			o_primrose
+			o_r4
+		}
+		191 = {
+			o_primrose
+			o_r4
+		}
+		5 = {
+			o_infatuate
+			o_comet
+			o_market_garden
+		}
+		0 = {
+			o_constellation
+			o_clipper
+			o_aintree
+			o_fusilade
+		}
+	}
+
+	first = {
+		o_umbral o_shadow o_sunlight o_starry o_mountain o_crescent o_active o_joint o_allied o_unified o_resolute o_courageous o_dark o_bright o_defiant o_poised o_proud o_spotless
+		o_iron o_steel o_bronze o_alpha o_beta o_gamma o_reckless o_stalwart o_red o_green o_orange o_blue o_ochre o_grey o_purple o_restless
+	}
+
+	second = {
+		o_storm o_fox o_shield o_scimitar o_sword o_spirit o_wolf o_panther o_slingshot o_wind o_garden o_thunder o_rain o_hail o_pegasus o_star o_apron o_dome o_homecoming o_laser
+		o_phalanx o_resolve o_heart o_support o_heat o_moon o_oak o_ash o_fire o_force o_hill o_river o_eagle o_raptor o_hawk o_lion o_tiger
+	}
+
+}
+
+REA = {
+	male = {
+		names = {
+			Aleksandr Aleksey Andrey Anton Boris Dmitry Fyodor Gennady
+			Georgy Grigory Igor Ilya Iosif Ivan Kirill Konstantin Lavr Leonid Lev
+			Maksim Mikhail Nikita Nikolay Noy Oleg Pavel Pyotr Roman Semyon Sergey
+			Valery Vasily Viktor Vladimir Vladislav Yegor Yevgeny Yury
+			#New
+			Akim Aksel Anastasy Anatoly Andrian Arkady Arseny Aslan Dzhabir Emil Feodosy Filipp Isay Ivar Izot
+			Karl Kazimir Kuzma Lavrenty Lazar Makary Manzakir Marat Markian Martemyan Mstislav
+			Osher Pasha Robert Roman Sidor Slava Stepan Tikhon Timofey Tsyrendashi Vsevolod Vyacheslav Yakov Yefim Zinovy
+			#Georgian
+			Levan Tamaz Zurab
+			#Armenian
+			Amayak Amazasp Arno Artashes Bagrat Derenik Karapet Khoren Tarlan
+		}
+		surnames = {
+			Akhnazarov Akimenko Alekseyev Antonov Azarov Badanov Brusilov Budyonny Chibisov Denikin
+			Dragomirov Frolov Golivin Grishin Gurko Ivanov Ivannikov Isayev
+			Konev Konstantinov Kornilov Kolchak Kuropatkin
+			Lazarev Makarov Maksimov Menshikov Nakhimov Nebogatov Nikolayevich Nikitin
+			Ostrovsky Pavlov Putyatin Romanov Rozhestvensky Skobelev
+			Shuvalov Surkov Tukhachevsky Yan Yegorov Yudenich Vorontsov Voroshilov Zavoyko
+			#New
+			Abramov Abugov Abyzov Achkasov Adriashenko Afanasev Agafonov Akimov Alagakov Alekhin Aleksandrovich
+			Aleksandrov Almazov Anashkin Andreyev Andrianov Apriamov Arushanyan Arutyunovich Asadov
+			Babak Barkov Bondaryov Borisovich Bulgakov Bulgatov Bulanenko Brezhnev Bocharov
+			Chernishevsky Chernishev Chigvintsev Chistyakov Chuikov Danilovich Dazhin Denishchev Dokutovich Dorzhiyev
+			Filippov Fyodorov Gabrilov Gagarin Ganyev Gashev Golubev Grachyov Grigorov Grishayev Gusev
+			Ilnitsky Kaminsky Khalikov Kiselyov Klubkov Koldeyev Kondakov Korenev Koshkin Kovshov Kuzma Kuznetsov
+			Larionov Lavrentyev Lev Lidov Lisitsyn Loginov Lukichyov Lyubilkin
+			Makeyev Makhlyagin Makoveyev Malyutin Maresyev Markelov Matveyevich Mazhnov Melikhov Milko Moiseyenko Molchanov Murakhovets
+			Nakaryakov Nesterov Nikiforov Nikolayev Nikulin Nomokonov Novozhilov Okunev Onilov Orlov
+			Pakhomkin Panchenko Panteleyev Parfyonov Pavlichenko Pchelintsev Pegeshov Petrov Popov Posazhnikov Prokopev Pustobriko
+			Rabichev Radkin Rakityansky Raskov Romanovich Romashov Rudnev Ryasin
+			Sagaidak Saikin Sanfirov Selin Selyanin Serebryakov Seryogin Shalayev Shambarov Shatrov
+			Shevelyov Shilov Shlyakhov Shmurak Shvetsov Simonov Sokolov Solomatin Stepanov Svetlov
+			Tanailov Terekhov Tinigin Tolstoy Ulyanenko Utkin Vashchenko Vasilenko Vinogradov Vladimirsky Volkhov Vorontsov
+			Yartsev Yegorov Yekimov Yermakov Yushin Zakharov Zaytsev Zhudin Zhukov
+			#Georgian (some might be shared with other SSRs around) -> Most likely in Russian form
+			Adamiya Aliyev Aslanikashvili Beriya Chiladze Dzhugashvili Gelashvili Giligashvili
+			Kapanadze Khalvashi Kvachantiradze Kvaratskhelia Lomidze Makharashvili Tatuashvili Tavadze Tsereteli
+			#Armenian (some might be shared with other SSRs around) -> Most likely in Russian form
+			Babadzhanyan Gurgen Markosyan
+			#Azerbaijan (some might be shared with other SSRs around) -> Most likely in Russian form
+			Akhundov Aliyarbekov Apresyan
+		}
+	}
+	female = {
+		names = {
+			Afanasiya Albina Aleksandra Anastasiya Elena Elvira Lydia Lyudmila Margarita Muza Natalya Olga Sofiya Svetlana Valentina Yelena
+			#New
+			Alina Alevtina Aliya Anna Anya Asya Dusya Galya Kaleriya Kalya Katya Klava Klavdiya Irina
+			Lida Liza Lyuba Lyubov Marina Mariya Maryam Marusya Nadezhda Nadya Natasha Nina Nonna
+			Polina Raisa Roza Rozaliya Serafima Svetlana Tamara Tanya Taya Tonya Tosya
+			Valya Vera Yekaterina Yepistiniya Yevdokiya Yevgeniya Yuliya Zinaida Zoya
+			#Georgian
+			Ketevan Nana Nino Tamar
+		}
+		surnames = {
+			#New
+			Abramova Abyzova Akhnazarova Akimenko Akimova Aleksandrova Aleksandrovna Almazova Anashkina Anatolyevna Artamonova
+			Badanova Bakieva Barakina Barkova Bocharova Bondaryova Bratishcheva Bulatova Bulgakova
+			Chegodayeva Chernisheva Chibisova Chigvintseva Chistyakova Chuikova Fedutenko Filippova Fyodorova
+			Gabrilova Gagarina Ganyeva Gasheva Golubeva Grachyova Grigorova Grishayeva Grunskaya Gulyakina Guseva Isayeva Ivanova
+			Kekeshyeva Kiselyova Klubkova Koldeyeva Kondakova Koreneva Korotkevich Kosmodemyanskaya Kovalenko Kovshova Kroshchenko Kuzmina Kuznetsova
+			Larionova Lavrentyeva Lidova Loginova Lukichyova
+			Makeyeva Makhlyagina Makoveyeva Maksimova Malyutina Maresyeva Markelova Matokh Mazhnova Melikhova Menshikova Milko Moiseyenko Molchanova
+			Moldagulova Mulatova Murakhovets Nakaryakova Nakhimova Nesterova Nikiforova Nikiforovna Nikoloyeva Novozhilova Nurmukhambetovna
+			Okuneva Onilova Orlova
+			Pakhomkina Panchenko Panteleyeva Parfyonova Pavlichenko Pavlova Pchelintseva Pegeshova Peredera Petrova Popova Posazhnikova Prokopeva Pustobrikova
+			Rabicheva Rachkevich Radkina Raskova Reznichenko Rogalskaya Romanova Romashova Rudneva Ryasina
+			Saikina Sanfirova Selina Selyanina Serebryakova Shalayeva Shambarova Shanina Shatrova
+			Shevelyova Shilova Shlyakhova Shvetsova Simonova Sokolova Stepanova Surkova Svetlova
+			Tanailova Terekhova Tinigina Ulyanenko Vashchenko Vasilenko Vinogradova Visnitskaya Volkhova Vorontsova
+			Yartseva Yegorova Yekimova Yermakova Yushina Zakharova Zhukova
+			#Caucasus
+			Aliyeva
+			#Georgia
+			Aslanikashvili Beriya Dzhugashvili Gelashvili Giligashvili Khalvashi Kvaratskhelia Kapanadze Ingorovka Lomidze Makharashvili Tatuashvili Tavadze Tsereteli
+			#Azerbaijan
+			Pashayeva
+		}
+	}
+	callsigns = { "The Colonist" "The Bell" Heine Duma Anvil Hammer Fury Arrow Storm Bear "White Lily" Devil Eagle Falcon Fox Snowflake Greasy Guardian Gunman Hawk Hardball Howl Blizzard Husky Ice Killer Steel Iron Skull Striker Thunder Warrior Wardog Vodka }
+
+	prefix = o_operatsiya
+
+	use_geographical_default_operation_names = yes
+	offensive_operation_suffix = o_strat_offensive_ru
+	defensive_operation_suffix = o_strat_defensive_ru
+	naval_operation_suffix = o_strat_naval_ru
+
+	operation = {
+		0 = {
+			o_mercury
+			o_venus
+			o_neptune
+			o_maly_saturn
+			o_maly_neptun
+			o_kontsert
+		}
+		130 = {
+			o_bagration
+		}
+		131 = {
+			o_bagration
+			o_suvorov
+		}
+		132 = {
+			o_iskra
+			o_lyuban
+			o_sinyavino
+		}
+		133 = {
+			o_mars
+			o_jupiter
+			o_kutuzov
+			o_polar_star
+			o_rumyantsev
+		}
+		24 = {
+			o_belgrade_strategic_offensive
+		}
+		8 = {
+			o_berlin_strategic_offensive
+		}
+		137 = {
+			o_ring
+			o_saturn
+			o_uranus
+		}
+		38 = {
+			o_samland
+		}
+	}
+}
+
+IND = {
+	male = {
+		names = {
+			Aleksandr Aleksey Andrey Anton Boris Dmitry Fyodor Gennady
+			Georgy Grigory Igor Ilya Iosif Ivan Kirill Konstantin Lavr Leonid Lev
+			Maksim Mikhail Nikita Nikolay Noy Oleg Pavel Pyotr Roman Semyon Sergey
+			Valery Vasily Viktor Vladimir Vladislav Yegor Yevgeny Yury
+			#New
+			Akim Aksel Anastasy Anatoly Andrian Arkady Arseny Aslan Dzhabir Emil Feodosy Filipp Isay Ivar Izot
+			Karl Kazimir Kuzma Lavrenty Lazar Makary Manzakir Marat Markian Martemyan Mstislav
+			Osher Pasha Robert Roman Sidor Slava Stepan Tikhon Timofey Tsyrendashi Vsevolod Vyacheslav Yakov Yefim Zinovy
+			#Georgian
+			Levan Tamaz Zurab
+			#Armenian
+			Amayak Amazasp Arno Artashes Bagrat Derenik Karapet Khoren Tarlan
+		}
+		surnames = {
+			Akhnazarov Akimenko Alekseyev Antonov Azarov Badanov Brusilov Budyonny Chibisov Denikin
+			Dragomirov Frolov Golivin Grishin Gurko Ivanov Ivannikov Isayev
+			Konev Konstantinov Kornilov Kolchak Kuropatkin
+			Lazarev Makarov Maksimov Menshikov Nakhimov Nebogatov Nikolayevich Nikitin
+			Ostrovsky Pavlov Putyatin Romanov Rozhestvensky Skobelev
+			Shuvalov Surkov Tukhachevsky Yan Yegorov Yudenich Vorontsov Voroshilov Zavoyko
+			#New
+			Abramov Abugov Abyzov Achkasov Adriashenko Afanasev Agafonov Akimov Alagakov Alekhin Aleksandrovich
+			Aleksandrov Almazov Anashkin Andreyev Andrianov Apriamov Arushanyan Arutyunovich Asadov
+			Babak Barkov Bondaryov Borisovich Bulgakov Bulgatov Bulanenko Brezhnev Bocharov
+			Chernishevsky Chernishev Chigvintsev Chistyakov Chuikov Danilovich Dazhin Denishchev Dokutovich Dorzhiyev
+			Filippov Fyodorov Gabrilov Gagarin Ganyev Gashev Golubev Grachyov Grigorov Grishayev Gusev
+			Ilnitsky Kaminsky Khalikov Kiselyov Klubkov Koldeyev Kondakov Korenev Koshkin Kovshov Kuzma Kuznetsov
+			Larionov Lavrentyev Lev Lidov Lisitsyn Loginov Lukichyov Lyubilkin
+			Makeyev Makhlyagin Makoveyev Malyutin Maresyev Markelov Matveyevich Mazhnov Melikhov Milko Moiseyenko Molchanov Murakhovets
+			Nakaryakov Nesterov Nikiforov Nikolayev Nikulin Nomokonov Novozhilov Okunev Onilov Orlov
+			Pakhomkin Panchenko Panteleyev Parfyonov Pavlichenko Pchelintsev Pegeshov Petrov Popov Posazhnikov Prokopev Pustobriko
+			Rabichev Radkin Rakityansky Raskov Romanovich Romashov Rudnev Ryasin
+			Sagaidak Saikin Sanfirov Selin Selyanin Serebryakov Seryogin Shalayev Shambarov Shatrov
+			Shevelyov Shilov Shlyakhov Shmurak Shvetsov Simonov Sokolov Solomatin Stepanov Svetlov
+			Tanailov Terekhov Tinigin Tolstoy Ulyanenko Utkin Vashchenko Vasilenko Vinogradov Vladimirsky Volkhov Vorontsov
+			Yartsev Yegorov Yekimov Yermakov Yushin Zakharov Zaytsev Zhudin Zhukov
+			#Georgian (some might be shared with other SSRs around) -> Most likely in Russian form
+			Adamiya Aliyev Aslanikashvili Beriya Chiladze Dzhugashvili Gelashvili Giligashvili
+			Kapanadze Khalvashi Kvachantiradze Kvaratskhelia Lomidze Makharashvili Tatuashvili Tavadze Tsereteli
+			#Armenian (some might be shared with other SSRs around) -> Most likely in Russian form
+			Babadzhanyan Gurgen Markosyan
+			#Azerbaijan (some might be shared with other SSRs around) -> Most likely in Russian form
+			Akhundov Aliyarbekov Apresyan
+		}
+	}
+	female = {
+		names = {
+			Afanasiya Albina Aleksandra Anastasiya Elena Elvira Lydia Lyudmila Margarita Muza Natalya Olga Sofiya Svetlana Valentina Yelena
+			#New
+			Alina Alevtina Aliya Anna Anya Asya Dusya Galya Kaleriya Kalya Katya Klava Klavdiya Irina
+			Lida Liza Lyuba Lyubov Marina Mariya Maryam Marusya Nadezhda Nadya Natasha Nina Nonna
+			Polina Raisa Roza Rozaliya Serafima Svetlana Tamara Tanya Taya Tonya Tosya
+			Valya Vera Yekaterina Yepistiniya Yevdokiya Yevgeniya Yuliya Zinaida Zoya
+			#Georgian
+			Ketevan Nana Nino Tamar
+		}
+		surnames = {
+			#New
+			Abramova Abyzova Akhnazarova Akimenko Akimova Aleksandrova Aleksandrovna Almazova Anashkina Anatolyevna Artamonova
+			Badanova Bakieva Barakina Barkova Bocharova Bondaryova Bratishcheva Bulatova Bulgakova
+			Chegodayeva Chernisheva Chibisova Chigvintseva Chistyakova Chuikova Fedutenko Filippova Fyodorova
+			Gabrilova Gagarina Ganyeva Gasheva Golubeva Grachyova Grigorova Grishayeva Grunskaya Gulyakina Guseva Isayeva Ivanova
+			Kekeshyeva Kiselyova Klubkova Koldeyeva Kondakova Koreneva Korotkevich Kosmodemyanskaya Kovalenko Kovshova Kroshchenko Kuzmina Kuznetsova
+			Larionova Lavrentyeva Lidova Loginova Lukichyova
+			Makeyeva Makhlyagina Makoveyeva Maksimova Malyutina Maresyeva Markelova Matokh Mazhnova Melikhova Menshikova Milko Moiseyenko Molchanova
+			Moldagulova Mulatova Murakhovets Nakaryakova Nakhimova Nesterova Nikiforova Nikiforovna Nikoloyeva Novozhilova Nurmukhambetovna
+			Okuneva Onilova Orlova
+			Pakhomkina Panchenko Panteleyeva Parfyonova Pavlichenko Pavlova Pchelintseva Pegeshova Peredera Petrova Popova Posazhnikova Prokopeva Pustobrikova
+			Rabicheva Rachkevich Radkina Raskova Reznichenko Rogalskaya Romanova Romashova Rudneva Ryasina
+			Saikina Sanfirova Selina Selyanina Serebryakova Shalayeva Shambarova Shanina Shatrova
+			Shevelyova Shilova Shlyakhova Shvetsova Simonova Sokolova Stepanova Surkova Svetlova
+			Tanailova Terekhova Tinigina Ulyanenko Vashchenko Vasilenko Vinogradova Visnitskaya Volkhova Vorontsova
+			Yartseva Yegorova Yekimova Yermakova Yushina Zakharova Zhukova
+			#Caucasus
+			Aliyeva
+			#Georgia
+			Aslanikashvili Beriya Dzhugashvili Gelashvili Giligashvili Khalvashi Kvaratskhelia Kapanadze Ingorovka Lomidze Makharashvili Tatuashvili Tavadze Tsereteli
+			#Azerbaijan
+			Pashayeva
+		}
+	}
+	callsigns = { "The Colonist" "The Bell" Heine Duma Anvil Hammer Fury Arrow Storm Bear "White Lily" Devil Eagle Falcon Fox Snowflake Greasy Guardian Gunman Hawk Hardball Howl Blizzard Husky Ice Killer Steel Iron Skull Striker Thunder Warrior Wardog Vodka }
+
+	prefix = o_operatsiya
+
+	use_geographical_default_operation_names = yes
+	offensive_operation_suffix = o_strat_offensive_ru
+	defensive_operation_suffix = o_strat_defensive_ru
+	naval_operation_suffix = o_strat_naval_ru
+
+	operation = {
+		0 = {
+			o_mercury
+			o_venus
+			o_neptune
+			o_maly_saturn
+			o_maly_neptun
+			o_kontsert
+		}
+		130 = {
+			o_bagration
+		}
+		131 = {
+			o_bagration
+			o_suvorov
+		}
+		132 = {
+			o_iskra
+			o_lyuban
+			o_sinyavino
+		}
+		133 = {
+			o_mars
+			o_jupiter
+			o_kutuzov
+			o_polar_star
+			o_rumyantsev
+		}
+		24 = {
+			o_belgrade_strategic_offensive
+		}
+		8 = {
+			o_berlin_strategic_offensive
+		}
+		137 = {
+			o_ring
+			o_saturn
+			o_uranus
+		}
+		38 = {
+			o_samland
+		}
+	}
+}
+
+OLE = {
+	male = {
+		names = { Najib Muhammad Tengku Kadir "Tengku Kadir" Embok Eunos Ibrahim Pak Pandir Rashid Ahmad Nordin Abdul Amin Lokman Yaacob Elyas Mazlan }
+	}
+	female = {
+		names = {
+			Azura Merenui Metetini Miri Moea Moeata Moerani Mohea Nanihi "Nu’utea" Orama Poe Pear Poehina Poenui Poerava Puaiti
+			Puatea Puaura Ranitea Rarahu Raunui Raurii Tahiata Taiana Taina Tania Taurua Tautiare Tehani
+			Tehea Teora Tera Tevai Titaina Titaua Tuianu Tumata Unutea Urarii Vaea Vaiana Vaianu Vaiata Vaihere Vaimiti Vairea
+			Vaite Vaitiare
+		}
+	}
+	surnames = { Razak Yusof Ali Suloh Abdullah Yaacob Sako Maidin Boestamam Aziz Latiff Omar }
+	callsigns = { }
+}
+
+DAF = {
+	male = {
+		names = { "Hee-Seok" "Jae-Hoon" "Shin-Woo" Sang Gun Kwang Woong Chul Hyuk "Yoon-Gi" "Han-gyeol" }
+	}
+	female = {
+		names = { "Ae-jung" Bora "Chae-won" "Hye-ja" "Ji-young" "Seong-ja" Sora "Yeo-jin" "Kyung-hee" }
+	}
+	surnames = { Kim Cho Lee Park Jeong Choe Jang Yun Rim Ryu Gang }
+	callsigns = { }
+}
+
+BAV = {
+	male = {
+		names = {
+			Adolf Alfred Anton Christian Dieter Emil Erich Erwin Felix Fritz Gabriel Gerhard
+			Gunther Hans Heinrich Heinz Helmuth Hermann Horst Joachim Karl Ludwig Marco
+			Markus Max Maximilian Otto Otto Paul Peter Philipp Ralph Samuel Staffan Theodor
+			Tobias Walter Wilhelm
+
+			# From VGE
+			Karl Willhelm Heinrich Hans Otto Hermann Paul Walther Friedrich Ernst Willi Fritz Max Franz Gustav August Johannes Johann Rudolph Emil Alfred Georg Albert Adolf Richard Erich Arthur Kurt Robert Josef Hugo Ludwig Bruno Bernhard Oskar Herbert Theodor Martin Peter Eduard Henri Werner Toni John Julius Christian Helmut Reinhold Erwin Ferdinand Gottlieb Siegfried
+		}
+	}
+	female = {
+		names = {
+			Jessica Emma Hanna Sofia Marie Hildegard
+
+			# From VGE
+			Anna Frida Marta Erna Emma Marie Gertrud Margarethe Maria Elisabeth Berta Elsa Helene Louise Johanna Hedwig Klara Minna Else Paula Ella Ida Wilhelmine Mathilde
+		}
+	}
+	surnames = {
+		Barkhorn Becker Behrmann Beisswenger Berglen Blum Brandt Brendel Dietrich
+		Duttmann Ehrler Fischer Graf Haas Hafner Hartmann Hoffmann Huber Kirschner Konig
+		Kraus Kuhn Lang Lehmann Lipfert Meyer Muller Rall Roth Schmidt Schneider Schulte
+		Schulz Sommer Stotz Sturm Vogt Wagner Weber Wilbs Winkler Winter Wolff Zimmermann
+
+		# From VGE
+		Adler Adolph Albach Albert Alles Alt Altergott Amen Appelhans Deisel Dellos Derr Detterer Diehl Dierlam Dieser Dietz Ditmar Döll Dorn Dörr Dorsch Dortman Driess Dumler Eberhard Eberhardt Eberling Ebert Eckert Eckhardt Eckler Edel Eich Eichhorn Eichmann Eisele Eisenach Eisenhuth Eitenmüller Elsässer Engel Engelhardt Erck Erder Eüler Euler Eurich Ewig Faber Falkenstein Faust Fech Fein Fendel Feuerstein Fischer Göttmann Götz Graf Gramlich Grasmück Grosch Gross Grún Grünemeier Grünwald Gutherich Gutmann Gutscher Guttmann Hegele Hegwald Heidenreich Heimbüchner Hein Heinrich Heitzenreder Helbrecht Heldt Helfenbein Heller Helmuth Helwig Hempel Henkel Henn Herber Herdt Hergenheim Hergert Hessler Hettinger Hetzel Heusel Hieronymus Hildt Hill Kammerzell Kappel Kappes Kaucher Kechter Kembel Kempel Kexel Kiehn Kildau Kimmel Kinderknecht Kindsvater Kirschbaum Kissler Kister Klamm Klaus Kleiber Klein Kleinfelder Klink Kloberdanz Kloster Knaus Kniss Knödler Kober Koch Köhler Kohlmann Langlitz Lapp Laubhan Lauck Lauterbach Lederer Lederhos Legler Lehr Lei Leichner Leiker Lein Leinweber Leister Lenz Leonhardt Lerch Lesser Licht Lichtenberger Lichtenwald Linenberg Lingelbach Link Lipps Lissmann Litzenberger Mill Miltenberger Mohn Mohr Mohrlang Molko Moninger Morasch Moritz Morkel Müller Müller Müller Münster Müntermann Muth Mützig Näb Nafts Nagelschmidt Nazarenus Neubauer Neuberger Neuhard Nickel Niedecker Niedenthal Oberheim Oberitter Oblander Ochsenhirt Oldt Orth Ostertag Oswald Ott Pappenheim Pickelhaubt Pinnecker Plouqet Präfried Prasch Preisendorf Quindt Raab Rauh Rausch Ravensberg Rebuhn Reh Rehn Reifschneider Reimer Rein Reinhardt Reinick Reis Reiswig Reiter Reitz Repp Rettig Reuscher Reuss Reuter Richter Ries Saalfeld Sack Sauer Sauerbrey Schäfer Schreieck Schremser Schuh Schultheis Schultz Schwab Schwabauer Schwabenland Schwan Schwartz Schwartzkopf  Seib Steinbach Steinbrecher Stellwagen Stiehl Stoll Störger Stork Stössel Streck Stroh Strohmann Stromberger Stürtz Suppes Thierolf Traub Traudt Traut Trin Trippel Trupp Ubert Uhrich Ulrich Urbach Urban Usinger Utz Vogel Vogler Voigt Völck Volk Volz Wasmuth Wassen Wassinger Weber Weckesser Weidemann Weidhardt Weigandt Weisgerber Weisheim Weiss Weitz Weitzel Welsch Wentz Wenzel Wenzereich Werth Wiedemann Wiederspahn Wiegand Wilhelm Will Willmann Windecker Winkelhausen Wittwanger Wolff Würtz Zell Zentner Zieg Ziegler Zitzmann Zorn Zürckgiebel
+	}
+
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+
+	prefix = o_unternehmen
+	operation = {
+		0 = {
+			o_ostwind
+			o_wetzstein
+ 			o_oderubung
+ 			o_donauubung
+ 			o_osterspaziergang
+ 			o_reibeisen
+ 			o_einbaum
+ 			o_apfelbaum
+ 			o_fuchsjagd
+ 			o_bismarck
+ 			o_dorffest
+ 			o_gelandemarsch
+ 			o_freiherr
+ 			o_deichgraf
+ 			o_heimfahrt
+ 			o_heimspiel
+ 			o_hasenjagd
+ 			o_ingwer
+ 			o_jahreswechsel
+ 			o_kannonenkugel
+ 			o_lastkahn
+ 			o_mondschein
+ 			o_neuland
+ 			o_ofenrohr
+ 			o_pistole
+ 			o_ruckreise
+ 			o_sandbank
+ 			o_tankwart
+ 			o_vogelsang
+ 			o_winkel
+ 			o_zebra
+ 			o_fischreiher
+			o_lichtschlag
+			o_nordpol
+			o_orkan
+			o_raubtier
+			o_storfang
+			o_taubenschlag
+			o_trappenjagd
+			o_wiesengrund
+			o_wintermarchen
+			o_eisbar
+			o_lehrgang
+			o_leopard
+			o_michael
+			o_poseidon
+			o_zwischenspiel
+			o_wintergewitter
+			o_aster
+			o_blei
+			o_blume
+			o_fischfang
+			o_herbstnebel
+			o_ludwig
+			o_luttich
+			o_martin
+			o_morgenwind
+			o_sonnenaufgang
+			o_konrad
+			o_maus
+			o_derfflinger
+			o_moorbrand
+			o_bettelstab
+			o_blucher
+			o_braunschweig
+			o_bruckenschlag
+			o_schneeman
+			o_sonnenwende
+			o_sudwing
+			o_haifisch
+			o_nordwind
+			o_schlussjagd
+			o_sturmflut
+			o_taube
+			o_siegfried
+			o_westwind
+			o_wildente
+			o_biene
+			o_gneisenau
+			o_granit
+			o_stahl
+			o_scharnhorst
+			o_nebelubung
+			o_eisen
+			o_festung
+			o_Geier
+			o_habicht
+			o_luchs
+			o_morgenrote
+			o_grunpfeil
+			o_fredericus
+		}
+		37 = { #baltics
+			o_beowulf
+			o_doppelkopf
+			o_laura
+		}
+		3 = { #Scotland
+			o_herbstreise
+		}
+		4 = { #ireland
+			o_kathleen
+		}
+		161 = { #iceland
+			o_ikarus
+		}
+		38 = { #Western Poland
+			o_fall_weiss
+		}
+		1 = { #South England
+			o_seelowe
+		}
+		5 = { #Benelux
+			o_fall_gelb
+			o_fall_braun
+		}
+		6 = { #Denmark
+			o_weserubung
+		}
+		22 = { #Czechoslovakia
+			o_fall_rot
+			o_fall_grun
+		}
+		202 = { #Crete/Aegean
+			o_merkur
+		}
+		25 = { #Greece
+			o_marita
+		}
+		29 = { #Central Med
+			o_herkules
+		}
+		26 = { # Bessarabia
+			o_munchen
+		}
+		130 = { #Russian Front
+			o_barbarossa
+		}
+		131 = { #Russian Front
+			o_barbarossa
+		}
+		132 = { #Northern Front
+			o_barbarossa
+			o_silberfuchs
+			o_blaufuchs
+			o_polarfuchs
+			o_platinfuchs
+			o_feuerzauber
+			o_nordlicht
+			o_sumpf
+		}
+		265 = { #Northern Front
+			o_barbarossa
+			o_silberfuchs
+			o_blaufuchs
+			o_polarfuchs
+			o_platinfuchs
+			o_feuerzauber
+			o_nordlicht
+			o_sumpf
+		}
+		150 = { #Northern Front
+			o_barbarossa
+			o_silberfuchs
+			o_blaufuchs
+			o_polarfuchs
+			o_platinfuchs
+			o_feuerzauber
+			o_nordlicht
+			o_sumpf
+		}
+		12 = { #Northern Front
+			o_barbarossa
+			o_silberfuchs
+			o_blaufuchs
+			o_polarfuchs
+			o_platinfuchs
+			o_feuerzauber
+			o_nordlicht
+			o_sumpf
+		}
+		133 = { #Moscow
+			o_taifun
+			o_zitadelle
+		}
+		134 = {
+			o_edelweiss
+			o_attika
+			o_bussard
+			o_herbstlaub
+			o_herbstzeitlose
+			o_schamil
+			o_clausewitz
+			o_brunhild
+			o_krimhilde
+			o_wikinger
+		}
+		19 = { #Northern France (this one is tricky)
+			o_fall_braun
+			o_herbstnebel
+		}
+		11 = {
+			o_buffel
+		}
+		191 = {
+			o_buffel
+			o_sizilien
+		}
+		13 = {
+			o_birke
+			o_tanne_ost
+			o_tanne_west
+		}
+		278 = {
+			o_birke
+			o_tanne_ost
+			o_tanne_west
+		}
+		277 = {
+			o_birke
+			o_tanne_ost
+			o_tanne_west
+		}
+		225 = {
+			o_brandung
+			o_skorpion
+			o_aida
+			o_capri
+			o_theseus
+			o_ochsenkopf
+			o_venezie
+			o_fruhlingswind
+			o_ausladung
+			o_eilbote
+			o_fliederblute
+			o_kuckuksei
+		}
+		126 = {
+			o_brandung
+			o_skorpion
+			o_aida
+			o_capri
+			o_theseus
+			o_ochsenkopf
+			o_venezie
+			o_fruhlingswind
+			o_ausladung
+			o_eilbote
+			o_fliederblute
+			o_kuckuksei
+		}
+		128 = {
+			o_brandung
+			o_skorpion
+			o_aida
+			o_capri
+			o_theseus
+			o_ochsenkopf
+			o_venezie
+			o_fruhlingswind
+			o_ausladung
+			o_eilbote
+			o_fliederblute
+			o_kuckuksei
+		}
+		129 = { #turkey
+			o_gertrud
+		}
+		41 = { #iberia
+			o_gisella
+			o_ilona
+			o_isabella
+			o_felix
+		}
+		154 = { # Northern Balkans
+			o_fruhlingserwachen
+			o_konrad
+			o_margarethe
+			o_sudwind
+		}
+		21 = { #italy
+			o_eiche
+			o_achse
+			o_alarich
+			o_siegfried
+			o_konstantin
+		}
+		23 = { #italy
+			o_eiche
+			o_achse
+			o_alaric
+			o_scwartz
+			o_siegfried
+			o_konstantin
+		}
+	}
+
+}
+
+
+PAV = {
+	male = {
+		names = {
+			Adrian Alexandru Andrei Anton Artur Bogdan Carol Cezar Constantin Constin
+			Cosmin Daniel Dumitru Emanuel Eremia Eugen Ferdinand Flaviu Florea Gheorghe
+			Grigore Henric Horatiu Iacob Ilie Ioan Ion Iosif Iulian
+			Iuliu Laurentiu Leontin Luca Lucian Mihai Mircea Nicolae Ovidiu Petru
+			Radu Sergiu Silviu Simion Stefan Valeriu Vasile Victor Vintila Vlad
+		  }
+	}
+	female = {
+		names = { Andrea Adriana Beatrice Bianca Juliana Ina Eugenia Nadia Sanda Sabina Raluca Ramona Rodica Patricia Liliana Felicia Corina }
+	}
+	surnames = {
+		Chifu Angelescu Antonescu Argetoianu Averescu Baldescu Barozzi Berindei Cernat Christecu Cihoski
+		Ciuperca Coanda Crainiceanu Critescu Culcer Cuza Dona Dragalina Dumitrescu
+		Falcoianu Florescu Gardescu Grigorescu Froza Harjeu Holban Iancovescu Iliasevici Iliescu
+		Ionascu Ionescu Ionitiu Koslinski Lahovary Lupescu Mardarescu Murgescu Poenaru Prezan
+		Salajan Samsonovici Schitiu Scodrea Slaniceanu Steflea Tatarascu Tenescu Vaitoianu Zottu
+	 }
+	callsigns = { }
+}
+
+TAL = {
+	male = {
+		names = {
+			Aleksandr Aleksey Andrey Anton Boris Dmitry Fyodor Gennady
+			Georgy Grigory Igor Ilya Iosif Ivan Kirill Konstantin Lavr Leonid Lev
+			Maksim Mikhail Nikita Nikolay Noy Oleg Pavel Pyotr Roman Semyon Sergey
+			Valery Vasily Viktor Vladimir Vladislav Yegor Yevgeny Yury
+			#New
+			Akim Aksel Anastasy Anatoly Andrian Arkady Arseny Aslan Dzhabir Emil Feodosy Filipp Isay Ivar Izot
+			Karl Kazimir Kuzma Lavrenty Lazar Makary Manzakir Marat Markian Martemyan Mstislav
+			Osher Pasha Robert Roman Sidor Slava Stepan Tikhon Timofey Tsyrendashi Vsevolod Vyacheslav Yakov Yefim Zinovy
+			#Georgian
+			Levan Tamaz Zurab
+			#Armenian
+			Amayak Amazasp Arno Artashes Bagrat Derenik Karapet Khoren Tarlan
+		}
+		surnames = {
+			Akhnazarov Akimenko Alekseyev Antonov Azarov Badanov Brusilov Budyonny Chibisov Denikin
+			Dragomirov Frolov Golivin Grishin Gurko Ivanov Ivannikov Isayev
+			Konev Konstantinov Kornilov Kolchak Kuropatkin
+			Lazarev Makarov Maksimov Menshikov Nakhimov Nebogatov Nikolayevich Nikitin
+			Ostrovsky Pavlov Putyatin Romanov Rozhestvensky Skobelev
+			Shuvalov Surkov Tukhachevsky Yan Yegorov Yudenich Vorontsov Voroshilov Zavoyko
+			#New
+			Abramov Abugov Abyzov Achkasov Adriashenko Afanasev Agafonov Akimov Alagakov Alekhin Aleksandrovich
+			Aleksandrov Almazov Anashkin Andreyev Andrianov Apriamov Arushanyan Arutyunovich Asadov
+			Babak Barkov Bondaryov Borisovich Bulgakov Bulgatov Bulanenko Brezhnev Bocharov
+			Chernishevsky Chernishev Chigvintsev Chistyakov Chuikov Danilovich Dazhin Denishchev Dokutovich Dorzhiyev
+			Filippov Fyodorov Gabrilov Gagarin Ganyev Gashev Golubev Grachyov Grigorov Grishayev Gusev
+			Ilnitsky Kaminsky Khalikov Kiselyov Klubkov Koldeyev Kondakov Korenev Koshkin Kovshov Kuzma Kuznetsov
+			Larionov Lavrentyev Lev Lidov Lisitsyn Loginov Lukichyov Lyubilkin
+			Makeyev Makhlyagin Makoveyev Malyutin Maresyev Markelov Matveyevich Mazhnov Melikhov Milko Moiseyenko Molchanov Murakhovets
+			Nakaryakov Nesterov Nikiforov Nikolayev Nikulin Nomokonov Novozhilov Okunev Onilov Orlov
+			Pakhomkin Panchenko Panteleyev Parfyonov Pavlichenko Pchelintsev Pegeshov Petrov Popov Posazhnikov Prokopev Pustobriko
+			Rabichev Radkin Rakityansky Raskov Romanovich Romashov Rudnev Ryasin
+			Sagaidak Saikin Sanfirov Selin Selyanin Serebryakov Seryogin Shalayev Shambarov Shatrov
+			Shevelyov Shilov Shlyakhov Shmurak Shvetsov Simonov Sokolov Solomatin Stepanov Svetlov
+			Tanailov Terekhov Tinigin Tolstoy Ulyanenko Utkin Vashchenko Vasilenko Vinogradov Vladimirsky Volkhov Vorontsov
+			Yartsev Yegorov Yekimov Yermakov Yushin Zakharov Zaytsev Zhudin Zhukov
+			#Georgian (some might be shared with other SSRs around) -> Most likely in Russian form
+			Adamiya Aliyev Aslanikashvili Beriya Chiladze Dzhugashvili Gelashvili Giligashvili
+			Kapanadze Khalvashi Kvachantiradze Kvaratskhelia Lomidze Makharashvili Tatuashvili Tavadze Tsereteli
+			#Armenian (some might be shared with other SSRs around) -> Most likely in Russian form
+			Babadzhanyan Gurgen Markosyan
+			#Azerbaijan (some might be shared with other SSRs around) -> Most likely in Russian form
+			Akhundov Aliyarbekov Apresyan
+		}
+	}
+	female = {
+		names = {
+			Afanasiya Albina Aleksandra Anastasiya Elena Elvira Lydia Lyudmila Margarita Muza Natalya Olga Sofiya Svetlana Valentina Yelena
+			#New
+			Alina Alevtina Aliya Anna Anya Asya Dusya Galya Kaleriya Kalya Katya Klava Klavdiya Irina
+			Lida Liza Lyuba Lyubov Marina Mariya Maryam Marusya Nadezhda Nadya Natasha Nina Nonna
+			Polina Raisa Roza Rozaliya Serafima Svetlana Tamara Tanya Taya Tonya Tosya
+			Valya Vera Yekaterina Yepistiniya Yevdokiya Yevgeniya Yuliya Zinaida Zoya
+			#Georgian
+			Ketevan Nana Nino Tamar
+		}
+		surnames = {
+			#New
+			Abramova Abyzova Akhnazarova Akimenko Akimova Aleksandrova Aleksandrovna Almazova Anashkina Anatolyevna Artamonova
+			Badanova Bakieva Barakina Barkova Bocharova Bondaryova Bratishcheva Bulatova Bulgakova
+			Chegodayeva Chernisheva Chibisova Chigvintseva Chistyakova Chuikova Fedutenko Filippova Fyodorova
+			Gabrilova Gagarina Ganyeva Gasheva Golubeva Grachyova Grigorova Grishayeva Grunskaya Gulyakina Guseva Isayeva Ivanova
+			Kekeshyeva Kiselyova Klubkova Koldeyeva Kondakova Koreneva Korotkevich Kosmodemyanskaya Kovalenko Kovshova Kroshchenko Kuzmina Kuznetsova
+			Larionova Lavrentyeva Lidova Loginova Lukichyova
+			Makeyeva Makhlyagina Makoveyeva Maksimova Malyutina Maresyeva Markelova Matokh Mazhnova Melikhova Menshikova Milko Moiseyenko Molchanova
+			Moldagulova Mulatova Murakhovets Nakaryakova Nakhimova Nesterova Nikiforova Nikiforovna Nikoloyeva Novozhilova Nurmukhambetovna
+			Okuneva Onilova Orlova
+			Pakhomkina Panchenko Panteleyeva Parfyonova Pavlichenko Pavlova Pchelintseva Pegeshova Peredera Petrova Popova Posazhnikova Prokopeva Pustobrikova
+			Rabicheva Rachkevich Radkina Raskova Reznichenko Rogalskaya Romanova Romashova Rudneva Ryasina
+			Saikina Sanfirova Selina Selyanina Serebryakova Shalayeva Shambarova Shanina Shatrova
+			Shevelyova Shilova Shlyakhova Shvetsova Simonova Sokolova Stepanova Surkova Svetlova
+			Tanailova Terekhova Tinigina Ulyanenko Vashchenko Vasilenko Vinogradova Visnitskaya Volkhova Vorontsova
+			Yartseva Yegorova Yekimova Yermakova Yushina Zakharova Zhukova
+			#Caucasus
+			Aliyeva
+			#Georgia
+			Aslanikashvili Beriya Dzhugashvili Gelashvili Giligashvili Khalvashi Kvaratskhelia Kapanadze Ingorovka Lomidze Makharashvili Tatuashvili Tavadze Tsereteli
+			#Azerbaijan
+			Pashayeva
+		}
+	}
+	callsigns = { "The Colonist" "The Bell" Heine Duma Anvil Hammer Fury Arrow Storm Bear "White Lily" Devil Eagle Falcon Fox Snowflake Greasy Guardian Gunman Hawk Hardball Howl Blizzard Husky Ice Killer Steel Iron Skull Striker Thunder Warrior Wardog Vodka }
+
+	prefix = o_operatsiya
+
+	use_geographical_default_operation_names = yes
+	offensive_operation_suffix = o_strat_offensive_ru
+	defensive_operation_suffix = o_strat_defensive_ru
+	naval_operation_suffix = o_strat_naval_ru
+
+	operation = {
+		0 = {
+			o_mercury
+			o_venus
+			o_neptune
+			o_maly_saturn
+			o_maly_neptun
+			o_kontsert
+		}
+		130 = {
+			o_bagration
+		}
+		131 = {
+			o_bagration
+			o_suvorov
+		}
+		132 = {
+			o_iskra
+			o_lyuban
+			o_sinyavino
+		}
+		133 = {
+			o_mars
+			o_jupiter
+			o_kutuzov
+			o_polar_star
+			o_rumyantsev
+		}
+		24 = {
+			o_belgrade_strategic_offensive
+		}
+		8 = {
+			o_berlin_strategic_offensive
+		}
+		137 = {
+			o_ring
+			o_saturn
+			o_uranus
+		}
+		38 = {
+			o_samland
+		}
+	}
+}
+
+
+LHA = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+
+CAU = {
+	male = {
+		names = {
+			Aleksandr Aleksey Andrey Anton Boris Dmitry Fyodor Gennady
+			Georgy Grigory Igor Ilya Iosif Ivan Kirill Konstantin Lavr Leonid Lev
+			Maksim Mikhail Nikita Nikolay Noy Oleg Pavel Pyotr Roman Semyon Sergey
+			Valery Vasily Viktor Vladimir Vladislav Yegor Yevgeny Yury
+			#New
+			Akim Aksel Anastasy Anatoly Andrian Arkady Arseny Aslan Dzhabir Emil Feodosy Filipp Isay Ivar Izot
+			Karl Kazimir Kuzma Lavrenty Lazar Makary Manzakir Marat Markian Martemyan Mstislav
+			Osher Pasha Robert Roman Sidor Slava Stepan Tikhon Timofey Tsyrendashi Vsevolod Vyacheslav Yakov Yefim Zinovy
+			#Georgian
+			Levan Tamaz Zurab
+			#Armenian
+			Amayak Amazasp Arno Artashes Bagrat Derenik Karapet Khoren Tarlan
+		}
+		surnames = {
+			Akhnazarov Akimenko Alekseyev Antonov Azarov Badanov Brusilov Budyonny Chibisov Denikin
+			Dragomirov Frolov Golivin Grishin Gurko Ivanov Ivannikov Isayev
+			Konev Konstantinov Kornilov Kolchak Kuropatkin
+			Lazarev Makarov Maksimov Menshikov Nakhimov Nebogatov Nikolayevich Nikitin
+			Ostrovsky Pavlov Putyatin Romanov Rozhestvensky Skobelev
+			Shuvalov Surkov Tukhachevsky Yan Yegorov Yudenich Vorontsov Voroshilov Zavoyko
+			#New
+			Abramov Abugov Abyzov Achkasov Adriashenko Afanasev Agafonov Akimov Alagakov Alekhin Aleksandrovich
+			Aleksandrov Almazov Anashkin Andreyev Andrianov Apriamov Arushanyan Arutyunovich Asadov
+			Babak Barkov Bondaryov Borisovich Bulgakov Bulgatov Bulanenko Brezhnev Bocharov
+			Chernishevsky Chernishev Chigvintsev Chistyakov Chuikov Danilovich Dazhin Denishchev Dokutovich Dorzhiyev
+			Filippov Fyodorov Gabrilov Gagarin Ganyev Gashev Golubev Grachyov Grigorov Grishayev Gusev
+			Ilnitsky Kaminsky Khalikov Kiselyov Klubkov Koldeyev Kondakov Korenev Koshkin Kovshov Kuzma Kuznetsov
+			Larionov Lavrentyev Lev Lidov Lisitsyn Loginov Lukichyov Lyubilkin
+			Makeyev Makhlyagin Makoveyev Malyutin Maresyev Markelov Matveyevich Mazhnov Melikhov Milko Moiseyenko Molchanov Murakhovets
+			Nakaryakov Nesterov Nikiforov Nikolayev Nikulin Nomokonov Novozhilov Okunev Onilov Orlov
+			Pakhomkin Panchenko Panteleyev Parfyonov Pavlichenko Pchelintsev Pegeshov Petrov Popov Posazhnikov Prokopev Pustobriko
+			Rabichev Radkin Rakityansky Raskov Romanovich Romashov Rudnev Ryasin
+			Sagaidak Saikin Sanfirov Selin Selyanin Serebryakov Seryogin Shalayev Shambarov Shatrov
+			Shevelyov Shilov Shlyakhov Shmurak Shvetsov Simonov Sokolov Solomatin Stepanov Svetlov
+			Tanailov Terekhov Tinigin Tolstoy Ulyanenko Utkin Vashchenko Vasilenko Vinogradov Vladimirsky Volkhov Vorontsov
+			Yartsev Yegorov Yekimov Yermakov Yushin Zakharov Zaytsev Zhudin Zhukov
+			#Georgian (some might be shared with other SSRs around) -> Most likely in Russian form
+			Adamiya Aliyev Aslanikashvili Beriya Chiladze Dzhugashvili Gelashvili Giligashvili
+			Kapanadze Khalvashi Kvachantiradze Kvaratskhelia Lomidze Makharashvili Tatuashvili Tavadze Tsereteli
+			#Armenian (some might be shared with other SSRs around) -> Most likely in Russian form
+			Babadzhanyan Gurgen Markosyan
+			#Azerbaijan (some might be shared with other SSRs around) -> Most likely in Russian form
+			Akhundov Aliyarbekov Apresyan
+		}
+	}
+	female = {
+		names = {
+			Afanasiya Albina Aleksandra Anastasiya Elena Elvira Lydia Lyudmila Margarita Muza Natalya Olga Sofiya Svetlana Valentina Yelena
+			#New
+			Alina Alevtina Aliya Anna Anya Asya Dusya Galya Kaleriya Kalya Katya Klava Klavdiya Irina
+			Lida Liza Lyuba Lyubov Marina Mariya Maryam Marusya Nadezhda Nadya Natasha Nina Nonna
+			Polina Raisa Roza Rozaliya Serafima Svetlana Tamara Tanya Taya Tonya Tosya
+			Valya Vera Yekaterina Yepistiniya Yevdokiya Yevgeniya Yuliya Zinaida Zoya
+			#Georgian
+			Ketevan Nana Nino Tamar
+		}
+		surnames = {
+			#New
+			Abramova Abyzova Akhnazarova Akimenko Akimova Aleksandrova Aleksandrovna Almazova Anashkina Anatolyevna Artamonova
+			Badanova Bakieva Barakina Barkova Bocharova Bondaryova Bratishcheva Bulatova Bulgakova
+			Chegodayeva Chernisheva Chibisova Chigvintseva Chistyakova Chuikova Fedutenko Filippova Fyodorova
+			Gabrilova Gagarina Ganyeva Gasheva Golubeva Grachyova Grigorova Grishayeva Grunskaya Gulyakina Guseva Isayeva Ivanova
+			Kekeshyeva Kiselyova Klubkova Koldeyeva Kondakova Koreneva Korotkevich Kosmodemyanskaya Kovalenko Kovshova Kroshchenko Kuzmina Kuznetsova
+			Larionova Lavrentyeva Lidova Loginova Lukichyova
+			Makeyeva Makhlyagina Makoveyeva Maksimova Malyutina Maresyeva Markelova Matokh Mazhnova Melikhova Menshikova Milko Moiseyenko Molchanova
+			Moldagulova Mulatova Murakhovets Nakaryakova Nakhimova Nesterova Nikiforova Nikiforovna Nikoloyeva Novozhilova Nurmukhambetovna
+			Okuneva Onilova Orlova
+			Pakhomkina Panchenko Panteleyeva Parfyonova Pavlichenko Pavlova Pchelintseva Pegeshova Peredera Petrova Popova Posazhnikova Prokopeva Pustobrikova
+			Rabicheva Rachkevich Radkina Raskova Reznichenko Rogalskaya Romanova Romashova Rudneva Ryasina
+			Saikina Sanfirova Selina Selyanina Serebryakova Shalayeva Shambarova Shanina Shatrova
+			Shevelyova Shilova Shlyakhova Shvetsova Simonova Sokolova Stepanova Surkova Svetlova
+			Tanailova Terekhova Tinigina Ulyanenko Vashchenko Vasilenko Vinogradova Visnitskaya Volkhova Vorontsova
+			Yartseva Yegorova Yekimova Yermakova Yushina Zakharova Zhukova
+			#Caucasus
+			Aliyeva
+			#Georgia
+			Aslanikashvili Beriya Dzhugashvili Gelashvili Giligashvili Khalvashi Kvaratskhelia Kapanadze Ingorovka Lomidze Makharashvili Tatuashvili Tavadze Tsereteli
+			#Azerbaijan
+			Pashayeva
+		}
+	}
+	callsigns = { "The Colonist" "The Bell" Heine Duma Anvil Hammer Fury Arrow Storm Bear "White Lily" Devil Eagle Falcon Fox Snowflake Greasy Guardian Gunman Hawk Hardball Howl Blizzard Husky Ice Killer Steel Iron Skull Striker Thunder Warrior Wardog Vodka }
+
+	prefix = o_operatsiya
+
+	use_geographical_default_operation_names = yes
+	offensive_operation_suffix = o_strat_offensive_ru
+	defensive_operation_suffix = o_strat_defensive_ru
+	naval_operation_suffix = o_strat_naval_ru
+
+	operation = {
+		0 = {
+			o_mercury
+			o_venus
+			o_neptune
+			o_maly_saturn
+			o_maly_neptun
+			o_kontsert
+		}
+		130 = {
+			o_bagration
+		}
+		131 = {
+			o_bagration
+			o_suvorov
+		}
+		132 = {
+			o_iskra
+			o_lyuban
+			o_sinyavino
+		}
+		133 = {
+			o_mars
+			o_jupiter
+			o_kutuzov
+			o_polar_star
+			o_rumyantsev
+		}
+		24 = {
+			o_belgrade_strategic_offensive
+		}
+		8 = {
+			o_berlin_strategic_offensive
+		}
+		137 = {
+			o_ring
+			o_saturn
+			o_uranus
+		}
+		38 = {
+			o_samland
+		}
+	}
+}
+
+BRS = {
+	male = {
+		names = {
+			Aleksandr Aleksey Andrey Anton Boris Dmitry Fyodor Gennady
+			Georgy Grigory Igor Ilya Iosif Ivan Kirill Konstantin Lavr Leonid Lev
+			Maksim Mikhail Nikita Nikolay Noy Oleg Pavel Pyotr Roman Semyon Sergey
+			Valery Vasily Viktor Vladimir Vladislav Yegor Yevgeny Yury
+			#New
+			Akim Aksel Anastasy Anatoly Andrian Arkady Arseny Aslan Dzhabir Emil Feodosy Filipp Isay Ivar Izot
+			Karl Kazimir Kuzma Lavrenty Lazar Makary Manzakir Marat Markian Martemyan Mstislav
+			Osher Pasha Robert Roman Sidor Slava Stepan Tikhon Timofey Tsyrendashi Vsevolod Vyacheslav Yakov Yefim Zinovy
+			#Georgian
+			Levan Tamaz Zurab
+			#Armenian
+			Amayak Amazasp Arno Artashes Bagrat Derenik Karapet Khoren Tarlan
+		}
+		surnames = {
+			Akhnazarov Akimenko Alekseyev Antonov Azarov Badanov Brusilov Budyonny Chibisov Denikin
+			Dragomirov Frolov Golivin Grishin Gurko Ivanov Ivannikov Isayev
+			Konev Konstantinov Kornilov Kolchak Kuropatkin
+			Lazarev Makarov Maksimov Menshikov Nakhimov Nebogatov Nikolayevich Nikitin
+			Ostrovsky Pavlov Putyatin Romanov Rozhestvensky Skobelev
+			Shuvalov Surkov Tukhachevsky Yan Yegorov Yudenich Vorontsov Voroshilov Zavoyko
+			#New
+			Abramov Abugov Abyzov Achkasov Adriashenko Afanasev Agafonov Akimov Alagakov Alekhin Aleksandrovich
+			Aleksandrov Almazov Anashkin Andreyev Andrianov Apriamov Arushanyan Arutyunovich Asadov
+			Babak Barkov Bondaryov Borisovich Bulgakov Bulgatov Bulanenko Brezhnev Bocharov
+			Chernishevsky Chernishev Chigvintsev Chistyakov Chuikov Danilovich Dazhin Denishchev Dokutovich Dorzhiyev
+			Filippov Fyodorov Gabrilov Gagarin Ganyev Gashev Golubev Grachyov Grigorov Grishayev Gusev
+			Ilnitsky Kaminsky Khalikov Kiselyov Klubkov Koldeyev Kondakov Korenev Koshkin Kovshov Kuzma Kuznetsov
+			Larionov Lavrentyev Lev Lidov Lisitsyn Loginov Lukichyov Lyubilkin
+			Makeyev Makhlyagin Makoveyev Malyutin Maresyev Markelov Matveyevich Mazhnov Melikhov Milko Moiseyenko Molchanov Murakhovets
+			Nakaryakov Nesterov Nikiforov Nikolayev Nikulin Nomokonov Novozhilov Okunev Onilov Orlov
+			Pakhomkin Panchenko Panteleyev Parfyonov Pavlichenko Pchelintsev Pegeshov Petrov Popov Posazhnikov Prokopev Pustobriko
+			Rabichev Radkin Rakityansky Raskov Romanovich Romashov Rudnev Ryasin
+			Sagaidak Saikin Sanfirov Selin Selyanin Serebryakov Seryogin Shalayev Shambarov Shatrov
+			Shevelyov Shilov Shlyakhov Shmurak Shvetsov Simonov Sokolov Solomatin Stepanov Svetlov
+			Tanailov Terekhov Tinigin Tolstoy Ulyanenko Utkin Vashchenko Vasilenko Vinogradov Vladimirsky Volkhov Vorontsov
+			Yartsev Yegorov Yekimov Yermakov Yushin Zakharov Zaytsev Zhudin Zhukov
+			#Georgian (some might be shared with other SSRs around) -> Most likely in Russian form
+			Adamiya Aliyev Aslanikashvili Beriya Chiladze Dzhugashvili Gelashvili Giligashvili
+			Kapanadze Khalvashi Kvachantiradze Kvaratskhelia Lomidze Makharashvili Tatuashvili Tavadze Tsereteli
+			#Armenian (some might be shared with other SSRs around) -> Most likely in Russian form
+			Babadzhanyan Gurgen Markosyan
+			#Azerbaijan (some might be shared with other SSRs around) -> Most likely in Russian form
+			Akhundov Aliyarbekov Apresyan
+		}
+	}
+	female = {
+		names = {
+			Afanasiya Albina Aleksandra Anastasiya Elena Elvira Lydia Lyudmila Margarita Muza Natalya Olga Sofiya Svetlana Valentina Yelena
+			#New
+			Alina Alevtina Aliya Anna Anya Asya Dusya Galya Kaleriya Kalya Katya Klava Klavdiya Irina
+			Lida Liza Lyuba Lyubov Marina Mariya Maryam Marusya Nadezhda Nadya Natasha Nina Nonna
+			Polina Raisa Roza Rozaliya Serafima Svetlana Tamara Tanya Taya Tonya Tosya
+			Valya Vera Yekaterina Yepistiniya Yevdokiya Yevgeniya Yuliya Zinaida Zoya
+			#Georgian
+			Ketevan Nana Nino Tamar
+		}
+		surnames = {
+			#New
+			Abramova Abyzova Akhnazarova Akimenko Akimova Aleksandrova Aleksandrovna Almazova Anashkina Anatolyevna Artamonova
+			Badanova Bakieva Barakina Barkova Bocharova Bondaryova Bratishcheva Bulatova Bulgakova
+			Chegodayeva Chernisheva Chibisova Chigvintseva Chistyakova Chuikova Fedutenko Filippova Fyodorova
+			Gabrilova Gagarina Ganyeva Gasheva Golubeva Grachyova Grigorova Grishayeva Grunskaya Gulyakina Guseva Isayeva Ivanova
+			Kekeshyeva Kiselyova Klubkova Koldeyeva Kondakova Koreneva Korotkevich Kosmodemyanskaya Kovalenko Kovshova Kroshchenko Kuzmina Kuznetsova
+			Larionova Lavrentyeva Lidova Loginova Lukichyova
+			Makeyeva Makhlyagina Makoveyeva Maksimova Malyutina Maresyeva Markelova Matokh Mazhnova Melikhova Menshikova Milko Moiseyenko Molchanova
+			Moldagulova Mulatova Murakhovets Nakaryakova Nakhimova Nesterova Nikiforova Nikiforovna Nikoloyeva Novozhilova Nurmukhambetovna
+			Okuneva Onilova Orlova
+			Pakhomkina Panchenko Panteleyeva Parfyonova Pavlichenko Pavlova Pchelintseva Pegeshova Peredera Petrova Popova Posazhnikova Prokopeva Pustobrikova
+			Rabicheva Rachkevich Radkina Raskova Reznichenko Rogalskaya Romanova Romashova Rudneva Ryasina
+			Saikina Sanfirova Selina Selyanina Serebryakova Shalayeva Shambarova Shanina Shatrova
+			Shevelyova Shilova Shlyakhova Shvetsova Simonova Sokolova Stepanova Surkova Svetlova
+			Tanailova Terekhova Tinigina Ulyanenko Vashchenko Vasilenko Vinogradova Visnitskaya Volkhova Vorontsova
+			Yartseva Yegorova Yekimova Yermakova Yushina Zakharova Zhukova
+			#Caucasus
+			Aliyeva
+			#Georgia
+			Aslanikashvili Beriya Dzhugashvili Gelashvili Giligashvili Khalvashi Kvaratskhelia Kapanadze Ingorovka Lomidze Makharashvili Tatuashvili Tavadze Tsereteli
+			#Azerbaijan
+			Pashayeva
+		}
+	}
+	callsigns = { "The Colonist" "The Bell" Heine Duma Anvil Hammer Fury Arrow Storm Bear "White Lily" Devil Eagle Falcon Fox Snowflake Greasy Guardian Gunman Hawk Hardball Howl Blizzard Husky Ice Killer Steel Iron Skull Striker Thunder Warrior Wardog Vodka }
+
+	prefix = o_operatsiya
+
+	use_geographical_default_operation_names = yes
+	offensive_operation_suffix = o_strat_offensive_ru
+	defensive_operation_suffix = o_strat_defensive_ru
+	naval_operation_suffix = o_strat_naval_ru
+
+	operation = {
+		0 = {
+			o_mercury
+			o_venus
+			o_neptune
+			o_maly_saturn
+			o_maly_neptun
+			o_kontsert
+		}
+		130 = {
+			o_bagration
+		}
+		131 = {
+			o_bagration
+			o_suvorov
+		}
+		132 = {
+			o_iskra
+			o_lyuban
+			o_sinyavino
+		}
+		133 = {
+			o_mars
+			o_jupiter
+			o_kutuzov
+			o_polar_star
+			o_rumyantsev
+		}
+		24 = {
+			o_belgrade_strategic_offensive
+		}
+		8 = {
+			o_berlin_strategic_offensive
+		}
+		137 = {
+			o_ring
+			o_saturn
+			o_uranus
+		}
+		38 = {
+			o_samland
+		}
+	}
+}
+
+SLI = {
+	male = {
+		names = {
+			Aleksandr Aleksey Andrey Anton Boris Dmitry Fyodor Gennady
+			Georgy Grigory Igor Ilya Iosif Ivan Kirill Konstantin Lavr Leonid Lev
+			Maksim Mikhail Nikita Nikolay Noy Oleg Pavel Pyotr Roman Semyon Sergey
+			Valery Vasily Viktor Vladimir Vladislav Yegor Yevgeny Yury
+			#New
+			Akim Aksel Anastasy Anatoly Andrian Arkady Arseny Aslan Dzhabir Emil Feodosy Filipp Isay Ivar Izot
+			Karl Kazimir Kuzma Lavrenty Lazar Makary Manzakir Marat Markian Martemyan Mstislav
+			Osher Pasha Robert Roman Sidor Slava Stepan Tikhon Timofey Tsyrendashi Vsevolod Vyacheslav Yakov Yefim Zinovy
+			#Georgian
+			Levan Tamaz Zurab
+			#Armenian
+			Amayak Amazasp Arno Artashes Bagrat Derenik Karapet Khoren Tarlan
+		}
+		surnames = {
+			Akhnazarov Akimenko Alekseyev Antonov Azarov Badanov Brusilov Budyonny Chibisov Denikin
+			Dragomirov Frolov Golivin Grishin Gurko Ivanov Ivannikov Isayev
+			Konev Konstantinov Kornilov Kolchak Kuropatkin
+			Lazarev Makarov Maksimov Menshikov Nakhimov Nebogatov Nikolayevich Nikitin
+			Ostrovsky Pavlov Putyatin Romanov Rozhestvensky Skobelev
+			Shuvalov Surkov Tukhachevsky Yan Yegorov Yudenich Vorontsov Voroshilov Zavoyko
+			#New
+			Abramov Abugov Abyzov Achkasov Adriashenko Afanasev Agafonov Akimov Alagakov Alekhin Aleksandrovich
+			Aleksandrov Almazov Anashkin Andreyev Andrianov Apriamov Arushanyan Arutyunovich Asadov
+			Babak Barkov Bondaryov Borisovich Bulgakov Bulgatov Bulanenko Brezhnev Bocharov
+			Chernishevsky Chernishev Chigvintsev Chistyakov Chuikov Danilovich Dazhin Denishchev Dokutovich Dorzhiyev
+			Filippov Fyodorov Gabrilov Gagarin Ganyev Gashev Golubev Grachyov Grigorov Grishayev Gusev
+			Ilnitsky Kaminsky Khalikov Kiselyov Klubkov Koldeyev Kondakov Korenev Koshkin Kovshov Kuzma Kuznetsov
+			Larionov Lavrentyev Lev Lidov Lisitsyn Loginov Lukichyov Lyubilkin
+			Makeyev Makhlyagin Makoveyev Malyutin Maresyev Markelov Matveyevich Mazhnov Melikhov Milko Moiseyenko Molchanov Murakhovets
+			Nakaryakov Nesterov Nikiforov Nikolayev Nikulin Nomokonov Novozhilov Okunev Onilov Orlov
+			Pakhomkin Panchenko Panteleyev Parfyonov Pavlichenko Pchelintsev Pegeshov Petrov Popov Posazhnikov Prokopev Pustobriko
+			Rabichev Radkin Rakityansky Raskov Romanovich Romashov Rudnev Ryasin
+			Sagaidak Saikin Sanfirov Selin Selyanin Serebryakov Seryogin Shalayev Shambarov Shatrov
+			Shevelyov Shilov Shlyakhov Shmurak Shvetsov Simonov Sokolov Solomatin Stepanov Svetlov
+			Tanailov Terekhov Tinigin Tolstoy Ulyanenko Utkin Vashchenko Vasilenko Vinogradov Vladimirsky Volkhov Vorontsov
+			Yartsev Yegorov Yekimov Yermakov Yushin Zakharov Zaytsev Zhudin Zhukov
+			#Georgian (some might be shared with other SSRs around) -> Most likely in Russian form
+			Adamiya Aliyev Aslanikashvili Beriya Chiladze Dzhugashvili Gelashvili Giligashvili
+			Kapanadze Khalvashi Kvachantiradze Kvaratskhelia Lomidze Makharashvili Tatuashvili Tavadze Tsereteli
+			#Armenian (some might be shared with other SSRs around) -> Most likely in Russian form
+			Babadzhanyan Gurgen Markosyan
+			#Azerbaijan (some might be shared with other SSRs around) -> Most likely in Russian form
+			Akhundov Aliyarbekov Apresyan
+		}
+	}
+	female = {
+		names = {
+			Afanasiya Albina Aleksandra Anastasiya Elena Elvira Lydia Lyudmila Margarita Muza Natalya Olga Sofiya Svetlana Valentina Yelena
+			#New
+			Alina Alevtina Aliya Anna Anya Asya Dusya Galya Kaleriya Kalya Katya Klava Klavdiya Irina
+			Lida Liza Lyuba Lyubov Marina Mariya Maryam Marusya Nadezhda Nadya Natasha Nina Nonna
+			Polina Raisa Roza Rozaliya Serafima Svetlana Tamara Tanya Taya Tonya Tosya
+			Valya Vera Yekaterina Yepistiniya Yevdokiya Yevgeniya Yuliya Zinaida Zoya
+			#Georgian
+			Ketevan Nana Nino Tamar
+		}
+		surnames = {
+			#New
+			Abramova Abyzova Akhnazarova Akimenko Akimova Aleksandrova Aleksandrovna Almazova Anashkina Anatolyevna Artamonova
+			Badanova Bakieva Barakina Barkova Bocharova Bondaryova Bratishcheva Bulatova Bulgakova
+			Chegodayeva Chernisheva Chibisova Chigvintseva Chistyakova Chuikova Fedutenko Filippova Fyodorova
+			Gabrilova Gagarina Ganyeva Gasheva Golubeva Grachyova Grigorova Grishayeva Grunskaya Gulyakina Guseva Isayeva Ivanova
+			Kekeshyeva Kiselyova Klubkova Koldeyeva Kondakova Koreneva Korotkevich Kosmodemyanskaya Kovalenko Kovshova Kroshchenko Kuzmina Kuznetsova
+			Larionova Lavrentyeva Lidova Loginova Lukichyova
+			Makeyeva Makhlyagina Makoveyeva Maksimova Malyutina Maresyeva Markelova Matokh Mazhnova Melikhova Menshikova Milko Moiseyenko Molchanova
+			Moldagulova Mulatova Murakhovets Nakaryakova Nakhimova Nesterova Nikiforova Nikiforovna Nikoloyeva Novozhilova Nurmukhambetovna
+			Okuneva Onilova Orlova
+			Pakhomkina Panchenko Panteleyeva Parfyonova Pavlichenko Pavlova Pchelintseva Pegeshova Peredera Petrova Popova Posazhnikova Prokopeva Pustobrikova
+			Rabicheva Rachkevich Radkina Raskova Reznichenko Rogalskaya Romanova Romashova Rudneva Ryasina
+			Saikina Sanfirova Selina Selyanina Serebryakova Shalayeva Shambarova Shanina Shatrova
+			Shevelyova Shilova Shlyakhova Shvetsova Simonova Sokolova Stepanova Surkova Svetlova
+			Tanailova Terekhova Tinigina Ulyanenko Vashchenko Vasilenko Vinogradova Visnitskaya Volkhova Vorontsova
+			Yartseva Yegorova Yekimova Yermakova Yushina Zakharova Zhukova
+			#Caucasus
+			Aliyeva
+			#Georgia
+			Aslanikashvili Beriya Dzhugashvili Gelashvili Giligashvili Khalvashi Kvaratskhelia Kapanadze Ingorovka Lomidze Makharashvili Tatuashvili Tavadze Tsereteli
+			#Azerbaijan
+			Pashayeva
+		}
+	}
+	callsigns = { "The Colonist" "The Bell" Heine Duma Anvil Hammer Fury Arrow Storm Bear "White Lily" Devil Eagle Falcon Fox Snowflake Greasy Guardian Gunman Hawk Hardball Howl Blizzard Husky Ice Killer Steel Iron Skull Striker Thunder Warrior Wardog Vodka }
+
+	prefix = o_operatsiya
+
+	use_geographical_default_operation_names = yes
+	offensive_operation_suffix = o_strat_offensive_ru
+	defensive_operation_suffix = o_strat_defensive_ru
+	naval_operation_suffix = o_strat_naval_ru
+
+	operation = {
+		0 = {
+			o_mercury
+			o_venus
+			o_neptune
+			o_maly_saturn
+			o_maly_neptun
+			o_kontsert
+		}
+		130 = {
+			o_bagration
+		}
+		131 = {
+			o_bagration
+			o_suvorov
+		}
+		132 = {
+			o_iskra
+			o_lyuban
+			o_sinyavino
+		}
+		133 = {
+			o_mars
+			o_jupiter
+			o_kutuzov
+			o_polar_star
+			o_rumyantsev
+		}
+		24 = {
+			o_belgrade_strategic_offensive
+		}
+		8 = {
+			o_berlin_strategic_offensive
+		}
+		137 = {
+			o_ring
+			o_saturn
+			o_uranus
+		}
+		38 = {
+			o_samland
+		}
+	}
+}
+
+ZEI = {
+	male = {
+		names = {
+			Aleksandr Aleksey Andrey Anton Boris Dmitry Fyodor Gennady
+			Georgy Grigory Igor Ilya Iosif Ivan Kirill Konstantin Lavr Leonid Lev
+			Maksim Mikhail Nikita Nikolay Noy Oleg Pavel Pyotr Roman Semyon Sergey
+			Valery Vasily Viktor Vladimir Vladislav Yegor Yevgeny Yury
+			#New
+			Akim Aksel Anastasy Anatoly Andrian Arkady Arseny Aslan Dzhabir Emil Feodosy Filipp Isay Ivar Izot
+			Karl Kazimir Kuzma Lavrenty Lazar Makary Manzakir Marat Markian Martemyan Mstislav
+			Osher Pasha Robert Roman Sidor Slava Stepan Tikhon Timofey Tsyrendashi Vsevolod Vyacheslav Yakov Yefim Zinovy
+			#Georgian
+			Levan Tamaz Zurab
+			#Armenian
+			Amayak Amazasp Arno Artashes Bagrat Derenik Karapet Khoren Tarlan
+		}
+		surnames = {
+			Akhnazarov Akimenko Alekseyev Antonov Azarov Badanov Brusilov Budyonny Chibisov Denikin
+			Dragomirov Frolov Golivin Grishin Gurko Ivanov Ivannikov Isayev
+			Konev Konstantinov Kornilov Kolchak Kuropatkin
+			Lazarev Makarov Maksimov Menshikov Nakhimov Nebogatov Nikolayevich Nikitin
+			Ostrovsky Pavlov Putyatin Romanov Rozhestvensky Skobelev
+			Shuvalov Surkov Tukhachevsky Yan Yegorov Yudenich Vorontsov Voroshilov Zavoyko
+			#New
+			Abramov Abugov Abyzov Achkasov Adriashenko Afanasev Agafonov Akimov Alagakov Alekhin Aleksandrovich
+			Aleksandrov Almazov Anashkin Andreyev Andrianov Apriamov Arushanyan Arutyunovich Asadov
+			Babak Barkov Bondaryov Borisovich Bulgakov Bulgatov Bulanenko Brezhnev Bocharov
+			Chernishevsky Chernishev Chigvintsev Chistyakov Chuikov Danilovich Dazhin Denishchev Dokutovich Dorzhiyev
+			Filippov Fyodorov Gabrilov Gagarin Ganyev Gashev Golubev Grachyov Grigorov Grishayev Gusev
+			Ilnitsky Kaminsky Khalikov Kiselyov Klubkov Koldeyev Kondakov Korenev Koshkin Kovshov Kuzma Kuznetsov
+			Larionov Lavrentyev Lev Lidov Lisitsyn Loginov Lukichyov Lyubilkin
+			Makeyev Makhlyagin Makoveyev Malyutin Maresyev Markelov Matveyevich Mazhnov Melikhov Milko Moiseyenko Molchanov Murakhovets
+			Nakaryakov Nesterov Nikiforov Nikolayev Nikulin Nomokonov Novozhilov Okunev Onilov Orlov
+			Pakhomkin Panchenko Panteleyev Parfyonov Pavlichenko Pchelintsev Pegeshov Petrov Popov Posazhnikov Prokopev Pustobriko
+			Rabichev Radkin Rakityansky Raskov Romanovich Romashov Rudnev Ryasin
+			Sagaidak Saikin Sanfirov Selin Selyanin Serebryakov Seryogin Shalayev Shambarov Shatrov
+			Shevelyov Shilov Shlyakhov Shmurak Shvetsov Simonov Sokolov Solomatin Stepanov Svetlov
+			Tanailov Terekhov Tinigin Tolstoy Ulyanenko Utkin Vashchenko Vasilenko Vinogradov Vladimirsky Volkhov Vorontsov
+			Yartsev Yegorov Yekimov Yermakov Yushin Zakharov Zaytsev Zhudin Zhukov
+			#Georgian (some might be shared with other SSRs around) -> Most likely in Russian form
+			Adamiya Aliyev Aslanikashvili Beriya Chiladze Dzhugashvili Gelashvili Giligashvili
+			Kapanadze Khalvashi Kvachantiradze Kvaratskhelia Lomidze Makharashvili Tatuashvili Tavadze Tsereteli
+			#Armenian (some might be shared with other SSRs around) -> Most likely in Russian form
+			Babadzhanyan Gurgen Markosyan
+			#Azerbaijan (some might be shared with other SSRs around) -> Most likely in Russian form
+			Akhundov Aliyarbekov Apresyan
+		}
+	}
+	female = {
+		names = {
+			Afanasiya Albina Aleksandra Anastasiya Elena Elvira Lydia Lyudmila Margarita Muza Natalya Olga Sofiya Svetlana Valentina Yelena
+			#New
+			Alina Alevtina Aliya Anna Anya Asya Dusya Galya Kaleriya Kalya Katya Klava Klavdiya Irina
+			Lida Liza Lyuba Lyubov Marina Mariya Maryam Marusya Nadezhda Nadya Natasha Nina Nonna
+			Polina Raisa Roza Rozaliya Serafima Svetlana Tamara Tanya Taya Tonya Tosya
+			Valya Vera Yekaterina Yepistiniya Yevdokiya Yevgeniya Yuliya Zinaida Zoya
+			#Georgian
+			Ketevan Nana Nino Tamar
+		}
+		surnames = {
+			#New
+			Abramova Abyzova Akhnazarova Akimenko Akimova Aleksandrova Aleksandrovna Almazova Anashkina Anatolyevna Artamonova
+			Badanova Bakieva Barakina Barkova Bocharova Bondaryova Bratishcheva Bulatova Bulgakova
+			Chegodayeva Chernisheva Chibisova Chigvintseva Chistyakova Chuikova Fedutenko Filippova Fyodorova
+			Gabrilova Gagarina Ganyeva Gasheva Golubeva Grachyova Grigorova Grishayeva Grunskaya Gulyakina Guseva Isayeva Ivanova
+			Kekeshyeva Kiselyova Klubkova Koldeyeva Kondakova Koreneva Korotkevich Kosmodemyanskaya Kovalenko Kovshova Kroshchenko Kuzmina Kuznetsova
+			Larionova Lavrentyeva Lidova Loginova Lukichyova
+			Makeyeva Makhlyagina Makoveyeva Maksimova Malyutina Maresyeva Markelova Matokh Mazhnova Melikhova Menshikova Milko Moiseyenko Molchanova
+			Moldagulova Mulatova Murakhovets Nakaryakova Nakhimova Nesterova Nikiforova Nikiforovna Nikoloyeva Novozhilova Nurmukhambetovna
+			Okuneva Onilova Orlova
+			Pakhomkina Panchenko Panteleyeva Parfyonova Pavlichenko Pavlova Pchelintseva Pegeshova Peredera Petrova Popova Posazhnikova Prokopeva Pustobrikova
+			Rabicheva Rachkevich Radkina Raskova Reznichenko Rogalskaya Romanova Romashova Rudneva Ryasina
+			Saikina Sanfirova Selina Selyanina Serebryakova Shalayeva Shambarova Shanina Shatrova
+			Shevelyova Shilova Shlyakhova Shvetsova Simonova Sokolova Stepanova Surkova Svetlova
+			Tanailova Terekhova Tinigina Ulyanenko Vashchenko Vasilenko Vinogradova Visnitskaya Volkhova Vorontsova
+			Yartseva Yegorova Yekimova Yermakova Yushina Zakharova Zhukova
+			#Caucasus
+			Aliyeva
+			#Georgia
+			Aslanikashvili Beriya Dzhugashvili Gelashvili Giligashvili Khalvashi Kvaratskhelia Kapanadze Ingorovka Lomidze Makharashvili Tatuashvili Tavadze Tsereteli
+			#Azerbaijan
+			Pashayeva
+		}
+	}
+	callsigns = { "The Colonist" "The Bell" Heine Duma Anvil Hammer Fury Arrow Storm Bear "White Lily" Devil Eagle Falcon Fox Snowflake Greasy Guardian Gunman Hawk Hardball Howl Blizzard Husky Ice Killer Steel Iron Skull Striker Thunder Warrior Wardog Vodka }
+
+	prefix = o_operatsiya
+
+	use_geographical_default_operation_names = yes
+	offensive_operation_suffix = o_strat_offensive_ru
+	defensive_operation_suffix = o_strat_defensive_ru
+	naval_operation_suffix = o_strat_naval_ru
+
+	operation = {
+		0 = {
+			o_mercury
+			o_venus
+			o_neptune
+			o_maly_saturn
+			o_maly_neptun
+			o_kontsert
+		}
+		130 = {
+			o_bagration
+		}
+		131 = {
+			o_bagration
+			o_suvorov
+		}
+		132 = {
+			o_iskra
+			o_lyuban
+			o_sinyavino
+		}
+		133 = {
+			o_mars
+			o_jupiter
+			o_kutuzov
+			o_polar_star
+			o_rumyantsev
+		}
+		24 = {
+			o_belgrade_strategic_offensive
+		}
+		8 = {
+			o_berlin_strategic_offensive
+		}
+		137 = {
+			o_ring
+			o_saturn
+			o_uranus
+		}
+		38 = {
+			o_samland
+		}
+	}
+}
+
+
+
+DUS = {
+	male = {
+		names = {
+			Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Arturo Benito Camillo
+			Carlo Cesare Costanzo Davide Emilio Enrico Ettore Fabrizio Faustino Federico
+			Felice Ferdinando Fiorenzo Francesco Gaetano Gennaro Girolamo Giulio Giuseppe
+			Guglielmo Innocenzo Leopoldo Lorenzo Luigi Marco Mario Massimo Matteo Nicola
+			Oreste Paolo Pasquale Pietro Prospero Raffaele Roberto Ruggiero Silvio Simone
+			Tancredi Ugo Umberto Vincenzo Vittorio
+		  }
+	}
+	female = {
+		names = { Maria Anna Sara Laura Sofia Stella Angela Giovanna Guiseppina Gianna Giulia Valentina }
+	}
+	surnames = {
+		Acton Albricci Badoglio Baldissera Baratieri Bava-Beccaris Cadorna Cagni Canevaro
+		Capello Caramore Caviglia Ceccherini Cialdini Cusani Dezza "di Robilant" "di Savoia" Emo
+		Fanti Fara Filomarino Garibaldi Giardino Giuriato Govone "La Màrmora" Lussu
+		Mambretti  Menabrea Orengo Pallavicino Pecori-Giraldi  Pelloux Perruchetti
+		Pianelli Porro Presbitero Ramorino Ricotti-Magnani Rigoni Sacchi Saletta
+		Sanna Solari Stern Vaccari Zupelli
+
+	 }
+	callsigns = { Buzzard Dusty Falcon Hawk Hammer Viper Banshee "The Baron" Lightning Duce Raven "Two Shot" Rosso Robur Gino Giri }
+}
+
+TEX = {
+	male = {
+		names = {
+			Abner Adam Albert Alexander Alfred Allison Ambrose Amos Augustus Benjamin Braxton
+			Cadmus Carnot Charles Chester Christopher Cyrus Daniel Donald Edmund Edward
+			Elkanah Eugene Evander Ezra Felix Francis Frank George Gideon Hamilton Henry
+			Hinchie Hiram Horace Howard Isaac James Jeffrey Jerome Jesse John Jonas Jonathan
+			Joseph Joshua Jubal Kirby Lafayette Lawrence Lemual Leonida Leslie Lewis Louis
+			Lucas Luke Malvin Mark Matthew Michael Nathan Nathaniel Norton Oscar Patrick
+			Peter Pierre Rand Randolph Raphael Richard Robert Russell Samuel Simon Sterling
+			Steven Stonewall Thomas Ulysses Wade Walter Wilburn William Wilton Zach
+		  }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Jay Carol Nancy Margaret }
+	}
+	surnames = {
+		Abbott Abercrombie Allen Ames Anderson Andrews Appleton Archer Armistead
+		Armstrong Arthur Asboth Atkins Babcock Baker Banks Barkhauer Barksdale Barnard
+		Barnes Barnum Barry Barstow Bartlett Bates Baxter Beatty Beauregard Bee Belknap Bender
+		Benning Benton Blair Blunt Bowie Bradley Bragg Breckenridge Brown Buckner Buell
+		Buford Burnside Butler Caldwell Campbell Carr Chamberlain Chapman Cheatham
+		Chipman Clayton Cleburne Clemens Coburn Connor Conrad Cook Cooper Crittenden
+		Custer Davies Davis Dotson Doubleday Early Ector Ewell Ewing Farnsworth Floyd
+		Ford Forrest Forsyth Foster Franklin French Fry Gano Garnett Gibbs Gilbert Gordon
+		Granbury Grant Green Gregg Griffin Halleck Hamlin Hampton Hancock Hardee Hardeman
+		Harrison Hatch Hayes Hays Heintzelman Heth Hill Hindman Holmgren Hood Hooker
+		Houston Howard Hunter Imboden Iverson Jackson Jenkins Johnson Johnston Jones
+		Kemper Kershaw Keyes Kimball King Lane Law Lee Longstreet Loring Lyon Mabry
+		Magruder Mahone Maxey McArthur McClellan McCook McCulloch McDowell McLaws Meade
+		Mitchell Moore Morgan Mosby Nelson Paine Pemberton Pender Pettigrew Phelps
+		Pickett Pillow Polk Pope Porter Posey Potter Powell Price Randal Reynolds Rhodes
+		Rice Robertson Robinson Rodes Rosencrans Ross Rosser Saloman Scales Schenck
+		Schofield Scott Scurry Sedgwick Semmes Seward Sheridan Sherman Sibley Sickles
+		Smith Sprague Steele Stevens Stevenson Stone Stuart Sullivan Taylor Terrell
+		Travis Trimble Tyler "Van Dorn"  Wade Wadsworth Walker Wallace Ward Warner
+		Washington Waterhouse Waul Wells Wharton Wheeler Whitfield Wigfall Wilcox
+		Williams Wilson Wise Wofford Wright Young Zoidberg
+	}
+	callsigns = { "Goose" "Iceman" "Maverick" "Apollo" "Animal" "Boom-Boom" "Badger" "Brick" "Cajun" "Challenger" "Chip" "Eagle" "Ghost" "Hawk" "Jaws" "Moses" "Mad Dog" }
+	prefix = o_operation
+	first = {
+		o_shadow o_mountain o_active o_joint o_allied o_unified o_resolute o_dark o_bright o_stalwart o_red o_green o_blue
+		o_bold o_defiant o_striking
+	}
+
+	second = {
+		o_storm o_fox o_shield o_sword o_wolf o_panther o_wind o_thunder o_rain o_pegasus o_star
+		o_phalanx o_resolve o_fire o_force o_eagle o_raptor o_hawk o_lion o_tiger
+		o_cobra
+	}
+	operation = {
+		160 = {
+			o_musketeer
+		}
+		83 = {
+			o_cartwheel
+			o_chronicle
+			o_postern
+			o_blissful
+			o_dexterity
+			o_cleanslate
+			o_cyclone
+			o_oboe
+			o_watchtower
+		}
+		97 = {
+			o_detachment
+			o_flintlock
+			o_catchpole
+			o_forager
+			o_galvanic
+			o_iceberg
+			o_stalemate
+		}
+		94 = {
+			o_detachment
+			o_flintlock
+			o_catchpole
+			o_forager
+			o_galvanic
+			o_iceberg
+			o_stalemate
+		}
+		84 = {
+			o_detachment
+			o_flintlock
+			o_catchpole
+			o_forager
+			o_galvanic
+			o_iceberg
+			o_stalemate
+		}
+		76 = {
+			o_iceberg
+			o_causway
+		}
+		154 = {
+			o_downfall
+			o_olympic
+			o_coronet
+			o_majestic
+		}
+		33 = {
+			o_cottage
+			o_sandcrab
+		}
+		23 = {
+			o_avalanche
+			o_giant
+			o_buffalo
+			o_husky
+			o_shingle
+		}
+		20 = {
+			o_anvil
+			o_dragoon
+		}
+		208 = {
+			o_overlord
+			o_cobra
+			o_roundup
+			o_sledgehammer
+		}
+		19 = {
+			o_overlord
+			o_cobra
+			o_roundup
+			o_sledgehammer
+		}
+		182 = {
+			o_torch
+			o_blackstone
+			o_brushwood
+			o_goalpost
+		}
+		126 = {
+			o_torch
+			o_blackstone
+			o_brushwood
+			o_goalpost
+		}
+	}
+}
+
+KIN = {
+	male = {
+		names = {
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = {
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+	prefix = o_operation
+		first = {
+			o_ichi
+			o_ni
+			o_san
+			o_yon
+			o_ko
+			o_roku
+			o_nana
+			o_hachi
+			o_kyu
+			o_ju
+			o_ju_ichi
+			o_ju_ni
+			o_ju_san
+			o_ju_yon
+			o_ju_ko
+			o_ju_roku
+			o_ju_hachi
+			o_ju_kyu
+			o_ni_ju
+			o_ni_ju_ichi
+			o_ni_ju_ni
+			o_ni_ju_san
+			o_ni_ju_yon
+			o_ni_ju_ko
+			o_ni_ju_roku
+			o_ni_ju_hachi
+			o_ni_ju_kyu
+			o_san_ju
+			o_san_ju_ichi
+			o_san_ju_ni
+			o_san_ju_san
+			o_san_ju_yon
+			o_san_ju_ko
+			o_san_ju_roku
+			o_san_ju_hachi
+			o_san_ju_kyu
+			o_yon_ju
+			o_yon_ju_ichi
+			o_yon_ju_ni
+			o_yon_ju_san
+			o_yon_ju_yon
+			o_yon_ju_ko
+			o_yon_ju_roku
+			o_yon_ju_hachi
+			o_yon_ju_kyu
+			o_roku_ju
+			o_roku_ju_ichi
+			o_roku_ju_ni
+			o_roku_ju_san
+			o_roku_ju_yon
+			o_roku_ju_ko
+			o_roku_ju_roku
+			o_roku_ju_hachi
+			o_roku_ju_kyu
+		}
+		second = {
+			o_go
+		}
+	operation = {
+		142 = {
+			o_fu
+		}
+		105 = {
+			o_ai
+		}
+		159 = {
+			o_e
+			o_b
+		}
+		187 = {
+			o_de
+			o_l
+			o_t
+		}
+		158 = {
+			o_de
+		}
+		167 = {
+			o_de
+			o_sr
+		}
+		289 = {
+			o_t
+		}
+		188 = {
+			o_t
+		}
+		160 = {
+			o_m
+		}
+		33 = {
+			o_al
+		}
+		189 = {
+			o_b
+		}
+		101 = {
+			o_d
+		}
+		93 = {
+			o_j
+		}
+		178 = {
+			o_fs
+		}
+		167 = {
+			o_mo
+		}
+		97 = {
+			o_ry
+		}
+		95 = {
+			o_mi
+		}
+	}
+
+}
+
+LUT = {
+	male = {
+		names = {
+			Aage Adam Alber Anders Asmund Axel Carl Christian Edvard Edvin
+			Erik Folke Frederik Georg Hannibal Hans Henrik Herman Hugo Ivar Jakob
+			Jacob Johan Julius Knud Ludvig Magnus Michael Niels Olav Otto
+			Peter Poul Sigurd Sven Tage Thomas Thorvald Ukrik Valdemar Vilhelm
+		}
+	}
+	female = {
+		names = { Karen Alma Elsa Else Monica Grete Gerda Helga Jytte Kaja Asta Astrid Signe }
+	}
+	surnames = {
+		Ahlefeldt Asp-Persson Berger Bonde Carlsen Dannemand Danneskjold-Samso  Eberlin Falsen
+		Folsach Güntelberg Gyldenfeldt Haack Hambro Haxthausen Juul Klauman Krogh Laessoe Hansen Have
+		Leuenbach Lovenbalk Michaelsen Mylius Neergaard Obelitz Oxholm Reventlow Rosenkrantz Schack-Schackenborg
+		Stemman Suenson Thygeson Trampe Urne  Wadenstierna Wedel-Heinen Zytphen-Adeler
+	}
+	callsigns = { }
+}
+
+FLU = {
+	male = {
+		names = {
+			Aage Arnór Ásgeir Astrathur Baldur Bjarni Björn Brynjólfur Dagbjartur Eggthor Einar Eysteinn Freyr Haraldur Hermann Gísli Hjörtur Jóhann Lórens Oddleifur Ólafur Skúli Stefán Sturlaugr Sveinn Vagn Vilhjálmur Ögrim
+		}
+	}
+	female = {
+		names = {
+			Árný Arnfrithur Bjarnhildur Boghildur Dómhildur Drótt Freydís Gunnrún Rafney
+		}
+	}
+	surnames = {
+		Arnórsson Ásgeirsson Thorarensen Bjarnason Björnsson Blöndal Aagesson Astrathursson Baldursson Björnsson Eggthorsson Guðmundsson Hjörtursson Jonsson Jónasson Oddleifsson Ólafsson Olgeirsson Pétursson Sigurbjörnsson Stefánsson Sæmundsson Thors Þórðarson Vagnsson
+	}
+	callsigns = { }
+}
+
+# France + Canada
+VIC = {
+	male = {
+		names = {
+			Achille Adolphe Adrien Aimable Alphonse Amédée Antoine Armand August Augustin Aurelien
+			Charles Daniel Denis Édouard Éttiene Elie Eugène Fernand François Frédéric
+			Félicien Félix Georges Guillaume Gustave Henri Hubert Hugo Jacques Jean Joseph
+			Jules Julien Lazare Leroy Louis Lucien Léopold Matthieu Michel Napoléon Nicolas
+			Patrice Paul Philippe Pierre Robert Thibaut Thierry Thomas Charles John Frederick Douglas Patrick Leonard Henry Arthur Alexander Campbell Gilbert Albert Victor Julian Francis James Jonathan
+		}
+	}
+	female = {
+		names = { Anne Marie Françoise Gisèle Marguerite Marianne Simone Anaïs Irène Nathalie Elsa Emma Lea Olivia Alice Florence Zoe Chloe Beatrice Charlotte Rosalie Eva Juliette Sofia Jade Camille Victoria }
+	}
+	surnames = {
+		Anthoine "Baraguey d'Hilliers" Bazaine Billot Bosquet "Boué de Lapeyrère" Boulanger Bourbaki Bouët-Willaumez Bugeaud Caillard Canrobert Courbet Cousin-Mountauban Delay "de Castellane" "de Castelnau"  "de Langle de Cary" "de MacMahon" "de Montaignac" "de Saint Arnaud" d'Orleans Davout Dubail Dubois Duchêne Dupetit-Thouars Exelmans Foch Forey "Franchet d'Espèrey" Gallieni Gouraud Guillaumat Hamelin Harispe Hoche Humbert Jaurès Joffre Lebouef Lyautey Murat "Ney d'Elchingen" Nivelle Péllissier Petain Ropert Vaillant Grey Elliot Hamilton Gordon Stanley Campbell Ross Petty-Fitzmaurice Windham Young Doyle Hastings Blackwood MacDougall
+	}
+	callsigns = { "Draco" "Fast" "Tiger" "Sparrow" "Ripper" "Sundance" "Toad" "Twitch" "Farmer" "Weasel" "Target Practice" "Invisible" "Beach Boy" "Princess" "The Mute" "Carpenter"}
+}
+
+MAN = {
+	male = {
+		names = {
+			Ma Deng Zhao Tong Guan Oboi Sonin Songgotu Suksaha Mingzhu Nalan Fu Hesehn Changlin
+		}
+	}
+	female = {
+		names = { Fen Jian Wen Hejing Hejia Hexiao Zhuangjing }
+	}
+	surnames = { Zhanshan Tiemei Shangzhi Linge Xiangying Xingde Kang'an }
+	callsigns = { }
+}
+
+TTS = {
+	male = {
+		names = {  Ma Deng Zhao Tong Guan Oboi Sonin Songgotu Suksaha Mingzhu Nalan Fu Hesehn Changlin  }
+	}
+	female = {
+		names = { Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene }
+	}
+	surnames = { Zhanshan Tiemei Shangzhi Linge Xiangying Xingde Kang'an }
+	callsigns = { }
+}

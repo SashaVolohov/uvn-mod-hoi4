@@ -10,7 +10,8 @@ state= {
 	state_category = town
 
 	history= {
-		owner = CUB
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -23,7 +24,6 @@ state= {
 				naval_base = 1
 			}
 		}
-		add_core_of = CUB
 		victory_points = {
 			7622 5 
 		}

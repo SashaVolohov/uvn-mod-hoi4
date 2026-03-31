@@ -13,9 +13,8 @@ state={
 		victory_points = {
 			13238 1 
 		}
-		owner = TIG
-		add_core_of = TIG
-		add_claim_by = ERI
+		owner = TTS
+		add_core_of = TTS
 
 	}
 

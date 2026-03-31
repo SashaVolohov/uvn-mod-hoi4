@@ -7,13 +7,13 @@ state = {
 
 	resources = {
 		tungsten = 42 # In replacement of Nitrate
+		coal = 1 # initial distribution = with infra 1.6 / 6 total
 	}
 
 	history = {
 
-		owner = CHL
-		add_core_of = CHL
-		add_claim_by = BOL
+		owner = TTS
+		add_core_of = TTS
 
 		buildings = {
 			infrastructure = 3

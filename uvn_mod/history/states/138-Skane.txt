@@ -6,8 +6,13 @@ state={
 	
 	state_category = city
 
+	resources = {
+		coal = 2 #initial distribution
+	}
+
 	history={
-		owner = SWE
+		owner = TTS
+		add_core_of = TTS
 		victory_points = {
 			9279 5 
 		}
@@ -27,7 +32,6 @@ state={
 				coastal_bunker = 1
 			}
 		}
-		add_core_of = SWE
 	}
 
 	provinces={

@@ -15,7 +15,6 @@ state={
 		victory_points = {
 			10099 1 
 		}
-		add_core_of = EGY
 
 		2025.1.1 = {
 			owner = DUS

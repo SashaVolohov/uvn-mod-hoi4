@@ -3,7 +3,8 @@ state = {
 	name = "STATE_875" #Chukchi Peninsula
 
 	history = {
-		owner = CKK
+		owner = TTS
+		add_core_of = TTS
 		victory_points = {
 			13204 1 
 		}
@@ -13,8 +14,6 @@ state = {
 				naval_base = 1
 			}
 		}
-		add_core_of = CKK
-		add_core_of = FER
 
 	}
 

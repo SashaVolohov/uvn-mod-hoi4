@@ -5,6 +5,11 @@ state=
 	manpower = 820000
 	
 	state_category = rural
+
+	resources = {
+		coal = 12 # initial distribution / 60 total
+	}
+
 	
 	
 	history=

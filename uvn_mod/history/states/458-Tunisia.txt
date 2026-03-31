@@ -9,8 +9,8 @@ state={
 	}
 
 	history={
-		owner = TUN
-		add_core_of = TUN
+		owner = TTS
+		add_core_of = TTS
 		victory_points = {
 			11969 10 
 		}

@@ -11,7 +11,8 @@ state={
 		steel=1
 	}
 	history={
-		owner = URG
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
@@ -24,7 +25,6 @@ state={
 				coastal_bunker = 1
 			}
 		}
-		add_core_of = URG
 		victory_points = {
 			10362 5
 		}

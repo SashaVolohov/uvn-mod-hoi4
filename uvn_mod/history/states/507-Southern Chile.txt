@@ -6,12 +6,17 @@ state={
 	
 	state_category = pastoral
 
+	resources = {
+		oil = 2
+		coal = 4 #initial distribution = with infra 5 / 6 total
+	}
+
 	history={
-		owner = CHL
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = CHL
 	}
 
 	provinces={

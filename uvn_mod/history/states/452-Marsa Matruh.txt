@@ -7,7 +7,8 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = EGY
+		owner = TTS
+		add_core_of = TTS
 		buildings = {
 			infrastructure = 2
 		}
@@ -20,7 +21,6 @@ state={
 			9989 1
 		}
 
-		add_core_of = EGY
 	}
 
 	provinces={
